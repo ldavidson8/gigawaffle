@@ -1,0 +1,252 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #f3f2f1;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    text-align: left;
+    color: #202020;
+    overflow-x: hidden;
+}
+
+
+.background-image-powerline:not(.lazyload)::before { background-image: url('/img/background/powerline_full.png'); }
+.background-image-hydropower-plant:not(.lazyload)::before { background-image: url('/img/background/hydropower-plant_full.png'); }
+.background-image-wind-turbines:not(.lazyload)::before { background-image: url('/img/background/wind-turbines_full.jpg'); }
+.background-image-preston:not(.lazyload)::before { background-image: url('/img/background/preston_full.jpg'); }
+.background-image-coffee-shop:not(.lazyload)::before { background-image: url('/img/background/coffee-shop_full.png'); }
+.background-image-docks:not(.lazyload)::before { background-image: url('/img/background/docks_full.jpg'); }
+
+@media (max-width: 1000px) and (max-height: 563px)
+{
+    .background-image-powerline:not(.lazyload)::before { background-image: url('/img/background/powerline_half.png'); }
+    .background-image-hydropower-plant:not(.lazyload)::before { background-image: url('/img/background/hydropower-plant_half.png'); }
+    .background-image-wind-turbines:not(.lazyload)::before { background-image: url('/img/background/wind-turbines_half.jpg'); }
+    .background-image-preston:not(.lazyload)::before { background-image: url('/img/background/preston_half.jpg'); }
+    .background-image-coffee-shop:not(.lazyload)::before { background-image: url('/img/background/coffee-shop_half.png'); }
+    .background-image-docks:not(.lazyload)::before { background-image: url('/img/background/docks_half.jpg'); }
+}
+
+@media (max-width: 500px) and (max-height: 281px)
+{
+    .background-image-powerline:not(.lazyload)::before { background-image: url('/img/background/powerline_quarter.png'); }
+    .background-image-hydropower-plant:not(.lazyload)::before { background-image: url('/img/background/hydropower-plant_quarter.png'); }
+    .background-image-wind-turbines:not(.lazyload)::before { background-image: url('/img/background/wind-turbines_quarter.jpg'); }
+    .background-image-preston:not(.lazyload)::before { background-image: url('/img/background/preston_quarter.jpg'); }
+    .background-image-coffee-shop:not(.lazyload)::before { background-image: url('/img/background/coffee-shop_quarter.png'); }
+    .background-image-docks:not(.lazyload)::before { background-image: url('/img/background/docks_quarter.jpg'); }
+}
+
+
+hr
+{
+    border: 3px solid #202020;
+    margin: 0px;
+}
+
+hr.hr-white
+{
+    border-color: #f3f2f1 !important;
+}
+
+
+.center-text
+{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.center-content
+{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+header,
+nav
+{
+    background-color: #00c2cb;
+    color: #f3f2f1;
+}
+
+nav,
+nav .container-fluid
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+nav .navigation-link
+{
+    margin: 12px 5px;
+    vertical-align: middle;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+nav .navigation-link:link,
+nav .navigation-link:visited
+{
+    color: #f3f2f1 !important;
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: 2px solid transparent;
+}
+
+nav .navigation-link:hover,
+nav .navigation-link:active
+{
+    color: #f3f2f1 !important;
+    text-decoration: underline;
+}
+
+nav li
+{
+    display: inline-block;
+}
+
+
+
+footer
+{
+    background-color: #202020;
+    color: #f3f2f1;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.full-size, .full-size-80, .full-size-60, .full-size-50, .full-size-40, .full-size-30
+{
+    padding: 0px;
+}
+
+.full-size
+{
+    min-height: 100vh;
+}
+
+.full-size-80
+{
+    min-height: 80vh;
+}
+
+.full-size-60
+{
+    min-height: 60vh;
+}
+
+.full-size-50
+{
+    min-height: 50vh;
+}
+
+.full-size-40
+{
+    min-height: 40vh;
+}
+
+.full-size-30
+{
+    min-height: 30vh;
+}
+
+
+::selection
+{
+    background-color: #00c2cb;
+    color: #f3f2f1;
+}
+
+
+h1
+{
+    text-align: left;
+    margin-top: 30px;
+}
+
+h1, h2, h4
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+h3, h5, h6
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+input:not([type=submit], [type=button], [type=reset]), select, textarea
+{
+    color: #202020 !important;
+}
+
+.form-black input, .form-black select, .form-black textarea
+{
+    color: #202020 !important;
+}
+
+.form-black input:not([type=submit], [type=button], [type=reset]), .form-black select, .form-black textarea
+{
+    background-color: #202020 !important;
+    color: #f3f2f1 !important;
+}
+
+input:not([type=submit], [type=button], [type=reset])::placeholder, textarea::placeholder,
+input:not([type=submit], [type=button], [type=reset]):-moz-placeholder, textarea:-moz-placeholder,
+input:not([type=submit], [type=button], [type=reset])::-moz-placeholder, textarea::-moz-placeholder,
+input:not([type=submit], [type=button], [type=reset]):-ms-input-placeholder, textarea:-ms-input-placeholder,
+input:not([type=submit], [type=button], [type=reset])::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+{
+    color: #a3a2a1 !important;
+}
+
+.form-black input:-webkit-autofill,
+.form-black select:-webkit-autofill,
+.form-black textarea:-webkit-autofill
+{
+    -webkit-box-shadow: 0 0 0 50px #202020 inset;
+    box-shadow: 0 0 0 50px #202020 inset;
+    -webkit-text-fill-color: #a3a2a1;
+}
+
+.form-black input:-webkit-autofill:focus,
+.form-black select:-webkit-autofill:focus,
+.form-black textarea:-webkit-autofill:focus
+{
+    -webkit-box-shadow: 0 0 0 50px #202020 inset;
+    box-shadow: 0 0 0 50px #202020 inset;
+    -webkit-text-fill-color: #a3a2a1;
+}
+
+.form-error-message
+{
+    font-size: 15px;
+    color: red;
+    font-weight: normal;
+}
+
+
+@media (max-width: 767px)
+{
+}
+
+@media (max-width: 575px)
+{
+}

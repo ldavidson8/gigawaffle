@@ -1,0 +1,26 @@
+.background-image-powerline.lazyload::before { background-image: url('/img/background/powerline_full.png'); }
+.background-image-hydropower-plant.lazyload::before { background-image: url('/img/background/hydropower-plant_full.png'); }
+.background-image-wind-turbines.lazyload::before { background-image: url('/img/background/wind-turbines_full.jpg'); }
+.background-image-preston.lazyload::before { background-image: url('/img/background/preston_full.jpg'); }
+.background-image-coffee-shop.lazyload::before { background-image: url('/img/background/coffee-shop_full.png'); }
+.background-image-docks.lazyload::before { background-image: url('/img/background/docks_full.jpg'); }
+
+@media (max-width: 1000px) and (max-height: 563px)
+{
+    .background-image-powerline.lazyload::before { background-image: url('/img/background/powerline_half.png'); }
+    .background-image-hydropower-plant.lazyload::before { background-image: url('/img/background/hydropower-plant_half.png'); }
+    .background-image-wind-turbines.lazyload::before { background-image: url('/img/background/wind-turbines_half.jpg'); }
+    .background-image-preston.lazyload::before { background-image: url('/img/background/preston_half.jpg'); }
+    .background-image-coffee-shop.lazyload::before { background-image: url('/img/background/coffee-shop_half.png'); }
+    .background-image-docks.lazyload::before { background-image: url('/img/background/docks_half.jpg'); }
+}
+
+@media (max-width: 500px) and (max-height: 281px)
+{
+    .background-image-powerline.lazyload::before { background-image: url('/img/background/powerline_quarter.png'); }
+    .background-image-hydropower-plant.lazyload::before { background-image: url('/img/background/hydropower-plant_quarter.png'); }
+    .background-image-wind-turbines.lazyload::before { background-image: url('/img/background/wind-turbines_quarter.jpg'); }
+    .background-image-preston.lazyload::before { background-image: url('/img/background/preston_quarter.jpg'); }
+    .background-image-coffee-shop.lazyload::before { background-image: url('/img/background/coffee-shop_quarter.png'); }
+    .background-image-docks.lazyload::before { background-image: url('/img/background/docks_quarter.jpg'); }
+}
