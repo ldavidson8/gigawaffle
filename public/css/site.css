@@ -35,6 +35,7 @@ body
     font-style: italic;
     padding: 0 20px;
     margin: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -145,7 +146,12 @@ nav li
     display: inline-block;
 }
 
-nav a:hover
+nav navbar-toggle
+{
+    background-color: white;
+    border:none;
+}
+
 
 
 
@@ -297,6 +303,16 @@ input:not([type=submit], [type=button], [type=reset])::-webkit-input-placeholder
 {
     .gradient-container
     {
-        
+    background-image: none  ;
+    width: 100%;
+    font-style: italic;
+    padding: 0 20px;
+    margin: 0;
+    display: block;
+    }
+
+    .gradient-container h1
+    {
+        color: var(--heading-color)
     }
 }

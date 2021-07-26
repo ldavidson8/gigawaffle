@@ -5,15 +5,25 @@
 @endsection
 
 @section('main-content')
-        <hr />
-        <div class="row flex-grow-1 no-padding background-image-powerline">
-            <div class="container center-content no-margin" style="padding: 30px;">
-                <h1>What We Do</h1>
-                <p>
-                    We provide businesses and people like YOU with the opportunity to save on their energy bills. With our no-nonsense approach, what you see is what you get.
-                    At Swap My Energy, we give you savings based on facts, not estimates.
-                    By finding you a unique deal you will have the opportunity to save money and the peace of mind that your energy bill switching is in good hands.
+        <div class="row flex-grow-1 no-padding">
+            <div class="col-12 col-sm-6">
+                <div class="gradient-container">
+                    <div class="text-center" style="padding: 0 20px;">
+                    <h1>Marketing and web design that tickles your taste buds</h1>
+                    <hr style="width: 100px">
+                    </div>
+                </div>
+                <div style="padding: 40px">
+                <p style="font-weight: 700;">
+                    We're gigawaffle; we want to turn businesses into brands. With plenty of options across web design, marketing and media, you're truly in control when it comes to your business.
                 </p>
+                <p> 
+                    You can pick and choose from a range of services, allowing you to build the perfect package for your business.
+                </p>
+                <div class="text-center">
+                <button class="navy-blue-button">View Services</button>
+                </div>
+                </div>
             </div>
         </div>
     </div>
