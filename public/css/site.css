@@ -3,18 +3,41 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #DF4985;
+    --secondary-color: #7A98EE;
+    --font-color: #FFFFFF;
+    --bg-color: #fff;
+    --heading-color: #000733;
+}
+
+
 body
 {
-    background-color: #f3f2f1;
+    background-color: var(--bg-color);
+    background-image: url('/img/background/background-grid.png');
     margin: 0px;
     padding: 0px;
     font-family: 'Inter', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     text-align: left;
-    color: #202020;
+    color: var(--heading-color);
     overflow-x: hidden;
 }
 
+
+.gradient-container
+{
+    background-image: linear-gradient(to right, #DF4985 , #7A98EE);
+    color: #FFFFFF;
+    height: 40vh;
+    width: 100%;
+    font-style: italic;
+    padding: 0 20px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
 
 .background-image-powerline:not(.lazyload)::before { background-image: url('/img/background/powerline_full.png'); }
 .background-image-hydropower-plant:not(.lazyload)::before { background-image: url('/img/background/hydropower-plant_full.png'); }
@@ -46,13 +69,13 @@ body
 
 hr
 {
-    border: 3px solid #202020;
+    border: 3px solid var(--font-color);
     margin: 0px;
 }
 
 hr.hr-white
 {
-    border-color: #f3f2f1 !important;
+    border-color: #FFFFFF !important;
 }
 
 
@@ -77,8 +100,9 @@ hr.hr-white
 header,
 nav
 {
-    background-color: #00c2cb;
-    color: #f3f2f1;
+    background-image: linear-gradient(to right, #DF4985 , #7A98EE);
+    color: #FFFFFF;
+    padding: 20px 10px 0 10px;
 }
 
 nav,
@@ -88,27 +112,31 @@ nav .container-fluid
     padding-right: 0px !important;
 }
 
-nav .navigation-link
+nav .navbar-brand
 {
-    margin: 12px 5px;
-    vertical-align: middle;
-    font-size: 23px;
+    color: #FFFFFF;
     font-weight: 700;
 }
 
-nav .navigation-link:link,
-nav .navigation-link:visited
+nav .nav-link
 {
-    color: #f3f2f1 !important;
+    margin: 12px 5px;
+    vertical-align: middle;
+}
+
+nav .nav-link:link,
+nav .nav-link:visited
+{
+    color: #FFFFFF !important;
     padding: 5px 7px;
     border-radius: 7px;
     border: 2px solid transparent;
 }
 
-nav .navigation-link:hover,
-nav .navigation-link:active
+nav .nav-link:hover,
+nav .nav-link:active
 {
-    color: #f3f2f1 !important;
+    color: #FFFFFF !important;
     text-decoration: underline;
 }
 
@@ -117,12 +145,14 @@ nav li
     display: inline-block;
 }
 
+nav a:hover
+
 
 
 footer
 {
     background-color: #202020;
-    color: #f3f2f1;
+    color: #FFFFFF;
     font-weight: 100;
     font-size: 22px;
     padding: 10px;
@@ -169,14 +199,15 @@ footer
 ::selection
 {
     background-color: #00c2cb;
-    color: #f3f2f1;
+    color: #FFFFFF;
 }
 
 
 h1
 {
+    font-size: 1.5rem;
     text-align: left;
-    margin-top: 30px;
+    color: var(--font-color)
 }
 
 h1, h2, h4
@@ -189,6 +220,17 @@ h3, h5, h6
 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+
+.navy-blue-button
+{
+    background-color: var(--heading-color);
+    color: var(--font-color);
+    font-weight: 700;
+    font-size: 20px;
+    border:none;
+    border-radius: 20px;
+    padding: 5px 20px;
 }
 
 
@@ -205,7 +247,7 @@ input:not([type=submit], [type=button], [type=reset]), select, textarea
 .form-black input:not([type=submit], [type=button], [type=reset]), .form-black select, .form-black textarea
 {
     background-color: #202020 !important;
-    color: #f3f2f1 !important;
+    color: #FFFFFF !important;
 }
 
 input:not([type=submit], [type=button], [type=reset])::placeholder, textarea::placeholder,
@@ -249,4 +291,12 @@ input:not([type=submit], [type=button], [type=reset])::-webkit-input-placeholder
 
 @media (max-width: 575px)
 {
+}
+
+@media (min-width: 576px)
+{
+    .gradient-container
+    {
+        
+    }
 }
