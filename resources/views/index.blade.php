@@ -99,7 +99,7 @@
             </div>
             <div class="w-100">
                 <h2 class="pink-heading" style="text-align:left; font-style: italic; font-size: 1.6em;"> The Process </h2>
-                <ul class="caret-right-list" style="font-weight: 400;">
+                <ul class="caret-right-list" style="font-weight: 500;">
                     <li>Purchase your perfect package, choose from one of our existing packages or talk with one our team.</li>
                     <li>We'll clarify any of the finer details and then get to work.</li>
                     <li>We'll regularly check back in with progress updates, ideas, designs and more, to ensure you get exactly what you're after.</li>
