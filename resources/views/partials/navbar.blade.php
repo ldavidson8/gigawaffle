@@ -13,7 +13,7 @@
     }
 </style>
 <nav class="navbar navbar-dark navbar-expand-sm">
-    <a id="navbar-logo" class="navbar-brand" href="#">gigawaffle</a>
+    <a id="navbar-logo" class="navbar-brand" href="{{ route('home') }}">gigawaffle</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
     </button>
