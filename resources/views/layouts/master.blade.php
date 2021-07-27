@@ -29,11 +29,6 @@
         @font-face { font-family: Poppins; src: url('{{ asset("fonts/Poppins-SemiBoldItalic.ttf") }}'); font-weight: 600; font-style: italic; }
         @font-face { font-family: Poppins; src: url('{{ asset("fonts/Poppins-Bold.ttf") }}'); font-weight: 700; font-style: italic; }
         @font-face { font-family: Poppins; src: url('{{ asset("fonts/Poppins-BoldItalic.ttf") }}'); font-weight: 700; font-style: italic; }
-
-
-
-
-
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
