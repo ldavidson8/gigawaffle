@@ -29,9 +29,9 @@ class WorkWithUsEmail extends Mailable
             $formData = $this -> formData;
             $params = compact([ 'formData' ]);
             
-            $view = $this -> subject('Gigawaffle - Request to work with us') -> view('_email.contact-forms.work-with-us', $params) -> text('_email.contact-forms.work-with-us-text', $params);
-            
             Log::channel('request-callback') -> info('WorkWithUsEmail -> build(), Sending Request to Work With Us Email');
+
+            $view = $this -> subject('Gigawaffle - Request to work with us') -> view('_email.contact-forms.work-with-us', $params) -> text('_email.contact-forms.work-with-us-text', $params);
             return $view;
         }
         catch (Throwable $ex)

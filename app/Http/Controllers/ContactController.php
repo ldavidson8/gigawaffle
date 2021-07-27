@@ -18,8 +18,8 @@ class ContactController extends Controller
             'message' => 'nullable|string'
         ]);
         if ($validator -> fails()) return back() -> withErrors($validator) -> withInput();
-
-        Mail::queue(new WorkWithUsEmail($data));
+        
+        Mail::to(env('MAIL_TO_ADDRESS')) -> queue(new WorkWithUsEmail($data));
 
         return response() -> json($data);
     }

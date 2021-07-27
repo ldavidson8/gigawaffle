@@ -96,13 +96,6 @@ footer
     text-align: center;
 }
 
-.pink-heading
-{
-    font-size: 30px;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
 
 .gradient
 {
@@ -219,9 +212,17 @@ hr.hr-white
 }
 
 
+.top-section-outer
+{
+    padding: 30px 0px;
+    margin: auto;
+}
+
+
 h1, h2, h3, h4, h5, h6
 {
     font-family: Rubik, sans-serif;
+    text-align: center;
 }
 
 h1
@@ -232,8 +233,21 @@ h1
     color: var(--font-color)
 }
 
-h2, h3, h4, h5, h6
+h2
 {
+    font-size: 27px;
+}
+
+h3
+{
+    font-size: 22px;
+}
+
+.pink-heading
+{
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: bold;
     text-align: center;
 }
 
@@ -293,11 +307,6 @@ textarea:-webkit-autofill:focus
 {
 }
 
-@media (max-width: 575px)
-{
-}
-
-
 @media (min-width: 576px)
 {
     .container-no-gradient-sm
@@ -310,7 +319,7 @@ textarea:-webkit-autofill:focus
 
     .gradient-container h1
     {
-        color: var(--heading-color)
+        color: var(--heading-color);
     }
 
     .align-item-bottom
@@ -328,5 +337,19 @@ textarea:-webkit-autofill:focus
     .center-button
     {
         text-align: initial;
+    }
+}
+
+@media (max-width: 575px)
+{
+    .gradient-container
+    {
+        padding: 50px 0px;
+    }
+    
+    .top-section-outer
+    {
+        padding: 0px;
+        margin-top: 0px;
     }
 }

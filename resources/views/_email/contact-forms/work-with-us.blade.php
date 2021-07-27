@@ -18,7 +18,7 @@
             </tr>
             <tr>
                 <th>Message</th>
-                <td>{{ (isset($formData["message"])) ? $formData["message"] : 'N/A' }}</td>
+                <td><pre>{{ (isset($formData["message"])) ? $formData["message"] : 'N/A' }}</pre></td>
             </tr>
         </tbody>
     </table>
