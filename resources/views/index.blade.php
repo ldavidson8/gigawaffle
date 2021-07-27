@@ -24,47 +24,6 @@
     {
         margin-right: 2em;
     }
-
-    .waves-image
-    {
-        position: absolute;
-        bottom: -50px;
-        width: 100%;
-        z-index: 3;
-    }
-
-    @media (min-width: 576px)
-{
-    .container-no-gradient-sm
-    {
-    background-image: none;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0;
-    }
-
-    .gradient-container h1
-    {
-        color: var(--heading-color)
-    }
-
-    .align-item-bottom
-    {
-        align-self: flex-end;
-    }
-
-    hr 
-    {
-        
-        border: 3px solid var(--heading-color);
-        margin: 0;
-    }
-
-    .center-button
-    {
-        text-align: initial;
-    }
-}
 </style>
 @endsection
 
@@ -76,7 +35,7 @@
         <div class="row flex-grow-1 no-padding">
             <div class="d-none d-lg-block col-2"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="gradient-container container-no-gradient-sm d-flex center-content" style="height: 40vh;">
+                <div class="gradient-container container-no-gradient-sm d-flex center-content" style="min-height: 40vh;">
                     <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
                     <h1>Marketing and web design that tickles your taste buds</h1>
                     <hr style="width: 150px">
@@ -86,7 +45,7 @@
                 <p style="font-weight: 700;">
                     We're gigawaffle; we want to turn businesses into brands. With plenty of options across web design, marketing and media, you're truly in control when it comes to your business.
                 </p>
-                <p> 
+                <p style="font-family: Poppins"> 
                     You can pick and choose from a range of services, allowing you to build the perfect package for your business.
                 </p>
                 <div class="center-button">
@@ -98,34 +57,36 @@
                 <img src="{{ asset('img/code-snippet.png') }}"/>
             </div>
         </div>
-        <img class="waves-image" src="{{ asset('img/wavesOpacity.png') }}">
     </div>
-    <div class="full-size-80 container-fluid gradient-container text-white">
-        <div class="col-12 d-flex flex-column align-items-center pt-5">
-            <h2> Our Services </h2>
-            <p> Those who have trusted gigawaffle </p>
-            <div class="row d-flex justify-content-center">
-                <div class="col-4">
-                    <img class="border-radius-20" src="https://via.placeholder.com/300x400" alt="">
+    <div class="gradient text-white no-padding">
+        <img class="waves-image-top" src="{{ asset('img/wavesOpacity-top.png') }}">
+        <div class="col-12 d-flex flex-column align-items-center py-5">
+            <h2 style="font-size: 1.5rem"> Our Services </h2>
+            <p style="font-size: 1.5em"> Those who have trusted gigawaffle </p>
+            <div class="row d-flex center-content text-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="border-radius-20" src="https://via.placeholder.com/300x350" alt="">
                         <p> Swap My Energy</p>
                         <p style="font-weight: 300; font-style: italic">Web Development Project</p>
                 </div>
-                <div class="col-4">
-                    <img class="border-radius-20" src="https://via.placeholder.com/300x400" alt="">
+                <div class="col-12 col-md-6 navy-blue-buttoncol-lg-4">
+                    <img class="border-radius-20" src="https://via.placeholder.com/300x350" alt="">
                         <p> Swap My Energy</p>
                         <p style="font-weight: 300; font-style: italic">Web Development Project</p>
                 </div>
-                <div class="col-4">
-                    <img class="border-radius-20" src="https://via.placeholder.com/300x400" alt="">
+                <div class="col-12 col-lg-4">
+                    <img class="border-radius-20" src="https://via.placeholder.com/300x350" alt="">
                         <p> Swap My Energy</p>
                         <p style="font-weight: 300; font-style: italic">Web Development Project</p>
                 </div>
             </div>
+            <button class="navy-blue-button"> See All Clients </button>
         </div>
+        <img class="waves-image-bottom" src="{{ asset('img/wavesOpacity-bottom.png') }}">
     </div>
     <div class="container">
         <div class="col-12 d-flex flex-column align-items-center">
-            <h3> The Process </h3>
+            <h2 class="pink-heading"> The Process </h2>
             <p> All the services, without the waffle </p>
             <div class="row">
                 <div class="col-12 col-md-6">
@@ -137,8 +98,8 @@
                 </div>
             </div>
             <div class="w-100">
-                <h3> The Process </h3>
-                <ul class="caret-right-list">
+                <h2 class="pink-heading" style="text-align:left; font-style: italic; font-size: 1.6em;"> The Process </h2>
+                <ul class="caret-right-list" style="font-weight: 400;">
                     <li>Purchase your perfect package, choose from one of our existing packages or talk with one our team.</li>
                     <li>We'll clarify any of the finer details and then get to work.</li>
                     <li>We'll regularly check back in with progress updates, ideas, designs and more, to ensure you get exactly what you're after.</li>
@@ -150,10 +111,10 @@
         </div>
     </div>
     <div class="container">
-        <div class="col-12 d-flex flex-column align-items-center">
-            <h4> The Waffle Corner </h4>
+        <div class="col-12 d-flex flex-column align-items-center py-5">
+            <h2 class="pink-heading"> The Waffle Corner </h2>
             <p> The only place we tolerate any waffle... </p>
-            <div class="row d-flex">
+            <div class="row d-flex pb-4 pt-3">
                 <img class="border-radius-20 blog-cards" src="https://via.placeholder.com/350x250">
                 <img class="border-radius-20 blog-cards" src="https://via.placeholder.com/350x250">
             </div>
