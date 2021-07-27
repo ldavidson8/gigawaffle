@@ -101,15 +101,10 @@ footer
 .gradient-container
 {
     background-image: linear-gradient(to right, #DF4985 , #7A98EE);
-    color: #FFFFFF;
-    height: 40vh;
     width: 100%;
-    font-style: italic;
     padding: 0 20px;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 .background-image-powerline:not(.lazyload)::before { background-image: url('/img/background/powerline_full.png'); }
@@ -173,6 +168,16 @@ hr.hr-white
     align-items: center;
     justify-content: center;
     margin: auto;
+}
+
+.center-button
+{
+    text-align: center;
+}
+
+.border-radius-20
+{
+    border-radius: 20px;
 }
 
 
@@ -311,23 +316,5 @@ input:not([type=submit], [type=button], [type=reset])::-webkit-input-placeholder
 
 @media (min-width: 576px)
 {
-    .gradient-container
-    {
-    background-image: none  ;
-    width: 100%;
-    font-style: italic;
-    padding: 0 20px;
-    margin: 0;
-    display: flex;
-    }
-
-    .gradient-container h1
-    {
-        color: var(--heading-color)
-    }
-
-    .align-item-bottom
-    {
-        align-self: flex-end;
-    }
+    
 }
