@@ -19,16 +19,15 @@ body
     background-image: url('/img/background/background-grid.png');
     margin: 0px;
     padding: 0px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-family: Rubik;
+    font-size: 17px;
     text-align: left;
     color: var(--heading-color);
     overflow-x: hidden;
 }
 
 
-header,
-nav
+header
 {
     background-image: linear-gradient(to right, #DF4985 , #7A98EE);
     color: #FFFFFF;
@@ -97,6 +96,11 @@ footer
     text-align: center;
 }
 
+
+.gradient
+{
+    background-image: linear-gradient(to right, #DF4985 , #7A98EE);
+}
 
 .gradient-container
 {
@@ -226,21 +230,15 @@ hr.hr-white
 
 h1
 {
-    font-size: 1.5rem;
+    font-size: 27px;
+    font-weight: 600;
     text-align: left;
     color: var(--font-color)
 }
 
-h1, h2, h4
+h2, h3, h4, h5, h6
 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-}
-
-h3, h5, h6
-{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    text-align: center;
 }
 
 .navy-blue-button
@@ -254,21 +252,17 @@ h3, h5, h6
     padding: 5px 20px;
 }
 
-
-input:not([type=submit], [type=button], [type=reset]), select, textarea
+        
+input, select, textarea
 {
-    color: #202020 !important;
+    border: none !important;
+    background-color: #000733 !important;
+    color: white !important;
 }
 
-.form-black input, .form-black select, .form-black textarea
+textarea
 {
-    color: #202020 !important;
-}
-
-.form-black input:not([type=submit], [type=button], [type=reset]), .form-black select, .form-black textarea
-{
-    background-color: #202020 !important;
-    color: #FFFFFF !important;
+    padding: 6px 15px;
 }
 
 input:not([type=submit], [type=button], [type=reset])::placeholder, textarea::placeholder,
@@ -277,32 +271,25 @@ input:not([type=submit], [type=button], [type=reset])::-moz-placeholder, textare
 input:not([type=submit], [type=button], [type=reset]):-ms-input-placeholder, textarea:-ms-input-placeholder,
 input:not([type=submit], [type=button], [type=reset])::-webkit-input-placeholder, textarea::-webkit-input-placeholder
 {
-    color: #a3a2a1 !important;
+    color: #aaaaaa !important;
 }
 
-.form-black input:-webkit-autofill,
-.form-black select:-webkit-autofill,
-.form-black textarea:-webkit-autofill
+input:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill
 {
-    -webkit-box-shadow: 0 0 0 50px #202020 inset;
-    box-shadow: 0 0 0 50px #202020 inset;
-    -webkit-text-fill-color: #a3a2a1;
+    -webkit-box-shadow: 0 0 0 50px #000733 inset;
+    box-shadow: 0 0 0 50px #000733 inset;
+    -webkit-text-fill-color: #aaaaaa;
 }
 
-.form-black input:-webkit-autofill:focus,
-.form-black select:-webkit-autofill:focus,
-.form-black textarea:-webkit-autofill:focus
+input:-webkit-autofill:focus,
+select:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus
 {
-    -webkit-box-shadow: 0 0 0 50px #202020 inset;
-    box-shadow: 0 0 0 50px #202020 inset;
-    -webkit-text-fill-color: #a3a2a1;
-}
-
-.form-error-message
-{
-    font-size: 15px;
-    color: red;
-    font-weight: normal;
+    -webkit-box-shadow: 0 0 0 50px #000733 inset;
+    box-shadow: 0 0 0 50px #000733 inset;
+    -webkit-text-fill-color: #aaaaaa;
 }
 
 

@@ -9,6 +9,8 @@ Route::get('/clients', [ HomeController::class, 'clients' ]) -> name('clients');
 Route::get('/services', [ HomeController::class, 'services' ]) -> name('services');
 Route::get('/about', [ HomeController::class, 'about' ]) -> name('about');
 
+Route::post('/work-with-us', [ ContactController::class, 'workWithUsPost' ]) -> name('post.work-with-us');
+
 Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
 {
     Route::get('401', function() { abort(401); });

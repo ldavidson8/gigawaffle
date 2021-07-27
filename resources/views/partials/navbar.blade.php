@@ -1,14 +1,25 @@
 <?php
     if (!isset($navbar_page)) $navbar_page = "";
 ?>
-<nav class="navbar navbar-dark navbar-expand-lg">
-    <a class="navbar-brand" href="#">gigawaffle</a>
+<style>
+    header
+    {
+        padding: 0px 30px;
+    }
+    
+    #navbar-logo
+    {
+        padding: 19px 0px;
+    }
+</style>
+<nav class="navbar navbar-dark navbar-expand-sm">
+    <a id="navbar-logo" class="navbar-brand" href="#">gigawaffle</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul id="navbar-desktop-section" class="navbar-nav mr-auto center-content">
         <li class="nav-item active">
             <a class="nav-link {{ ($navbar_page == "home") ? 'navigation-link-current-page' : '' }}" href="{{ route("home") }}">Home</a>
         </li>
