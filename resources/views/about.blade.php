@@ -64,6 +64,16 @@
         <div class="pink-box-round pink-box-merge-bottom">
             <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
                 <form method="post" action="{{ route('post.work-with-us') }}">
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <strong>Whoops!</strong> There were some problems with your input.<br /><br />
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     @csrf
                     <div class="form-group">
                         <label for="fullname">Full Name *</label>
@@ -91,5 +101,4 @@
             </div>
         </div>
     </div>
-    <div class="pink-box banner">Find us on social media @gigawaffle</div>
 @endsection

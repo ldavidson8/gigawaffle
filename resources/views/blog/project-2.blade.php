@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-6 d-none d-sm-flex center-content">
-                <img src="{{ asset('img/background/coffee-shop_full.png') }}" alt="" />
+                <img src="{{ asset('img/background/docks_full.jpg') }}" alt="" />
             </div>
         </div>
     </div>

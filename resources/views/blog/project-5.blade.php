@@ -2,178 +2,51 @@
 
 @section('stylesheets')
     <style>
-        .background-image
+        h1
         {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            border-radius: 30px;
-        }
-        .background-image-right { background-position: right; }
-        
-        .background-image-coffee-shop { background-image: url("{{ asset('img/background/coffee-shop_full.png') }}"); }
-        .background-image-docks { background-image: url("{{ asset('img/background/docks_full.jpg') }}"); }
-        .background-image-plant { background-image: url("{{ asset('img/background/hydropower-plant_full.png') }}"); }
-        .background-image-market { background-image: url("{{ asset('img/background/market_full.jpg') }}"); }
-        .background-image-powerline { background-image: url("{{ asset('img/background/powerline_full.png') }}"); }
-        .background-image-preston { background-image: url("{{ asset('img/background/preston_full.jpg') }}"); }
-        .background-image-train { background-image: url("{{ asset('img/background/train_full.jpg') }}"); }
-        .background-image-windturbines { background-image: url("{{ asset('img/background/wind-turbines_full.png') }}"); }
-        
-        @media (max-width: 1000px) and (max-height: 563px)
-        {
-            .background-image-coffee-shop { background-image: url("{{ asset('img/background/coffee-shop_half.png') }}"); }
-            .background-image-docks { background-image: url("{{ asset('img/background/docks_half.jpg') }}"); }
-            .background-image-plant { background-image: url("{{ asset('img/background/hydropower-plant_half.png') }}"); }
-            .background-image-market { background-image: url("{{ asset('img/background/market_half.jpg') }}"); }
-            .background-image-powerline { background-image: url("{{ asset('img/background/powerline_half.png') }}"); }
-            .background-image-preston { background-image: url("{{ asset('img/background/preston_half.jpg') }}"); }
-            .background-image-train { background-image: url("{{ asset('img/background/train_half.jpg') }}"); }
-            .background-image-windturbines { background-image: url("{{ asset('img/background/wind-turbines_half.png') }}"); }
-        }
-        
-        @media (max-width: 500px) and (max-height: 281px)
-        {
-            .background-image-coffee-shop { background-image: url("{{ asset('img/background/coffee-shop_quarter.png') }}"); }
-            .background-image-docks { background-image: url("{{ asset('img/background/docks_quarter.jpg') }}"); }
-            .background-image-plant { background-image: url("{{ asset('img/background/hydropower-plant_quarter.png') }}"); }
-            .background-image-market { background-image: url("{{ asset('img/background/market_quarter.jpg') }}"); }
-            .background-image-powerline { background-image: url("{{ asset('img/background/powerline_quarter.png') }}"); }
-            .background-image-preston { background-image: url("{{ asset('img/background/preston_quarter.jpg') }}"); }
-            .background-image-train { background-image: url("{{ asset('img/background/train_quarter.jpg') }}"); }
-            .background-image-windturbines { background-image: url("{{ asset('img/background/wind-turbines_quarter.png') }}"); }
-        }
-        
-        .client-project-section
-        {
-            padding: 20px 0px !important;
-            min-height: 500px;
+            text-align: center;
+            padding: 100px 0px 30px;
+            font-style: normal;
         }
 
-        .client-project-column
+        picture, img, picture > source
         {
-            display: flex;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            align-content: flex-start;
-            justify-content: flex-start;
+            max-width: 100%;
+            border-radius: 20px;
         }
-        
 
         @media (max-width: 767px)
         {
-            .background-image
+            h1
             {
-                height: 30vw;
+                padding: 20px 0px;
             }
         }
     </style>
 @endsection
 
 @section('before-header')
-    <div class="full-size-60 container-fluid d-flex flex-column">
 @endsection
 
 @section('main-content')
+    <div class="d-flex flex-column center-content no-padding">
         <div class="container-lg row top-section-outer">
-            <div class="col-12{{-- col-sm-6 col-xl-8 --}} no-padding">
+            <div class="col-12 col-sm-6 col-xl-6 no-padding">
                 <div class="gradient-container container-no-gradient-sm d-flex center-content">
                     <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
-                        <h1>Those who have trusted gigawaffle</h1>
-                        <hr style="width: 150px">
+                        <h1>Project Title</h1>
                     </div>
                 </div>
-                <div class="text-container-40px">
-                    <p><b>Here you'll find all of the clients we've previously worked with, what services we provided for them and what they thought of our work.</b></p>
-                    <p>You can read more about a client by clicking "Learn More". If you like what you see, why not get in touch with us, and you never know, your business may appear here too.</p>
-                    <div class="center-button"><button class="button-default">Get In Touch</button></div>
-                </div>
             </div>
-            {{-- <div class="col-sm-6 col-xl-4 d-none d-sm-flex center-content">
-                <img src="{{ asset('img/code-snippet.png') }}"/>
-            </div> --}}
+            <div class="col-12 col-sm-6 col-xl-6 d-none d-sm-flex center-content">
+                <img src="{{ asset('img/background/powerline_full.png') }}" alt="" />
+            </div>
         </div>
     </div>
-    <div class="text-container-40px">
-        <div class="client-project-section row">
-            <div class="col-12 col-md-4 col-lg-4 background-image background-image-right background-image-coffee-shop"></div>
-            <div class="col-12 col-md-8 col-lg-8 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="/blog/post-1">Learn more</a>
-            </div>
-        </div>
-        <div class="client-project-section row no-padding">
-            <div class="col-12 col-md-8 col-lg-8 order-2 order-md-1 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="/blog/post-1">Learn more</a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-docks"></div>
-        </div>
-        <div class="client-project-section row">
-            <div class="col-12 col-md-4 col-lg-4 background-image background-image-right background-image-plant"></div>
-            <div class="col-12 col-md-8 col-lg-8 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="/blog/post-1">Learn more</a>
-            </div>
-        </div>
-        <div class="client-project-section row no-padding">
-            <div class="col-12 col-md-8 col-lg-8 order-2 order-md-1 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="/blog/post-1">Learn more</a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-market"></div>
-        </div>
-        <div class="client-project-section row">
-            <div class="col-12 col-md-4 col-lg-4 background-image background-image-right background-image-powerline"></div>
-            <div class="col-12 col-md-8 col-lg-8 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="/blog/post-1">Learn more</a>
-            </div>
-        </div>
-        <div class="client-project-section row no-padding">
-            <div class="col-12 col-md-8 col-lg-8 order-2 order-md-1 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="/blog/post-1">Learn more</a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-preston"></div>
-        </div>
-        <div class="client-project-section row">
-            <div class="col-12 col-md-4 col-lg-4 background-image background-image-right background-image-train"></div>
-            <div class="col-12 col-md-8 col-lg-8 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="/blog/post-1">Learn more</a>
-            </div>
-        </div>
-        <div class="client-project-section row no-padding">
-            <div class="col-12 col-md-8 col-lg-8 order-2 order-md-1 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="/blog/post-1">Learn more</a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-windturbines"></div>
-        </div>
+    <div class="container-lg" style="font-size: 20px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
+        <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
+        <a href="{{ url() -> previous(route('clients')) }}"><button class="button-default">Back</button></a>
+        <br /><br />
     </div>
 @endsection

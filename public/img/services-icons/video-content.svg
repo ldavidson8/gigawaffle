@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66.872" height="39.289" viewBox="0 0 66.872 39.289">
+  <g id="video-camera" transform="translate(0 0)">
+    <g id="Group_31" data-name="Group 31">
+      <g id="Group_30" data-name="Group 30">
+        <path id="Path_92" data-name="Path 92" d="M37.826,96.512H7.316A7.338,7.338,0,0,0,0,103.828v24.656A7.338,7.338,0,0,0,7.316,135.8H37.826a7.338,7.338,0,0,0,7.316-7.316V103.828A7.291,7.291,0,0,0,37.826,96.512Z" transform="translate(0 -96.512)" fill="#e63fc5"/>
+      </g>
+    </g>
+    <g id="Group_33" data-name="Group 33" transform="translate(48.8 3.906)">
+      <g id="Group_32" data-name="Group 32" transform="translate(0 0)">
+        <path id="Path_93" data-name="Path 93" d="M354.161,123.965a3.727,3.727,0,0,0-1.244.512L341.5,131.062v16.974l11.487,6.585a4.35,4.35,0,0,0,6-1.61,4.47,4.47,0,0,0,.585-2.195V128.209A4.4,4.4,0,0,0,354.161,123.965Z" transform="translate(-341.504 -123.847)" fill="#e63fc5"/>
+      </g>
+    </g>
+  </g>
+</svg>

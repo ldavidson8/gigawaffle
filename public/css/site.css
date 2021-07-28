@@ -8,7 +8,7 @@
     --primary-color: #DF4985;
     --secondary-color: #7A98EE;
     --font-color: #FFFFFF;
-    --bg-color: #fff;
+    --bg-color: #FFFFFF;
     --heading-color: #000733;
 }
 
@@ -95,7 +95,7 @@ nav navbar-toggle
 
 footer
 {
-    background-color: #202020;
+    background-color: var(--heading-color);
     color: #FFFFFF;
     font-weight: 100;
     font-size: 22px;
@@ -306,14 +306,27 @@ b
     padding: 5px 20px;
 }
 
-.button-default
+.button-default,
+.button-alternate
 {
     border: none;
     border-radius: 17px;
-    background-color: #000733;
-    color: white;
     padding: 5px 20px;
     font-weight: 600;
+}
+
+.button-default
+{
+    background-color: #000733;
+    color: white;
+    border: 2px solid #000733;
+}
+
+.button-alternate
+{
+    background-color: white;
+    color: #000733;
+    border: 2px solid #000733;
 }
 
 

@@ -4,14 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ HomeController::class, 'index' ]) -> name('home');
-Route::get('/services', [ HomeController::class, 'services' ]) -> name('services');
-Route::get('/about', [ HomeController::class, 'about' ]) -> name('about');
+Route::get('/', 'HomeController@index') -> name('home');
+Route::get('/services', 'HomeController@services') -> name('services');
+Route::get('/about', 'HomeController@about') -> name('about');
+Route::get('/terms-and-conditions') -> name('terms-and-conditions');
+Route::get('/privacy-policy') -> name('privacy-policy');
+Route::get('/cookie-policy') -> name('cookie-policy');
 
-Route::post('/work-with-us', [ ContactController::class, 'workWithUsPost' ]) -> name('post.work-with-us');
+Route::get('/clients', 'BlogController@clients') -> name('clients');
+Route::get('/clients/{blogId}', 'BlogController@clientProjects') -> name('clients.projects');
 
-Route::get('/clients', [ BlogController::class, 'clients' ]) -> name('clients');
-Route::get('/clients/{blogId}', [ BlogController::class, 'clientProjects']) -> name('clients.projects');
 
 Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
 {
@@ -22,4 +24,18 @@ Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
     Route::get('429', function() { abort(429); });
     Route::get('500', function() { abort(500); });
     Route::get('503', function() { abort(503); });
+});
+
+
+Route::group([ 'prefix' => 'work-with-us' ], function()
+{
+    Route::post('/', 'ContactController@workWithUsPost') -> name('post.work-with-us');
+    Route::get('/success', 'ContactController@workWithUsSuccess') -> name('post.work-with-us.success');
+    Route::get('/error', 'ContactController@workWithUsError') -> name('post.work-with-us.error');
+});
+Route::group([ 'prefix' => 'contact-us' ], function()
+{
+    Route::post('/', 'ContactController@contactUsPost') -> name('post.contact-us');
+    Route::get('/success', 'ContactController@contactUsSuccess') -> name('post.contact-us.success');
+    Route::get('/error', 'ContactController@contactUsError') -> name('post.contact-us.error');
 });

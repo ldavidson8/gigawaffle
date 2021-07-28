@@ -35,6 +35,20 @@ return [
     */
 
     'channels' => [
+        'work-with-us-form' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/work-with-us-form.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+            'days' => 14,
+        ],
+        
+        'contact-us-form' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/contact-us-form.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+            'days' => 14,
+        ],
+        
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
