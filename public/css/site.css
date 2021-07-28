@@ -103,6 +103,11 @@ footer
     text-align: center;
 }
 
+img
+{
+    max-width: 100%;
+}
+
 
 .gradient
 {
@@ -145,6 +150,11 @@ hr.hr-white
 .no-padding
 {
     padding: 0px !important;
+}
+
+.no-margin
+{
+    margin: 0px !important;
 }
 
 

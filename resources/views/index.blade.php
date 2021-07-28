@@ -22,9 +22,27 @@
         vertical-align: middle;
     }
 
+    .blog-cards
+    {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    @media (max-width: 990px)
+    {
     .blog-cards:first-of-type
     {
-        margin-right: 2em;
+        margin-right: 0;
+    }
+        }
+
+    @media (min-width: 991px)
+    {
+    .blog-cards:first-of-type
+    {
+        margin-right: 1em;
+    }
+    
     }
 </style>
 @endsection
@@ -35,7 +53,7 @@
 
 @section('main-content')
         <div class="container-lg row top-section-outer">
-            <div class="col-12 col-md-6 col-lg-8">
+            <div class="col-12 col-md-6 col-lg-8 no-padding">
                 <div class="gradient-container container-no-gradient-sm d-flex center-content">
                     <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
                         <h1>Marketing and web design that tickles your taste buds</h1>
@@ -63,7 +81,7 @@
         <img class="waves-image-top" src="{{ asset('img/wavesOpacity-top.png') }}">
         <div class="col-12 d-flex flex-column align-items-center py-5">
             <h2 style="font-size: 1.5rem"> Our Services </h2>
-            <p style="font-size: 1.5em"> Those who have trusted gigawaffle </p>
+            <p style="font-size: 1.5em; font-weight: bold;"> Those who have trusted gigawaffle </p>
             <div class="row d-flex center-content text-center">
                 <div class="col-12 col-md-6 col-lg-4">
                     <img class="border-radius-20" src="https://via.placeholder.com/300x350" alt="">
@@ -87,7 +105,7 @@
     </div>
     <div class="container">
         <div class="col-12 d-flex flex-column align-items-center py-0 py-md-4">
-            <h2 class="pink-heading" style="padding-top: 30px;">The Process</h2>
+            <h2 class="pink-heading pb-3" style="padding-top: 30px;">The Process</h2>
             <h3> All the services, without the waffle </h3>
             <div class="row pt-5">
                 <div class="col-12 col-md-6">
@@ -95,7 +113,7 @@
                     <p> Our enthusiastic and passionate team will always be on hand throughout the process, allowing you to see your image come to life </p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="{{ asset('img/world-wide-web-image.png') }}"/>
+                    <img src="{{ asset('img/world-wide-web-image.png') }}" width="100%"/>
                 </div>
             </div>
             <div class="w-100">
@@ -113,9 +131,9 @@
     </div>
     <div class="container">
         <div class="col-12 d-flex flex-column align-items-center py-5">
-            <h2 class="pink-heading"> The Waffle Corner </h2>
+            <h2 class="pink-heading pb-3"> The Waffle Corner </h2>
             <h3> The only place we tolerate any waffle... </h3>
-            <div class="row d-flex pb-4 pt-0 pt-md-5">
+            <div class="row d-flex justify-content-center pb-4 pt-0 pt-md-5">
                 <img class="border-radius-20 blog-cards" src="https://via.placeholder.com/450x350">
                 <img class="border-radius-20 blog-cards" src="https://via.placeholder.com/450x350">
             </div>
