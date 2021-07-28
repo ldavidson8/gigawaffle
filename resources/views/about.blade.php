@@ -2,102 +2,11 @@
 
 @section('stylesheets')
     <style>
-        b
-        {
-            font-weight: 600;
-        }
-
-        .button-default
-        {
-            border: none;
-            border-radius: 17px;
-            background-color: #000733;
-            color: white;
-            padding: 5px 20px;
-            font-weight: 600;
-        }
-
-        .shadowed-card
-        {
-            box-shadow: 0px 2px 3px 0px #000733;
-            border-radius: 20px;
-        }
-        
-        .social-img
-        {
-            margin: 5px;
-        }
-        
-
-        .banner
-        {
-            padding: 20px;
-            text-align: center;
-            color: white;
-            font-size: 19.5px;
-            font-weight: 300;
-        }
-
-        .pink-box
-        {
-            background-color: #DF4985;
-            color: white;
-        }
-
-        .pink-box-round
-        {
-            border-radius: 20px;
-            background-color: #DF4985;
-            color: white;
-        }
-
-        .pink-box-merge-bottom
-        {
-            border-radius: 20px 20px 0px 0px !important;
-        }
-        
-        .pink-box-white-striped-border
-        {
-            border: 4px dashed white;
-            border-radius: 20px;
-            padding: 20px;
-        }
-
-        .pink-box-border-merge-bottom
-        {
-            border-bottom: none;
-            border-radius: 20px 20px 0px 0px !important;
-        }
-        
-        @media (max-width: 575px)
-        {
-            .pink-box-round
-            {
-                border-radius: 0px !important;
-            }
-
-            .pink-box-merge-bottom
-            {
-                border-radius: 0px !important;
-            }
-            
-            .pink-box-white-striped-border
-            {
-                border: none;
-                border-radius: 0px;
-                padding: 17px 20px 0px;
-            }
-
-            .pink-box-border-merge-bottom
-            {
-                border-radius: 0px !important;
-            }
-        }
     </style>
 @endsection
 
 @section('before-header')
-    <div class="full-size-60 container-fluid d-flex h-100 flex-column">
+    <div class="full-size-60 container-fluid d-flex flex-column">
 @endsection
 
 @section('main-content')
@@ -105,8 +14,8 @@
             <div class="col-12{{-- col-sm-6 col-xl-8 --}} no-padding">
                 <div class="gradient-container container-no-gradient-sm d-flex center-content">
                     <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
-                    <h1>A new agency that suits you</h1>
-                    <hr style="width: 150px">
+                        <h1>A new agency that suits you</h1>
+                        <hr style="width: 150px">
                     </div>
                 </div>
                 <div style="padding: 40px">

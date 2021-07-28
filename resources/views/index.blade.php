@@ -30,32 +30,31 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size container-fluid d-flex h-100 flex-column">
+    <div class="full-size-60 container-fluid d-flex flex-column">
 @endsection
 
 @section('main-content')
-        <div class="row flex-grow-1 no-padding">
-            <div class="d-none d-lg-block col-2"></div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="gradient-container container-no-gradient-sm d-flex center-content" style="min-height: 40vh;">
+        <div class="container-lg row top-section-outer">
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="gradient-container container-no-gradient-sm d-flex center-content">
                     <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
-                    <h1>Marketing and web design that tickles your taste buds</h1>
-                    <hr style="width: 150px">
+                        <h1>Marketing and web design that tickles your taste buds</h1>
+                        <hr style="width: 150px">
                     </div>
                 </div>
                 <div style="padding: 40px">
-                <p style="font-weight: 700;">
-                    We're gigawaffle; we want to turn businesses into brands. With plenty of options across web design, marketing and media, you're truly in control when it comes to your business.
-                </p>
-                <p style="font-family: Poppins"> 
-                    You can pick and choose from a range of services, allowing you to build the perfect package for your business.
-                </p>
-                <div class="center-button">
-                <button class="navy-blue-button">View Services</button>
-                </div>
+                    <p style="font-weight: 700;">
+                        We're gigawaffle; we want to turn businesses into brands. With plenty of options across web design, marketing and media, you're truly in control when it comes to your business.
+                    </p>
+                    <p>
+                        You can pick and choose from a range of services, allowing you to build the perfect package for your business.
+                    </p>
+                    <div class="center-button">
+                        <button class="button-default">View Services</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-6 d-none d-md-flex center-content">
+            <div class="col-6 col-lg-4 d-none d-md-flex center-content">
                 <img src="{{ asset('img/code-snippet.png') }}"/>
             </div>
         </div>
@@ -87,8 +86,8 @@
         <img class="waves-image-bottom" src="{{ asset('img/wavesOpacity-bottom.png') }}">
     </div>
     <div class="container">
-        <div class="col-12 d-flex flex-column align-items-center py-0 py-md-4   ">
-            <h2 class="pink-heading"> The Process </h2>
+        <div class="col-12 d-flex flex-column align-items-center py-0 py-md-4">
+            <h2 class="pink-heading" style="padding-top: 30px;">The Process</h2>
             <h3> All the services, without the waffle </h3>
             <div class="row pt-5">
                 <div class="col-12 col-md-6">

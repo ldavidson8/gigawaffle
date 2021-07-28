@@ -1,16 +1,21 @@
 @extends('layouts.master')
 
+@section('stylesheets')
+    <style>
+    </style>
+@endsection
+
 @section('before-header')
-    <div class="full-size container-fluid d-flex h-100 flex-column">
+    <div class="full-size-60 container-fluid d-flex flex-column">
 @endsection
 
 @section('main-content')
         <div class="container-lg row top-section-outer">
-            <div class="col-12 col-sm-6 col-xl-8 no-padding">
+            <div class="col-12{{-- col-sm-6 col-xl-8 --}} no-padding">
                 <div class="gradient-container container-no-gradient-sm d-flex center-content">
                     <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
-                    <h1>A new agency that suits you</h1>
-                    <hr style="width: 150px">
+                        <h1>A new agency that suits you</h1>
+                        <hr style="width: 150px">
                     </div>
                 </div>
                 <div style="padding: 40px">
@@ -19,9 +24,9 @@
                     <div class="center-button"><button class="button-default">The Waffle Corner</button></div>
                 </div>
             </div>
-            <div class="col-sm-6 col-xl-4 d-none d-sm-flex center-content">
+            {{-- <div class="col-sm-6 col-xl-4 d-none d-sm-flex center-content">
                 <img src="{{ asset('img/code-snippet.png') }}"/>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="container no-padding">
@@ -30,23 +35,28 @@
         <div class="shadowed-card" style="height: 400px;"></div>
     </div>
     <br />
-    <div class="container-fluid banner gradient">
-        <h2 style="font-weight: 200; margin: 20px auto;">Discover us</h2>
-        <div style="padding: 5px 0px 25px;">
-            <img class="social-img" src="{{ asset('img/social-links/facebook.svg') }}" width="50px" height="50px" />
-            <img class="social-img" src="{{ asset('img/social-links/twitter.svg') }}" width="50px" height="50px" />
-            <img class="social-img" src="{{ asset('img/social-links/linkedin.svg') }}" width="50px" height="50px" />
-            <img class="social-img" src="{{ asset('img/social-links/tiktok.svg') }}" width="50px" height="50px" />
-            <img class="social-img" src="{{ asset('img/social-links/instagram.svg') }}" width="50px" height="50px" />
-            <img class="social-img" src="{{ asset('img/social-links/youtube.svg') }}" width="50px" height="50px" />
+    <div class="gradient no-padding">
+        <img class="waves-image-top" src="{{ asset('img/wavesOpacity-top.png') }}" />
+        <div class="banner">
+            <h2 style="font-weight: 200; margin: 20px auto;">Discover us</h2>
+            <div style="padding: 5px 0px 25px;">
+                <a href="https://www.facebook.com/swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/facebook.svg') }}" width="50px" height="50px" /></a>
+                <a href="https://twitter.com/swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/twitter.svg') }}" width="50px" height="50px" /></a>
+                <a href="https://www.instagram.com/swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/linkedin.svg') }}" width="50px" height="50px" /></a>
+                <a href="https://www.tiktok.com/@swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/tiktok.svg') }}" width="50px" height="50px" /></a>
+                <a href="https://www.linkedin.com/company/swapmyenergyuk/"><img class="social-img" src="{{ asset('img/social-links/instagram.svg') }}" width="50px" height="50px" /></a>
+                <a href="https://www.youtube.com/channel/UC7u_949FAQeV9FlZm4dH7lQ"><img class="social-img" src="{{ asset('img/social-links/youtube.svg') }}" width="50px" height="50px" /></a>
+            </div>
         </div>
+        <img class="waves-image-bottom" src="{{ asset('img/wavesOpacity-bottom.png') }}" style="position: relative; top: 1px;" />
     </div>
     <br />
     <div class="container no-padding">
         <h2 class="pink-heading"><b>Our Story</b></h2>
         <h3>The story of gigawaffle has only just begun</h3>
-        <div style="height: 400px;"></div>
+        <div class="shadowed-card" style="height: 400px;"></div>
     </div>
+    <br />
     <div class="container no-padding" style="width: 576px; max-width: 100%;">
         <h2 class="pink-heading"><b>Get In Touch</b></h2>
         <h3>Want to work with us?</h3>

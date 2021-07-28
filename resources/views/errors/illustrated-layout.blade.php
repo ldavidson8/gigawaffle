@@ -6,10 +6,6 @@
 
         <title>@yield('title')</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-
         <!-- Styles -->
         <style>
             html {
@@ -47,7 +43,7 @@
             }
 
             code {
-                font-family: monospace, monospace;
+                font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 1em;
             }
 
@@ -61,7 +57,7 @@
 
             button,
             input {
-                font-family: sans-serif;
+                font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 100%;
                 line-height: 1.15;
                 margin: 0;
@@ -154,7 +150,7 @@
             html {
                 -webkit-box-sizing: border-box;
                         box-sizing: border-box;
-                font-family: sans-serif;
+                font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
             }
 
             *,
@@ -294,7 +290,7 @@
             }
 
             .font-sans {
-                font-family: Nunito, sans-serif;
+                font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
             }
 
             .font-light {
