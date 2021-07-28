@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ HomeController::class, 'index' ]) -> name('home');
-Route::get('/clients', [ HomeController::class, 'clients' ]) -> name('clients');
 Route::get('/services', [ HomeController::class, 'services' ]) -> name('services');
 Route::get('/about', [ HomeController::class, 'about' ]) -> name('about');
 
 Route::post('/work-with-us', [ ContactController::class, 'workWithUsPost' ]) -> name('post.work-with-us');
+
+Route::get('/clients', [ BlogController::class, 'clients' ]) -> name('clients');
+Route::get('/clients/{blogId}', [ BlogController::class, 'clientProjects']) -> name('clients.projects');
 
 Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
 {

@@ -6,7 +6,7 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size-60 container-fluid d-flex flex-column">
+    <div class="full-size-60 container-fluid d-flex flex-column center-content">
 @endsection
 
 @section('main-content')
@@ -18,7 +18,7 @@
                         <hr style="width: 150px">
                     </div>
                 </div>
-                <div style="padding: 40px">
+                <div class="text-container-40px">
                     <p><b>For some people, understanding what is needed to elevate your business can be hard. This is where we come in. Our dedicated team at gigawaffle are ready to turn your business into a brand.</b></p>
                     <p>We're always on the look out for ways we can improve our efficiency, quality, accuracy, and more. This allows us to be on top of the latest design, development and marketing trends. We'll keep you up to date with everything gigawaffle via "The Waffle Corner".</p>
                     <div class="center-button"><button class="button-default">The Waffle Corner</button></div>
@@ -36,7 +36,7 @@
     </div>
     <br />
     <div class="gradient no-padding">
-        <img class="waves-image-top" src="{{ asset('img/wavesOpacity-top.png') }}" />
+        @include('partials.waves-top')
         <div class="banner">
             <h2 style="font-weight: 200; margin: 20px auto;">Discover us</h2>
             <div style="padding: 5px 0px 25px;">
@@ -48,7 +48,7 @@
                 <a href="https://www.youtube.com/channel/UC7u_949FAQeV9FlZm4dH7lQ"><img class="social-img" src="{{ asset('img/social-links/youtube.svg') }}" width="50px" height="50px" /></a>
             </div>
         </div>
-        <img class="waves-image-bottom" src="{{ asset('img/wavesOpacity-bottom.png') }}" style="position: relative; top: 1px;" />
+        @include('partials.waves-bottom')
     </div>
     <br />
     <div class="container no-padding">

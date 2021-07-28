@@ -109,6 +109,13 @@ img
 }
 
 
+.row
+{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
 .gradient
 {
     background-image: linear-gradient(to right, #DF4985 , #7A98EE);
@@ -266,6 +273,11 @@ b
     font-weight: 600;
 }
 
+.text-container-40px
+{
+    padding: 40px;
+}
+
 
 .pink-heading
 {
@@ -273,6 +285,13 @@ b
     color: var(--primary-color);
     font-weight: bold;
     text-align: center;
+}
+
+.pink-link
+{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 
@@ -347,31 +366,6 @@ b
 {
     border-bottom: none;
     border-radius: 20px 20px 0px 0px !important;
-}
-
-@media (max-width: 575px)
-{
-    .pink-box-round
-    {
-        border-radius: 0px !important;
-    }
-
-    .pink-box-merge-bottom
-    {
-        border-radius: 0px !important;
-    }
-    
-    .pink-box-white-striped-border
-    {
-        border: none;
-        border-radius: 0px;
-        padding: 17px 20px 0px;
-    }
-
-    .pink-box-border-merge-bottom
-    {
-        border-radius: 0px !important;
-    }
 }
 
         
@@ -463,5 +457,32 @@ textarea:-webkit-autofill:focus
     {
         padding: 0px;
         margin-top: 0px;
+    }
+    
+    .pink-box-round
+    {
+        border-radius: 0px !important;
+    }
+
+    .pink-box-merge-bottom
+    {
+        border-radius: 0px !important;
+    }
+    
+    .pink-box-white-striped-border
+    {
+        border: none;
+        border-radius: 0px;
+        padding: 17px 20px 0px;
+    }
+
+    .pink-box-border-merge-bottom
+    {
+        border-radius: 0px !important;
+    }
+    
+    .text-container-40px
+    {
+        padding: 10px 15px;
     }
 }
