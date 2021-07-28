@@ -63,7 +63,9 @@
                         You can pick and choose from a range of services, allowing you to build the perfect package for your business.
                     </p>
                     <div class="center-button">
+                        <a href="{{ route("services") }}">
                         <button class="button-default">View Services</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -94,7 +96,9 @@
                         <p style="font-weight: 300; font-style: italic">Web Development Project</p>
                 </div>
             </div>
+            <a href="{{ route('clients') }}">
             <button class="navy-blue-button"> See All Clients </button>
+            </a>
         </div>
         @include('partials.waves-bottom')
     </div>

@@ -29,25 +29,24 @@
     </div>  
 </a>
 <div class="container-fluid p-3" style="background-color: var(--heading-color)">
-    <div class="row bottom-border-center ">
-        <div class="col-5 col-md-6">
-            <p style="font-size: 1.5em; font-weight: 600;"> gigawaffle <p>
+    <div class="row bottom-border-center px-md-5 px-0">
+        <div class="col-5 col-md-6 no-padding">
+            <p style="font-size: 1.3em; font-weight: 600;"> gigawaffle <p>
             <ul class="list-unstyled">
-                <a class="footer-link {{ ($navbar_page == "about") ? 'footer-link-current-page' : '' }}" href="{{ route("about") }}">
+                <a class="footer-link href="{{ route("about") }}">
                     <li>About</li>
                 </a>
                 <a class="footer-link" href="">
                     <li>Contact Us</li>
                 </a>
-                <a class="footer-link" href="">
+                <a class="footer-link" href="https://www.znergi.co.uk/jobs" rel="external">
                     <li>Jobs</li>
                 </a>
             </ul>
         </div>
-        {{-- <div class="col-6 d-none d-md-block"></div> --}}
-        <div class="col-7 col-md-6 d-flex flex-column text-right">
+        <div class="col-7 col-md-6 no-padding d-flex flex-column text-right">
             <ul class="list-unstyled">
-                <li> <i class="fa fa-home" style="display: inline-block" aria-hidden="true"></i>
+                <li> <img src="{{ asset('img/home-icon.png') }}" height="30">
                     <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>
                 </li>
                 <li>Estate House,</li>
@@ -57,12 +56,12 @@
             </ul>
         </div>
     </div>
-    <div class="row no-margin pt-3">
+    <div class="row no-margin pt-3 px-md-3 px-0">
         <div class="order-last order-md-0 d-block col-12 col-md-6 text-center text-md-left">
             <p> &copy;2021 Gigawaffle </p>
         </div>
         <div class="col-12 col-md-6 order-first order-md-1 text-md-right d-flex justify-content-between justify-content-md-end">
-            <a class="footer-link mr-5"href="#"> Terms </a>
+            <a class="footer-link mr-5" href="#"> Terms </a>
             <a class="footer-link" href="#"> Privacy </a>
         </div>
     </div>
