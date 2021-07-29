@@ -42,10 +42,8 @@
             <div style="padding: 5px 0px 25px;">
                 <a href="https://www.facebook.com/swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/facebook.svg') }}" width="50px" height="50px" /></a>
                 <a href="https://twitter.com/swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/twitter.svg') }}" width="50px" height="50px" /></a>
-                <a href="https://www.instagram.com/swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/linkedin.svg') }}" width="50px" height="50px" /></a>
-                <a href="https://www.tiktok.com/@swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/tiktok.svg') }}" width="50px" height="50px" /></a>
-                <a href="https://www.linkedin.com/company/swapmyenergyuk/"><img class="social-img" src="{{ asset('img/social-links/instagram.svg') }}" width="50px" height="50px" /></a>
-                <a href="https://www.youtube.com/channel/UC7u_949FAQeV9FlZm4dH7lQ"><img class="social-img" src="{{ asset('img/social-links/youtube.svg') }}" width="50px" height="50px" /></a>
+                <a href="https://www.instagram.com/swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/instagram.svg') }}" width="50px" height="50px" /></a>
+                <a href="https://www.linkedin.com/company/swapmyenergyuk/"><img class="social-img" src="{{ asset('img/social-links/linkedin.svg') }}" width="50px" height="50px" /></a>
             </div>
         </div>
         @include('partials.waves-bottom')
