@@ -19,19 +19,21 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul id="navbar-desktop-section" class="navbar-nav mr-auto center-content">
-        <li class="nav-item active">
-            <a class="nav-link {{ ($navbar_page == "home") ? 'navigation-link-current-page' : '' }}" href="{{ route("home") }}">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link {{ ($navbar_page == "clients") ? 'navigation-link-current-page' : '' }}" href="{{ route("clients") }}">Clients</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link {{ ($navbar_page == "services") ? 'navigation-link-current-page' : '' }}" href="{{ route("services") }}">Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link {{ ($navbar_page == "about") ? 'navigation-link-current-page' : '' }}" href="{{ route("about") }}">About</a>
-        </li>
+        <ul id="navbar-desktop-section" class="navbar-nav mr-auto center-content">
+            <li class="nav-item active">
+                <a class="nav-link {{ ($navbar_page == "home") ? 'navigation-link-current-page' : '' }}" href="{{ route("home") }}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ ($navbar_page == "clients") ? 'navigation-link-current-page' : '' }}" href="{{ route("clients") }}">Clients</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ ($navbar_page == "services") ? 'navigation-link-current-page' : '' }}" href="{{ route("services") }}">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ ($navbar_page == "about") ? 'navigation-link-current-page' : '' }}" href="{{ route("about") }}">About</a>
+            </li>
+        </ul>
+        <button class="btn-toggle ml-auto">Toggle Dark Mode</button>
     </div>
   </nav>
 

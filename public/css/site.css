@@ -7,10 +7,17 @@
 {
     --primary-color: #DF4985;
     --secondary-color: #7A98EE;
-    --font-color: #FFFFFF;
+    --font-color: #000733;  
     --bg-color: #FFFFFF;
-    --heading-color: #000733;
+    
 }
+
+:root.dark {
+    --primary-color: #DF4985;
+    --secondary-color: #7A98EE;
+    --font-color: #FFFFFF;
+    --bg-color: #000733;
+  }
 
 
 body
@@ -22,10 +29,9 @@ body
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
     text-align: left;
-    color: var(--heading-color);
+    color: var(--font-color);
     overflow-x: hidden;
 }
-
 
 header
 {
@@ -95,7 +101,7 @@ nav navbar-toggle
 
 footer
 {
-    background-color: var(--heading-color);
+    background-color: #000733;
     color: #FFFFFF;
     font-weight: 100;
     font-size: 22px;
@@ -297,7 +303,7 @@ b
 
 .navy-blue-button
 {
-    background-color: var(--heading-color);
+    background-color: var(--navy-blue);
     color: var(--font-color);
     font-weight: 700;
     font-size: 20px;
@@ -438,7 +444,7 @@ textarea:-webkit-autofill:focus
 
     .gradient-container h1
     {
-        color: var(--heading-color);
+        color: var(--navy-blue);
     }
 
     .align-item-bottom
@@ -449,7 +455,7 @@ textarea:-webkit-autofill:focus
     hr 
     {
         
-        border: 3px solid var(--heading-color);
+        border: 3px solid var(--navy-blue);
         margin: 0;
     }
 

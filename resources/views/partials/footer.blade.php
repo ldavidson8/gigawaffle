@@ -18,17 +18,17 @@
     
     .bottom-border-center
     {
-        background: linear-gradient(var(--primary-color),var(--primary-color)) bottom/ 95% 5px no-repeat, var(--heading-color);
+        background: linear-gradient(var(--primary-color),var(--primary-color)) bottom/ 95% 5px no-repeat, var(--navy-blue);
     }
 
 </style>
 <div class="text-white">
 <a href="https://linktr.ee/gigawaffle" rel="external">
-    <div class="col-12 container-fluid text-center footer-link" style="background-color: var(--primary-color)">
+    <div class="col-12 container-fluid text-center footer-link" style="background-color: var(--primary-color);">
         Find us on social media @gigawaffleuk
     </div>  
 </a>
-<div class="container-fluid p-3" style="background-color: var(--heading-color)">
+<div class="container-fluid p-3" style="background-color: var(--navy-blue)">
     <div class="row bottom-border-center px-md-5 px-0">
         <div class="col-5 col-md-6 no-padding">
             <p style="font-size: 1.3em; font-weight: 600;"> gigawaffle <p>

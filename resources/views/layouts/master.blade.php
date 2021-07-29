@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="dark" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 
     <title>{{ (isset($page_title)) ? "$page_title" : 'Gigawaffle' }}</title>
@@ -45,6 +45,7 @@
 
     <!-- Our Scripts -->
     <script type="text/javascript" src="{{ URL::asset('js/intersection-observer-api.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/theme-toggle.js') }}"></script>
 
 </head>
 <body>
