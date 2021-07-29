@@ -102,7 +102,7 @@
                 <h2>Project Title</h2>
                 <h3>Project Type</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'blogId' => '1' ]) }}">Learn more</a>
+                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">Learn more</a>
             </div>
         </div>
         <div class="client-project-section row no-padding">
@@ -111,7 +111,7 @@
                 <h2>Project Title</h2>
                 <h3>Project Type</h3>
                 <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'blogId' => '2' ]) }}">Learn more</a>
+                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '2' ]) }}">Learn more</a>
             </div>
             <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-docks"></div>
         </div>
@@ -122,7 +122,7 @@
                 <h2>Project Title</h2>
                 <h3>Project Type</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'blogId' => '3' ]) }}">Learn more</a>
+                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '3' ]) }}">Learn more</a>
             </div>
         </div>
         <div class="client-project-section row no-padding">
@@ -131,7 +131,7 @@
                 <h2>Project Title</h2>
                 <h3>Project Type</h3>
                 <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'blogId' => '4' ]) }}">Learn more</a>
+                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '4' ]) }}">Learn more</a>
             </div>
             <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-market"></div>
         </div>
@@ -142,7 +142,7 @@
                 <h2>Project Title</h2>
                 <h3>Project Type</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'blogId' => '5' ]) }}">Learn more</a>
+                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '5' ]) }}">Learn more</a>
             </div>
         </div>
         <div class="client-project-section row no-padding">
@@ -151,7 +151,7 @@
                 <h2>Project Title</h2>
                 <h3>Project Type</h3>
                 <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'blogId' => '6' ]) }}">Learn more</a>
+                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '6' ]) }}">Learn more</a>
             </div>
             <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-preston"></div>
         </div>
@@ -162,7 +162,7 @@
                 <h2>Project Title</h2>
                 <h3>Project Type</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'blogId' => '7' ]) }}">Learn more</a>
+                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '7' ]) }}">Learn more</a>
             </div>
         </div>
         <div class="client-project-section row no-padding">
@@ -171,7 +171,7 @@
                 <h2>Project Title</h2>
                 <h3>Project Type</h3>
                 <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'blogId' => '8' ]) }}">Learn more</a>
+                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '8' ]) }}">Learn more</a>
             </div>
             <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-windturbines"></div>
         </div>

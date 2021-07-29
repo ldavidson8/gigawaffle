@@ -11,8 +11,8 @@ Route::get('/terms-and-conditions') -> name('terms-and-conditions');
 Route::get('/privacy-policy') -> name('privacy-policy');
 Route::get('/cookie-policy') -> name('cookie-policy');
 
-Route::get('/clients', 'BlogController@clients') -> name('clients');
-Route::get('/clients/{blogId}', 'BlogController@clientProjects') -> name('clients.projects');
+Route::get('/clients', 'ClientsController@clients') -> name('clients');
+Route::get('/clients/{projectId}', 'ClientsController@clientProjects') -> name('clients.projects');
 
 
 Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
