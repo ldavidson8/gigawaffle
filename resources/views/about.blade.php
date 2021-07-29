@@ -38,7 +38,7 @@
     <div class="gradient no-padding">
         @include('partials.waves-top')
         <div class="banner">
-            <h2 style="font-weight: 200; margin: 20px auto;">Discover us</h2>
+            <h2 style="font-weight: 200; margin: 20px auto; color: white; font-size: 2.5rem">Discover us</h2>
             <div style="padding: 5px 0px 25px;">
                 <a href="https://www.facebook.com/swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/facebook.svg') }}" width="50px" height="50px" /></a>
                 <a href="https://twitter.com/swapmyenergyuk"><img class="social-img" src="{{ asset('img/social-links/twitter.svg') }}" width="50px" height="50px" /></a>
@@ -57,7 +57,7 @@
         <div class="shadowed-card" style="height: 400px;"></div>
     </div>
     <br />
-    <div class="container no-padding" style="width: 576px; max-width: 100%;">
+    <div id="#getintouch" class="container no-padding" style="width: 576px; max-width: 100%;">
         <h2 class="pink-heading"><b>Get In Touch</b></h2>
         <h3>Want to work with us?</h3>
         <p style="font-size: 20px; text-align: center;">Fill in this form and we will be back in touch with you.</p>
