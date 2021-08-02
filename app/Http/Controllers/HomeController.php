@@ -51,4 +51,10 @@ class HomeController extends Controller
         $page_title = 'Cookie Policy - Gigawaffle';
         return view('cookie-policy', compact('page_title'));
     }
+
+    public function picknMix()
+    {
+        $page_title = 'Pick n Mix - Gigawaffle';
+        return view('service-selection', compact('page_title'));
+    }
 }

@@ -5,31 +5,31 @@
 
 :root 
 {
-    --primary-color: #DF4985;
-    --secondary-color: #7A98EE;
-    --font-color: #000733;  
-    --bg-color: #FFFFFF;
+    --color-pink: #DF4985;
+    --color-violet: #7A98EE;
+    --color-navyblue: #000733;  
+    --color-white: #FFFFFF;
     
 }
 
 :root.dark {
-    --primary-color: #DF4985;
-    --secondary-color: #7A98EE;
-    --font-color: #FFFFFF;
-    --bg-color: #000733;
+    --color-pink: #DF4985;
+    --color-violet: #7A98EE;
+    --color-navyblue: #FFFFFF;
+    --color-white: #000733;
   }
 
 
 body
 {
-    background-color: var(--bg-color);
+    background-color: var(--color-white);
     background-image: url('/img/background/background-grid.png');
     margin: 0px;
     padding: 0px;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
     text-align: left;
-    color: var(--font-color);
+    color: var(--color-navyblue);
     overflow-x: hidden;
 }
 
@@ -150,7 +150,7 @@ img
 
 hr
 {
-    border: 3px solid var(--font-color);
+    border: 3px solid var(--color-navyblue);
     margin: 0px;
 }
 
@@ -260,7 +260,7 @@ h1
     font-size: 27px;
     font-weight: 600;
     text-align: left;
-    color: var(--font-color)
+    color: var(--color-navyblue)
 }
 
 h2
@@ -288,14 +288,14 @@ b
 .pink-heading
 {
     font-size: 30px;
-    color: var(--primary-color);
+    color: var(--color-pink);
     font-weight: bold;
     text-align: center;
 }
 
 .pink-link
 {
-    color: var(--primary-color);
+    color: var(--color-pink);
     font-weight: 500;
     font-size: 1.1em;
 }
@@ -303,8 +303,8 @@ b
 
 .navy-blue-button
 {
-    background-color: var(--navy-blue);
-    color: var(--font-color);
+    background-color: var(--color-navyblue);
+    color: var(--color-white);
     font-weight: 700;
     font-size: 20px;
     border:none;

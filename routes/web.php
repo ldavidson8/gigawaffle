@@ -7,9 +7,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index') -> name('home');
 Route::get('/services', 'HomeController@services') -> name('services');
 Route::get('/about', 'HomeController@about') -> name('about');
-Route::get('/terms-and-conditions') -> name('terms-and-conditions');
-Route::get('/privacy-policy') -> name('privacy-policy');
-Route::get('/cookie-policy') -> name('cookie-policy');
+Route::get('/terms-and-conditions', 'HomeController@termsAndConditions') -> name('terms-and-conditions');
+Route::get('/privacy-policy', 'HomeController@privacyPolicy') -> name('privacy-policy');
+Route::get('/cookie-policy', 'HomeController@cookiePolicy') -> name('cookie-policy');
+Route::get('/service-selection', 'HomeController@picknMix') -> name('service-selection');
 
 Route::get('/clients', 'ClientsController@clients') -> name('clients');
 Route::get('/clients/{projectId}', 'ClientsController@clientProjects') -> name('clients.projects');
