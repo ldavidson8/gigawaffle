@@ -11,6 +11,41 @@
     {
         padding: 19px 0px;
     }
+
+    .switch 
+    {   
+        position : relative ;
+        display : inline-block;
+        width : 50px;
+        height : 30px;
+        background-color: var(--color-white);
+        border-radius: 20px;
+    }
+
+    .switch::after 
+    {  
+        content: '';  
+        position: absolute;  
+        width: 28px;  
+        height: 28px;  
+        border-radius: 50%;  
+        background-color: var(--color-violet);  
+        top: 1px;
+        left: 1px;  
+        transition: all 0.3s;
+    }
+    .checkbox:checked + .switch::after 
+    {  
+        left : 20px; 
+    }
+    .checkbox:checked + .switch 
+    {  
+        background-color: var(--color-pink);
+    }
+    .checkbox 
+    {    
+        display : none;
+    }
 </style>
 <nav class="navbar navbar-dark navbar-expand-sm">
     <a id="navbar-logo" class="navbar-brand" href="{{ route('home') }}">gigawaffle</a>
@@ -33,9 +68,12 @@
                 <a class="nav-link {{ ($navbar_page == "about") ? 'navigation-link-current-page' : '' }}" href="{{ route("about") }}">About</a>
             </li>
         </ul>
-        <button class="btn-toggle ml-auto">Toggle Dark Mode</button>
+        <div class="ml-auto">
+                <input type="checkbox" id="toggle" class="checkbox" />
+                <label for="toggle" class="switch"></label>
+        </div>
     </div>
-  </nav>
+</nav>
 
     {{-- <div class="container-fluid">
         
