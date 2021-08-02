@@ -1,39 +1,39 @@
 <style>
     .footer-link
     {
-        color: var(--font-color)
+        color: var(--color-white)
     }
 
     .footer-link:hover
     {
-        color: var(--secondary-color);
+        color: var(--color-violet);
         text-decoration: none;
     }
     
     .fa-home
     {
         font-size: 3em;
-        color: var(--primary-color);
+        color: var(--color-pink);
     }
     
     .bottom-border-center
     {
-        background: linear-gradient(var(--primary-color),var(--primary-color)) bottom/ 95% 5px no-repeat, var(--navy-blue);
+        background: linear-gradient(var(--color-pink),var(--color-pink)) bottom/ 95% 5px no-repeat, var(--color-navyblue);
     }
 
 </style>
 <div class="text-white">
 <a href="https://linktr.ee/gigawaffle" rel="external">
-    <div class="col-12 container-fluid text-center footer-link" style="background-color: var(--primary-color);">
+    <div class="col-12 container-fluid text-center footer-link" style="background-color: var(--color-pink);">
         Find us on social media @gigawaffleuk
     </div>  
 </a>
-<div class="container-fluid p-3" style="background-color: var(--navy-blue)">
+<div class="container-fluid p-3" style="background-color: var(--color-navyblue)">
     <div class="row bottom-border-center px-md-5 px-0">
         <div class="col-5 col-md-6 no-padding">
             <p style="font-size: 1.3em; font-weight: 600;"> gigawaffle <p>
             <ul class="list-unstyled">
-                <a class="footer-link href="{{ route("about") }}">
+                <a class="footer-link" href="{{ route("about") }}">
                     <li>About</li>
                 </a>
                 <a class="footer-link" href="">
