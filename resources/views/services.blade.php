@@ -53,7 +53,9 @@
                     <p><b>You can 'Pick n Mix' from our wide range of design, development, media & marketing services, allowing you to created a tailored package perfect for your business.</b></p>
                     <p>Not sure what services you want or want a waffle-free approach? Don't worry, we can help. Just click "Help Me Decide" below and fill in the form.</p>
                     <div class="center-button">
-                        <button class="button-default">Pick n Mix</button>
+                        <a href="{{ route("service-selection") }}">
+                        <button class="button-default"">Pick n Mix</button>
+                        </a>
                         <button class="button-alternate">Help Me Decide</button>
                     </div>
                 </div>

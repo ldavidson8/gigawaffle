@@ -12,7 +12,7 @@
         font-family: 'FontAwesome';
         content: '\f0da';
         margin:0 10px 0 -15px;
-        color: var(--primary-color);
+        color: var(--color-pink);
         font-size: 3em;
         vertical-align: middle;
     }
