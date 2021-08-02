@@ -61,8 +61,8 @@
             <p> &copy;2021 Gigawaffle </p>
         </div>
         <div class="col-12 col-md-6 order-first order-md-1 text-md-right d-flex justify-content-between justify-content-md-end">
-            <a class="footer-link mr-5" href="#"> Terms </a>
-            <a class="footer-link" href="#"> Privacy </a>
+            <a class="footer-link mr-5" href="{{ route("terms-and-conditions") }}"> Terms </a>
+            <a class="footer-link" href="{{ route("privacy-policy") }}"> Privacy </a>
         </div>
     </div>
 </div>
