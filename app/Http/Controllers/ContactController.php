@@ -17,8 +17,8 @@ class ContactController extends Controller
     {
         try
         {
-            $data = Request::all();
-            $validator = Validator::make($data,
+            $form_data = Request::all();
+            $validator = Validator::make($form_data,
             [
                 'fullname' => 'required|string',
                 'email' => 'required|email',
@@ -26,28 +26,10 @@ class ContactController extends Controller
                 'message' => 'nullable|string'
             ]);
             if ($validator -> fails()) return back() -> withErrors($validator) -> withInput();
-            
-            $ticket = date("dHis");
-            try
-            {
-                $data =
-                [
-                    'full_name' => Request::input('fullname'),
-                    'email_address' => Request::input('email'),
-                    'phone_number' => Request::input('phone'),
-                    'message' => Request::input('message')
-                ];
-                $insertId = DB::table('contact_us') -> insertGetId($data);
-                $ticket = $insertId;
-            }
-            catch (Throwable $th)
-            {
-                report($th);
-            }
-            
-            Mail::to(env('MAIL_TO_ADDRESS')) -> queue(new WorkWithUsEmail($data, $ticket));
-            
-            return redirect() -> route('post.work-with-us.success', [ 'token' => $ticket ]);
+
+            Mail::to(env('MAIL_TO_ADDRESS')) -> queue(new WorkWithUsEmail($form_data));
+
+            return redirect() -> route('post.work-with-us.success');
         }
         catch (Throwable $th)
         {
@@ -74,8 +56,8 @@ class ContactController extends Controller
     {
         try
         {
-            $data = Request::all();
-            $validator = Validator::make($data,
+            $form_data = Request::all();
+            $validator = Validator::make($form_data,
             [
                 'fullname' => 'required|string',
                 'email' => 'required|email',
@@ -84,12 +66,31 @@ class ContactController extends Controller
             ]);
             if ($validator -> fails()) return back() -> withErrors($validator) -> withInput();
 
-            Mail::to(env('MAIL_TO_ADDRESS')) -> queue(new ContactUsEmail($data));
+            $ticket = date("dHis");
+            try
+            {
+                $sql_data =
+                [
+                    'full_name' => Request::input('fullname'),
+                    'email_address' => Request::input('email'),
+                    'phone_number' => Request::input('phone'),
+                    'message' => Request::input('message')
+                ];
+                $insertId = DB::table('contact_us') -> insertGetId($sql_data);
+                $ticket = $insertId;
+            }
+            catch (Throwable $th)
+            {
+                report($th);
+            }
+
+            Mail::to(env('MAIL_TO_ADDRESS')) -> queue(new ContactUsEmail($form_data, $ticket));
 
             return redirect() -> route('post.contact-us.success');
         }
         catch (Throwable $th)
         {
+            throw($th);
             report($th);
             return redirect() -> route('post.contact-us.error');
         }

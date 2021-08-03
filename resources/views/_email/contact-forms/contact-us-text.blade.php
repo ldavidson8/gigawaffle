@@ -2,6 +2,8 @@
 --- Request To Work With Us ---
 -------------------------------
 
+Support Ticket: {{ $ticket }}
+
 Full Name:
     {{ $formData["fullname"] }}
 

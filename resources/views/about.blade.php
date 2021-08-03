@@ -1,7 +1,81 @@
 @extends('layouts.master')
 
 @section('stylesheets')
-    <style>
+    <style type="text/css">
+        .timeline-section-outer
+        {
+            text-align: center;
+        }
+
+        .timeline-section
+        {
+            position: relative;
+            display: inline-block;
+            width: 700px;
+            max-width: 100%;
+            text-align: left;
+            padding: 0 4em;
+            padding-bottom: 0.5em;
+            margin: 0;
+        }
+
+        .timeline-section p:first-of-type
+        {
+            font-weight: bold;
+            font-style: italic;
+            line-height: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .timeline-section p:last-of-type
+        {
+            margin-bottom: 0px;
+        }
+
+        .timeline-section .timeline-lines
+        {
+            position: absolute;
+            left: 2.5em;
+            top: 1em;
+            width: 1.2em;
+            bottom: 0px;
+            border-top: 1px solid var(--color-navyblue);
+            border-left: 1px solid var(--color-navyblue);
+        }
+
+        .timeline-lines-2
+        {
+            position: absolute;
+            left: 2.5em;
+            top: 0;
+            height: 1em;
+            border-left: 1px solid var(--color-navyblue);
+        }
+
+        .timeline-section-bottom .timeline-lines
+        {
+            border-left: 0px;
+        }
+
+        .timeline-date
+        {
+            position: absolute;
+            left: 1.25em;
+            top: 1em;
+            transform: translate(-50%, -50%) rotate(-90deg);
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        @media (max-width: 575px)
+        {
+            .timeline-section
+            {
+                padding-right: 1.5em;
+                border-top: none;
+                border-bottom: none;
+            }
+        }
     </style>
 @endsection
 
@@ -52,11 +126,33 @@
     <div class="container no-padding">
         <h2 class="pink-heading"><b>Our Story</b></h2>
         <h3>The story of gigawaffle has only just begun</h3>
-        <div class="shadowed-card" style="height: 400px;"></div>
+        <div class="timeline-section-outer">
+            <div class="timeline-section timeline-section-top">
+                <div class="timeline-lines"></div>
+                <div class="timeline-date">June 2021</div>
+                <p>The launch of gigawaffle</p>
+                <p>After many days of strategising and designing, gigawaffle was born.</p>
+            </div>
+            <div class="timeline-section">
+                <div class="timeline-lines"></div>
+                <div class="timeline-lines-2"></div>
+                <div class="timeline-date">May 2021</div>
+                <p>The planning stages</p>
+                <p>Our team got to work on developing the site you're currently looking at and the strategy behind gigawaffle</p>
+            </div>
+            <div class="timeline-section timeline-section-bottom">
+                <div class="timeline-lines"></div>
+                <div class="timeline-lines-2"></div>
+                <div class="timeline-date">April 2021</div>
+                <p>The idea behind gigawaffle</p>
+                <p>Whilst working as the internal design and development team at Swap My Energy, we realised that to a decent amount of people, marketing, design and coding terminology is all just waffle.</p>
+                <p>We saw an opportunity to help people understand this waffle and as a result, gigawaffle was born.</p>
+            </div>
+        </div>
     </div>
     <br />
     <div id="#getintouch" class="container no-padding" style="width: 576px; max-width: 100%;">
-        <h2 class="pink-heading"><b>Get In Touch</b></h2>
+        <h2 class="pink-heading"><b>Join Our Team</b></h2>
         <h3>Want to work with us?</h3>
         <p style="font-size: 20px; text-align: center;">Fill in this form and we will be back in touch with you.</p>
         <div class="pink-box-round pink-box-merge-bottom">

@@ -12,15 +12,12 @@ class WorkWithUsEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
-
     private $formData;
-    
 
     public function __construct($formData)
     {
         $this -> formData = $formData;
     }
-
 
     public function build()
     {
@@ -28,7 +25,7 @@ class WorkWithUsEmail extends Mailable
         {
             $formData = $this -> formData;
             $params = compact([ 'formData' ]);
-            
+
             Log::channel('work-with-us-form') -> info('WorkWithUsEmail -> build(), Sending Request to Work With Us Email');
 
             $view = $this -> subject('Gigawaffle - Request to work with us') -> view('_email.contact-forms.work-with-us', $params) -> text('_email.contact-forms.work-with-us-text', $params);

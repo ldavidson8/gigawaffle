@@ -12,26 +12,26 @@ class ContactUsEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
-
     private $formData;
-    
+    private $ticket;
 
-    public function __construct($formData)
+    public function __construct($formData, $ticket)
     {
         $this -> formData = $formData;
+        $this -> ticket = $ticket;
     }
-
 
     public function build()
     {
         try
         {
             $formData = $this -> formData;
-            $params = compact([ 'formData' ]);
-            
+            $ticket = $this -> ticket;
+            $params = compact([ 'formData', 'ticket' ]);
+
             Log::channel('contact-us-form') -> info('ContactUsEmail -> build(), Sending Request to Work With Us Email');
 
-            $view = $this -> subject('Gigawaffle - Request to work with us') -> view('_email.contact-forms.contact-us', $params) -> text('_email.contact-forms.contact-us-text', $params);
+            $view = $this -> subject('Gigawaffle - Support Request') -> view('_email.contact-forms.contact-us', $params) -> text('_email.contact-forms.contact-us-text', $params);
             return $view;
         }
         catch (Throwable $ex)

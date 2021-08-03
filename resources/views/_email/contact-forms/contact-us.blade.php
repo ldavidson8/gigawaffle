@@ -5,6 +5,10 @@
     <table>
         <tbody>
             <tr>
+                <th>Support Ticket</th>
+                <td>{{ $ticket }}</td>
+            </tr>
+            <tr>
                 <th>Full Name/Company Name</th>
                 <td>{{ $formData["fullname"] }}</td>
             </tr>
