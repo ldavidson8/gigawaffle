@@ -155,7 +155,7 @@ img
 
 hr
 {
-    border: 3px solid var(--color-navyblue);
+    border: 3px solid var(--color-white);
     margin: 0px;
 }
 
@@ -265,7 +265,7 @@ h1
     font-size: 27px;
     font-weight: 600;
     text-align: left;
-    color: var(--color-navyblue)
+    color: var(--color-white)
 }
 
 h2
