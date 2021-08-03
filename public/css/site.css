@@ -497,7 +497,7 @@ textarea:-webkit-autofill:focus
     {
         border: none;
         border-radius: 0px;
-        padding: 17px 20px 0px;
+        padding: 20px 20px 40px 20px;
     }
 
     .pink-box-border-merge-bottom

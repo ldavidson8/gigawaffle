@@ -24,7 +24,7 @@
 </style>
 <div class="text-white">
 <a href="https://linktr.ee/gigawaffle" rel="external">
-    <div class="col-12 container-fluid text-center footer-link" style="background-color: var(--color-pink);">
+    <div class="col-12 container-fluid text-center footer-link py-2" style="background-color: var(--color-pink);">
         Find us on social media @gigawaffleuk
     </div>  
 </a>
