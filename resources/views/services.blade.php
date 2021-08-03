@@ -56,7 +56,9 @@
                         <a href="{{ route("service-selection") }}">
                         <button class="button-default"">Pick n Mix</button>
                         </a>
-                        <button class="button-alternate">Help Me Decide</button>
+                        <a href="{{ route('services') }}#contactform">
+                            <button class="button-alternate">Help Me Decide</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -162,7 +164,7 @@
             <div class="package-container col-12 col-md-6" style="text-align: left;">
                 <img src="" alt="" />
                 <h4>It's Time To Upgrade</h4>
-                <p>Want a bespoke and future-preef website? We will create a mobile ready website, so your customers can enjoy what you offer at any time or place.</p>
+                <p>Want a bespoke and future-proof website? We will create a mobile ready website, so your customers can enjoy what you offer at any time or place.</p>
                 <a href="" class="pink-link">Learn More</a>
             </div>
             <div class="col-12 col-md-6">
@@ -174,7 +176,7 @@
         </div>
         <br />
     </div>
-    <div class="container no-padding" style="width: 576px; max-width: 100%;">
+    <div id="contactform" class="container no-padding" style="width: 576px; max-width: 100%;">
         <h2 class="pink-heading">Get In Touch</h2>
         <h3>Don't understand all the waffle? Or can't decide? We can help.</h3>
         <p style="font-size: 20px; text-align: center;">Fill in this form and we will be back in touch with you.</p>
@@ -205,7 +207,7 @@
                         <input class="form-control" type="text" name="phone" value="{{ old('phone') }}">
                     </div>
                     <div class="form-group">
-                        <label for="message">How can we help? *</label>
+                        <label for="message">Message *</label>
                         <textarea name="message" rows="4" required style="width: 100%;">{{ old('message') }}</textarea>
                     </div>
                     <div class="from-group">

@@ -86,7 +86,7 @@
                 <div class="text-container-40px">
                     <p><b>Here you'll find all of the clients we've previously worked with, what services we provided for them and what they thought of our work.</b></p>
                     <p>You can read more about a client by clicking "Learn More". If you like what you see, why not get in touch with us, and you never know, your business may appear here too.</p>
-                    <div class="center-button"><button class="button-default">Get In Touch</button></div>
+                    <div class="center-button"><a href="{{ route('services') }}#contactform"><button class="button-default">Get In Touch</button></a></div>
                 </div>
             </div>
             {{-- <div class="col-sm-6 col-xl-4 d-none d-sm-flex center-content">

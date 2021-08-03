@@ -123,7 +123,7 @@
                     <li>We'll regularly check back in with progress updates, ideas, designs and more, to ensure you get exactly what you're after.</li>
                 </ul>
                 <div style="text-align: center">
-                    <button class="navy-blue-button">Get Started</button>
+                    <a href="{{ route('services') }}"><button class="navy-blue-button">Get Started</button></a>
                 </div>
             </div>
         </div>
