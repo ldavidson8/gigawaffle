@@ -67,6 +67,11 @@
             font-weight: bold;
         }
 
+        .google-map
+        {
+            object-fit: contain;
+        }
+
         @media (max-width: 575px)
         {
             .timeline-section
@@ -74,6 +79,14 @@
                 padding-right: 1.5em;
                 border-top: none;
                 border-bottom: none;
+            }
+        }
+
+        @media (min-width: 991px)
+        {
+            .google-map
+            {
+                
             }
         }
     </style>
@@ -106,7 +119,22 @@
     <div class="container no-padding">
         <h2 class="pink-heading"><b>Our Locations</b></h2>
         <h3>Where to find gigawaffle</h3>
-        <div class="shadowed-card" style="height: 400px;"></div>
+        <div class="shadowed-card">
+            <div class="row">
+            <div class="col-12 col-md-8"><img class="google-map" src="{{ asset('img/map-image/map.png') }}"></div>
+            <div class="col-12 col-md-4">
+                <img src="{{ asset('img/home-icon.png') }}" height="30">
+                <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>
+                <ul class="list-unstyled">
+                    <li>Estate House,</li>
+                    <li>Fox Street,</li>
+                    <li>Preston,</li>
+                    <li>PR1 2AB</li>
+                    <li style="font-style: italic;"> hello@gigawaffle.co.uk </li>
+                </ul>
+            </div>
+            </div>
+        </div>
     </div>
     <br />
     <div class="gradient no-padding">
