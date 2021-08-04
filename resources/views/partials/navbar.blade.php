@@ -40,7 +40,7 @@
     }
     .checkbox:checked + .switch 
     {  
-        background-color: var(--color-pink);
+        background-color: var(--color-navyblue);
     }
     .checkbox 
     {    
@@ -68,10 +68,10 @@
                 <a class="nav-link {{ ($navbar_page == "about") ? 'navigation-link-current-page' : '' }}" href="{{ route("about") }}">About</a>
             </li>
         </ul>
-        <div class="ml-auto">
+        {{-- <div class="ml-auto">
                 <input type="checkbox" id="toggle" class="checkbox" />
                 <label for="toggle" class="switch"></label>
-        </div>
+        </div> --}}
     </div>
 </nav>
 
