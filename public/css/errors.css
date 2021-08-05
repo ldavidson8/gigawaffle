@@ -1,11 +1,90 @@
-@media (max-width: 991px)
+
+.background-image{
+  background-repeat: no-repeat; 
+  background-position: bottom; 
+  background-size: 150%;
+}
+button:hover{
+    color: #DB4782; 
+}
+
+table.table-center-contents{
+    width: 100%;
+    height: 100%;
+
+}
+
+table.table-center-contents td{
+    vertical-align: center;
+}
+
+h1 {
+   background: -webkit-linear-gradient( #DF4985, #7A98EE);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.gradient-container{
+  background-image: linear-gradient(to right, #DF4985 , #7A98EE);
+  border-radius: 20px;
+}
+
+@media (max-width: 575px)
 {
-    .background-image-display-none
+    .gradient-error-pages
     {
-        display: none; /* for hiding background image on below large desktop sizes */
+        padding: 3px 3px !important;
+        width: 100% !important;
     }
 }
 
-button:hover{
-    color: #ffc46c; 
+@media (max-width: 516px)
+{
+    .error-images
+    {
+      background-size: 100% !important;
+    }
+}
+
+@media (max-width: 516px)
+{
+    .gradient-error-pages
+    {
+      width: auto !important;
+      padding: 10px 10px !important;
+    }
+}
+/*animations*/
+
+#number-spacing {
+    letter-spacing:15px;
+    -webkit-animation: number 3.5s;
+          animation: number 3.5s;
+}
+
+@-webkit-keyframes number {
+  0%   { letter-spacing: -40px; }
+  100% { letter-spacing: 15px; }
+}
+@keyframes number {
+  0%   { letter-spacing: -40px; }
+  100% { letter-spacing: 15px; }
+}
+
+
+
+
+#title-spacing {
+    letter-spacing:-3px;
+    -webkit-animation: title 2.5s;
+          animation: title 2.5s;
+}
+
+@-webkit-keyframes title {
+  0%   { letter-spacing: -10px; }
+  100% { letter-spacing: -3px; }
+}
+@keyframes title {
+  0%   { letter-spacing: -10px; }
+  100% { letter-spacing: -3px; }
 }
