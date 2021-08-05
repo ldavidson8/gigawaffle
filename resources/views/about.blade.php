@@ -121,7 +121,7 @@
         <h3>Where to find gigawaffle</h3>
         <div class="shadowed-card">
             <div class="row">
-            <div class="col-12 col-md-8"><img class="google-map" src="{{ asset('img/map-image/map.png') }}"></div>
+            <div class="col-12 col-md-8"><img class="google-map" src="{{ asset('img/map.png') }}"></div>
             <div class="col-12 col-md-4">
                 <img src="{{ asset('img/home-icon.png') }}" height="30">
                 <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>
