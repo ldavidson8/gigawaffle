@@ -460,7 +460,7 @@ textarea:-webkit-autofill:focus
     hr 
     {
         
-        border: 3px solid var(--navy-blue);
+        border: 3px solid var(--color-navyblue);
         margin: 0;
     }
 
