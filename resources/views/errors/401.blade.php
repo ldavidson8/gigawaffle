@@ -8,14 +8,14 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size container-fluid d-flex h-100 flex-column" style="background: #f0f0f0;">
+    <div class="full-size container-fluid d-flex h-100 flex-column" style="background-image: url('/img/background/background-grid.png');">
 @endsection
 
 @section('main-content')
         <hr/>
         <div class="row flex-grow-1 no-padding">
         <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block"></div>
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"style="background: #f0f0f0; background-image: url('{{ asset('img/error pages/401.png') }}'); background-repeat: no-repeat; background-position: center; background-size: 350px;">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"style="background-image: url('{{ asset('img/error pages/401.png') }}'); background-repeat: no-repeat; background-position: center; background-size: 350px;">
                 <table class="table-center-contents">
                     <tr>
                         <td>
@@ -24,7 +24,7 @@
                             <br /><br /> 
 
                             <div style="display: flex; justify-content: center;">
-                                <p class="gradient-container gradient-error-pages" style="text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 550px;">Your authorization failed<br />Please fill in the correct credentials and try again</p> 
+                                <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 550px;">Your authorization failed<br />Please fill in the correct credentials and try again</p> 
                             </div>
 
                             <br /><br />

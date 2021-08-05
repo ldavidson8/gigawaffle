@@ -16,7 +16,7 @@
         <div class="row flex-grow-1 no-padding background-image" style="background-image: url('{{ asset('img/waves/wavesDesktopBottom.png') }}');">
             <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block"></div>
             <div class="col-xl-8 col-lg-8 col-md-8 col-12" style="position: relative;"> 
-                <div style="background-image: url('{{ asset('img/error pages/403.png') }}'); position: absolute; width: 100%; height: 100%; background-size: 700px; background-repeat: no-repeat; background-position: center; filter: grayscale(100%); filter: contrast(0%); opacity: 0.2; transform: scaleX(-1);">
+                <div class="error-images" style="background-image: url('{{ asset('img/error pages/403.png') }}'); position: absolute; width: 100%; height: 100%; background-size: 700px; background-repeat: no-repeat; background-position: center; filter: grayscale(100%); filter: contrast(0%); opacity: 0.2; transform: scaleX(-1);">
                 </div>
                 <table class=" no-spacing table-center-contents">
                     <tr>
@@ -26,7 +26,7 @@
                             <br /><br />
 
                             <div style="padding-top:; display: flex; justify-content: center;">
-                                <p class="gradient-container gradient-error-pages" style="position: relative; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 500px;">You do not have permission to continue</p> 
+                                <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; position: relative; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 500px;">You do not have permission to continue</p> 
                             </div>
 
                             <br /><br />

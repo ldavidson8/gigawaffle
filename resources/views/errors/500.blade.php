@@ -24,7 +24,7 @@
                             <br /><br />
 
                             <div style="padding-top:; display: flex; justify-content: center;">
-                                <p class="gradient-container gradient-error-pages" style="text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 500px;">The server encountered an internal error and was unable to complete your request</p> 
+                                <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 500px;">The server encountered an internal error and was unable to complete your request</p> 
                             </div>
 
                             <br /><br />

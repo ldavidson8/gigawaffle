@@ -26,7 +26,7 @@
                             <br /><br />
 
                             <div style="display: flex; justify-content: center;">
-                                <p class="gradient-container gradient-error-pages" style="position: relative; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 470px;">The server is temporarily unable to <br /> handle your request, Please try again later</p> 
+                                <p class="gradient-container gradient-error-pages" style=" padding: 10px 10px; position: relative; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 470px;">The server is temporarily unable to <br /> handle your request, Please try again later</p> 
                             </div>
 
                             <br /><br />

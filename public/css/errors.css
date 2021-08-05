@@ -20,6 +20,7 @@ table.table-center-contents td{
 
 h1 {
    background: -webkit-linear-gradient( #DF4985, #7A98EE);
+   background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
@@ -33,7 +34,7 @@ h1 {
 {
     .gradient-error-pages
     {
-        padding: 3px 3px !important;
+        padding: 10px 10px !important;
         width: 100% !important;
     }
 }
@@ -46,14 +47,6 @@ h1 {
     }
 }
 
-@media (max-width: 516px)
-{
-    .gradient-error-pages
-    {
-      width: auto !important;
-      padding: 10px 10px !important;
-    }
-}
 /*animations*/
 
 #number-spacing {
