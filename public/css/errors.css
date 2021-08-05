@@ -39,7 +39,7 @@ h1 {
     }
 }
 
-@media (max-width: 516px)
+@media (max-width: 575px)
 {
     .error-images
     {
