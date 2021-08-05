@@ -43,7 +43,7 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size-60 container-fluid d-flex flex-column center-content">
+    <div class="full-size-80 container-fluid d-flex flex-column center-content">
 @endsection
 
 @section('main-content')
@@ -55,7 +55,7 @@
                         <hr style="width: 150px">
                     </div>
                 </div>
-                <div class="text-container-40px">
+                <div class="text-container-40px;">
                     <p style="font-weight: 700;">
                         We're gigawaffle; we want to turn businesses into brands. With plenty of options across web design, marketing and media, you're truly in control when it comes to your business.
                     </p>
@@ -76,7 +76,7 @@
     </div>
     <div class="gradient text-white no-padding">
         @include('partials.waves-top')
-        <div class="col-12 d-flex flex-column align-items-center py-5">
+        <div class="col-12 d-flex flex-column align-items-center text-center py-5">
             <h2 style="font-size: 1.5em"> Our Services </h2>
             <p style="font-size: 1.5em; font-weight: bold;"> Those who have trusted gigawaffle </p>
             <div class="row d-flex center-content text-center">
