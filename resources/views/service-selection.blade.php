@@ -11,7 +11,7 @@
             border:none;
             border-radius: 10px;
             padding: 5px 15px;
-            margin-left: 30px;
+            width: 90vw;
         }
         .long-button
         {
@@ -124,6 +124,12 @@
             width: 200px;
             margin: 5px;
         }
+
+        .filter-button
+        {
+            margin-left: 30px;
+            width: auto;
+        }
   
         }
 
@@ -157,7 +163,7 @@
 @endsection
 
 @section('main-content')
-<div class="container-fluid" style="padding: 30px 0 0 0;">
+<div class="container-fluid text-center text-md-left" style="padding: 30px 0 0 0;">
         <input type="radio" id="All" name="filter-services" class="btn-check radio-hidden" checked />
         <label class="filter-button" for="All">All Services<i class="fa fa-folder-open filter-button-icon" aria-hidden="true"></i></label>
         <input type="radio" id="Design" name="filter-services" class="btn-check radio-hidden" />
@@ -439,7 +445,7 @@
             <p style="font-size: 20px; font-weight: 700;"> Select the services that suit your business and click continue. If you've accidentally selected a service that you don't want, you can remove it from your basket by clicking in the top right corner. </p>
         </div>
         <div class="col-12 col-md-6 d-flex center-content flex-column">
-            <button class="d-block long-button mb-3">View Basket</button>
+            {{-- <button class="d-block long-button mb-3">View Basket</button> --}}
             <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>   
         </div>
     </div>

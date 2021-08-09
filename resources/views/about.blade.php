@@ -122,8 +122,8 @@
         <div class="shadowed-card">
             <div class="row">
             <div class="col-12 col-md-8"><img class="google-map" src="{{ asset('img/map.png') }}"></div>
-            <div class="col-12 col-md-4">
-                <img src="{{ asset('img/home-icon.png') }}" height="30">
+            <div class="col-12 col-md-4 m-auto text-center text-md-left">
+                <img src="{{ asset('img/home-icon.png') }}" style="display: inline-block" height="30">
                 <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>
                 <ul class="list-unstyled">
                     <li>Estate House,</li>
@@ -154,7 +154,7 @@
     <div class="container no-padding">
         <h2 class="pink-heading"><b>Our Story</b></h2>
         <h3>The story of gigawaffle has only just begun</h3>
-        <div class="timeline-section-outer">
+        <div class="timeline-section-outer mt-5">
             <div class="timeline-section timeline-section-top">
                 <div class="timeline-lines"></div>
                 <div class="timeline-date">June 2021</div>
@@ -180,9 +180,11 @@
     </div>
     <br />
     <div id="#getintouch" class="container no-padding" style="width: 576px; max-width: 100%;">
-        <h2 class="pink-heading"><b>Join Our Team</b></h2>
-        <h3>Want to work with us?</h3>
-        <p style="font-size: 20px; text-align: center;">Fill in this form and we will be back in touch with you.</p>
+        <h2 style="font-size: 30px;
+        color: var(--color-pink);
+        font-weight: bold;
+        text-align: center;"><b>How can we help you<span style="color: var(--color-navyblue)">?</span></b></h2>
+        <p style="font-size: 20px; text-align: center;">Send a message</p>
         <div class="pink-box-round pink-box-merge-bottom">
             <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
                 <form method="post" action="{{ route('post.work-with-us') }}">

@@ -24,14 +24,43 @@
             margin: 17px;
         }
 
+        .package-container
+        {
+            box-shadow: 0px 2px 3px 0px #000733;
+            border-radius: 20px;
+            background-color: var(--color-white);
+            padding: 25px;
+            text-align: left;
+        }
+
+        .package-container-header
+        {
+            text-align: left;
+        }
+
         .package-container p
         {
             color: gray;
         }
 
-        .package-container h4
+        @media (min-width: 767px)
         {
-            text-align: left;
+            .package-container
+            {
+                box-shadow: none;
+                border-radius:0;
+                background-color: transparent;
+            }
+
+            .package-container:nth-child(2n+2)
+            {
+                text-align: right;
+            }
+
+            .package-container-header:nth-of-type()
+            {
+                text-align: right;
+            }
         }
     </style>
 @endsection
@@ -79,7 +108,7 @@
                 <img src="{{ asset('img/services-icons/web-development.svg') }}" alt="" />
                 <p>Web Development</p>
             </div>
-            <div class="service-item">
+            <div class="service-item"> class="package-container-header"
                 <img src="{{ asset('img/services-icons/ui-design.svg') }}" alt="" />
                 <p>UI Design</p>
             </div>
@@ -139,35 +168,35 @@
         <h3>Packages that make it easy for you</h3>
 
         <div class="row" style="padding: 20px 0px;">
-            <div class="package-container col-12 col-md-6" style="text-align: left;">
-                <img src="" alt="" />
-                <h4>From Business To Brand</h4>
+            <div class="package-container col-12 col-md-6">
+                <img src="{{ asset('img/services-packages/fan-icon.png') }}" alt="" />
+                <h4 class="package-container-header">From Business To Brand</h4>
                 <p>Turn you business into a brand with this package. We'll sort out your brand design, social media marketing, content marketing and media content to upgrade your business.</p>
                 <a href="" class="pink-link">Learn More</a>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="d-none d-md-block col-md-6">
                 <img src="{{ asset('img/services-packages/megaphone.png') }}" alt="" />
             </div>
         </div>
         <div class="row" style="padding: 20px 0px;">
-            <div class="col-12 col-md-6">
+            <div class="d-none d-md-block col-md-6">
                 <img src="{{ asset('img/services-packages/desktop.png') }}" alt="" />
             </div>
-            <div class="package-container col-12 col-md-6" style="text-align: right;">
-                <img src="" alt="" />
-                <h4>Time To Get Connected</h4>
+            <div class="package-container col-12 col-md-6">
+                <img src="{{ asset('img/services-packages/globe.png') }}" alt="" />
+                <h4 class="package-container-header">Time To Get Connected</h4>
                 <p>We'll get your business online by creating a website to suit your business. We will do some basic SEO work to push your business up Google's search engine.</p>
                 <a href="" class="pink-link">Learn More</a>
             </div>
         </div>
         <div class="row" style="padding: 20px 0px;">
-            <div class="package-container col-12 col-md-6" style="text-align: left;">
-                <img src="" alt="" />
-                <h4>It's Time To Upgrade</h4>
+            <div class="package-container col-12 col-md-6">
+                <img src="{{ asset('img/services-packages/smartphone.png') }}" alt="" />
+                <h4 class="package-container-header">It's Time To Upgrade</h4>
                 <p>Want a bespoke and future-proof website? We will create a mobile ready website, so your customers can enjoy what you offer at any time or place.</p>
                 <a href="" class="pink-link">Learn More</a>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="d-none d-md-block col-md-6">
                 <img src="{{ asset('img/services-packages/mobile.png') }}" alt="" />
             </div>
         </div>

@@ -21,6 +21,7 @@
     {
         margin-bottom: 1em;
         text-align: center;
+        border: 2px solid var(--color-navyblue)
     }
 
     @media (max-width: 990px)
@@ -43,11 +44,12 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size-80 container-fluid d-flex flex-column center-content">
+    <div class="full-size container-fluid d-flex flex-column center-content">
 @endsection
 
 @section('main-content')
-        <div class="container-lg row top-section-outer">
+    <canvas id="bubble"></canvas>
+    <div class="container-lg row top-section-outer">
             <div class="col-12 col-md-6 col-lg-8 no-padding">
                 <div class="gradient-container container-no-gradient-sm d-flex center-content">
                     <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
@@ -133,10 +135,10 @@
             <h2 class="pink-heading pb-3"> The Waffle Corner </h2>
             <h3> The only place we tolerate any waffle... </h3>
             <div class="row d-flex justify-content-center pb-4 pt-0 pt-md-5">
-                <img class="border-radius-20 blog-cards" src="https://via.placeholder.com/450x350">
-                <img class="border-radius-20 blog-cards" src="https://via.placeholder.com/450x350">
+                <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-1.png') }}">
+                <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-2.png') }}">
             </div>
-            <button class="navy-blue-button">Read More </button>
+            <!-- Change to live site blog url when site is ready to launch --><a href="http://gw01.gigawaffle.co.uk/blog/"><button class="navy-blue-button"> Read More </button></a>
         </div>
     </div>
 @endsection

@@ -42,6 +42,9 @@
                 <a class="footer-link" href="https://www.znergi.co.uk/jobs" rel="external">
                     <li>Jobs</li>
                 </a>
+                <a class="footer-link" href="http://gw01.gigawaffle.co.uk/blog/">
+                    <li>Blog</li>
+                </a>
             </ul>
         </div>
         <div class="col-7 col-md-6 no-padding d-flex flex-column text-right">
@@ -49,8 +52,8 @@
                 <li> <img src="{{ asset('img/home-icon.png') }}" height="30">
                     <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>
                 </li>
-                <li>Estate House,</li>
-                <li>Fox Street,</li>
+                <li>Estate House</li>
+                <li>Fox Street</li>
                 <li>Preston</li>
                 <li>PR1 2AB</li>
             </ul>
