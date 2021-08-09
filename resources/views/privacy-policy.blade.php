@@ -2,45 +2,26 @@
 
 @section('stylesheets')
     <style>
-        .bold-font{
-            font-weight: bold;
-        }
         p{
             font-weight: normal;
-            line-height: 1;  
+            line-height: 1;
+            padding: 6px; 
         }
         h2{
-            background: #00C2CB;
-            font-size: 28px;
-            padding: 10px 10px 10px 20px;
+            padding: 8px !important;
             border-radius: 25px;
         }
-        .indented-list{
-            margin: 20px 0;
-            list-style-type: disc;
+
+        h1{
+            text-decoration: underline;
+            color: #000733;
+            padding-top: 50px;
+            text-align: center;
+            font-size: 35px;
         }
         .anchor-default:link, .anchor-default:visited{
-            color: #00C2CB;
+            color: #DF4985;
             outline: none;
-        }
-        .anchor-default:hover, .anchor-default:active{
-            color: #fdae36;
-            outline: none;
-        }
-            @media (max-width: 494px)
-        {
-            .main-title
-            {
-                font-size: 8.5vmin;
-                margin-left: -15px;
-            }
-        }
-        @media (max-width: 374px)
-        {
-            .section-title
-            {
-                font-size: 25px;
-            }
         }
     </style>
 @endsection
@@ -49,63 +30,52 @@
 <hr />
 <main class="col-md-12">
         <div class="container">
-                <h1 class="main-title">SwapMyEnergy.co.uk Privacy policy</h1>
+                <h1 class="main-title">Welcome to Gigawaffle’s Privacy Policy</h1>
                 <br />
+                <p class="font-weight-bold">
+                    Last Revised: August 2021
+                </p>
                 <p>
-                    Znergi Ltd ("swapmyenergy.co.uk", "we" or "us") is committed to respecting and protecting your privacy.
+                    Gigawaffle ("gigawaffle.co.uk", "we" or "us") is committed to respecting and protecting your privacy.
                 </p>
                 <p>
                     This policy explains how we collect, handle and use any personal information that you provide to us through our website, 
-                    mobile apps and other services. Please do read it. We'll review this policy from time to time. If we make changes, we'll 
+                    mobile apps and other services. We'll review this policy from time to time. If we make changes, we'll 
                     post the latest version here.
                 </p>
                 <p>
-                    For the purposes of data protection law, the controller is Znergi Ltd, Estate House, 18 Fox St, Preston PR1 2AB.
+                    Prior to accessing or using our Services, please read this policy and make sure you fully understand our practices in relation to your Personal Information.  If you read and fully understand this Privacy Policy, and remain opposed to our practices, you must immediately leave and discontinue all use of any of our Services.  If you have any questions or concerns regarding this policy, please contact us <a class="anchor-default" href="#">here.</a>
                 </p>
-                <h2 class="section-title">What personal data do we collect?</h2>
+                <h2 class="section-title gradient-container">What personal data do we collect?</h2>
+                <br />
                 <p>
-                    When you use our services, we have to collect, keep and share some personal data and we ask that you agree to that in 
-                    line with this policy.
+                    When you use our services, we must collect Personal Information relating to an identified or identifiable natural person. We ask that you agree to that in line with this policy.
                 </p>
                 <p>We may collect and process the following information about you:</p>
                 <p class="font-weight-bold">Information you provide to us voluntarily</p>
                 <p>
-                    Information you choose to give us might include personal data needed for filling in forms on our websites or apps or by 
-                    corresponding with us by phone, email, live chat or in discussion forums. This includes information you provide when you do 
-                    a price comparison, enter into a contract for the supply of services, enter a competition, promotion or survey, give us 
-                    feedback, leave a comment or enter into a discussion.
+                    Information you choose to give us might include personal data needed for filling in forms or by information you include in your communications with us. This includes information you provide when you enter into a contract for the supply of services, give us feedback or leave a comment.  
                 </p>
                 <p>
                     The personal information that you provide may include basic stuff needed to make an application such as names and 
                     contact details but may include financial information and other information about you to enable us to provide you 
-                    with our price comparison, switching and other services.
+                    with our services.
                 </p>
-                <p>
-                    For some products, you may need to provide us with certain special category data to allow us to provide you with quotes. 
-                    This includes information about health (for an energy provider to assess whether you have any special requirements).
-                </p>
-                <p>
-                    When you provide this information to us, we will ask for your consent to use your special category data in accordance 
-                    with this privacy policy. If you do not consent to that use, you may not be able to proceed with your quote.
-                </p>
-                <p class="font-weight-bold">Information we generate or collect about you</p>
+                <p class="font-weight-bold">Information collected when you use our Services</p>
                 <p>
                     We generate or collect some information from your computer or device automatically as you use our services. 
                     This includes things like your IP address, information about the device and browser you are using to access our 
                     services, the website URL you visited us from and the third-party sites you visit when you click on links to exit 
-                    the swapmyenergy.co.uk site. We may also know your location from your mobile or your IP address. We may combine 
+                    the gigawaffle.co.uk site. We may also know your location from your mobile or your IP address. We may combine 
                     this information with other information you have provided to us or which we have received from other sources.
                 </p>
-                <p class="font-weight-bold">Information we receive from third parties</p>
+                <p class="font-weight-bold">Information we collect from other sources</p>
                 <p>
-                    We work closely with various third parties (for example, business partners, advertising networks, search 
-                    engine providers and analytic service providers) and may receive information about you from them. For example, 
-                    if you've redirected to an energy supplier's website or app to complete your application, we might collect 
-                    information from them about whether you went ahead with your application and what you applied for. We may combine 
-                    this information with other information you have provided to us or which we collected about you.
+                    We may receive Personal Information about you from third-party sources, such as security providers , fraud detection and prevention providers for example to help us screen out users associated with fraud, social media platforms, when you log-in or sign-up using your social media account, we may receive Personal Information from that service (e.g., your username, basic profile Personal Information) and in some cases, we may collect Personal Information from lead enhancement companies which help us to improve our service offering.
                 </p>
-                <h2 class="section-title">How we use your personal data</h2>
+                <h2 class="section-title gradient-container">How we use your personal data</h2>
                 <p>
+                <br />
                     We only use your information where you've given us your consent, where it's necessary to deliver the services 
                     you've requested, where it's necessary to exercise or comply with legal rights or obligations, or for normal 
                     business purposes of the type described in this policy.
@@ -128,7 +98,7 @@
                         <ul>
                             <li>
                                 redirecting you to their platform along with whatever data is necessary to enable them to recognise 
-                                you and the product / service option you have selected on swapmyenergy.co.uk, including the details 
+                                you and the product / service option you have selected on gigawaffle.co.uk, including the details 
                                 of your search; or
                             </li>
                             <li>
@@ -162,7 +132,7 @@
                         by us or by third parties.
                     </li>
                     <li>
-                        Personalising your experience of our services in order to ensure your experience on swapmyenergy.co.uk 
+                        Personalising your experience of our services in order to ensure your experience on gigawaffle.co.uk 
                         is as relevant as possible.
                     </li>
                     <li>
@@ -192,8 +162,9 @@
                         may have originated from, or to protect our services against misuse from automated software agents.
                     </li>
                 </ul>
-                <h2 class="section-title">Lawful basis for processing</h2>
+                <h2 class="section-title gradient-container">Lawful basis for processing</h2>
                 <p>
+                <br />
                     Our legal basis for processing your personal data for the purposes described above will typically be one of the following:
                 </p>
                 <p class="font-weight-bold">Consent</p>
@@ -215,8 +186,9 @@
                     your experience of our services or use your information for analytic purposes), for security and fraud prevention, for 
                     identifying and correcting faults with our services and to protect our business.
                 </p>
-                <h2 class="section-title">Sharing your personal data</h2>
+                <h2 class="section-title gradient-container">Sharing your personal data</h2>
                 <p>
+                <br />
                     We may share your personal data with selected third parties who provide us with a variety of different services that support 
                     the delivery of our services. These may include;
                 </p>
@@ -240,7 +212,7 @@
                 <ul class="contentQuestions">
                     <li>
                         providers of email management and email distribution services - for example, if you sign up to receive 
-                        swapmyenergy.co.uk newsletters or other marketing messages we will manage the delivery of these using a third 
+                        gigawaffle.co.uk newsletters or other marketing messages we will manage the delivery of these using a third 
                         party email distribution platform.
                     </li>
                     <li>
@@ -263,7 +235,7 @@
                     </li>
                     <li>
                         providers of tracking tools that we use to monitor instances where you click on a link to a Product 
-                        Supplier's website and redirect from the swapmyenergy.co.uk site to that Product Supplier's site.
+                        Supplier's website and redirect from the gigawaffle.co.uk site to that Product Supplier's site.
                     </li>
                 </ul>
                 <p>We generally only share this information in a form that does not directly identify you.</p>
@@ -288,8 +260,9 @@
                     information, if necessary, to prevent, detect or prosecute illegal or suspected illegal activities, including fraud, 
                     or to prevent other damage or where necessary in response to legal action against us, or to enforce our rights and claims.
                 </p>
-                <h2 class="section-title">Storing your personal information</h2>
+                <h2 class="section-title gradient-container">Storing your personal information</h2>
                 <p>
+                <br />
                     We store the information we collect from you on secure servers. We may transfer, store or process your personal information 
                     outside of the European Economic Area ("EEA"). The laws in some countries may not provide as much legal protection for your 
                     personal information as in the EEA.
@@ -327,12 +300,12 @@
                 <p>
                     You have the right to ask us not to process your personal information for marketing purposes. You can do this at any 
                     time by clicking on the "unsubscribe" link in any marketing email we send you. You can also opt out of marketing by 
-                    emailing <a href="mailto:unsubscribe@swapmyenergy.co.uk">unsubscribe@swapmyenergy.co.uk</a>.
+                    emailing <a href="mailto:unsubscribe@gigawaffle.co.uk">unsubscribe@gigawaffle.co.uk</a>.
                 </p> --}}
                 <p>
                     You also have the right to access your personal information, to object to the use of your personal information for 
                     certain purposes, and the right to erase, restrict or receive a machine-readable copy of your personal information. 
-                    To update or delete your information please email <a class="anchor-default" href="mailto:privacy@swapmyenergy.co.uk">privacy@swapmyenergy.co.uk</a> or contact us using the address below. 
+                    To update or delete your information please email <a class="anchor-default" href="mailto:privacy@gigawaffle.co.uk.co.uk">privacy@gigawaffle.co.uk</a> or contact us using the address below. 
                     We will handle your request in accordance with the law. This means there may be legal reasons why we cannot fulfil 
                     all requests.
                 </p>
@@ -342,7 +315,7 @@
                     and we do not accept liability for the content of any other website. Please check the privacy policy of any other 
                     website before submitting any personal information to it.
                 </p>
-                <p class="font-weight-bold">swapmyenergy.co.uk comparison service providers</p>
+                <p class="font-weight-bold">gigawaffle.co.uk comparison service providers</p>
                 <p>
                     Our business energy comparison service is provided by Bionic Services Limited. By using the business energy telephone 
                     based energy comparison and switching service you agree to Bionic Services Limited's Terms &amp; Conditions and Privacy Policy.

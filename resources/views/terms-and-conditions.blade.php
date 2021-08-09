@@ -3,24 +3,24 @@
     <style>
         p{
             font-weight: normal;
-            line-height: 1;  
+            line-height: 1; 
+            padding: 6px;
         }
         h2{
-            background: #00C2CB;
-            font-size: 28px;
-            padding: 10px 10px 10px 20px;
+            padding: 8px !important;
             border-radius: 25px;
+            color: #000733;
         }
 
         h1{
             text-decoration: underline;
+            color: #000733;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 35px;
         }
         .anchor-default:link, .anchor-default:visited{
-            color: #00C2CB;
-            outline: none;
-        }
-        .anchor-default:hover, .anchor-default:active{
-            color: #fdae36;
+            color: #DF4985;
             outline: none;
         }
         @media (max-width: 407px)
@@ -40,159 +40,194 @@
             <div class="title">
                 <br />
                 <h1> Terms and Conditions </h1>
+                <br />
+                <p class="font-weight-bold">
+                    Last Revised: August 2021
+                </p>
+                <p>
+                    Below we have listed important legal terms that apply to anyone who visits our website or uses our services. These terms are necessary in order to protect both you and us, and to make our services possible and more enjoyable for everyone.
+                </p>
             </div>
             <section>
                 <br />
-                <h2 class="section-title">1. Parties</h2>
-                    <p>1.1 This Agreement is made between You the customer ("Customer") and <!--change here-->Znergi Ltd. ("Swap My Energy"), a company registered in England, (Company Number <!--change here-->12937329) whose registered address is <!--change here-->Estate House, 18 Fox St, Preston PR1 2AB.</p>
+                <h2 class="section-title gradient-container">1. Introduction</h2>
                     <br />
-                <h2 class="section-title">2. Definitions</h2>
-                    <p>2.1 In this Agreement, unless the context otherwise requires: "We", "Us", "Our" and related expressions refer to <!--change here-->Znergi Ltd.
+                    <p class="font-weight-bold">1.1 Parties</p>
+                    <p>This Agreement is made between You the customer ("Customer") and, Gigawaffle ("gigawaffle.co.uk"), a company registered in England, (Company Number 12937329) whose registered address is Estate House, 18 Fox St, Preston PR1 2AB.</p>
+                    <p class="font-weight-bold">1.2. Definitions</p>
+                    <p>In this Agreement, unless the context otherwise requires: 
                     <br />
                     <br />
-                    2.2 "You", "Your", "Customer" and related expressions refer to the user of the Service and/or Our Site.
+                    "We", "Us", "Our" and related expressions refer to Gigawaffle.
                     <br />
                     <br />
-                    2.3 "Our Site" means the website with address <!--change here--><a class="anchor-default" href="http://www.swapmyenergy.co.uk/">www.swapmyenergy.co.uk.</a> 
+                    "You", "Your", "Customer" and related expressions refer to the user of the Service. 
                     <br />
                     <br />
-                    2.4 "Service" means the service provided by <!--change here-->Swap My Energy via the SwapMyEnergy.com website ("Our Site") or call centre whereby the Customer may obtain impartial information on the Suppliers and the services and products they offer and potentially transact with the Suppliers for the provision of those services and/or products;
+                    "Our Site" means the website with address <a class="anchor-default" href="#">www.gigawaffle.co.uk.</a> 
                     <br />
                     <br />
-                    2.5 "Supplier" means any supplier of goods, products and/or services selected by Us from time to time and who is listed on Our Site.</p>
+                    "Service" means the service provided by Gigawaffle via the gigawaffle.co.uk website.
                     <br />
-                <h2 class="section-title">3. Use of the Service</h2>
-                    <p>3.1 Use of this Service is subject to the terms and conditions set out in this Agreement. 
                     <br />
+                    ("Our Site") or call centre whereby the Customer may obtain impartial information on the services and products we offer.</p>
+                    <p class="font-weight-bold">1.3. Our Purpose </p>
+                    <p>Our services offer our users the ability to easily create beautiful and highly functional online presence, to manage and promote businesses, content and ideas, and have an overall great experience doing so – without being tech-savvy or a design guru. As detailed below, we offer our users numerous tools and features for customizing, publishing and use of stunning websites, online e-commerce platforms, newsletters, galleries, media players, mobile apps and other online and mobile online and mobile applications, tools and services.
+                    </p>
+                    <p class="font-weight-bold">1.4. Legal Agreement</p>
+                    <p>You may visit and/or use the Gigawaffle Services and/or the Gigawaffle App only if you fully agree to the Gigawaffle Terms - and by using and/or registering to any of the Gigawaffle Services, you signify and affirm your informed consent to these Terms of Use and any other Gigawaffle Terms applicable to your use of any Gigawaffle Services.
+                    </p>
+                    <p class="font-weight-bold">1.5. User Account</p>
+                    <p>In order to access and use certain sections and features of the Gigawaffle Services, you must first register and create an account with Gigawaffle (“User Account”). If anyone other than yourself accesses your User Account and/or any of your User Platforms’ settings, they may perform any actions available to you, make changes to your User Platform(s) and User Account, and accept any legal terms available therein, make various representations and warranties and more – and all such activities will be deemed to have occurred on your behalf and in your name. Therefore, we strongly encourage you to keep the log-in credentials of your User Account confidential, and allow such access only to people you trust - as you will be solely and fully responsible for all activities that occur under your User Account and/or User Platforms (including for any representations, warranties and undertakings made therein), whether or not specifically authorized by you, and for any damages, expenses or losses that may result from such activities.
+                    </p>
+                <h2 class="section-title gradient-container">2. Buyer's Obligations</h2>
+                <br />
+                    <p class="font-weight-bold">2.1. You represent and warrant that:</p> 
+                    <p>You are of sufficient legal age and capacity to enter into this Agreement. That you have taken all reasonable precautions to ensure that any data you submit to Our Site is true and accurate and free from viruses and anything else that may have a contaminating or destructive effect on any part of Our Site or any other technology.
+                    </p>
+                    <p class="font-weight-bold">2.2. You undertake and agree to:</p>
+                    <p>fully comply with all applicable laws and any other contractual terms which govern your use of the Gigawaffle Services (and any related interaction or transaction).
                     <br />
-                    3.2 This Service is provided solely to assist Customers in finding information about a range of goods and services, and to permit Customers to obtain quotations from Suppliers or to transact with Suppliers, and for no other purposes.
+                    <br /> 
+                    be solely responsible and liable with respect to any of the uses of the Gigawaffle Services which occur under your User Account and/or User Platform(s), and for any of your User Content (including for any consequences of accessing, importing, uploading, copying, using or publishing such User Content on or with respect to the Gigawaffle Services);
                     <br />
+                    <br /> 
+                    regularly and independently save and backup any of your User Content and the information that is being processed by you regarding your User Platform, including with respect to End Users, User Products, and any applications and/or Third Party Services used by you;
                     <br />
-                    3.3 You warrant that You are of sufficient legal age and capacity to enter into this Agreement and to use this Service to create binding legal obligations.
                     <br />
+                    receive from time to time promotional messages and materials from Gigawaffle or its partners, by mail, e-mail or any other contact form you may provide us with (including your phone number for calls or text messages). If you wish not to receive such promotional materials or notices – please just notify us at any time;
                     <br />
-                    3.4 You warrant that You have taken all reasonable precautions to ensure that any data you submit to Our Site is true and accurate and free from viruses and anything else that may have a contaminating or destructive effect on any part of Our Site or any other technology. 
                     <br />
+                    Gigawaffle’s sole discretion as to the means, manner, and method for performing the Gigawaffle Services, including those regarding the hosting, transmission, publication and/or display of any User Platforms and/or Content (including the inclusion and presentation of any advertisements or other commercial content with respect thereto).
                     <br />
-                    3.5 You warrant that We will not be party to any transactions between You and any third part Supplier listed on Our Site, and all such transactions are subject to the terms and conditions of the relevant Supplier.<!--change here--> Swap My Energy shall in no circumstances have any liability whatsoever in respect of any such transaction. <!--change here-->Swap My Energy will not be responsible for any loss, cost or damage incurred by Customers arising out of or in relation to any transaction or attempt to enter into a transaction (including but not limited to failure to transmit or deliver any services, products or goods).
                     <br />
+                    ​Gigawaffle shall have the right to offer the Gigawaffle Services in alternative price plans and impose different restrictions as for the upload, storage, download and use of the Gigawaffle Services in each price plan, including, without limitation, restrictions on network traffic and bandwidth, size and/or length of Content, quality and/or format of Content, sources of Content, volume of download time, number of subscribers to your Content, etc.
+                    </p>
+                    <p class="font-weight-bold">2.3. You agree and undertake not to:</p>
+                    <p>copy, modify, create derivative works of, download, adapt, reverse engineer, emulate, migrate to another service, translate, compile, decompile or disassemble the Gigawaffle Website, the Gigawaffle Services (or any part thereof), any Content offered by Gigawaffle or Third Party Services for use and display within User Platforms (“Licensed Content”) and/or any part thereof in any way, or publicly display, perform, transmit or distribute any of the foregoing without Gigawaffle’s prior written and specific consent and/or as expressly permitted under the Gigawaffle Terms;
                     <br />
-                    3.6 You acknowledge that where relevant We may pass on Your details to Suppliers or potential suppliers for the purpose of attracting offers to supply services from such Suppliers or potential suppliers. 
                     <br />
+                    submit, transmit or display any User Content, or use Licensed Content in a context, which may be deemed as defamatory, libelous, obscene, harassing, threatening, incendiary, abusive, racist, offensive, deceptive or fraudulent, encouraging criminal or harmful conduct, or which otherwise violates the rights of Gigawaffle or any third party (including any intellectual property rights, privacy rights, contractual or fiduciary rights), or otherwise shows any person, entity or brand in a bad or disparaging light, without their prior explicit approval;
                     <br />
-                    3.7 We will use reasonable endeavours to ensure that the information relating to Suppliers' services and the cost of such services is updated regularly and is accurate, and we will rectify errors and omissions as soon as practicable after being notified of them. However, We do not accept responsibility for third party data and therefore disclaim all warranties and representations as to the accuracy of any such information. 
                     <br />
+                    use any illegal action to collect login data and/or passwords for other websites, third parties, software or services;
                     <br />
-                    3.8 Our Site may contain links to other web sites, which are provided solely as a convenience to You and not as an endorsement by Us of the contents of such other websites. We shall not be responsible for the content of any other websites and make no representation or warranty regarding any other websites or the contents or materials on such websites. 
                     <br />
+                    phish, collect, upload, or otherwise make available credit card information or other forms of financial data used for collecting payments, unless done in accordance with any applicable law, including, with the PCI DSS standard when applicable;  
                     <br />
-                    3.9 We do not guarantee to provide the Service free of faults. In the event of a fault in the Service, You should report it to Us using the contact information provided on Our Site. 
                     <br />
+                    upload, insert, collect or otherwise make available  within the Gigawaffle Website or the Gigawaffle Services (or any part thereof), any malicious, unlawful, defamatory or obscene Content;
                     <br />
-                    3.10 We do not warrant that Your use of the Service will be uninterrupted and do not warrant that any messages or information transmitted via the Service will be transmitted accurately, reliably, in a timely manner or at all. 
                     <br />
+                    act in a manner which might be perceived as damaging to Gigawaffle’s reputation and goodwill or which may bring Gigawaffle into disrepute or harm;
                     <br />
-                    3.11 We reserve the right to withdraw any Supplier (or any product or service of a Supplier) from the Service at any time. 
                     <br />
+                    impersonate any person or entity or provide false information on the Gigawaffle Services and/or User Platform, whether directly or indirectly, or otherwise perform any manipulation in order to disguise your identity or the origin of any message or transmittal you send to Gigawaffle and/or any End Users;
                     <br />
-                    3.12 The following uses of the Services are expressly prohibited: (a) resale of the Services and/or the Supplier's services, products and/or goods without the prior written consent of <!--change here-->Swap My Energy or the relevant Supplier; (b) submitting false data including but not limited to false names, addresses and contact details and fraudulent use of credit/debit card numbers; (c) circumventing, or attempting to circumvent, Our security or network including, but not limited to, accessing data not intended for the Customer, logging into a server or account the Customer is not expressly authorised to access, or probing the security of other networks; (d) executing any form of network monitoring which will intercept data not intended for the Customer; (e) entering into fraudulent transactions with Suppliers (which shall include but not be limited to entering into transactions purportedly on behalf of a third party where the Customer has no authority to bind that third party, or the Customer acting as if they were the third party). 
                     <br />
+                    falsely state or otherwise misrepresent your affiliation with any person or entity, or falsely express or imply that Gigawaffle or any third party endorses you, your User Platform, your business, your User Products, or any statement you make;
                     <br />
-                    3.13 We reserve the right, to be exercised in Our sole discretion, at any time and without notice to terminate or restrict Your access to Our Site or any component thereof.</p>
                     <br />
-                <h2 class="section-title">4. Payment</h2>
-                    <p>4.1 Use of the Service is currently free. However, we reserve the right to make charges for certain services or to make charges for the use of Services that were previously free. If at any time we impose a charge for our service, We will notify You of any applicable charges before any such services can be accessed or before any charges are levied. 
+                    use any of the Gigawaffle Services and/or User Platform in connection with any form of spam, unsolicited mail, fraud, scam, phishing, “chain letters”, “pyramid schemes” or similar conduct, or otherwise engage in unethical marketing or advertising;
                     <br />
                     <br />
-                    4.2 You will be responsible for making all payments due to Suppliers on the terms agreed with the relevant Supplier and <!--change here-->Swap My Energy shall have no responsibility for transmission of payments to any Supplier.</p>
+                    sell, license, or exploit for any commercial purposes any use of or access to the Licensed Content and/or Gigawaffle Services, except as expressly permitted by the Gigawaffle Terms;
                     <br />
-                <h2 class="section-title">5. Buyer's Obligations</h2>
-                    <p>5.1 If You choose to purchase a product and/or service, We will inform You of any applicable terms and conditions imposed by the Supplier, in relation to the supply of its goods, products and/or services and You agree to abide by those terms and conditions. 
                     <br />
+                    remove or alter any copyright notices, watermarks, restrictions and signs indicating proprietary rights of any of our licensors, including copyright mark [©], Creative Commons [(cc)] indicators, or trademarks [® or ™] contained in or accompanying the Gigawaffle Services and/or Licensed Content; or
                     <br />
-                    5.2 You warrant that all information provided by You on registration, during the course of entering into a transaction with one or more Suppliers for one or more products or services, and during the course of this Agreement is true, complete and accurate and that You will promptly inform Us of any changes to such information.</p>
                     <br />
-                <h2 class="section-title">6. Intellectual Property Rights</h2>
-                    <p>6.1 All web site design, text, graphics, the selection and arrangement thereof, and all software compilations, underlying source code, software (including applets) and all other materials on Our Site are copyright <!--change here-->Znergi Ltd. and its affiliates, or its content and technology providers. 
+                    violate, attempt to violate, or otherwise fail to comply with any of the Gigawaffle Terms or any laws or requirements applicable to your use of the Gigawaffle Services.
+                    </p>
+                <h2 class="section-title gradient-container">3. Content and Ownership</h2>
                     <br />
+                    <p class="font-weight-bold">3.1. Your Intellectual Property</p>
+                    <p>
+                    As between Gigawaffle and you, you shall own all intellectual property pertaining to your User Content and to any other materials created by you, including to any designs, images, animations, videos, audio files, fonts, logos, illustrations, compositions, artworks, code, interfaces, text and literary works. Gigawaffle does not claim ownership rights on your content.
+                    </p>
+                    <p class="font-weight-bold">3.2. Gigawaffle’s Intellectual Property</p>
+                    <p>
+                    All rights, title and interest in and to the Gigawaffle Services, including any and all copyrightable materials or any other content thereof which is or may be subject to any intellectual property rights under any applicable law (including any artwork, graphics, images, website templates and widgets, literary work, source and object code, computer code (including html), applications, audio, music, video and other media, designs, animations, interfaces, documentation, derivatives and versions thereof, the “look and feel” of the Gigawaffle Services, methods, products, algorithms, data, interactive features and objects, advertising and acquisition tools and methods, inventions, trade secrets, logos, domains, customized URLs, trademarks, service marks, trade names and other proprietary identifiers, whether or not registered and/or capable of being registered (collectively, “Intellectual Property”), and any derivations thereof, are owned by and/or licensed to Gigawaffle.
                     <br />
-                    6.2 The trademarks, logos and service marks displayed on Our Site (collectively, the "Trade Marks") include registered or unregistered trademarks belonging to Us, Our affiliates, Suppliers, and various third parties. 
                     <br />
+                    Subject to your full compliance with the Gigawaffle Terms and timely payment of all applicable Fees, Gigawaffle hereby grants you, upon creating your User Account and for as long as Gigawaffle wishes to provide you with the Gigawaffle Services, a non-exclusive, non-transferable, non-sublicensable, fully revocable, limited license to use the Gigawaffle Services and Licensed Content, for the purpose of generating and displaying your User Platform to End Users and offering your User Products (as defined below) therein, solely as expressly permitted under the Gigawaffle Terms, and solely within the Gigawaffle Services.
+                    </p>
+                <h2 class="section-title gradient-container">4. Data Protection and Privacy</h2>
                     <br />
-                    6.3 Nothing contained on Our Site should be construed as granting, by implication, estoppel, or otherwise, any license or right to use any of the Trade Marks without the written permission of the owner of the Trade Marks. 
+                    <p>
+                    Certain parts of the Gigawaffle Services (including certain Third Party Services) require or involve the submission, collection and/or use of certain personally identifying or identifiable information. In particular and as a part of accessing or using the Gigawaffle Services, Gigawaffle and such Third Party Services may collect, access and use certain data pertaining to Users and End Users, including the activities or navigation undertaken by Users and End Users through the Gigawaffle Services and/or User Platforms. We encourage you to read our Privacy Policy and each such Third Party Services’ relevant policies on a regular basis, for a description of such data collection and use practices.</p>
+                <h2 class="section-title gradient-container">5. Payments and Service Fees</h2>
+                <br />
+                    <p class="font-weight-bold">5.1. Paid Services</p>
+                    <p>
+                    The use of certain Gigawaffle Services may be subject to payment of particular fees, as determined by Gigawaffle in its sole discretion. Gigawaffle will provide notice of such Fees then in effect in relation to such Paid Services. If you wish to receive or use such Paid Services, you are required to pay all applicable Fees in advance.
                     <br />
                     <br />
-                    6.4 Neither Our Site, nor any part of it may be reproduced, adapted, stored in a data storage or retrieval system or transmitted in any form or by any means without Our prior written permission, except as expressly permitted by law. 
+                    Gigawaffle reserves the right to change its Fees at any time, upon notice to you if such change may affect your existing subscriptions. If you received a discount or other promotional offer, Gigawaffle shall have the right to automatically and without notice renew your subscription to such Gigawaffle Service(s) at the full applicable Fee.
+                    </p>
+                    <p class="font-weight-bold">5.2. Invoices</p>
+                    <p> 
+                    Gigawaffle will issue an invoice or credit memo for any payment of Fees or refund made to or by Gigawaffle (“Invoice”). Each Invoice will be issued in electronic form and based on the country stated in your billing address, and will be made available to you via your User Account and/or by e-mail. For the purpose of issuing the Invoice, you may be required to furnish certain Personal Information (as such term is defined in the Privacy Policy) in order to comply with local laws.
+                    </p>
+                    <p class="font-weight-bold">5.3. Money-Back Guarantee</p>
+                    <p>  
+                    If you are not satisfied with Gigawaffle Services that are subject to a Fee for a period of service or subscription commitment and which is your initial purchase of such service, you may provide notice of cancellation for any reason within fourteen (14) days of having first ordered or activated. The Refund is applicable only to the initial purchase of Gigawaffle services and is not applicable to any additional purchases, upgrades, modification or renewals. Please note that the Refund amount may be different than the amount you were charged due to currency changes and third party fees. Gigawaffle will not be responsible for any differences caused by change of currency exchange rates or fees you were charged by third parties. After the Refund Period, the Fees paid by you are non-refundable and non-cancellable.
+                    </p>
+                <h2 class="section-title gradient-container">6. Termination</h2>
                     <br />
+                    <p class="font-weight-bold">6.1. Cancellation by User</p>
+                    <p>
+                    You may discontinue to use and request to cancel your User Account and/or any Gigawaffle Services at any time, in accordance with the instructions available on the Gigawaffle Services. The effective date and time for such cancellation shall be the date and time on which you have completed the cancellation process on the Gigawaffle Services, and the effective date for cancellation of Paid Services shall be at the end of such Paid Services’ subscription period.
                     <br />
-                    6.5 You shall retain ownership of the data you submit to Our Site. You agree that if You submit suggestions, ideas, comments or questions or post any other information on Our Site, You grant Us and Our affiliates a worldwide, non-exclusive, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, copy, modify, adapt, distribute, publish, display and transmit such content in any form, media or technology. We take no responsibility and assume no liability for any content posted or submitted by You (save where such message is transmitted by way of private correspondence).</p>
                     <br />
-                <h2 class="section-title">7. Indemnity</h2>
-                    <p>7.1 You shall indemnify <!--change here-->Swap My Energy against each loss, liability or cost incurred by <!--change here-->Swap My Energy arising out of: any claims or legal proceedings arising from Your use of the Services which are brought or threatened against <!--change here-->Swap My Energy by any other person; or any breach of this Agreement by You.</p>
+                    Please note that as the cancellation process may take a few days, in order to avoid the next automatic renewal and respective charge the cancellation request should be made at least fourteen (14) days prior to the expiration of the then-current service period.
+                    </p>
+                    <p class="font-weight-bold">6.2. Cancellation by Gigawaffle</p>
+                    <p>  
+                    Failure to comply with any of the Gigawaffle Terms and/or to pay any due Fee shall entitle Gigawaffle to suspend (until full payment is made) or cancel your User Account and User Platform (or certain features thereof), as well as the provision of any related Gigawaffle Services (e.g., Paid Services) or Third Party Services to you. 
+                    </p>
+                <h2 class="section-title gradient-container">7. Third Party Services</h2>
                     <br />
-                <h2 class="section-title">8. Exclusion of Liability</h2>
-                    <p>8.1 In performing any obligation under this Agreement, Our only duty is to exercise reasonable care and skill. 
+                    <p>The Gigawaffle Services enable you to engage and procure certain third party services, products and tools for enhancing your User Platform and your overall user experience, including, without limitation, third party applications and widgets offered via the Gigawaffle Website, third party Licensed Content, media distribution services, sellers of tangible products, third party designers who may assist you with your User Platform, etc..
                     <br />
                     <br />
-                    8.2 We do not warrant and exclude all liability in respect of the accuracy, completeness, fitness for purpose or legality of any information accessed using the Service via Our Site, Our call centre or otherwise sent to You and You agree that sole responsibility for the accuracy, completeness, fitness for purpose or legality of information relating to Supplier's information, goods or services shall rest with the Supplier. 
+                    You acknowledge and agree that regardless of the manner in which such Third Party Services may be offered to you Gigawaffle merely acts as an intermediary platform between you and such Third Party Services, and does not in any way endorse any such Third Party Services, or shall be in any way responsible or liable with respect thereto.
                     <br />
                     <br />
-                    8.3 Whilst We endeavour to allow uninterrupted trouble-free access to Our Site, We do not warrant that Our Site will operate free from error, nor do We warrant that use of Our Site will not result in damage to Your computer or Your computer becoming infected with a computer virus or other harmful components. You are therefore advised to take suitable precautions and to use Your own anti-virus software at all times. 
+                    Any and all use of such Third Party Services shall be done solely at your own risk and responsibility, and may be subject to such legal and financial terms which govern such Third Party Services, which you are encouraged to review before engaging with them.
                     <br />
                     <br />
-                    8.4 Due to the nature of electronic transmission of data over the Internet, any liability we may have for any losses or claims arising from an inability to access Our Site, or from any use of Our Site or reliance on the data transmitted using Our Site, is excluded to the fullest extent permissible by law. 
+                    If you use third parties' services, software or goods while using our Services, you declare that you act in compliance with their terms of use.
+                    </p>
+                <h2 class="section-title gradient-container">8. Disclaimer</h2>
                     <br />
+                    <p>We provide the Gigawaffle Services on an “As Is”, “with all faults” and “As Available” basis, without any warranties of any kind, including any implied warranties or conditions of merchantability, fitness for a particular purpose, workmanlike effort, non-infringement, or any other warranty – all to the fullest extent permitted by law. We specifically do not represent or warrant that the Gigawaffle Services (or any part, feature or Content thereof) are complete, accurate, of any certain quality, reliable or secure in any way, suitable for or compatible with any of your (or your End Users’) contemplated activities, devices, operating systems, browsers, software or tools (or that they will remain as such at any time), or comply with any laws applicable to you or your End Users (including in any jurisdiction in which you operate), or that their operation will be free of any viruses, bugs or other harmful components or program limitations.</p>
+                <h2 class="section-title gradient-container">9. Limitation of Liability</h2>
                     <br />
-                    8.5 Except as otherwise provided herein, <!--change here-->Swap My Energy shall not have any liability other than in respect of: death or personal injury arising from its own negligence or that of its employees, agents or contractors while acting in the course of their employment by <!--change here-->Swap My Energy; or any liability of <!--change here-->Swap My Energy which cannot by Law be excluded or restricted. 
+                    <p>To the fullest extent permitted by law in each applicable jurisdiction, Gigawaffle, its officers, directors, shareholders, employees, affiliates and/or agents shall not be liable to you for any direct, indirect, incidental, special, punitive, exemplary or consequential damages whatsoever, including any damages resulting from (1) errors, mistakes, or inaccuracies of or in any content; (2) any personal injury or property damage related to your use of the Gigawaffle Services; (3) any unauthorized access to or use of our servers and/or any personal information and/or other information stored therein; (4) any interruption or cessation of transmission to or from the Gigawaffle Services; (5) the use or display of any Content or User Content posted, emailed, transmitted, or otherwise made available via the Gigawaffle Services; (6) events beyond the reasonable control of Gigawaffle, including any internet failures, equipment failures, electrical power failures, strikes, labor disputes, riots, insurrections, civil disturbances, shortages of labor or materials, fires, floods, storms, earthquakes, explosions, acts of God, war, terrorism, intergalactic struggles, governmental actions, orders of courts, agencies or tribunals or non-performance of third parties; and/or (7) loss of use, data, profits, goodwill, or other intangible losses, resulting from the use or the inability to use any or all of Gigawaffle Services.
                     <br />
                     <br />
-                    8.6 Subject to the liability which we accept in clause 8.4: (a) our aggregate liability to you arising out of or in connection with this Agreement or use of the Service shall not exceed &pound;50; and (b) We shall not be liable in contract, tort or otherwise howsoever arising out of or in connection with this agreement or use of the Service for any indirect loss, consequential loss, loss of profits, data, revenue, business opportunity, anticipated savings, goodwill or reputation.</p>
+                    You acknowledge and agree that these limitations of liability are agreed allocations of risk constituting in part the consideration for Gigawaffle’s services to you, and such limitations will apply even if Gigawaffle has been advised of the possibility of such liabilities.</p>
+                <h2 class="section-title gradient-container">10. Indemnity</h2>
                     <br />
-                <h2 class="section-title">9. Exclusion of liability for third party providers' products and services</h2>
-                    <p>9.1 Your attention is drawn to the fact that when purchasing goods or services from a third party Supplier through Our Site or through Our Service, You may be subject to further terms and conditions in respect of such goods or services purchased, which may be imposed by such third party Supplier. Your acceptance of such terms and conditions is at Your own risk. You should check that You agree to those terms and conditions before making an application or entering into any transaction.</p>
+                    <p>You agree to defend, indemnify and hold harmless Gigawaffle, its officers, directors, shareholders, employees, affiliates and agents, from and against any and all claims, damages, obligations, losses, liabilities, costs, debt and expenses (including attorneys’ fees) arising from: (1) your violation of any term of these Terms of Use or any other Gigawaffle Terms; (2) your violation of any third party right, including any copyright, access rights, property, or privacy right, resulting from your User Platform or User Content and/or your use of the Gigawaffle Services, including, without limitation, Gigawaffle Services’ actions for your benefit; and/or (3) any other type of claim that your User Platform and/or User Content caused damage to a third party.</p>
+                <h2 class="section-title gradient-container">11. General</h2>
                     <br />
-                <h2 class="section-title">10. Data Protection and Privacy</h2>
-                    <p>10.1 We are committed to protecting your privacy. Our privacy practices are set out in our Privacy Policy displayed on Our Site. You agree that You have read Our Privacy Policy and that You agree that the terms of such policy are reasonable. 
+                    <p class="font-weight-bold">11.1. Changes & Updates</p>
+                    <p> 
+                    Gigawaffle reserves the right to change, suspend or terminate any of the Gigawaffle Services (or any features thereof, or prices applicable thereto), and/or cancel your access to any of the Gigawaffle Services (including removal of any materials created by you in connection with the Gigawaffle Services) for any reason and/or change any of the Gigawaffle Terms with or without prior notice - at any time and in any manner.
                     <br />
                     <br />
-                    10.2 Use of Your personal information will in all cases be with Your consent and subject to any rights You may have as a Data Subject under the Data Protection Act 1998 as amended from time to time.</p>
+                    You agree that Gigawaffle will not be liable to you or to any third party for any modification, suspension or discontinuance of those Gigawaffle Services.
                     <br />
-                <h2 class="section-title">11. Assignment</h2>
-                    <p>11.1 You shall not assign or delegate or otherwise deal with all or any of Your rights or obligations under this Agreement. <!--change here-->Swap My Energy shall have the right to assign or otherwise delegate all or any of its rights or obligations under this Agreement to any person or entity.</p>
                     <br />
-                <h2 class="section-title">12. Force Majeure</h2>
-                    <p>12.1 <!--change here-->Swap My Energy shall not be liable for any breach of its obligations under this Agreement where it is hindered or prevented from carrying out its obligations by any cause outside its reasonable control, including without limitation by lightning, fire, flood, extremely severe weather, strike, lock-out, labour dispute, act of God, war, riot, civil commotion, malicious damage, failure of any telecommunications or computer system, compliance with any law, accident (or by any damage caused by any of such events).</p>
+                    If any such changes involve the payment of additional Fees, we will provide you with a notice of such Fees prior to enabling such specific changes. If you fail or refuse to pay such Fees, we may (at our sole discretion) cancel your User Account, continue to support your then-current Gigawaffle Services without enabling such changes, or provide you with alternative Services.</p>
+                    <p class="font-weight-bold">11.2. Notices</p>
+                    <p> 
+                    We may provide you with notices in any of the following methods: (1) via the Gigawaffle Services, including by pop-up within the Gigawaffle Website, User Account or elsewhere; (2) by e-mail, sent to the e-mail address you provided us; and/or (3) through any other means, including any phone number. Gigawaffle’s notice to you will be deemed received and effective within twenty four (24) hours after it was published or sent through any of the foregoing methods, unless otherwise indicated in the notice.</p>
+                <h2 class="section-title gradient-container">12. Governing Law</h2>
                     <br />
-                <h2 class="section-title">13. Entire Agreement</h2>
-                    <p>This Agreement, together with any terms and conditions incorporated herein or referred to in it, represents the entire understanding between the parties in relation to the subject matter herein and supersedes all other agreements or representations by either party, whether oral or written, and may not be amended or modified except in writing or by making such amendments or modifications available on Our Site.</p>
-                    <br />
-                <h2 class="section-title">14. Notices</h2>
-                    <p>14.1 Unless otherwise stated within this Agreement, notices to be given to either party shall be in writing and shall be delivered by hand, electronic mail (other than for the purpose of legal process) sent by fax or pre-paid post to the Customer at the address supplied to <!--change here-->Swap My Energy or to Znergi Ltd. at its address as specified on the Our Site.</p>
-                    <br />
-                <h2 class="section-title">15. Termination</h2>
-                    <p>15.1 We may terminate or suspend your access to the Service at any time. 
-                    <br />
-                    <br />
-                    15.2 All disclaimers, indemnities and exclusions in these terms and conditions shall survive termination of the agreement between us for any reason.</p>
-                    <br />
-                <h2 class="section-title">16. General</h2>
-                    <p>16.1 This Service, and the content of our Site is directed solely at Customers who access the site from the United Kingdom, and in the specific case of domestic energy products or services, Customers who reside in Great Britain. We make no representation that any product or service referred to on Our Site is available or otherwise suitable for use outside of the United Kingdom (or in the case of energy products and services, outside of Great Britain). 
-                    <br />
-                    <br />
-                    16.2 These terms and conditions shall be deemed severable. In the event that any provision is held by a court of law to be unlawful, invalid or unenforceable, such provision shall nonetheless be enforced to the fullest extent permitted by applicable law, and such finding shall not affect the validity and enforceability of any other remaining provisions. 
-                    <br />
-                    <br />
-                    16.3 If We fail to enforce a right under this agreement, that failure will not prevent Us from enforcing other rights, or the same type of right on a later occasion. 
-                    <br />
-                    <br />
-                    16.4 We reserve the right to modify these terms and conditions without notice. All such amendments to these terms will be posted on Our Site. Your continued use of Our Site will be deemed to constitute acceptance of the terms and conditions in force at the time of use. 
-                    <br />
-                    <br />
-                    16.5 Unless expressly provided in this agreement, no term of this agreement is enforceable pursuant to the Contracts (Rights of Third Parties) Act 1999 by any person who is not a party to it.</p>
-                    <br />
-                <h2 class="section-title">17. Governing Law</h2>
-                    <p>17.1 This Agreement shall be governed by and construed in accordance with the laws of England and Wales and both parties hereby submit to the non-exclusive jurisdiction of the courts of England and Wales.</p>
-                    <br />
+                    <p>This Agreement shall be governed by and construed in accordance with the laws of England and Wales and both parties hereby submit to the non-exclusive jurisdiction of the courts of England and Wales.</p>
                 <br />
                 <br />
             </section>
