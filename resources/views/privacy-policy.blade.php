@@ -86,27 +86,10 @@
                 <p class="font-weight-bold">In order to provide our services to you and to fulfil your requests</p>
                 <ul>
                     <li>
-                        Providing you with the information, products and services you request from us 
-                        (including providing you with price comparison and switching services).
+                        Providing you with the information, products and services you request from us.
                     </li>
                     <li>
-                        Generating results in response to your search queries, for example providing you with a 
-                        list of the energy suppliers and tariffs that meet your requirements;
-                    </li>
-                    <li>
-                        Where you select an energy supplier that you'd like to enter into a transaction with, either:
-                        <ul>
-                            <li>
-                                redirecting you to their platform along with whatever data is necessary to enable them to recognise 
-                                you and the product / service option you have selected on gigawaffle.co.uk, including the details 
-                                of your search; or
-                            </li>
-                            <li>
-                                facilitating the completion of the transaction from within our services, which will involve us collecting 
-                                and transferring to that Supplier all information required to enable the transaction to be processed, 
-                                including your contact details and payment details;
-                            </li>
-                        </ul>
+                        Generating results in response to your search queries
                     </li>
                     <li>
                         Contacting you with messages, notifications or alerts that are necessary in order to deliver the services 
@@ -192,18 +175,6 @@
                     We may share your personal data with selected third parties who provide us with a variety of different services that support 
                     the delivery of our services. These may include;
                 </p>
-                <p class="font-weight-bold">Product suppliers to obtain quotes and help you to switch</p>
-                <p>
-                    We provide your personal data to the suppliers whose products and services are listed on our websites and apps to help them 
-                    provide quotes and to carry out your switch. When you buy products or services from these suppliers, their own privacy 
-                    policies will apply to how they use your personal data. You can find these privacy policies on their websites. Before 
-                    completing any transaction or switch, we recommend that you carefully review these policies in order to understand how 
-                    that product supplier will use your data.
-                </p>
-                <p>
-                    We also use some third parties to provide certain comparison services for us. They will use your personal information in 
-                    accordance with their own privacy policies. Details of these third parties and their privacy policies are set out below.
-                </p>
                 <p class="font-weight-bold">Third Party Service Providers who help us operate our business</p>
                 <p>
                     We may provide your personal information to our business partners, suppliers and subcontractors who provide services to us. 
@@ -256,7 +227,7 @@
                 </p>
                 <p>
                     We may disclose your information where necessary to enforce our Terms of Service or other agreements, or to a prospective 
-                    or ultimate buyer if Znergi Ltd itself (or part of our business) is sold. We may also disclose your 
+                    or ultimate buyer if Gigawaffle itself (or part of our business) is sold. We may also disclose your 
                     information, if necessary, to prevent, detect or prosecute illegal or suspected illegal activities, including fraud, 
                     or to prevent other damage or where necessary in response to legal action against us, or to enforce our rights and claims.
                 </p>
@@ -285,16 +256,14 @@
                 {{-- <p class="font-weight-bold">Cookies</p>
                 <p>
                     We use cookies and similar technologies to help deliver, optimise, personalise and analyse our services and for advertising 
-                    purposes. You may adjust the settings on your browser to refuse cookies but some of our services may not work if you do. 
-                    For more detailed information on how we use cookies and why we use them, please read our <a href="/cookie-policy">Cookie Policy</a>.
+                    purposes. You may adjust the settings on your browser to refuse cookies but some of our services may not work if you do.
                 </p>
                 <p class="font-weight-bold">How to opt-out of collection of information by third party advertisers</p>
                 <p>
                     Our third party advertisers and advertising network providers may provide you with ads on our websites and apps or on 
                     other websites. To make those ads more relevant and help measure their effectiveness, they may use cookies and similar 
                     technologies. They record your activity (including pages visited) and try to figure out what information interests 
-                    you most. They use this information in accordance with their own privacy policies. You can find information about how 
-                    to tailor your advertising preferences and how to opt out in our <a href="/cookie-policy">Cookie Policy</a>.
+                    you most. They use this information in accordance with their own privacy policies.
                 </p>
                 <p class="font-weight-bold">Your choices and rights</p>
                 <p>
@@ -315,19 +284,14 @@
                     and we do not accept liability for the content of any other website. Please check the privacy policy of any other 
                     website before submitting any personal information to it.
                 </p>
-                <p class="font-weight-bold">gigawaffle.co.uk comparison service providers</p>
-                <p>
-                    Our business energy comparison service is provided by Bionic Services Limited. By using the business energy telephone 
-                    based energy comparison and switching service you agree to Bionic Services Limited's Terms &amp; Conditions and Privacy Policy.
-                </p>
                 <p class="font-weight-bold">How you can contact us?</p>
                 <p>If you have questions about this privacy policy you can contact us;</p>
                 <p>By Phone:</p>
                 <p>
-                    01772 584880
+                    01772 123456
                 </p>
                 <p>By email:</p>
-                <p><a href="mailto: {{ env('DATA_CONTACT_EMAIL') }}"> {{ env('DATA_CONTACT_EMAIL') }}</a></p>
+                <p></p>
                 <p>
                     If you have unresolved concerns, you have the right to complain to a data protection authority. In the United Kingdom 
                     the relevant authority is
