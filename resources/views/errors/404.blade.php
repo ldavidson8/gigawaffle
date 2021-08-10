@@ -24,7 +24,7 @@
                             <br /><br />
 
                             <div style="padding-top:; display: flex; justify-content: center;">
-                                <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 500px;">This page does not exists</p> 
+                                <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 500px;">This page does not exist</p> 
                             </div>
 
                             <br /><br />
