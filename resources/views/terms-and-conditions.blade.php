@@ -64,7 +64,7 @@
                     "You", "Your", "Customer" and related expressions refer to the user of the Service. 
                     <br />
                     <br />
-                    "Our Site" means the website with address <a class="anchor-default" href="#">www.gigawaffle.co.uk.</a> 
+                    "Our Site" means the website with address <a class="anchor-default" href="{{ asset ('/') }}">www.gigawaffle.co.uk.</a> 
                     <br />
                     <br />
                     "Service" means the service provided by Gigawaffle via the gigawaffle.co.uk website.
