@@ -68,7 +68,7 @@
                 <a class="nav-link {{ ($navbar_page == "about") ? 'navigation-link-current-page' : '' }}" href="{{ route("about") }}">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://gw01.gigawaffle.co.uk/blog/">Blog</a>
+                <a class="nav-link" href="http://gigawaffle.co.uk/blog/">Blog</a>
             </li>
         </ul>
         {{-- <div class="ml-auto">

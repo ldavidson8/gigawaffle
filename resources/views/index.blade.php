@@ -21,7 +21,34 @@
     {
         margin-bottom: 1em;
         text-align: center;
-        border: 2px solid var(--color-navyblue)
+        border: 2px solid var(--color-navyblue);
+    }
+
+    .blog-card-link
+    {
+        position: relative;
+    }
+
+    .blog-cards-text
+    {
+        color: var(--color-pink);
+        font-size: 17px;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        font-weight: 700;
+    }
+
+
+
+    .text-white-outline
+    {
+        /* 1 pixel white shadow to left, top, right and bottom */
+        text-shadow: 
+        -1px 0 white, 
+        0 1px white, 
+        1px 0 white, 
+        0 -1px white;
     }
 
     @media (max-width: 990px)
@@ -58,10 +85,10 @@
                     </div>
                 </div>
                 <div class="text-container-40px;">
-                    <p style="font-weight: 700;">
+                    <p class="text-white-outline" style="font-weight: 700;">
                         We're gigawaffle; we want to turn businesses into brands. With plenty of options across web design, marketing and media, you're truly in control when it comes to your business.
                     </p>
-                    <p>
+                    <p class="text-white-outline">
                         You can pick and choose from a range of services, allowing you to build the perfect package for your business.
                     </p>
                     <div class="center-button">
@@ -135,10 +162,16 @@
             <h2 class="pink-heading pb-3"> The Waffle Corner </h2>
             <h3> The only place we tolerate any waffle... </h3>
             <div class="row d-flex justify-content-center pb-4 pt-0 pt-md-5">
+                <a class="blog-card-link" href="http://gigawaffle.co.uk/blog/2021/08/09/waffle-fundamentals-what-is-copywriting/">
+                <p class="blog-cards-text"> Waffle Fundamentals: What is Copywriting? </p>
                 <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-1.png') }}">
+                </a>
+                <a class="blog-card-link" href="http://gigawaffle.co.uk/blog/2021/08/08/welcome-to-the-waffle-corner/">
+                <p class="blog-cards-text"> Welcome to the Waffle Corner </p>
                 <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-2.png') }}">
+                </a>
             </div>
-            <!-- Change to live site blog url when site is ready to launch --><a href="http://gw01.gigawaffle.co.uk/blog/"><button class="navy-blue-button"> Read More </button></a>
+            <!-- Change to live site blog url when site is ready to launch --><a href="http://gigawaffle.co.uk/blog/"><button class="navy-blue-button"> Read More </button></a>
         </div>
     </div>
 @endsection
