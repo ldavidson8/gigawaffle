@@ -66,14 +66,14 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size-60 container-fluid d-flex flex-column center-content">
+    <div class="full-size container-fluid d-flex flex-column center-content">
 @endsection
 
 @section('main-content')
         <div class="container-md row top-section-outer">
-            <div class="col-12 col-sm-6 col-xl-8 no-padding">
+            <div class="col-12 col-md-6 no-padding">
                 <div class="gradient-container container-no-gradient-sm d-flex">
-                    <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
+                    <div class="align-item-bottom" style="font-style: italic">
                         <h1>Services that make your mouth water</h1>
                         <hr style="width: 150px">
                     </div>
@@ -85,14 +85,14 @@
                         <a href="{{ route("service-selection") }}">
                         <button class="button-default"">Pick n Mix</button>
                         </a>
-                        <a href="{{ route('services') }}#contactform">
+                        <a href="{{ route('services') }}#services-contactform">
                             <button class="button-alternate">Help Me Decide</button>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-xl-4 d-none d-sm-flex center-content">
-                <img src="{{ asset('img/phone.png') }}"/>
+            <div class="col-6 d-none d-md-flex center-content">
+                <img src="{{ asset('img/services-illustration.png') }}"/>
             </div>
         </div>
     </div>
@@ -108,7 +108,7 @@
                 <img src="{{ asset('img/services-icons/web-development.svg') }}" alt="" />
                 <p>Web Development</p>
             </div>
-            <div class="service-item"> class="package-container-header"
+            <div class="service-item">
                 <img src="{{ asset('img/services-icons/ui-design.svg') }}" alt="" />
                 <p>UI Design</p>
             </div>
@@ -205,9 +205,9 @@
         </div>
         <br />
     </div>
-    <div id="contactform" class="container no-padding" style="width: 576px; max-width: 100%;">
+    <div id="services-contactform" class="container no-padding" style="width: 576px; max-width: 100%;">
         <h2 class="pink-heading">Get In Touch</h2>
-        <h3>Don't understand all the waffle? Or can't decide? We can help.</h3>
+        <h3>Don't understand all the waffle? &#x1F92F; <br> Or can't decide? We can help.</h3>
         <p style="font-size: 20px; text-align: center;">Fill in this form and we will be back in touch with you.</p>
         <div class="pink-box-round pink-box-merge-bottom">
             <div class="pink-box-white-striped-border pink-box-border-merge-bottom">

@@ -8,6 +8,7 @@ html
     scroll-behavior: smooth;
 }
 
+
 :root 
 {
     --color-pink: #DF4985;
@@ -143,7 +144,7 @@ canvas {
 {
     background-image: linear-gradient(to right, #DF4985 , #7A98EE);
     width: 100%;
-    padding: 0 20px;
+    padding: 0;
     margin: 0;
     position: relative;
 }
@@ -293,7 +294,8 @@ b
 
 .text-container-40px
 {
-    padding: 40px;
+    padding-top: 40px;
+    font-size: 20px;
 }
 
 
@@ -451,7 +453,7 @@ textarea:-webkit-autofill:focus
     {
         background-image: none;
         width: 100%;
-        padding: 0 20px;
+        padding: 0;
         margin: 0;
     }
 
@@ -482,7 +484,8 @@ textarea:-webkit-autofill:focus
 {
     .gradient-container
     {
-        padding: 50px 0px;
+        padding: 50px 30px;
+        justify-content: center;
     }
     
     .top-section-outer

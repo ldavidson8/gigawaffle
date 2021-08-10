@@ -71,14 +71,14 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size-60 container-fluid d-flex flex-column center-content">
+    <div class="full-size container-fluid d-flex flex-column center-content">
 @endsection
 
 @section('main-content')
         <div class="container-lg row top-section-outer">
-            <div class="col-12{{-- col-sm-6 col-xl-8 --}} no-padding">
-                <div class="gradient-container container-no-gradient-sm d-flex center-content">
-                    <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
+            <div class="col-12 col-md-6 no-padding">
+                <div class="gradient-container container-no-gradient-sm d-flex">
+                    <div class="align-item-bottom no-padding" style="font-style: italic">
                         <h1>Those who have trusted gigawaffle</h1>
                         <hr style="width: 150px">
                     </div>
@@ -89,9 +89,9 @@
                     <div class="center-button"><a href="{{ route('services') }}#contactform"><button class="button-default">Get In Touch</button></a></div>
                 </div>
             </div>
-            {{-- <div class="col-sm-6 col-xl-4 d-none d-sm-flex center-content">
-                <img src="{{ asset('img/code-snippet.png') }}"/>
-            </div> --}}
+            <div class="col-6 d-none d-md-block">
+                <img src={{ asset('img/approved-illustration.png')}}>
+            </div>
         </div>
     </div>
     <div class="text-container-40px">

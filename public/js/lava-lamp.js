@@ -65,6 +65,7 @@ window.onload = function() {
       parent.height * 0.2 + Math.random() * parent.height * 0.6
     );
     this.size = (parent.wh / 15) + ( Math.random() * (max - min) + min ) * (parent.wh / 10);
+    this.size *= 0.7;
     this.width = parent.width;
     this.height = parent.height;
   };
@@ -257,7 +258,7 @@ window.onload = function() {
       ctx = screen.ctx;
   screen.resize();
   // create LavaLamps
-  lava0 = new LavaLamp(screen.width, screen.height, 6, "#7A98EE", "#DF4985");
+  lava0 = new LavaLamp(screen.width, screen.height, 10, "#7A98EE", "#DF4985");
 
   run();
 
