@@ -43,31 +43,24 @@
                     mobile apps and other services. We'll review this policy from time to time. If we make changes, we'll 
                     post the latest version here.
                 </p>
-                <p>
-                    Prior to accessing or using our Services, please read this policy and make sure you fully understand our practices in relation to your Personal Information.  If you read and fully understand this Privacy Policy, and remain opposed to our practices, you must immediately leave and discontinue all use of any of our Services.  If you have any questions or concerns regarding this policy, please contact us <a class="anchor-default" href="#">here.</a>
-                </p>
                 <h2 class="section-title gradient-container">What personal data do we collect?</h2>
                 <br />
                 <p>
-                    When you use our services, we must collect Personal Information relating to an identified or identifiable natural person. We ask that you agree to that in line with this policy.
+                    Prior to accessing or using our Services, please understand we must collect Personal Information relating to an identified or identifiable natural person. We ask that you read, agree and make sure you fully understand our practices in relation to your Personal Information. If you read and fully understand this Privacy Policy, and remain opposed to our practices, you must immediately leave and discontinue all use of any of our Services. If you have any questions or concerns regarding this policy, please contact us <a class="anchor-default" href="#">here.</a>
+                    
                 </p>
                 <p>We may collect and process the following information about you:</p>
                 <p class="font-weight-bold">Information you provide to us voluntarily</p>
                 <p>
-                    Information you choose to give us might include personal data needed for filling in forms or by information you include in your communications with us. This includes information you provide when you enter into a contract for the supply of services, give us feedback or leave a comment.  
+                    Information you choose to give us might include personal data needed when you register for our Services or by information you include in your communications with us. This also includes information you provide when you enter into a contract, give us feedback or leave a comment.  
                 </p>
                 <p>
-                    The personal information that you provide may include basic stuff needed to make an application such as names and 
-                    contact details but may include financial information and other information about you to enable us to provide you 
-                    with our services.
+                    You may provide us Personal Information, such as a name, email address, phone number, financial information (for paid services), Personal Information contained in scanned identification documents (such as an ID card, driver’s license, passport, or official company registration documents) and other information about you to enable us to provide you with our services.
                 </p>
                 <p class="font-weight-bold">Information collected when you use our Services</p>
                 <p>
                     We generate or collect some information from your computer or device automatically as you use our services. 
-                    This includes things like your IP address, information about the device and browser you are using to access our 
-                    services, the website URL you visited us from and the third-party sites you visit when you click on links to exit 
-                    the gigawaffle.co.uk site. We may also know your location from your mobile or your IP address. We may combine 
-                    this information with other information you have provided to us or which we have received from other sources.
+                    This includes things like your IP address, information about the device and browser you are using to access our services, the website URL you visited us from and the third-party sites you visit when you click on links to exit the gigawaffle.co.uk site. We may combine this information with other information you have provided to us or which we have received from other sources.
                 </p>
                 <p class="font-weight-bold">Information we collect from other sources</p>
                 <p>
@@ -89,22 +82,22 @@
                         Providing you with the information, products and services you request from us.
                     </li>
                     <li>
-                        Generating results in response to your search queries
+                        Generating personalized results in response to your search queries.
                     </li>
                     <li>
-                        Contacting you with messages, notifications or alerts that are necessary in order to deliver the services 
-                        requested, such as transaction confirmation emails and notifications about changes or updates to our services 
-                        or to our policies;
+                        To further develop, customize, expand, and improve our Services, based on Users’ common preferences, experiences and difficulties.
                     </li>
                     <li>
-                        Responding to communications you have sent us, such as via our customer service help centre or on social media;
+                        Contacting you with messages, notifications or alerts that are necessary in order to deliver the services requested, such as transaction confirmation emails and notifications about changes or updates to our services or to our policies.
                     </li>
                     <li>
-                        Where you have created an account with us, maintaining and administering this and ensuring that it is kept 
-                        up-to-date and accessible; and
+                        Responding to communications you have sent us, such as via our customer service help centre or on social media.
                     </li>
                     <li>
-                        Administering promotions, competitions or surveys that you enter into with us.
+                        Where you have created an account with us, maintaining and administering this and ensuring that it is kept up-to-date and accessible.
+                    </li>
+                    <li>
+                        Administering promotions, competitions or surveys that you may enter into with us.
                     </li>
                 </ul>
                 <p class="font-weight-bold">For advertising and marketing</p>
@@ -145,40 +138,11 @@
                         may have originated from, or to protect our services against misuse from automated software agents.
                     </li>
                 </ul>
-                <h2 class="section-title gradient-container">Lawful basis for processing</h2>
-                <p>
-                <br />
-                    Our legal basis for processing your personal data for the purposes described above will typically be one of the following:
-                </p>
-                <p class="font-weight-bold">Consent</p>
-                <p>
-                    You have consented to us using your personal data for this purpose (for example, when you agree to receive marketing emails 
-                    from us or create an alert). You can withdraw your consent at any time by updating your marketing preferences.
-                </p>
-                <p class="font-weight-bold">Legal obligations</p>
-                <p>
-                    It is necessary for us to use your personal data in order to comply with a legal obligation (not including contractual obligations).
-                </p>
-                <p>
-                    Where you provide us with special category data (for example, information about your health) we will seek your explicit consent 
-                    to process this information.
-                </p>
-                <p class="font-weight-bold">Legitimate interests</p>
-                <p>
-                    It is in our legitimate interests to use your personal data to operate and improve our services (for example, when we customise 
-                    your experience of our services or use your information for analytic purposes), for security and fraud prevention, for 
-                    identifying and correcting faults with our services and to protect our business.
-                </p>
                 <h2 class="section-title gradient-container">Sharing your personal data</h2>
-                <p>
                 <br />
-                    We may share your personal data with selected third parties who provide us with a variety of different services that support 
-                    the delivery of our services. These may include;
-                </p>
                 <p class="font-weight-bold">Third Party Service Providers who help us operate our business</p>
                 <p>
-                    We may provide your personal information to our business partners, suppliers and subcontractors who provide services to us. 
-                    The types of Third Party Service Providers we may share elements of your personal data with include;
+                    We may share your personal data with selected third parties who provide us with a variety of different services that support the delivery of our services. These may include:
                 </p>
                 <ul class="contentQuestions">
                     <li>
@@ -201,12 +165,10 @@
                 </p>
                 <ul>
                     <li>
-                        providers of data aggregation and analytics software services that enable us to effectively monitor and 
-                        optimise the delivery of our services.
+                        providers of data aggregation and analytics software services that enable us to effectively monitor and optimise the delivery of our services.
                     </li>
                     <li>
-                        providers of tracking tools that we use to monitor instances where you click on a link to a Product 
-                        Supplier's website and redirect from the gigawaffle.co.uk site to that Product Supplier's site.
+                        providers of tracking tools that we use to monitor instances where you click on a link to Third Party Service website and redirect from the gigawaffle.co.uk site.
                     </li>
                 </ul>
                 <p>We generally only share this information in a form that does not directly identify you.</p>
@@ -230,6 +192,30 @@
                     or ultimate buyer if Gigawaffle itself (or part of our business) is sold. We may also disclose your 
                     information, if necessary, to prevent, detect or prosecute illegal or suspected illegal activities, including fraud, 
                     or to prevent other damage or where necessary in response to legal action against us, or to enforce our rights and claims.
+                </p>
+                <h2 class="section-title gradient-container">Lawful basis for processing</h2>
+                <p>
+                <br />
+                    Our legal basis for processing your personal data for the purposes described above will typically be one of the following:
+                </p>
+                <p class="font-weight-bold">Consent</p>
+                <p>
+                    You have consented to us using your personal data for this purpose (for example, when you agree to receive marketing emails 
+                    from us or create an alert). You can withdraw your consent at any time by updating your marketing preferences.
+                </p>
+                <p class="font-weight-bold">Legal obligations</p>
+                <p>
+                    It is necessary for us to use your personal data in order to comply with a legal obligation (not including contractual obligations).
+                </p>
+                <p>
+                    Where you provide us with special category data (for example, information about your health) we will seek your explicit consent 
+                    to process this information.
+                </p>
+                <p class="font-weight-bold">Legitimate interests</p>
+                <p>
+                    It is in our legitimate interests to use your personal data to operate and improve our services (for example, when we customise 
+                    your experience of our services or use your information for analytic purposes), for security and fraud prevention, for 
+                    identifying and correcting faults with our services and to protect our business.
                 </p>
                 <h2 class="section-title gradient-container">Storing your personal information</h2>
                 <p>
@@ -286,12 +272,8 @@
                 </p>
                 <p class="font-weight-bold">How you can contact us?</p>
                 <p>If you have questions about this privacy policy you can contact us;</p>
-                <p>By Phone:</p>
-                <p>
-                    01772 123456
-                </p>
-                <p>By email:</p>
-                <p></p>
+                <p>By Phone:<br />01772 123456</p>
+                <p>By email:<br />hello@gigawaffle.co.uk</p>
                 <p>
                     If you have unresolved concerns, you have the right to complain to a data protection authority. In the United Kingdom 
                     the relevant authority is
