@@ -110,19 +110,19 @@
             <p style="font-size: 1.5em; font-weight: bold;"> Those who have trusted gigawaffle </p>
             <div class="row d-flex center-content text-center">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <img class="border-radius-20" src="https://via.placeholder.com/300x350" alt="">
+                    <img class="border-radius-20" src="{{ asset('img/project-cards/sme-card.png')}}" alt="">
                         <p style="font-size: 1.5em; font-weight: 500;"> Swap My Energy</p>
                         <p style="font-weight: 300; font-style: italic">Web Development Project</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <img class="border-radius-20" src="https://via.placeholder.com/300x350" alt="">
-                        <p style="font-size: 1.5em; font-weight: 500;"> Swap My Energy</p>
-                        <p style="font-weight: 300; font-style: italic">Web Development Project</p>
+                    <img class="border-radius-20" src="{{ asset('img/project-cards/comingsoon.png') }}" alt="">
+                        <p style="font-size: 1.5em; font-weight: 500;"> Project Title</p>
+                        <p style="font-weight: 300; font-style: italic"> Project Category</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <img class="border-radius-20" src="https://via.placeholder.com/300x350" alt="">
-                        <p style="font-size: 1.5em; font-weight: 500;"> Swap My Energy</p>
-                        <p style="font-weight: 300; font-style: italic">Web Development Project</p>
+                    <img class="border-radius-20" src="{{ asset('img/project-cards/comingsoon.png') }}" alt="">
+                        <p style="font-size: 1.5em; font-weight: 500;"> Project Title</p>
+                        <p style="font-weight: 300; font-style: italic"> Project Category</p>
                 </div>
             </div>
             <a href="{{ route('clients') }}">
