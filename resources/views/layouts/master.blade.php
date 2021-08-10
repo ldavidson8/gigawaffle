@@ -42,6 +42,9 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer="true"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YVLHDXKRLS"></script>
+    <script src="{{ URL::asset('js/google-analytics.js') }}"></script>
 
     <!-- Our Scripts -->
     <script type="text/javascript" src="{{ URL::asset('js/intersection-observer-api.js') }}"></script>

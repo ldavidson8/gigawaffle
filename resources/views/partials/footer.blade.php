@@ -36,13 +36,13 @@
                 <a class="footer-link" href="{{ route("about") }}">
                     <li>About</li>
                 </a>
-                <a class="footer-link" href="">
+                <a class="footer-link" href="{{ route('about') }}#contactform">
                     <li>Contact Us</li>
                 </a>
                 <a class="footer-link" href="https://www.znergi.co.uk/jobs" rel="external">
                     <li>Jobs</li>
                 </a>
-                <a class="footer-link" href="http://gw01.gigawaffle.co.uk/blog/">
+                <a class="footer-link" href="http://gigawaffle.co.uk/blog/">
                     <li>Blog</li>
                 </a>
             </ul>

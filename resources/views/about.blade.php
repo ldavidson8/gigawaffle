@@ -93,14 +93,14 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size-60 container-fluid d-flex flex-column center-content">
+    <div class="full-size container-fluid d-flex flex-column center-content">
 @endsection
 
 @section('main-content')
         <div class="container-lg row top-section-outer">
-            <div class="col-12{{-- col-sm-6 col-xl-8 --}} no-padding">
-                <div class="gradient-container container-no-gradient-sm d-flex center-content">
-                    <div class="align-item-bottom" style="padding: 0 20px; font-style: italic">
+            <div class="col-12 col-md-6 no-padding">
+                <div class="gradient-container container-no-gradient-sm d-flex">
+                    <div class="align-item-bottom" style="font-style: italic">
                         <h1>A new agency that suits you</h1>
                         <hr style="width: 150px">
                     </div>
@@ -111,9 +111,9 @@
                     <div class="center-button"><button class="button-default">The Waffle Corner</button></div>
                 </div>
             </div>
-            {{-- <div class="col-sm-6 col-xl-4 d-none d-sm-flex center-content">
-                <img src="{{ asset('img/code-snippet.png') }}"/>
-            </div> --}}
+            <div class="col-6">
+                <img src="{{ asset('img/Thinking-man-illustration.png') }}">
+            </div>
         </div>
     </div>
     <div class="container no-padding">
@@ -179,11 +179,11 @@
         </div>
     </div>
     <br />
-    <div id="#getintouch" class="container no-padding" style="width: 576px; max-width: 100%;">
+    <div id="contactform" class="container no-padding" style="width: 576px; max-width: 100%;">
         <h2 style="font-size: 30px;
         color: var(--color-pink);
         font-weight: bold;
-        text-align: center;"><b>How can we help you<span style="color: var(--color-navyblue)">?</span></b></h2>
+        text-align: center;"><b>How can we help you?</b></h2>
         <p style="font-size: 20px; text-align: center;">Send a message</p>
         <div class="pink-box-round pink-box-merge-bottom">
             <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
