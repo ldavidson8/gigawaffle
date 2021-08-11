@@ -1,7 +1,7 @@
 @extends('_email.layouts.master')
 
 @section('main-content')
-    <h1>Gigawaffle - Pick and Mix Request</h1>
+    <h1>Gigawaffle - Pick and Mix Services Request</h1>
     <table>
         <tbody>
             <tr>
@@ -20,13 +20,15 @@
                 <th>Message</th>
                 <td><pre>{{ $formData["message"] }}</pre></td>
             </tr>
-            @if (isset($services))
+            @if (isset($formData["services"]))
                 <tr>
                     <th>Services:</th>
                     <td>
-                        @foreach($formData["services"] as $services)
-                            {{ $services }}
-                        @endforeach 
+                        <ul>
+                            @foreach($formData["services"] as $services)
+                                <li>{{ $services }}</li>
+                            @endforeach
+                        </ul>
                     </td>
                 </tr>
             @endif

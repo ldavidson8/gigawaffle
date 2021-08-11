@@ -1,5 +1,5 @@
 -------------------------------
---- Gigawaffle - Pick and Mix Request ---
+--- Gigawaffle - Pick and Mix Services Request ---
 -------------------------------
 
 Full Name:
@@ -14,7 +14,7 @@ Phone Number:
 Message:
     {{ $formData["message"] }}
 
-@if (isset($services))
+@if (isset($formData["services"]))
 Services:
     @foreach($formData["services"] as $services)
     {{ $services }}
