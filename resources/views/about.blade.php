@@ -108,7 +108,7 @@
                 <div class="text-container-40px">
                     <p><b>For some people, understanding what is needed to elevate your business can be hard. This is where we come in. Our dedicated team at gigawaffle are ready to turn your business into a brand.</b></p>
                     <p>We're always on the look out for ways we can improve our efficiency, quality, accuracy, and more. This allows us to be on top of the latest design, development and marketing trends. We'll keep you up to date with everything gigawaffle via "The Waffle Corner".</p>
-                    <div class="center-button"><button class="button-default">The Waffle Corner</button></div>
+                    <div class="center-button"><a href="http://gigawaffle.co.uk/blog/"><button class="button-default">The Waffle Corner</button></a></div>
                 </div>
             </div>
             <div class="col-6">
