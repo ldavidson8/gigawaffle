@@ -96,12 +96,12 @@
     </div>
     <div class="text-container-40px">
         <div class="client-project-section row">
-            <div class="col-12 col-md-4 col-lg-4 background-image background-image-right background-image-coffee-shop"></div>
+            <div class="col-12 col-md-4 col-lg-4"><img class="border-radius-20" src="{{ asset('img/clients-images/sme-client.png') }}"></div>
             <div class="col-12 col-md-8 col-lg-8 client-project-column" style="padding-top: 10px;">
                 <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
+                <h2>Swap My Energy</h2>
+                <h3>Marketing and Web Development Project</h3>
+                <p>Swap my energy is an energy broker based in the bustling heart of Preston’s city centre. Swap My Energy believes in making the management of energy bills efficient, cheap and hassle free. As a company they work with both large businesses and independent shops. They also have a dedicated residential team that works with homeowners to find them their best deals. In practicality as a client they were just starting off so they needed a comprehensive boost in all their fields, this meant helping them not only boost their content but create entirely new streams of income via social media and online branding. </p>
                 <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">Learn more</a>
             </div>
         </div>
