@@ -35,6 +35,13 @@ return [
     */
 
     'channels' => [
+        'service-selection-form' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/service-selection-form.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+            'days' => 14,
+        ],
+
         'work-with-us-form' => [
             'driver' => 'daily',
             'path' => storage_path('logs/work-with-us-form.log'),

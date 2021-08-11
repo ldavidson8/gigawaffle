@@ -10,7 +10,6 @@ Route::get('/about', 'HomeController@about') -> name('about');
 Route::get('/terms-and-conditions', 'HomeController@termsAndConditions') -> name('terms-and-conditions');
 Route::get('/privacy-policy', 'HomeController@privacyPolicy') -> name('privacy-policy');
 Route::get('/cookie-policy', 'HomeController@cookiePolicy') -> name('cookie-policy');
-Route::get('/service-selection', 'HomeController@picknMix') -> name('service-selection');
 
 Route::get('/clients', 'ClientsController@clients') -> name('clients');
 Route::get('/clients/{projectId}', 'ClientsController@clientProjects') -> name('clients.projects');
@@ -39,4 +38,11 @@ Route::group([ 'prefix' => 'contact-us' ], function()
     Route::post('/', 'ContactController@contactUsPost') -> name('post.contact-us');
     Route::get('/success', 'ContactController@contactUsSuccess') -> name('post.contact-us.success');
     Route::get('/error', 'ContactController@contactUsError') -> name('post.contact-us.error');
+});
+Route::group([ 'prefix' => 'service-selection' ], function()
+{
+    Route::get('/', 'HomeController@picknMix') -> name('service-selection');
+    Route::post('/', 'ServiceSelectionController@serviceSelectionPost') -> name('post.service-selection');
+    Route::get('/success', 'ServiceSelectionController@serviceSelectionSuccess') -> name('post.service-selection.success');
+    Route::get('/error', 'ServiceSelectionController@serviceSelectionError') -> name('post.service-selection.error');
 });

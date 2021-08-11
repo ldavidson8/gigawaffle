@@ -31,17 +31,16 @@
         @font-face { font-family: Poppins; src: url('{{ asset("fonts/Poppins-BoldItalic.ttf") }}'); font-weight: 700; font-style: italic; }
     </style>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- Our Stylesheets -->
     <link rel="stylesheet" href="{{ asset('css/site.css') }}" />
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     @yield('stylesheets')
     
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer="true"></script>
+    <script src="https://kit.fontawesome.com/6e2d0444fe.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YVLHDXKRLS"></script>
     <script src="{{ URL::asset('js/google-analytics.js') }}"></script>

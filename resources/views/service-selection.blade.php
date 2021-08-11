@@ -72,13 +72,13 @@
         }
         .selection-items [type=checkbox]:checked + label 
         {
-        color: var(--color-violet);
+        color: var(--color-pink);
         background-color: var(--color-navyblue);
         font-style: normal;
         }
         .selection-items [type=checkbox]:checked + * *
         {
-            fill: var(--color-violet);
+            fill: var(--color-pink);
         } 
 
         .service-svg-1
@@ -163,6 +163,26 @@
 @endsection
 
 @section('main-content')
+<div class="container-md my-3">
+    <p style="font-size: 22px; font-weight: 700;"> Select the services that suit your business and click continue. If you've accidentally selected a service that you don't want, you can click/tap the button to deselect. </p>
+        {{-- <div class="col-12 col-md-6 d-flex center-content flex-column">
+            <button class="d-block long-button mb-3">View Basket</button>
+            <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>   
+        </div> --}}
+</div>
+</div>
+<form method="post" action="{{ route('post.service-selection') }}">
+    @csrf
+    @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> There were some problems with your input.<br /><br />
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 <div class="container-fluid text-center text-md-left" style="padding: 30px 0 0 0;">
         <input type="radio" id="All" name="filter-services" class="btn-check radio-hidden" checked />
         <label class="filter-button" for="All">All Services<i class="fa fa-folder-open filter-button-icon" aria-hidden="true"></i></label>
@@ -196,7 +216,6 @@
             <path id="Path_10" data-name="Path 10" d="M45.354,46H4.37A4.375,4.375,0,0,0,0,50.37V82.419a4.375,4.375,0,0,0,4.37,4.37H45.354a4.375,4.375,0,0,0,4.37-4.37V50.37A4.375,4.375,0,0,0,45.354,46ZM17.578,56.2a1.457,1.457,0,0,1,2.108-1.3l11.654,5.827a1.457,1.457,0,0,1,0,2.606L19.686,69.154a1.457,1.457,0,0,1-2.108-1.3ZM42.343,78.049H17.31a4.344,4.344,0,0,1-8.2,0H7.381a1.457,1.457,0,1,1,0-2.913H9.106a4.344,4.344,0,0,1,8.2,0H42.343a1.457,1.457,0,1,1,0,2.913Z" transform="translate(0 -46)" fill="#fff"/>
             </svg>
         </label>
-        
         <div class="selection-items mb-4 mb-md-5">
             <input type="checkbox" name="services[]" id="brand-design" value="brand-design" class="radio-hidden">
             <label for="brand-design" class="selection-button" filter="design">
@@ -439,17 +458,17 @@
         </label>
             
 </div>
-<div class="container mb-5">
+{{-- <div class="container mb-5">
     <div class="row">
         <div class="col-12 col-md-6">
             <p style="font-size: 20px; font-weight: 700;"> Select the services that suit your business and click continue. If you've accidentally selected a service that you don't want, you can remove it from your basket by clicking in the top right corner. </p>
         </div>
         <div class="col-12 col-md-6 d-flex center-content flex-column">
-            {{-- <button class="d-block long-button mb-3">View Basket</button>
-            <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>    --}}
+            <button class="d-block long-button mb-3">View Basket</button>
+            <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>   
         </div>
     </div>
-</div>
+</div> --}}
 <div class="row">
     <div class="col-md-2 d-block"></div>
     <div class="col-12 col-xl-4">
@@ -459,25 +478,13 @@
     <div class="container no-padding" style="width: 576px; max-width: 100%;">
         <div class="pink-box-round pink-box-merge-bottom">
             <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
-                <form method="post" action="{{ route('post.contact-us') }}">
-                    @csrf
-                    @if (count($errors) > 0)
-                        <div class="alert alert-danger">
-                            <strong>Whoops!</strong> There were some problems with your input.<br /><br />
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
                     <div class="form-group">
                         <label for="fullname">Full Name *</label>
-                        <input class="form-control" type="text" name="fullname" value="{{ old('fullname') }}" required="required" />
+                        <input class="form-control" type="text" name="fullname" value="{{ old('fullname') }}" required />
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address *</label>
-                        <input class="form-control" type="email" name="email" value="{{ old('email') }}" required="required">
+                        <input class="form-control" type="email" name="email" value="{{ old('email') }}" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number (optional)</label>
