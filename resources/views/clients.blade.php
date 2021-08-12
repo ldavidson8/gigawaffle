@@ -58,7 +58,68 @@
             align-content: flex-start;
             justify-content: flex-start;
         }
-        
+
+        .client-project-column h2, h3
+        {   
+            text-align: left;
+        }
+
+        .client-project-column h2
+        {
+            font-size: 30px;
+            margin-bottom: 1rem;
+        }
+
+        .client-project-column h3
+        {
+            font-weight: 400;
+        }
+
+        .fa-long-arrow-alt-right
+        {
+            vertical-align: middle;
+            margin-left: 0.3em;
+            font-size: 25px;
+        }
+
+
+        /* Read more toggle button CSS */
+
+        input.read-more-state
+        {
+            display: none;
+        }
+
+        p.read-more-target
+        {
+            font-size: 0;
+            max-height: 0;
+            opacity: 0;
+            transition: .25s ease;
+        }
+
+        input.read-more-state:checked ~  p.read-more-target 
+        {
+        font-size: inherit;
+        max-height: 999em;
+        opacity: 1;
+        }
+        input.read-more-state ~ label.read-more-trigger:before 
+        {
+            font-family: "Font Awesome 5 Free";
+            content: 'Read more \f245';
+            font-weight: 700;
+        }
+        input.read-more-state:checked ~ label.read-more-trigger:before 
+        {
+            content: 'Read less';
+            font-weight: 700;
+        }
+        label.read-more-trigger 
+        {
+            cursor: pointer;
+            display: inline-block;
+        }
 
         @media (max-width: 767px)
         {
@@ -71,7 +132,7 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size container-fluid d-flex flex-column center-content">
+    <div class="full-size container-fluid d-flex flex-column center-content mb-5">
 @endsection
 
 @section('main-content')
@@ -95,14 +156,19 @@
         </div>
     </div>
     <div class="text-container-40px">
-        <div class="client-project-section row">
-            <div class="col-12 col-md-4 col-lg-4"><img class="border-radius-20" src="{{ asset('img/clients-images/sme-client.png') }}"></div>
-            <div class="col-12 col-md-8 col-lg-8 client-project-column" style="padding-top: 10px;">
+        <div class="client-project-section row no-padding">
+            <div class="d-none d-lg-block col-lg-2"></div>
+            <div class="col-12 col-md-6 col-lg-2 text-center">@include('partials.client-project-images.swapmyenergy')</div>
+            <div class="col-12 col-md-6 col-lg-6" style="padding-top: 10px;">
+                <input type="checkbox" class="read-more-state" id="read-more-controller">
                 <div class="temp-img-card-2"></div>
                 <h2>Swap My Energy</h2>
                 <h3>Marketing and Web Development Project</h3>
-                <p>Swap my energy is an energy broker based in the bustling heart of Preston’s city centre. Swap My Energy believes in making the management of energy bills efficient, cheap and hassle free. As a company they work with both large businesses and independent shops. They also have a dedicated residential team that works with homeowners to find them their best deals. In practicality as a client they were just starting off so they needed a comprehensive boost in all their fields, this meant helping them not only boost their content but create entirely new streams of income via social media and online branding. </p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">Learn more</a>
+                <p>Swap my energy is an energy broker based in the bustling heart of Preston’s city centre. Swap My Energy believes in making the management of energy bills efficient, cheap and hassle free. As a company they work with both large businesses and independent shops. </p> 
+                    
+                <p class="read-more-target"> They also have a dedicated residential team that works with homeowners to find them their best deals. In practicality as a client they were just starting off so they needed a comprehensive boost in all their fields, this meant helping them not only boost their content but create entirely new streams of income via social media and online branding. </p>
+                <label for="read-more-controller" class="read-more-trigger"></label>
+                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">Learn more<i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
         </div>
         <div class="client-project-section row no-padding">
