@@ -111,17 +111,17 @@
                     <div class="center-button"><a href="http://gigawaffle.co.uk/blog/"><button class="button-default">The Waffle Corner</button></a></div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 d-none d-md-block">
                 <img src="{{ asset('img/Thinking-man-illustration.png') }}">
             </div>
         </div>
     </div>
-    <div class="container no-padding">
+    <div class="container no-padding" style="margin: 3em auto;">
         <h2 class="pink-heading"><b>Our Locations</b></h2>
         <h3>Where to find gigawaffle</h3>
         <div class="shadowed-card">
             <div class="row">
-            <div class="col-12 col-md-8"><img class="google-map" src="{{ asset('img/map.png') }}"></div>
+            <div class="col-12 col-md-8 no-padding"><img class="google-map border-radius-20" src="{{ asset('img/map.png') }}"></div>
             <div class="col-12 col-md-4 m-auto text-center text-md-left">
                 <img src="{{ asset('img/home-icon.png') }}" style="display: inline-block" height="30">
                 <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>

@@ -62,6 +62,14 @@
                 text-align: right;
             }
         }
+
+        @media (min-width: 768px) and (max-width: 991px)
+        {
+            .button-margin-md
+            {
+                margin-bottom: 1em;
+            }
+        }
     </style>
 @endsection
 
@@ -83,7 +91,7 @@
                     <p>Not sure what services you want or want a waffle-free approach? Don't worry, we can help. Just click "Help Me Decide" below and fill in the form.</p>
                     <div class="center-button">
                         <a href="{{ route("service-selection") }}">
-                        <button class="button-default"">Pick n Mix</button>
+                        <button class="button-default button-margin-md">Pick n Mix</button>
                         </a>
                         <a href="{{ route('services') }}#services-contactform">
                             <button class="button-alternate">Help Me Decide</button>
@@ -200,13 +208,13 @@
                 <img src="{{ asset('img/services-packages/mobile.png') }}" alt="" />
             </div>
         </div>
-        <div style="text-align: center;">
+        {{-- <div style="text-align: center;">
             <a href=""><button class="button-default">View Packages</button></a>
-        </div>
+        </div> --}}
         <br />
     </div>
     <div id="services-contactform" class="container no-padding" style="width: 576px; max-width: 100%;">
-        <h2 class="pink-heading">Get In Touch</h2>
+        <h2 class="pink-heading">Help Me Decide</h2>
         <h3>Don't understand all the waffle? &#x1F92F; <br> Or can't decide? We can help.</h3>
         <p style="font-size: 20px; text-align: center;">Fill in this form and we will be back in touch with you.</p>
         <div class="pink-box-round pink-box-merge-bottom">

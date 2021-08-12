@@ -39,16 +39,15 @@
     .post-content
     {
         position: absolute;
-        bottom: 0px;
-        left: 10px;
-        padding: 0 10px 25px 15px;
+        bottom: 25px;
+        left: 15px;
     }
 
     .meta
     {
         color: var(--color-pink);
         font-size: 12px;
-        margin-top: 15px;
+        margin-top: 5px;
     }
     .text-white-outline
     {
@@ -118,7 +117,9 @@
             <p style="font-size: 1.5em; font-weight: bold;"> Those who have trusted gigawaffle </p>
             <div class="row d-flex center-content text-center">
                 <div class="col-12 col-md-6 col-lg-4">
+                    <a href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">
                     <img class="border-radius-20" src="{{ asset('img/project-cards/sme-card.png')}}" alt="">
+                    </a>
                         <p style="font-size: 1.5em; font-weight: 500;"> Swap My Energy</p>
                         <p style="font-weight: 300; font-style: italic">Web Development Project</p>
                 </div>
