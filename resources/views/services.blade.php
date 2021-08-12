@@ -232,8 +232,8 @@
                         </div>
                     @endif
                     <div class="form-group">
-                        <label for="fullname">Full Name *</label>
-                        <input class="form-control" type="text" name="fullname" value="{{ old('fullname') }}" required="required" />
+                        <label for="full_name">Full Name *</label>
+                        <input class="form-control" type="text" name="full_name" value="{{ old('full_name') }}" required="required" />
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address *</label>

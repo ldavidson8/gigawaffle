@@ -6,7 +6,7 @@
         <tbody>
             <tr>
                 <th>Full Name/Company Name</th>
-                <td>{{ $formData["fullname"] }}</td>
+                <td>{{ $formData["full_name"] }}</td>
             </tr>
             <tr>
                 <th>Email Address</th>

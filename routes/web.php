@@ -15,18 +15,6 @@ Route::get('/clients', 'ClientsController@clients') -> name('clients');
 Route::get('/clients/{projectId}', 'ClientsController@clientProjects') -> name('clients.projects');
 
 
-Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
-{
-    Route::get('401', function() { abort(401); });
-    Route::get('403', function() { abort(403); });
-    Route::get('404', function() { abort(404); });
-    Route::get('419', function() { abort(419); });
-    Route::get('429', function() { abort(429); });
-    Route::get('500', function() { abort(500); });
-    Route::get('503', function() { abort(503); });
-});
-
-
 Route::group([ 'prefix' => 'work-with-us' ], function()
 {
     Route::post('/', 'ContactController@workWithUsPost') -> name('post.work-with-us');
@@ -36,13 +24,25 @@ Route::group([ 'prefix' => 'work-with-us' ], function()
 Route::group([ 'prefix' => 'contact-us' ], function()
 {
     Route::post('/', 'ContactController@contactUsPost') -> name('post.contact-us');
-    Route::get('/success', 'ContactController@contactUsSuccess') -> name('post.contact-us.success');
+    Route::get('/success/{ticket}', 'ContactController@contactUsSuccess') -> name('post.contact-us.success');
     Route::get('/error', 'ContactController@contactUsError') -> name('post.contact-us.error');
 });
 Route::group([ 'prefix' => 'service-selection' ], function()
 {
     Route::get('/', 'HomeController@picknMix') -> name('service-selection');
     Route::post('/', 'ServiceSelectionController@serviceSelectionPost') -> name('post.service-selection');
-    Route::get('/success', 'ServiceSelectionController@serviceSelectionSuccess') -> name('post.service-selection.success');
+    Route::get('/success/{ticket}', 'ServiceSelectionController@serviceSelectionSuccess') -> name('post.service-selection.success');
     Route::get('/error', 'ServiceSelectionController@serviceSelectionError') -> name('post.service-selection.error');
+});
+
+
+Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
+{
+    Route::get('401', function() { abort(401); });
+    Route::get('403', function() { abort(403); });
+    Route::get('404', function() { abort(404); });
+    Route::get('419', function() { abort(419); });
+    Route::get('429', function() { abort(429); });
+    Route::get('500', function() { abort(500); });
+    Route::get('503', function() { abort(503); });
 });

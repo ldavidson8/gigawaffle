@@ -16,10 +16,11 @@ class ServiceSelectionController extends Controller
     {
         try
         {
+            // form validation
             $form_data = Request::all();
             $validator = Validator::make($form_data,
             [
-                'fullname' => 'required|string',
+                'full_name' => 'required|string',
                 'email' => 'required|email',
                 'phone' => 'nullable|numeric',
                 'message' => 'required|string',
@@ -27,39 +28,47 @@ class ServiceSelectionController extends Controller
             ]);
             if ($validator -> fails()) return back() -> withErrors($validator) -> withInput();
 
+            // save the form data to the database
+            $ticket = date("dHis");
             try
             {
                 $sql_data =
                 [
-                    'full_name' => Request::input('fullname'),
-                    'email_address' => Request::input('email'),
-                    'phone_number' => Request::input('phone'),
-                    'message' => Request::input('message'),
-                    'services' => Request::input('services')
+                    Request::input('full_name'),
+                    Request::input('email'),
+                    Request::input('phone'),
+                    Request::input('message'),
+                    implode(",", Request::input('services'))
                 ];
-                $insertId = DB::table('service_request') -> insertGetId($sql_data);
+                $rows = DB::select("call INSERT_service_request(?, ?, ?, ?, ?);", $sql_data);
+                if (count($rows) > 0)
+                {
+                    $ticket = $rows[0] -> last_insert_id;
+                }
             }
             catch (Throwable $th)
             {
                 report($th);
             }
+            $ticket = "PAM" . $ticket;
 
-            Mail::to(env('MAIL_TO_ADDRESS')) -> queue(new ServiceSelectionEmail($form_data));
+            // send an email to our support email address
+            Mail::to(env('MAIL_TO_ADDRESS')) -> queue(new ServiceSelectionEmail($form_data), $ticket);
 
-            return redirect() -> route('post.service-selection.success');
+            // redirect to the success page
+            return redirect() -> route('post.service-selection.success', [ "ticket" => $ticket ]);
         }
         catch (Throwable $th)
         {
-            throw($th);
             report($th);
             return redirect() -> route('post.service-selection.error');
         }
     }
 
-    public function serviceSelectionSuccess()
+    public function serviceSelectionSuccess($ticket)
     {
         $page_title = 'Success | Gigawaffle Service Request';
-        return view('contact-forms.service-selection.success', compact('page_title'));
+        return view('contact-forms.service-selection.success', compact('page_title', 'ticket'));
     }
 
     public function serviceSelectionError()

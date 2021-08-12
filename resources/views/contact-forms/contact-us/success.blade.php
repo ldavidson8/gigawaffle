@@ -17,13 +17,13 @@
         <div class="flex-grow-1">
             <div class="container-lg no-padding">
                 <div class="gradient-container container-no-gradient-sm">
-                    <div class="align-item-bottom" style="padding: 0 20px; font-style: italic; text-align: left;">
+                    <div class="align-item-bottom no-padding" style="padding: 0 20px; font-style: italic; text-align: left;">
                         <h1>Success!</h1>
                         <hr style="width: 150px">
                     </div>
                 </div>
                 <div class="text-container-40px">
-                    <p><b>Thnk you for contacting us. We will be back in touch with you soon.</b></p>
+                    <p><b>Thank you for contacting us. Your reference number is {{ $ticket }}. We will be back in touch with you soon.</b></p>
                     <p><a href="{{ route('home') }}"><button class="button-default">Home</button></a></p>
                 </div>
             </div>

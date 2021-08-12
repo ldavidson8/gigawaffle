@@ -17,7 +17,7 @@
         <div class="flex-grow-1">
             <div class="container-lg no-padding">
                 <div class="gradient-container container-no-gradient-sm">
-                    <div class="align-item-bottom" style="padding: 0 20px; font-style: italic; text-align: left;">
+                    <div class="align-item-bottom no-padding" style="padding: 0 20px; font-style: italic; text-align: left;">
                         <h1>Uh Oh...</h1>
                         <hr style="width: 150px">
                     </div>

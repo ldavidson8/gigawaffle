@@ -49,14 +49,14 @@
             display: none;
         }
 
-        .selection-items 
+        .selection-items
         {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+
         .selection-button
         {
             background-color: var(--color-white);
@@ -70,7 +70,7 @@
             margin: 5px;
             align-items: center;
         }
-        .selection-items [type=checkbox]:checked + label 
+        .selection-items [type=checkbox]:checked + label
         {
         color: var(--color-pink);
         background-color: var(--color-navyblue);
@@ -79,7 +79,7 @@
         .selection-items [type=checkbox]:checked + * *
         {
             fill: var(--color-pink);
-        } 
+        }
 
         .service-svg-1
         {
@@ -104,14 +104,14 @@
 
         @media (min-width: 768px)
         {
-            .selection-items 
+            .selection-items
         {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+
         .selection-button
         {
             background-color: var(--color-white);
@@ -130,7 +130,7 @@
             margin-left: 30px;
             width: auto;
         }
-  
+
         }
 
         @media (min-width: 992px)
@@ -167,7 +167,7 @@
     <p style="font-size: 22px; font-weight: 700;"> Select the services that suit your business and click continue. If you've accidentally selected a service that you don't want, you can click/tap the button to deselect. </p>
         {{-- <div class="col-12 col-md-6 d-flex center-content flex-column">
             <button class="d-block long-button mb-3">View Basket</button>
-            <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>   
+            <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>
         </div> --}}
 </div>
 </div>
@@ -277,7 +277,7 @@
                         <path id="Path_55" data-name="Path 55" d="M256,0c10.011,0,18.757,11.025,22.722,27.9h20.041C291.188,11.266,274.414,0,256,0Z" transform="translate(-256)" class="service-svg-1"/>
                         </g>
                     </g>
-                </svg>                          
+                </svg>
                 Web Dev
             </label>
             <input type="checkbox" name="services[]" id="ui-design" value="ui-design" class="radio-hidden">
@@ -456,7 +456,7 @@
             </svg>
             Social Media Content
         </label>
-            
+
 </div>
 {{-- <div class="container mb-5">
     <div class="row">
@@ -465,7 +465,7 @@
         </div>
         <div class="col-12 col-md-6 d-flex center-content flex-column">
             <button class="d-block long-button mb-3">View Basket</button>
-            <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>   
+            <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>
         </div>
     </div>
 </div> --}}
@@ -479,8 +479,8 @@
         <div class="pink-box-round pink-box-merge-bottom">
             <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
                     <div class="form-group">
-                        <label for="fullname">Full Name *</label>
-                        <input class="form-control" type="text" name="fullname" value="{{ old('fullname') }}" required />
+                        <label for="full_name">Full Name *</label>
+                        <input class="form-control" type="text" name="full_name" value="{{ old('full_name') }}" required />
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address *</label>

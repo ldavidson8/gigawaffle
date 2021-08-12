@@ -5,7 +5,7 @@
 Support Ticket: {{ $ticket }}
 
 Full Name:
-    {{ $formData["fullname"] }}
+    {{ $formData["full_name"] }}
 
 Email Address:
     {{ $formData["email"] }}
