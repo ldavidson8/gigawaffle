@@ -145,6 +145,23 @@
         </div>
     </div>
     <div class="text-container-40px container-lg">
+        @foreach ($client_projects }} as $client_project)
+            <div class="client-project-section row no-padding">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <img src="{{ asset($client_project -> ImageSource) }}" alt="" />
+                </div>
+                <div class="col-12 col-md-8 col-xl-8" style="padding-top: 10px;">
+                    <input type="checkbox" class="read-more-state" id="read-more-controller">
+                    <div class="temp-img-card-2"></div>
+                    <h2>{{ $client_project -> Heading }}</h2>
+                    {{-- <h3>{{ $client_project -> SubHeading }}</h3> --}}
+                    <p>Swap my energy is an energy broker based in the bustling heart of Preston’s city centre. Swap My Energy believes in making the management of energy bills efficient, cheap and hassle free. As a company they work with both large businesses and independent shops.</p>
+                    <p class="read-more-target"> They also have a dedicated residential team that works with homeowners to find them their best deals. In practicality as a client they were just starting off so they needed a comprehensive boost in all their fields, this meant helping them not only boost their content but create entirely new streams of income via social media and online branding.</p>
+                    <label for="read-more-controller" class="read-more-trigger"></label>
+                    <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => 'swapmyenergy' ]) }}">Learn more<i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        @endforeach
         <div class="client-project-section row no-padding">
             <div class="col-12 col-md-4 col-lg-4 background-image background-image-swapmyenergy"></div>
             <div class="col-12 col-md-8 col-xl-8" style="padding-top: 10px;">

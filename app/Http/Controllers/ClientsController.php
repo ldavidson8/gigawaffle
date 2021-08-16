@@ -2,35 +2,54 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
+use Throwable;
+
 class ClientsController extends Controller
 {
     public function clients()
     {
         $navbar_page = 'clients';
         $page_title = 'Our Clients - Gigawaffle';
-        return view('clients', compact('navbar_page', 'page_title'));
+
+        $client_projects = [];
+        try
+        {
+            $rows = DB::select('call SELECT_Client_Project');
+            if (isset($rows) && count($rows) > 0)
+            {
+                $client_projects = $rows;
+            }
+        }
+        catch (Throwable $th)
+        {
+            report($th);
+            return redirect() -> action("ClientsController@clients");
+        }
+
+        return view('clients.index', compact('navbar_page', 'page_title', 'client_projects'));
     }
 
     public function clientProjects($projectId)
     {
-        if (!isset($projectId)) return redirect() -> route('clients');
+        if (!isset($projectId)) return redirect() -> action("ClientsController@clients");
 
-        switch ($projectId)
+        try
         {
-            case 'swapmyenergy': $view = 'clients.swapmyenergy'; break;
-            case '2': $view = 'clients.project-2'; break;
-            case '3': $view = 'clients.project-3'; break;
-            case '4': $view = 'clients.project-4'; break;
-            case '5': $view = 'clients.project-5'; break;
-            case '6': $view = 'clients.project-6'; break;
-            case '7': $view = 'clients.project-7'; break;
-            case '8': $view = 'clients.project-8'; break;
-            default:
-                return redirect() -> route('clients');
-        }
+            $rows = DB::select('call SELECT_BY_ID_Client_Project(?)', [ $projectId ]);
 
-        $navbar_page = '';
-        $page_title = 'Our Clients - Gigawaffle';
-        return view($view, compact('navbar_page', 'page_title'));
+            if (isset($rows) && count($rows) > 0)
+            {
+                $client_project = $rows[0];
+                $navbar_page = '';
+                $page_title = $client_project -> PageTitle;
+                return view('clients.client-project', compact('navbar_page', 'page_title', 'client_project'));
+            }
+        }
+        catch (Throwable $th)
+        {
+            report($th);
+            return redirect() -> action("ClientsController@clients");
+        }
     }
 }
