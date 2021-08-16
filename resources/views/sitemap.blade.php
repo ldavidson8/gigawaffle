@@ -6,37 +6,45 @@
             list-style: none;
         }
         p{
-            font-weight: normal;   
+            font-weight: normal;
+            text-align: center;
         }
         .line-height{
             line-height: 2.5;
         }
         .anchor-default:link, .anchor-default:visited{
-            color: #00aeb6;
+            color: #DF4985;
             outline: none;
         }
         .anchor-default:hover, .anchor-default:active{
-            color: #fdae36;
+            color: #000733;
             outline: none;
-            text-decoration: none;
+            text-decoration:;
         }
         h1{
-            background: #00C2CB;
-            padding: 10px 10px 10px 20px;
-            border-radius: 25px;
+            text-decoration: underline;
+            color: #000733;
+            text-align: center;
+            font-size: 35px;
+            padding-top: 40px;
+        }
+        .gradient-container{
+            background-image: linear-gradient(to right, #DF4985 , #7A98EE);
+            border-radius: 20px;
         }
         .font-weight-bold{
-            background: #00C2CB;
+            color: #000733;
             padding: 2.5mm;
             margin-right: 2cm;
             border-radius: 25px; 
             text-align: center;
         }
-        @media (max-width: 521px)
+
+        @media (max-width: 370px)
         {
             .section-title
             {
-                font-size: 6.5vmin;
+                font-size: 9vmin;
             }
         }
         @media (max-width: 334px)
@@ -55,67 +63,40 @@
         <div class="container">
             <div class="title">
                 <br />
-                <h1 class="section-title"> SwapMyEnergy.co.uk Sitemap</h1>
+                <h1 class="section-title"> Gigawaffle.co.uk Sitemap</h1>
                 <br />
                 <div>
-                    <p>Welcome to our Sitemap page. For easy access you can find a list of visitable pages on our website below.<br /> <br />Don't fall victim to rising energy prices. Swap My Energy aims to bring you great deals by giving you easy access to the best commercial energy tariffs on the market. With our market leading commerical energy calculator, you can quickly find the best energy prices available to you. </p>
+                    <p>Welcome to our Sitemap page. Below you can find a list of all the visitable pages on our website.</p>
                     <br />
                 </div>
             </div>   
             <div class="row">
-                {{-- <div class="col-lg-6">
-                    <p class="font-weight-bold">SwapMyEnergy information:</p>
+                <div class="col-lg-6">
+                    <p class="font-weight-bold gradient-container">Gigawaffle:</p>
                     <ul class="line-height">
                         <li>
-                            <p><a class="anchor-default" href="{{route('business.about')}}">About Us</a></p>
-                            <p><a class="anchor-default" href="{{route('business.t&c')}}">Terms and Conditions</a></p>
-                            <p><a class="anchor-default" href="{{route('business.privacy policy')}}">Privacy Policy</a></p>
-                            <p><a class="anchor-default" href="{{route('business.cookie policy')}}">Our Cookie policy</a></p>
+                        <br />
+                            <p><a class="anchor-default" href="{{ route('home') }}">Home</a></p>
+                            <p><a class="anchor-default" href="{{ route('about') }}">About Us</a></p>
+                            <p><a class="anchor-default" href="{{ route('clients') }}">Clients</a></p>
+                            <p><a class="anchor-default" href="{{ route('services') }}">Our Services</a></p>
+                            <p><a class="anchor-default" href="{{ route('service-selection') }}">Service Selection</a></p>
+                            <p><a class="anchor-default" href="{{ route('about') }}#contactform">Contact Us</a></p>
+                            <p><a class="anchor-default" href="{{ route('privacy-policy') }}">Privacy Policy</a></p>
+                            <p><a class="anchor-default" href="{{ route('terms-and-conditions') }}">Terms and Conditions</a></p>
+                            
+                            <p><a class="anchor-default" href="http://gigawaffle.co.uk/blog/">Blog</a></p>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
-                    <p class="font-weight-bold">Services & Support:</p>
+                    <p class="font-weight-bold gradient-container">Clients:</p>
                     <ul class="line-height">
                         <li>
-                            <p><a class="anchor-default" href="{{route('business.home')}}">Business</a></p>
-                            <p><a class="anchor-default" href="{{route('residential.home')}}">Residential</a></p>
-                            <p><a class="anchor-default" href="{{route('business.partners and affiliates')}}">Our Affiliate Program</a></p>
-                            <p><a class="anchor-default" href="{{route('business.contact')}}">Contact Us</a></p>
-                            <p><a class="anchor-default" href="{{route('business.contact')}}#support">Raise a Support Request</a></p>
+                        <br />
+                        <p><a class="anchor-default" href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">Swap My Energy</a></p>  
                         </li>
                     </ul>   
-                </div> --}}
-                <div class="col-lg-6">
-                    <p class="font-weight-bold">Business:</p>
-                    <ul class="line-height">
-                        <li>
-                            <p><a class="anchor-default" href="{{route('business.home')}}">Home</a></p>
-                            <p><a class="anchor-default" href="{{route('business.about')}}">About Us</a></p>
-                            <p><a class="anchor-default" href="{{route('business.partners and affiliates')}}">Our Affiliate Program</a></p>
-                            <p><a class="anchor-default" href="{{route('business.contact')}}">Contact Us</a></p>
-                            <p><a class="anchor-default" href="{{route('business.contact')}}#support">Raise a Support Request</a></p>
-                            <p><a class="anchor-default" href="{{route('business.t&c')}}">Terms and Conditions</a></p>
-                            <p><a class="anchor-default" href="{{route('business.privacy policy')}}">Privacy Policy</a></p>
-                            <p><a class="anchor-default" href="{{route('business.cookie policy')}}">Our Cookie policy</a></p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <p class="font-weight-bold">Residential:</p>
-                    <ul class="line-height">
-                        <li>
-                            <p><a class="anchor-default" href="{{route('residential.home')}}">Home</a></p>
-                            <p><a class="anchor-default" href="{{route('residential.energy-comparison.1-address')}}">Swap My Energy</a></p>
-                            <p><a class="anchor-default" href="{{route('residential.about')}}">About Us</a></p>
-                            <p><a class="anchor-default" href="{{route('residential.partners and affiliates')}}">Our Affiliate Program</a></p>
-                            <p><a class="anchor-default" href="{{route('residential.contact')}}">Contact Us</a></p>
-                            <p><a class="anchor-default" href="{{route('residential.contact')}}#support">Raise a Support Request</a></p>
-                            <p><a class="anchor-default" href="{{route('residential.t&c')}}">Terms and Conditions</a></p>
-                            <p><a class="anchor-default" href="{{route('residential.privacy policy')}}">Privacy Policy</a></p>
-                            <p><a class="anchor-default" href="{{route('residential.cookie policy')}}">Our Cookie policy</a></p>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

@@ -19,11 +19,11 @@
                 <table class="table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing" style="padding-bottom: 5.5cm; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 140px;">401</span><br />Access Denied</h1>
+                            <h1 id="title-spacing" style="padding-top: 2cm; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 130px;">401</span><br />Access Denied</h1>
 
                             <br /><br /> 
 
-                            <div style="display: flex; justify-content: center;">
+                            <div style="display: flex; justify-content: center; padding-top:5cm;">
                                 <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 550px;">Your authorization failed<br />Please fill in the correct credentials and try again</p> 
                             </div>
 

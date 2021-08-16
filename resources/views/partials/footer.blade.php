@@ -33,7 +33,7 @@
         <div class="col-5 col-md-6 no-padding">
             <p style="font-size: 1.3em; font-weight: 600;"> gigawaffle <p>
             <ul class="list-unstyled">
-                <a class="footer-link" href="{{ route("about") }}">
+                <a class="footer-link" href="{{ route('about') }}">
                     <li>About</li>
                 </a>
                 <a class="footer-link" href="{{ route('about') }}#contactform">
@@ -64,8 +64,9 @@
             <p> &copy;2021 Gigawaffle </p>
         </div>
         <div class="col-12 col-md-6 order-first order-md-1 text-md-right d-flex justify-content-between justify-content-md-end">
-            <a class="footer-link mr-5" href="{{ route("terms-and-conditions") }}"> Terms </a>
-            <a class="footer-link" href="{{ route("privacy-policy") }}"> Privacy </a>
+            <a class="footer-link mr-5" href="{{ route('terms-and-conditions') }}"> Terms </a>
+            <a class="footer-link mr-5" href="{{ route('privacy-policy') }}"> Privacy </a>
+            <a class="footer-link" href="{{ route('sitemap') }}"> Sitemap </a>
         </div>
     </div>
 </div>

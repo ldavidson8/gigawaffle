@@ -23,11 +23,15 @@
             color: #DF4985;
             outline: none;
         }
-        @media (max-width: 407px)
+        .anchor-default:hover, .anchor-default:active{
+            color: #000733;
+            outline: none;
+        }
+        @media (max-width: 334px)
         {
             .section-title
             {
-                font-size: 23px;
+                font-size: 7vmin;
             }
         }
     </style>
@@ -53,7 +57,7 @@
                 <h2 class="section-title gradient-container">1. Introduction</h2>
                     <br />
                     <p class="font-weight-bold">1.1 Parties</p>
-                    <p>This Agreement is made between You the customer ("Customer") and, Gigawaffle ("gigawaffle.co.uk"), a company registered in England, (Company Number 12937329) whose registered address is Estate House, 18 Fox St, Preston PR1 2AB.</p>
+                    <p>This Agreement is made between You the customer ("Customer") and, Gigawaffle ("gigawaffle.co.uk"), a company registered in England, (Company Number 01772 584880) whose registered address is Estate House, 18 Fox St, Preston PR1 2AB.</p>
                     <p class="font-weight-bold">1.2. Definitions</p>
                     <p>In this Agreement, unless the context otherwise requires: 
                     <br />
@@ -64,7 +68,7 @@
                     "You", "Your", "Customer" and related expressions refer to the user of the Service. 
                     <br />
                     <br />
-                    "Our Site" means the website with address <a class="anchor-default" href="{{ asset ('/') }}">www.gigawaffle.co.uk.</a> 
+                    "Our Site" means the website with address <a class="anchor-default" href="{{ route('home') }}">www.gigawaffle.co.uk.</a> 
                     <br />
                     <br />
                     "Service" means the service provided by Gigawaffle via the gigawaffle.co.uk website.
@@ -86,16 +90,16 @@
                     <p>You are of sufficient legal age and capacity to enter into this Agreement. That you have taken all reasonable precautions to ensure that any data you submit to Our Site is true and accurate and free from viruses and anything else that may have a contaminating or destructive effect on any part of Our Site or any other technology.
                     </p>
                     <p class="font-weight-bold">2.2. You undertake and agree to:</p>
-                    <p>fully comply with all applicable laws and any other contractual terms which govern your use of the Gigawaffle Services (and any related interaction or transaction).
+                    <p>Fully comply with all applicable laws and any other contractual terms which govern your use of the Gigawaffle Services (and any related interaction or transaction).
                     <br />
                     <br /> 
-                    be solely responsible and liable with respect to any of the uses of the Gigawaffle Services which occur under your User Account and/or User Platform(s), and for any of your User Content (including for any consequences of accessing, importing, uploading, copying, using or publishing such User Content on or with respect to the Gigawaffle Services);
+                    Be solely responsible and liable with respect to any of the uses of the Gigawaffle Services which occur under your User Account and/or User Platform(s), and for any of your User Content (including for any consequences of accessing, importing, uploading, copying, using or publishing such User Content on or with respect to the Gigawaffle Services);
                     <br />
                     <br /> 
-                    regularly and independently save and backup any of your User Content and the information that is being processed by you regarding your User Platform, including with respect to End Users, User Products, and any applications and/or Third Party Services used by you;
+                    Regularly and independently save and backup any of your User Content and the information that is being processed by you regarding your User Platform, including with respect to End Users, User Products, and any applications and/or Third Party Services used by you;
                     <br />
                     <br />
-                    receive from time to time promotional messages and materials from Gigawaffle or its partners, by mail, e-mail or any other contact form you may provide us with (including your phone number for calls or text messages). If you wish not to receive such promotional materials or notices – please just notify us at any time;
+                    Receive from time to time promotional messages and materials from Gigawaffle or its partners, by mail, e-mail or any other contact form you may provide us with (including your phone number for calls or text messages). If you wish not to receive such promotional materials or notices – please just notify us at any time;
                     <br />
                     <br />
                     Gigawaffle’s sole discretion as to the means, manner, and method for performing the Gigawaffle Services, including those regarding the hosting, transmission, publication and/or display of any User Platforms and/or Content (including the inclusion and presentation of any advertisements or other commercial content with respect thereto).
@@ -104,40 +108,40 @@
                     ​Gigawaffle shall have the right to offer the Gigawaffle Services in alternative price plans and impose different restrictions as for the upload, storage, download and use of the Gigawaffle Services in each price plan, including, without limitation, restrictions on network traffic and bandwidth, size and/or length of Content, quality and/or format of Content, sources of Content, volume of download time, number of subscribers to your Content, etc.
                     </p>
                     <p class="font-weight-bold">2.3. You agree and undertake not to:</p>
-                    <p>copy, modify, create derivative works of, download, adapt, reverse engineer, emulate, migrate to another service, translate, compile, decompile or disassemble the Gigawaffle Website, the Gigawaffle Services (or any part thereof), any Content offered by Gigawaffle or Third Party Services for use and display within User Platforms (“Licensed Content”) and/or any part thereof in any way, or publicly display, perform, transmit or distribute any of the foregoing without Gigawaffle’s prior written and specific consent and/or as expressly permitted under the Gigawaffle Terms;
+                    <p>Copy, modify, create derivative works of, download, adapt, reverse engineer, emulate, migrate to another service, translate, compile, decompile or disassemble the Gigawaffle Website, the Gigawaffle Services (or any part thereof), any Content offered by Gigawaffle or Third Party Services for use and display within User Platforms (“Licensed Content”) and/or any part thereof in any way, or publicly display, perform, transmit or distribute any of the foregoing without Gigawaffle’s prior written and specific consent and/or as expressly permitted under the Gigawaffle Terms;
                     <br />
                     <br />
-                    submit, transmit or display any User Content, or use Licensed Content in a context, which may be deemed as defamatory, libelous, obscene, harassing, threatening, incendiary, abusive, racist, offensive, deceptive or fraudulent, encouraging criminal or harmful conduct, or which otherwise violates the rights of Gigawaffle or any third party (including any intellectual property rights, privacy rights, contractual or fiduciary rights), or otherwise shows any person, entity or brand in a bad or disparaging light, without their prior explicit approval;
+                    Submit, transmit or display any User Content, or use Licensed Content in a context, which may be deemed as defamatory, libelous, obscene, harassing, threatening, incendiary, abusive, racist, offensive, deceptive or fraudulent, encouraging criminal or harmful conduct, or which otherwise violates the rights of Gigawaffle or any third party (including any intellectual property rights, privacy rights, contractual or fiduciary rights), or otherwise shows any person, entity or brand in a bad or disparaging light, without their prior explicit approval;
                     <br />
                     <br />
-                    use any illegal action to collect login data and/or passwords for other websites, third parties, software or services;
+                    Use any illegal action to collect login data and/or passwords for other websites, third parties, software or services;
                     <br />
                     <br />
-                    phish, collect, upload, or otherwise make available credit card information or other forms of financial data used for collecting payments, unless done in accordance with any applicable law, including, with the PCI DSS standard when applicable;  
+                    Collect, upload, or otherwise make available credit card information or other forms of financial data used for collecting payments, unless done in accordance with any applicable law.
                     <br />
                     <br />
-                    upload, insert, collect or otherwise make available  within the Gigawaffle Website or the Gigawaffle Services (or any part thereof), any malicious, unlawful, defamatory or obscene Content;
+                    Upload, insert, collect or otherwise make available  within the Gigawaffle Website or the Gigawaffle Services (or any part thereof), any malicious, unlawful, defamatory or obscene Content;
                     <br />
                     <br />
-                    act in a manner which might be perceived as damaging to Gigawaffle’s reputation and goodwill or which may bring Gigawaffle into disrepute or harm;
+                    Act in a manner which might be perceived as damaging to Gigawaffle’s reputation and goodwill or which may bring Gigawaffle into disrepute or harm;
                     <br />
                     <br />
-                    impersonate any person or entity or provide false information on the Gigawaffle Services and/or User Platform, whether directly or indirectly, or otherwise perform any manipulation in order to disguise your identity or the origin of any message or transmittal you send to Gigawaffle and/or any End Users;
+                    Impersonate any person or entity or provide false information on the Gigawaffle Services and/or User Platform, whether directly or indirectly, or otherwise perform any manipulation in order to disguise your identity or the origin of any message or transmittal you send to Gigawaffle and/or any End Users;
                     <br />
                     <br />
-                    falsely state or otherwise misrepresent your affiliation with any person or entity, or falsely express or imply that Gigawaffle or any third party endorses you, your User Platform, your business, your User Products, or any statement you make;
+                    Falsely state or otherwise misrepresent your affiliation with any person or entity, or falsely express or imply that Gigawaffle or any third party endorses you, your User Platform, your business, your User Products, or any statement you make;
                     <br />
                     <br />
-                    use any of the Gigawaffle Services and/or User Platform in connection with any form of spam, unsolicited mail, fraud, scam, phishing, “chain letters”, “pyramid schemes” or similar conduct, or otherwise engage in unethical marketing or advertising;
+                    Use any of the Gigawaffle Services and/or User Platform in connection with any form of spam, unsolicited mail, fraud, scam, phishing, “chain letters”, “pyramid schemes” or similar conduct, or otherwise engage in unethical marketing or advertising;
                     <br />
                     <br />
-                    sell, license, or exploit for any commercial purposes any use of or access to the Licensed Content and/or Gigawaffle Services, except as expressly permitted by the Gigawaffle Terms;
+                    Sell, license, or exploit for any commercial purposes any use of or access to the Licensed Content and/or Gigawaffle Services, except as expressly permitted by the Gigawaffle Terms;
                     <br />
                     <br />
-                    remove or alter any copyright notices, watermarks, restrictions and signs indicating proprietary rights of any of our licensors, including copyright mark [©], Creative Commons [(cc)] indicators, or trademarks [® or ™] contained in or accompanying the Gigawaffle Services and/or Licensed Content; or
+                    Remove or alter any copyright notices, watermarks, restrictions and signs indicating proprietary rights.
                     <br />
                     <br />
-                    violate, attempt to violate, or otherwise fail to comply with any of the Gigawaffle Terms or any laws or requirements applicable to your use of the Gigawaffle Services.
+                    Violate, attempt to violate, or otherwise fail to comply with any of the Gigawaffle Terms or any laws or requirements applicable to your use of the Gigawaffle Services.
                     </p>
                 <h2 class="section-title gradient-container">3. Content and Ownership</h2>
                     <br />

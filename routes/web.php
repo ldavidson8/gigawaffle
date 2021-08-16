@@ -10,6 +10,7 @@ Route::get('/about', 'HomeController@about') -> name('about');
 Route::get('/terms-and-conditions', 'HomeController@termsAndConditions') -> name('terms-and-conditions');
 Route::get('/privacy-policy', 'HomeController@privacyPolicy') -> name('privacy-policy');
 Route::get('/cookie-policy', 'HomeController@cookiePolicy') -> name('cookie-policy');
+Route::get('/sitemap', 'HomeController@Sitemap') -> name('sitemap');
 
 Route::get('/clients', 'ClientsController@clients') -> name('clients');
 Route::get('/clients/{projectId}', 'ClientsController@clientProjects') -> name('clients.projects');

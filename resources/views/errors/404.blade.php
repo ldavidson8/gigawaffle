@@ -19,7 +19,7 @@
                 <table class=" no-spacing table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing" style="padding-top:; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 140px;">404</span><br />Uh-oh! <br />There's nothing here</h1>
+                            <h1 id="title-spacing" style="padding-top:; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 130px;">404</span><br />Uh-oh! <br />There's nothing here</h1>
                             
                             <br /><br />
 

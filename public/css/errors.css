@@ -47,21 +47,23 @@ h1 {
     }
 }
 
+
 /*animations*/
 
 #number-spacing {
-    letter-spacing:15px;
+    letter-spacing: 1px;
     -webkit-animation: number 3.5s;
-          animation: number 3.5s;
+    animation: number 3.5s;
+    
 }
 
 @-webkit-keyframes number {
   0%   { letter-spacing: -40px; }
-  100% { letter-spacing: 15px; }
+  100% { letter-spacing: 1px; }
 }
 @keyframes number {
   0%   { letter-spacing: -40px; }
-  100% { letter-spacing: 15px; }
+  100% { letter-spacing: 1px; }
 }
 
 
@@ -70,7 +72,7 @@ h1 {
 #title-spacing {
     letter-spacing:-3px;
     -webkit-animation: title 2.5s;
-          animation: title 2.5s;
+    animation: title 2.5s;
 }
 
 @-webkit-keyframes title {

@@ -23,6 +23,25 @@
             color: #DF4985;
             outline: none;
         }
+
+        .anchor-default:hover, .anchor-default:active{
+            color: #000733;
+            outline: none;
+        }
+        @media (max-width: 370px)
+        {
+            .main-title
+            {
+                font-size: 9vmin;
+            }
+        }
+        @media (max-width: 334px)
+        {
+            .section-title
+            {
+                font-size: 7vmin;
+            }
+        }
     </style>
 @endsection
 
@@ -40,13 +59,13 @@
                 </p>
                 <p>
                     This policy explains how we collect, handle and use any personal information that you provide to us through our website, 
-                    mobile apps and other services. We'll review this policy from time to time. If we make changes, we'll 
+                    mobile apps and other services. We'll review this policy from time to time and if we make changes, we'll 
                     post the latest version here.
                 </p>
                 <h2 class="section-title gradient-container">What personal data do we collect?</h2>
                 <br />
                 <p>
-                    Prior to accessing or using our Services, please understand we must collect Personal Information relating to an identified or identifiable natural person. We ask that you read, agree and make sure you fully understand our practices in relation to your Personal Information. If you read and fully understand this Privacy Policy, and remain opposed to our practices, you must immediately leave and discontinue all use of any of our Services. If you have any questions or concerns regarding this policy, please contact us <a class="anchor-default" href="{{ asset('/about') }}">here.</a>
+                    Prior to accessing or using our Services, please understand we must collect Personal Information relating to an identified or identifiable natural person. We ask that you read, agree and make sure you fully understand our practices in relation to your Personal Information. If you read and fully understand this Privacy Policy, and remain opposed to our practices, you must immediately leave and discontinue all use of any of our Services. If you have any questions or concerns regarding this policy, please contact us <a class="anchor-default" href="{{ route('about') }}#contactform">here.</a>
                     
                 </p>
                 <p>We may collect and process the following information about you:</p>
@@ -272,9 +291,10 @@
                 </p>
                 <p class="font-weight-bold">How you can contact us?</p>
                 <p>If you have questions about this privacy policy you can contact us;</p>
-                <p>By Phone:<br />0000 000000</p>
-                <p>By email:<br />hello@gigawaffle.co.uk</p>
                 <p>
+                    Telephone: {{ env('DATA_CONTACT_PHONE_NUMBER') }}<br />
+                    Email: {{ env('DATA_CONTACT_EMAIL') }}
+                </p>
                     If you have unresolved concerns, you have the right to complain to a data protection authority. In the United Kingdom 
                     the relevant authority is
                 </p>

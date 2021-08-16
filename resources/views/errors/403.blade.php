@@ -21,7 +21,7 @@
                 <table class=" no-spacing table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing" style="position: relative; padding-top:; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 140px;">403</span><br />Forbidden</h1>
+                            <h1 id="title-spacing" style="position: relative; padding-top:; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 130px;">403</span><br />Forbidden</h1>
                             
                             <br /><br />
 
