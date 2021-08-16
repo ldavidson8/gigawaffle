@@ -138,7 +138,7 @@
             </div>
             <div class="service-item">
                 <img src="{{ asset('img/services-icons/copywriting.svg') }}" alt="" />
-                <p>Copyrighting</p>
+                <p>Copywriting</p>
             </div>
             <div class="service-item">
                 <img src="{{ asset('img/services-icons/digital-marketing.svg') }}" alt="" />
