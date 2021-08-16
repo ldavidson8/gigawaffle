@@ -11,9 +11,6 @@
         }
         .background-image-right { background-position: right; }
 
-        .background-image-swapmyenergy { background-image: url("{{ asset('img/clients-images/swapmyenergy/sme-client.png') }}"); }
-
-        .background-image-docks { background-image: url("{{ asset('img/background/docks_full.jpg') }}"); }
         .background-image-plant { background-image: url("{{ asset('img/background/hydropower-plant_full.png') }}"); }
         .background-image-market { background-image: url("{{ asset('img/background/market_full.jpg') }}"); }
         .background-image-powerline { background-image: url("{{ asset('img/background/powerline_full.png') }}"); }
@@ -23,8 +20,6 @@
 
         @media (max-width: 1000px)
         {
-            /* .background-image-swapmyenergy { background-image: url("{{ asset('img/clients-images/swapmyenergy/sme-client-mobile.png') }}"); } */
-            .background-image-docks { background-image: url("{{ asset('img/background/docks_half.jpg') }}"); }
             .background-image-plant { background-image: url("{{ asset('img/background/hydropower-plant_half.png') }}"); }
             .background-image-market { background-image: url("{{ asset('img/background/market_half.jpg') }}"); }
             .background-image-powerline { background-image: url("{{ asset('img/background/powerline_half.png') }}"); }
@@ -35,8 +30,7 @@
 
         .client-project-section
         {
-            padding: 20px 0px !important;
-            min-height: 500px;
+            margin: 20px 0px !important;
         }
 
         .client-project-column
@@ -46,6 +40,7 @@
             flex-direction: column;
             align-content: flex-start;
             justify-content: flex-start;
+            font-size: 18px;
         }
 
         .client-project-column h2, h3
@@ -55,7 +50,7 @@
 
         .client-project-column h2
         {
-            font-size: 30px;
+            font-size: 30px !important;
             margin-bottom: 1rem;
         }
 
@@ -121,7 +116,7 @@
 @endsection
 
 @section('before-header')
-    <div class="full-size container-fluid d-flex flex-column center-content mb-5">
+    <div class="full-size container-fluid d-flex flex-column center-content">
 @endsection
 
 @section('main-content')
@@ -140,111 +135,41 @@
                 </div>
             </div>
             <div class="col-6 d-none d-md-block">
-                <img src={{ asset('img/approved-illustration.png')}}>
+                <img src={{ asset('img/approved-illustration.png') }}>
             </div>
         </div>
     </div>
-    <div class="text-container-40px container-lg">
-        @foreach ($client_projects }} as $client_project)
+    <div class="text-container-40px container-xl">
+        @for ($i = 0; $i < count($client_projects); $i++)
+            <?php
+                $client_project = $client_projects[$i];
+                $project_image_order_classes = "";
+                $project_text_order_classes = "";
+
+                if ($i % 2 == 1) // if the index is odd
+                {
+                    $project_image_order_classes = "order-1 order-md-2";
+                    $project_text_order_classes = "order-2 order-md-1";
+                }
+                $short_content = explode("\r\n", $client_project -> ShortContent)
+            ?>
             <div class="client-project-section row no-padding">
-                <div class="col-12 col-md-4 col-lg-4">
-                    <img src="{{ asset($client_project -> ImageSource) }}" alt="" />
-                </div>
-                <div class="col-12 col-md-8 col-xl-8" style="padding-top: 10px;">
-                    <input type="checkbox" class="read-more-state" id="read-more-controller">
+                <a href="{{ route('clients.projects', [ 'projectId' => $client_project -> ID ]) }}" class="col-12 col-md-4 col-lg-4 {{ $project_image_order_classes }} background-image" style="background-image: url('{{ asset($client_project -> ImageSource) }}');"></a>
+                <div class="col-12 col-md-8 col-xl-8 {{ $project_text_order_classes }} client-project-column" style="padding-top: 10px;">
+                    {{-- @if (count($short_content) > 1) <input type="checkbox" class="read-more-state" id="read-more-controller"> @endif --}}
                     <div class="temp-img-card-2"></div>
                     <h2>{{ $client_project -> Heading }}</h2>
-                    {{-- <h3>{{ $client_project -> SubHeading }}</h3> --}}
-                    <p>Swap my energy is an energy broker based in the bustling heart of Preston’s city centre. Swap My Energy believes in making the management of energy bills efficient, cheap and hassle free. As a company they work with both large businesses and independent shops.</p>
-                    <p class="read-more-target"> They also have a dedicated residential team that works with homeowners to find them their best deals. In practicality as a client they were just starting off so they needed a comprehensive boost in all their fields, this meant helping them not only boost their content but create entirely new streams of income via social media and online branding.</p>
-                    <label for="read-more-controller" class="read-more-trigger"></label>
-                    <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => 'swapmyenergy' ]) }}">Learn more<i class="fas fa-long-arrow-alt-right"></i></a>
+                    <h3>{{ $client_project -> SubHeading }}</h3>
+                    @for ($j = 0; $j < count($short_content); $j++)
+                        {{-- <p <?= ($j > 0) ? "class='read-more-target'" : '' ?>> --}}
+                        <p>
+                            {{ $short_content[$j] }}
+                        </p>
+                    @endfor
+                    {{-- @if (count($short_content) > 1) <label for="read-more-controller" class="read-more-trigger"></label> @endif --}}
+                    <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => $client_project -> ID ]) }}">Learn more<i class="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
-        @endforeach
-        <div class="client-project-section row no-padding">
-            <div class="col-12 col-md-4 col-lg-4 background-image background-image-swapmyenergy"></div>
-            <div class="col-12 col-md-8 col-xl-8" style="padding-top: 10px;">
-                <input type="checkbox" class="read-more-state" id="read-more-controller">
-                <div class="temp-img-card-2"></div>
-                <h2>Swap My Energy</h2>
-                <h3>Marketing and Web Development Project</h3>
-                <p>Swap my energy is an energy broker based in the bustling heart of Preston’s city centre. Swap My Energy believes in making the management of energy bills efficient, cheap and hassle free. As a company they work with both large businesses and independent shops. </p>
-
-                <p class="read-more-target"> They also have a dedicated residential team that works with homeowners to find them their best deals. In practicality as a client they were just starting off so they needed a comprehensive boost in all their fields, this meant helping them not only boost their content but create entirely new streams of income via social media and online branding. </p>
-                <label for="read-more-controller" class="read-more-trigger"></label>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => 'swapmyenergy' ]) }}">Learn more<i class="fas fa-long-arrow-alt-right"></i></a>
-            </div>
-        </div>
-        <div class="client-project-section row no-padding">
-            <div class="col-12 col-md-8 col-lg-8 order-2 order-md-1 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '2' ]) }}">Learn more</a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-docks"></div>
-        </div>
-        <div class="client-project-section row">
-            <div class="col-12 col-md-4 col-lg-4 background-image background-image-right background-image-plant"></div>
-            <div class="col-12 col-md-8 col-lg-8 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '3' ]) }}">Learn more</a>
-            </div>
-        </div>
-        <div class="client-project-section row no-padding">
-            <div class="col-12 col-md-8 col-lg-8 order-2 order-md-1 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '4' ]) }}">Learn more</a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-market"></div>
-        </div>
-        <div class="client-project-section row">
-            <div class="col-12 col-md-4 col-lg-4 background-image background-image-right background-image-powerline"></div>
-            <div class="col-12 col-md-8 col-lg-8 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '5' ]) }}">Learn more</a>
-            </div>
-        </div>
-        <div class="client-project-section row no-padding">
-            <div class="col-12 col-md-8 col-lg-8 order-2 order-md-1 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '6' ]) }}">Learn more</a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-preston"></div>
-        </div>
-        <div class="client-project-section row">
-            <div class="col-12 col-md-4 col-lg-4 background-image background-image-right background-image-train"></div>
-            <div class="col-12 col-md-8 col-lg-8 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum magna erat, ac sagittis sapien euismod in. Duis in eros non sem finibus consectetur non ac enim. Etiam rutrum eros vel tellus consequat, eget sollicitudin ante mattis. Nam ullamcorper varius vestibulum. Ut dui erat, vehicula nec tincidunt eu, maximus a diam. Phasellus nisl est, scelerisque vitae elit vitae, facilisis cursus sem. Cras fringilla, ligula eu dictum auctor, massa ipsum semper neque, et porttitor tellus risus vitae est. Suspendisse ante ex, auctor id posuere pulvinar, feugiat eu arcu. Morbi facilisis gravida augue, nec semper ex commodo ac. Curabitur sollicitudin orci at orci rhoncus, a rutrum ligula vehicula. Quisque in lectus id massa accumsan pellentesque nec at tellus. Ut feugiat, risus quis ornare congue, metus metus aliquam eros, at vulputate lectus dui in purus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '7' ]) }}">Learn more</a>
-            </div>
-        </div>
-        <div class="client-project-section row no-padding">
-            <div class="col-12 col-md-8 col-lg-8 order-2 order-md-1 client-project-column" style="padding-top: 10px;">
-                <div class="temp-img-card-2"></div>
-                <h2>Project Title</h2>
-                <h3>Project Type</h3>
-                <p>Nulla sollicitudin, nisl eu tempus eleifend, nisi metus egestas velit, in pulvinar nibh nunc vel neque. Aliquam rhoncus auctor diam, id egestas lorem congue et. Morbi laoreet turpis sit amet quam congue, sit amet cursus diam fringilla. Mauris vulputate ut justo malesuada efficitur. Donec dictum non elit commodo aliquam. Vivamus tincidunt turpis et accumsan condimentum. Integer dapibus vitae massa et hendrerit. Vivamus justo elit, accumsan ac viverra id, consectetur in tellus.</p>
-                <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '8' ]) }}">Learn more</a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 order-1 order-md-2 background-image background-image-windturbines"></div>
-        </div>
+        @endfor
     </div>
 @endsection

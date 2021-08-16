@@ -24,7 +24,7 @@ class ClientsController extends Controller
         catch (Throwable $th)
         {
             report($th);
-            return redirect() -> action("ClientsController@clients");
+            return redirect() -> route('home');
         }
 
         return view('clients.index', compact('navbar_page', 'page_title', 'client_projects'));
@@ -48,8 +48,10 @@ class ClientsController extends Controller
         }
         catch (Throwable $th)
         {
+            throw($th);
             report($th);
             return redirect() -> action("ClientsController@clients");
         }
+        return redirect() -> action("ClientsController@clients");
     }
 }
