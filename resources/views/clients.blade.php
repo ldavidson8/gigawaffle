@@ -10,7 +10,7 @@
             border-radius: 30px;
         }
         .background-image-right { background-position: right; }
-        
+
         .background-image-coffee-shop { background-image: url("{{ asset('img/background/coffee-shop_full.png') }}"); }
         .background-image-docks { background-image: url("{{ asset('img/background/docks_full.jpg') }}"); }
         .background-image-plant { background-image: url("{{ asset('img/background/hydropower-plant_full.png') }}"); }
@@ -19,7 +19,7 @@
         .background-image-preston { background-image: url("{{ asset('img/background/preston_full.jpg') }}"); }
         .background-image-train { background-image: url("{{ asset('img/background/train_full.jpg') }}"); }
         .background-image-windturbines { background-image: url("{{ asset('img/background/wind-turbines_full.png') }}"); }
-        
+
         @media (max-width: 1000px) and (max-height: 563px)
         {
             .background-image-coffee-shop { background-image: url("{{ asset('img/background/coffee-shop_half.png') }}"); }
@@ -31,7 +31,7 @@
             .background-image-train { background-image: url("{{ asset('img/background/train_half.jpg') }}"); }
             .background-image-windturbines { background-image: url("{{ asset('img/background/wind-turbines_half.png') }}"); }
         }
-        
+
         @media (max-width: 500px) and (max-height: 281px)
         {
             .background-image-coffee-shop { background-image: url("{{ asset('img/background/coffee-shop_quarter.png') }}"); }
@@ -43,7 +43,7 @@
             .background-image-train { background-image: url("{{ asset('img/background/train_quarter.jpg') }}"); }
             .background-image-windturbines { background-image: url("{{ asset('img/background/wind-turbines_quarter.png') }}"); }
         }
-        
+
         .client-project-section
         {
             padding: 20px 0px !important;
@@ -60,7 +60,7 @@
         }
 
         .client-project-column h2, h3
-        {   
+        {
             text-align: left;
         }
 
@@ -98,24 +98,24 @@
             transition: .25s ease;
         }
 
-        input.read-more-state:checked ~  p.read-more-target 
+        input.read-more-state:checked ~  p.read-more-target
         {
         font-size: inherit;
         max-height: 999em;
         opacity: 1;
         }
-        input.read-more-state ~ label.read-more-trigger:before 
+        input.read-more-state ~ label.read-more-trigger:before
         {
             font-family: "Font Awesome 5 Free";
             content: 'Read more \f245';
             font-weight: 700;
         }
-        input.read-more-state:checked ~ label.read-more-trigger:before 
+        input.read-more-state:checked ~ label.read-more-trigger:before
         {
             content: 'Read less';
             font-weight: 700;
         }
-        label.read-more-trigger 
+        label.read-more-trigger
         {
             cursor: pointer;
             display: inline-block;
@@ -155,17 +155,16 @@
             </div>
         </div>
     </div>
-    <div class="text-container-40px">
+    <div class="text-container-40px container-lg">
         <div class="client-project-section row no-padding">
-            <div class="d-none d-lg-block col-lg-2"></div>
-            <div class="col-12 col-md-6 col-lg-2 text-center">@include('partials.client-project-images.swapmyenergy')</div>
-            <div class="col-12 col-md-6 col-lg-6" style="padding-top: 10px;">
+            <div class="col-12 col-md-6 col-xl-4 text-center">@include('partials.client-project-images.swapmyenergy')</div>
+            <div class="col-12 col-md-6 col-xl-8" style="padding-top: 10px;">
                 <input type="checkbox" class="read-more-state" id="read-more-controller">
                 <div class="temp-img-card-2"></div>
                 <h2>Swap My Energy</h2>
                 <h3>Marketing and Web Development Project</h3>
-                <p>Swap my energy is an energy broker based in the bustling heart of Preston’s city centre. Swap My Energy believes in making the management of energy bills efficient, cheap and hassle free. As a company they work with both large businesses and independent shops. </p> 
-                    
+                <p>Swap my energy is an energy broker based in the bustling heart of Preston’s city centre. Swap My Energy believes in making the management of energy bills efficient, cheap and hassle free. As a company they work with both large businesses and independent shops. </p>
+
                 <p class="read-more-target"> They also have a dedicated residential team that works with homeowners to find them their best deals. In practicality as a client they were just starting off so they needed a comprehensive boost in all their fields, this meant helping them not only boost their content but create entirely new streams of income via social media and online branding. </p>
                 <label for="read-more-controller" class="read-more-trigger"></label>
                 <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">Learn more<i class="fas fa-long-arrow-alt-right"></i></a>
