@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="text-container-40px">
-                    <p><b>There was a problem sending your request about our services.</b></p>
+                    <p><b>There was a problem sending your request.</b></p>
                     <p>Please contact us using the details below.</p>
                     <p>
                         Telephone: {{ env('DATA_CONTACT_PHONE_NUMBER') }}<br />

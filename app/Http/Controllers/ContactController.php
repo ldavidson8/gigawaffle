@@ -33,12 +33,12 @@ class ContactController extends Controller
             {
                 $sql_data =
                 [
-                    'full_name' => Request::input('full_name'),
-                    'email_address' => Request::input('email'),
-                    'phone_number' => Request::input('phone'),
-                    'message' => Request::input('message')
+                    Request::input('full_name'),
+                    Request::input('email'),
+                    Request::input('phone'),
+                    Request::input('message')
                 ];
-                DB::table('work_with_us') -> insertGetId($sql_data);
+                DB::select("call INSERT_work_with_us(?, ?, ?, ?);", $sql_data);
             }
             catch (Throwable $th)
             {
