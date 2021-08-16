@@ -229,7 +229,7 @@
                 </svg>
                 Brand Design
             </label>
-            <input type="checkbox" name="services[]" id="web-dev" name="web-dev" value="web-dev" class="radio-hidden">
+            <input type="checkbox" name="services[]" id="web-dev" name="web-dev" value="Web Development" class="radio-hidden">
             <label for="web-dev" class="selection-button" filter="design">
                 <svg id="world-wide-web" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 94.595 94.595">
                     <g id="Group_2" data-name="Group 2" transform="translate(30.269 6.005)">
@@ -280,7 +280,7 @@
                 </svg>
                 Web Dev
             </label>
-            <input type="checkbox" name="services[]" id="ui-design" value="ui-design" class="radio-hidden">
+            <input type="checkbox" name="services[]" id="ui-design" value="UI Design" class="radio-hidden">
             <label for="ui-design" class="selection-button" filter="design">
                 <svg id="computer" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 94.424 89.506">
                     <path id="Path_56" data-name="Path 56" d="M68.225,114.5a4.723,4.723,0,0,1,7.312-.074l.734.88a.787.787,0,0,0,1.208,0l3.811-4.569a4.722,4.722,0,0,1,7.251,0l2.821,3.382a.787.787,0,0,0,1.391-.5V92.074A1.574,1.574,0,0,0,91.18,90.5H67.574A1.574,1.574,0,0,0,66,92.074V114.99a.787.787,0,0,0,1.391.5Zm8.791-19.667a6.295,6.295,0,1,1-6.295,6.295A6.3,6.3,0,0,1,77.016,94.828Z" transform="translate(-53.017 -75.156)" class="service-svg-1"/>
@@ -293,7 +293,7 @@
                 </svg>
                 UI Design
             </label>
-            <input type="checkbox" name="services[]" id="graphic-design" value="graphic-design" class="radio-hidden">
+            <input type="checkbox" name="services[]" id="graphic-design" value="Graphic Design" class="radio-hidden">
             <label for="graphic-design" class="selection-button" filter="design">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 94.423 94.424">
                     <g id="design" transform="translate(0)">
@@ -307,7 +307,7 @@
                 </svg>
                 Graphic Design
             </label>
-            <input type="checkbox" name="services[]" id="packaging-design" value="packaging-design" class="radio-hidden">
+            <input type="checkbox" name="services[]" id="packaging-design" value="Packaging Design" class="radio-hidden">
             <label for="packaging-design" class="selection-button" filter="design">
                 <svg id="packaging" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 73.676 104.205">
                     <path id="Path_68" data-name="Path 68" d="M143.507,60H102.2L92.026,72.211h41.3Z" transform="translate(-88.561 -47.789)" class="service-svg-1"/>
@@ -319,7 +319,7 @@
                 </svg>
                 Packaging Design
             </label>
-            <input type="checkbox" name="services[]" id="staff-systems" value="staff-systems" class="radio-hidden">
+            <input type="checkbox" name="services[]" id="staff-systems" value="Staff Systems" class="radio-hidden">
             <label for="staff-systems" class="selection-button" filter="design">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 67.867 104.205">
                     <g id="id-card" transform="translate(0)">
@@ -340,7 +340,7 @@
                 </svg>
                 SEO
             </label>
-            <input type="checkbox" name="services[]" id="copywriting" value="copywriting" class="radio-hidden">
+            <input type="checkbox" name="services[]" id="copywriting" value="Copywriting" class="radio-hidden">
             <label for="copywriting" class="selection-button" filter="marketing">
                 <svg id="copywriting" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 94.566 80.918">
                     <path id="Path_23" data-name="Path 23" d="M8.311,40.959H35.238l10.27,9.374a2.968,2.968,0,0,0,3.019.548,2.535,2.535,0,0,0,1.71-2.336V40.959h8.311c4.583,0,8.311-3.4,8.311-7.586V8.086C66.861,3.9,63.132.5,58.549.5H8.311C3.729.5,0,3.9,0,8.086V33.373C0,37.556,3.729,40.959,8.311,40.959ZM50.238,15.672a5.322,5.322,0,0,1,5.541,5.057,5.564,5.564,0,0,1-11.082,0A5.322,5.322,0,0,1,50.238,15.672Zm-16.623,0a5.322,5.322,0,0,1,5.541,5.057,5.322,5.322,0,0,1-5.541,5.057,5.322,5.322,0,0,1-5.541-5.057A5.322,5.322,0,0,1,33.615,15.672Zm-16.808,0a5.322,5.322,0,0,1,5.541,5.057,5.322,5.322,0,0,1-5.541,5.057,5.322,5.322,0,0,1-5.541-5.057A5.322,5.322,0,0,1,16.808,15.672Zm0,0" transform="translate(0 -0.5)" class="service-svg-1"/>
@@ -350,7 +350,7 @@
                 </svg>
                 Copywriting
             </label>
-            <input type="checkbox" name="services[]" id="digital-marketing" value="digital-marketing" class="radio-hidden">
+            <input type="checkbox" name="services[]" id="digital-marketing" value="Digital Marketing" class="radio-hidden">
             <label for="digital-marketing" class="selection-button" filter="marketing">
                 <svg id="social-media_2_" data-name="social-media (2)" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 88.656 80.918">
                     <path id="Path_29" data-name="Path 29" d="M367.139,357.177a3.142,3.142,0,1,0-3.429-3.129,3.293,3.293,0,0,0,3.429,3.129Z" transform="translate(-300.732 -295.459)" class="service-svg-1"/>
@@ -361,7 +361,7 @@
                 </svg>
                 Digital Marketing
             </label>
-            <input type="checkbox" name="services[]" id="content-marketing" value="content-marketing" class="radio-hidden">
+            <input type="checkbox" name="services[]" id="content-marketing" value="Content Marketing" class="radio-hidden">
             <label for="content-marketing" class="selection-button" filter="marketing">
                 <svg id="social-media_3_" data-name="social-media (3)" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 88.656 80.918">
                     <g id="content" transform="translate(0)">
@@ -378,7 +378,7 @@
                 </svg>
                 Content Marketing
             </label>
-        <input type="checkbox" name="services[]" id="affiliate-marketing" value="affiliate-marketing" class="radio-hidden">
+        <input type="checkbox" name="services[]" id="affiliate-marketing" value="Affiliate Marketing" class="radio-hidden">
         <label for="affiliate-marketing" class="selection-button" filter="marketing">
             <svg id="network" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 97.524 90.595">
             <path id="Path_76" data-name="Path 76" d="M91.76,202.449H92.1a4.173,4.173,0,0,1,4.259,4.08v3.044a4.173,4.173,0,0,1-4.26,4.081h-.337a4.173,4.173,0,0,1-4.259-4.081V206.53a4.173,4.173,0,0,1,4.26-4.081Z" transform="translate(-73.85 -167.842)" class="service-svg-1"/>
@@ -394,7 +394,7 @@
             </svg>
             Affiliate Marketing
         </label>
-        <input type="checkbox" name="services[]" id="email-marketing" value="email-marketing" class="radio-hidden">
+        <input type="checkbox" name="services[]" id="email-marketing" value="Email Marketing" class="radio-hidden">
         <label for="email-marketing" class="selection-button" filter="marketing">
             <svg id="email" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 95.784 64.141">
             <g id="Group_22" data-name="Group 22" transform="translate(63.493 11.825)">
@@ -420,7 +420,7 @@
             </svg>
             Email Marketing
         </label>
-        <input type="checkbox" name="services[]" id="video-content" value="video-content" class="radio-hidden">
+        <input type="checkbox" name="services[]" id="video-content" value="Video Content" class="radio-hidden">
         <label for="video-content" class="selection-button" filter="social-content">
             <svg id="video-camera" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 95.784 51.364">
             <g id="Group_31" data-name="Group 31">
@@ -436,14 +436,14 @@
             </svg>
             Video Content
         </label>
-        <input type="checkbox" name="services[]" id="audio-content" value="audio-content" class="radio-hidden">
+        <input type="checkbox" name="services[]" id="audio-content" value="Audio Content" class="radio-hidden">
         <label for="audio-content" class="selection-button" filter="social-content">
             <svg id="speaker-filled-audio-tool" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 95.784 69.451">
                 <path id="Path_97" data-name="Path 97" d="M47.921,71.542a3.959,3.959,0,0,1-2.5,3.592,4.67,4.67,0,0,1-1.85.378,4.607,4.607,0,0,1-2.776-.914L17.015,56.612H4.35A4.171,4.171,0,0,1,0,52.643V36.826a4.174,4.174,0,0,1,4.35-3.971H17.016L40.8,14.869a4.675,4.675,0,0,1,4.626-.535,3.961,3.961,0,0,1,2.5,3.592V71.542Zm16.716-6.2c-.106.007-.208.01-.313.01a4.565,4.565,0,0,1-3.075-1.162l-.582-.533a3.714,3.714,0,0,1-.42-5.172,21.515,21.515,0,0,0-.669-28.29,3.717,3.717,0,0,1,.3-5.309l.581-.531a4.636,4.636,0,0,1,6.445.3,29.637,29.637,0,0,1,.907,39.109A4.476,4.476,0,0,1,64.637,65.338ZM82.621,77.607a4.519,4.519,0,0,1-3.142,1.4c-.06,0-.12,0-.182,0a4.566,4.566,0,0,1-3.076-1.162l-.571-.522a3.721,3.721,0,0,1-.253-5.363,40.226,40.226,0,0,0,10.88-27.233A40.22,40.22,0,0,0,74.628,16.69a3.723,3.723,0,0,1,.175-5.434l.57-.522A4.454,4.454,0,0,1,78.58,9.567,4.532,4.532,0,0,1,81.705,10.9,48.451,48.451,0,0,1,95.784,44.736,48.426,48.426,0,0,1,82.621,77.607Z" transform="translate(0 -9.565)" class="service-svg-1"/>
             </svg>
             Audio Content
         </label>
-        <input type="checkbox" name="services[]" id="social-media" value="social-media-content" class="radio-hidden">
+        <input type="checkbox" name="services[]" id="social-media" value="Social Media Content" class="radio-hidden">
         <label for="social-media" class="selection-button" filter="social-content">
             <svg id="social-media_4_" data-name="social-media (4)" xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 85.481 78.02">
                 <g id="Group_35" data-name="Group 35">
