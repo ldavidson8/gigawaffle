@@ -112,7 +112,7 @@
                 </div>
             </div>
             <div class="col-6 d-none d-md-block">
-                <img src="{{ asset('img/Thinking-man-illustration.png') }}">
+                <img src="{{ asset('img/Thinking-man-illustration.png') }}" alt="">
             </div>
         </div>
     </div>
@@ -123,7 +123,7 @@
             <div class="row">
             <div class="col-12 col-md-8 no-padding"><img class="google-map border-radius-20" src="{{ asset('img/map.png') }}"></div>
             <div class="col-12 col-md-4 m-auto text-center text-md-left">
-                <img src="{{ asset('img/home-icon.png') }}" style="display: inline-block" height="30">
+                <img src="{{ asset('img/home-icon.png') }}" style="display: inline-block" height="30" alt="Map of our location">
                 <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>
                 <ul class="list-unstyled">
                     <li>Estate House,</li>
@@ -142,10 +142,10 @@
         <div class="banner">
             <h2 style="font-weight: 200; margin: 20px auto; color: white; font-size: 2.5rem">Discover us</h2>
             <div style="padding: 5px 0px 25px;">
-                <a href="https://www.facebook.com/Gigawaffle-110675841300819"><img class="social-img" src="{{ asset('img/social-links/facebook.svg') }}" width="50px" height="50px" /></a>
-                <a href="https://twitter.com/gigawaffleuk"><img class="social-img" src="{{ asset('img/social-links/twitter.svg') }}" width="50px" height="50px" /></a>
-                <a href="https://www.instagram.com/gigawaffleuk/"><img class="social-img" src="{{ asset('img/social-links/instagram.svg') }}" width="50px" height="50px" /></a>
-                <a href="https://www.linkedin.com/company/gigawaffle/"><img class="social-img" src="{{ asset('img/social-links/linkedin.svg') }}" width="50px" height="50px" /></a>
+                <a href="https://www.facebook.com/Gigawaffle-110675841300819"><img class="social-img" src="{{ asset('img/social-links/facebook.svg') }}" width="50px" height="50px" alt="Facebook" /></a>
+                <a href="https://twitter.com/gigawaffleuk"><img class="social-img" src="{{ asset('img/social-links/twitter.svg') }}" width="50px" height="50px" alt="Twitter" /></a>
+                <a href="https://www.instagram.com/gigawaffleuk/"><img class="social-img" src="{{ asset('img/social-links/instagram.svg') }}" width="50px" height="50px" alt="Instagram" /></a>
+                <a href="https://www.linkedin.com/company/gigawaffle/"><img class="social-img" src="{{ asset('img/social-links/linkedin.svg') }}" width="50px" height="50px" alt="LinkedIn" /></a>
             </div>
         </div>
         @include('partials.waves-bottom')

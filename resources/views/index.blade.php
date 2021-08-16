@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="col-6 d-none d-md-flex center-content">
-                <img src="{{ asset('img/code-snippet.png') }}"/>
+                <img src="{{ asset('img/code-snippet.png') }}" alt="Code snippet of Hello world in React framework"/>
             </div>
         </div>
     </div>
@@ -150,7 +150,7 @@
                     <p> Our enthusiastic and passionate team will always be on hand throughout the process, allowing you to see your image come to life </p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="{{ asset('img/world-wide-web-image.png') }}" width="100%"/>
+                    <img src="{{ asset('img/world-wide-web-image.png') }}" width="100%" alt=""/>
                 </div>
             </div>
             <div class="w-100">
@@ -177,14 +177,14 @@
                         <p class="blog-cards-text"> Waffle Fundamentals: What is Copywriting?</p>
                         <div class="meta"> <i class="far fa-calendar-alt"></i> 09 Aug 2021 </div>
                     </div>
-                    <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-1.png') }}">
+                    <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-1.png') }}" alt="">
                 </a>
                 <a class="blog-card-link" href="http://gigawaffle.co.uk/blog/2021/08/08/welcome-to-the-waffle-corner/">
                     <div class="post-content">
                         <p class="blog-cards-text"> Welcome to the Waffle Corner</p>
                         <div class="meta"> <i class="far fa-calendar-alt"></i> 08 Aug 2021 </div>
                     </div>
-                    <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-2.png') }}">
+                    <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-2.png') }}" alt="">
                 </a>
             </div>
             <!-- Change to live site blog url when site is ready to launch --><a href="http://gigawaffle.co.uk/blog/"><button class="navy-blue-button"> Read More </button></a>

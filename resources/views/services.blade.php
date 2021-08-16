@@ -109,63 +109,63 @@
         <h3>What we offer</h3>
         <div class="services-outer">
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/brand-design.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/brand-design.svg') }}" alt="Brand Design" />
                 <p>Brand Design</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/web-development.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/web-development.svg') }}" alt="Web Development" />
                 <p>Web Development</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/ui-design.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/ui-design.svg') }}" alt="UI Design" />
                 <p>UI Design</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/graphic-design.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/graphic-design.svg') }}" alt="Graphic Design" />
                 <p>Graphic Design</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/packaging-design.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/packaging-design.svg') }}" alt="Packaging Design" />
                 <p>Packaging Design</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/staff-systems.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/staff-systems.svg') }}" alt="Staff Systems" />
                 <p>Staff Systems</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/seo.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/seo.svg') }}" alt="SEO" />
                 <p>SEO</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/copywriting.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/copywriting.svg') }}" alt="Copywriting" />
                 <p>Copywriting</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/digital-marketing.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/digital-marketing.svg') }}" alt="Digital Marketing" />
                 <p>Digital Marketing</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/content-marketing.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/content-marketing.svg') }}" alt="Content Marketing" />
                 <p>Content Marketing</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/affiliate-marketing.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/affiliate-marketing.svg') }}" alt="Affiliate Marketing" />
                 <p>Affiliate Marketing</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/email-marketing.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/email-marketing.svg') }}" alt="Email Marketing" />
                 <p>Email Marketing</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/video-content.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/video-content.svg') }}" alt="Video Content" />
                 <p>Video Content</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/autio-content.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/autio-content.svg') }}" alt="Audio Content" />
                 <p>Audio Content</p>
             </div>
             <div class="service-item">
-                <img src="{{ asset('img/services-icons/social-content.svg') }}" alt="" />
+                <img src="{{ asset('img/services-icons/social-content.svg') }}" alt="Social Media Content" />
                 <p>Social Content</p>
             </div>
         </div>
