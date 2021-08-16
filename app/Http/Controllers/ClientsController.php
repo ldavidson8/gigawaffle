@@ -17,7 +17,7 @@ class ClientsController extends Controller
 
         switch ($projectId)
         {
-            case '1': $view = 'clients.project-1'; break;
+            case 'swapmyenergy': $view = 'clients.swapmyenergy'; break;
             case '2': $view = 'clients.project-2'; break;
             case '3': $view = 'clients.project-3'; break;
             case '4': $view = 'clients.project-4'; break;
@@ -28,7 +28,7 @@ class ClientsController extends Controller
             default:
                 return redirect() -> route('clients');
         }
-        
+
         $navbar_page = '';
         $page_title = 'Our Clients - Gigawaffle';
         return view($view, compact('navbar_page', 'page_title'));
