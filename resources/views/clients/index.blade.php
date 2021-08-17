@@ -11,23 +11,6 @@
         }
         .background-image-right { background-position: right; }
 
-        .background-image-plant { background-image: url("{{ asset('img/background/hydropower-plant_full.png') }}"); }
-        .background-image-market { background-image: url("{{ asset('img/background/market_full.jpg') }}"); }
-        .background-image-powerline { background-image: url("{{ asset('img/background/powerline_full.png') }}"); }
-        .background-image-preston { background-image: url("{{ asset('img/background/preston_full.jpg') }}"); }
-        .background-image-train { background-image: url("{{ asset('img/background/train_full.jpg') }}"); }
-        .background-image-windturbines { background-image: url("{{ asset('img/background/wind-turbines_full.png') }}"); }
-
-        @media (max-width: 1000px)
-        {
-            .background-image-plant { background-image: url("{{ asset('img/background/hydropower-plant_half.png') }}"); }
-            .background-image-market { background-image: url("{{ asset('img/background/market_half.jpg') }}"); }
-            .background-image-powerline { background-image: url("{{ asset('img/background/powerline_half.png') }}"); }
-            .background-image-preston { background-image: url("{{ asset('img/background/preston_half.jpg') }}"); }
-            .background-image-train { background-image: url("{{ asset('img/background/train_half.jpg') }}"); }
-            .background-image-windturbines { background-image: url("{{ asset('img/background/wind-turbines_half.png') }}"); }
-        }
-
         .client-project-section
         {
             margin: 20px 0px !important;

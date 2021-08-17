@@ -9,13 +9,13 @@ html
 }
 
 
-:root 
+:root
 {
     --color-pink: #DF4985;
     --color-violet: #7A98EE;
-    --color-navyblue: #000733;  
+    --color-navyblue: #000733;
     --color-white: #FFFFFF;
-    
+
 }
 
 :root.dark {
@@ -403,7 +403,7 @@ b
     border-radius: 20px 20px 0px 0px !important;
 }
 
-        
+
 input, select, textarea
 {
     border: none !important;
@@ -468,9 +468,9 @@ textarea:-webkit-autofill:focus
         align-self: flex-end;
     }
 
-    hr 
+    hr
     {
-        
+
         border: 3px solid var(--color-navyblue);
         margin: 0;
     }
@@ -488,13 +488,13 @@ textarea:-webkit-autofill:focus
         padding: 50px 30px;
         justify-content: center;
     }
-    
+
     .top-section-outer
     {
         padding: 0px;
         margin-top: 0px;
     }
-    
+
     .pink-box-round
     {
         border-radius: 0px !important;
@@ -504,7 +504,7 @@ textarea:-webkit-autofill:focus
     {
         border-radius: 0px !important;
     }
-    
+
     .pink-box-white-striped-border
     {
         border: none;
@@ -516,7 +516,7 @@ textarea:-webkit-autofill:focus
     {
         border-radius: 0px !important;
     }
-    
+
     .text-container-40px
     {
         padding: 10px 15px;
