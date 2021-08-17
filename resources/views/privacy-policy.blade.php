@@ -28,6 +28,11 @@
             color: #000733;
             outline: none;
         }
+        .gradient-container{
+            background-image: linear-gradient(to right, #DF4985 , #7A98EE);
+            border-radius: 20px;
+        }
+
         @media (max-width: 370px)
         {
             .main-title

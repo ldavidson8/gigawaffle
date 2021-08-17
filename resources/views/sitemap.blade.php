@@ -11,6 +11,8 @@
         }
         .line-height{
             line-height: 2.5;
+            padding: 0px;
+            margin: 0px;
         }
         .anchor-default:link, .anchor-default:visited{
             color: #DF4985;
@@ -47,13 +49,6 @@
                 font-size: 9vmin;
             }
         }
-        @media (max-width: 334px)
-        {
-            .font-weight-bold
-            {
-                margin-right: 5px;
-            }
-        }
     </style>
 @endsection
 
@@ -82,10 +77,10 @@
                             <p><a class="anchor-default" href="{{ route('services') }}">Our Services</a></p>
                             <p><a class="anchor-default" href="{{ route('service-selection') }}">Service Selection</a></p>
                             <p><a class="anchor-default" href="{{ route('about') }}#contactform">Contact Us</a></p>
-                            <p><a class="anchor-default" href="{{ route('privacy-policy') }}">Privacy Policy</a></p>
-                            <p><a class="anchor-default" href="{{ route('terms-and-conditions') }}">Terms and Conditions</a></p>
-                            
                             <p><a class="anchor-default" href="http://gigawaffle.co.uk/blog/">Blog</a></p>
+                            <p><a class="anchor-default" href="{{ route('privacy-policy') }}">Privacy Policy</a></p>
+                            <p><a class="anchor-default" href="{{ route('cookie-policy') }}">Cookie Policy</a></p>
+                            <p><a class="anchor-default" href="{{ route('terms-and-conditions') }}">Terms and Conditions</a></p>
                         </li>
                     </ul>
                 </div>

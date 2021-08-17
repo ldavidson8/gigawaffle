@@ -20,7 +20,15 @@
     {
         background: linear-gradient(var(--color-pink),var(--color-pink)) bottom/ 95% 5px no-repeat, var(--color-navyblue);
     }
-
+    @media (max-width: 360px)
+        {
+            .footer-ver
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;  
+            }
+        }
 </style>
 <div class="text-white">
 <a href="https://linktr.ee/gigawaffle" rel="external">
@@ -63,10 +71,11 @@
         <div class="order-last order-md-0 d-block col-12 col-md-6 text-center text-md-left">
             <p> &copy;2021 Gigawaffle </p>
         </div>
-        <div class="col-12 col-md-6 order-first order-md-1 text-md-right d-flex justify-content-between justify-content-md-end">
-            <a class="footer-link mr-4" href="{{ route('terms-and-conditions') }}"> Terms </a>
-            <a class="footer-link mr-4" href="{{ route('privacy-policy') }}"> Privacy </a>
-            <a class="footer-link" href="{{ route('sitemap') }}"> Sitemap </a>
+        <div class="footer-ver col-12 col-md-6 order-first order-md-1 text-md-right d-flex justify-content-between justify-content-md-end">
+            <a class="footer-link mr-3" href="{{ route('terms-and-conditions') }}"> Terms </a>
+            <a class="footer-link mr-3" href="{{ route('privacy-policy') }}"> Privacy </a>
+            <a class="footer-link mr-3" href="{{ route('cookie-policy') }}">Cookies</a>
+            <a class="footer-link mr-3" href="{{ route('sitemap') }}">Sitemap</a>
         </div>
     </div>
 </div>
