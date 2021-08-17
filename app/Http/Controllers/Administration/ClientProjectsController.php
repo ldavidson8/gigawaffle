@@ -109,7 +109,7 @@ class ClientProjectsController extends Controller
                 try
                 {
                     $uploaded_file = $request -> image;
-                    $image = 'storage/' . $uploaded_file -> store('client-projects/images', 'public_html');
+                    $image = 'storage/' . $uploaded_file -> store('client-projects', 'public_html');
                 }
                 catch (Throwable $th)
                 {

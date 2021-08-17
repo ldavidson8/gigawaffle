@@ -47,3 +47,25 @@ Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
     Route::get('500', function() { abort(500); });
     Route::get('503', function() { abort(503); });
 });
+
+// Route::get('symbolic-link', function()
+// {
+//     $target = '/home/wqbk9bge58wq/laravel-swapmyenergy/public/css';
+//     $shortcut = '/home/wqbk9bge58wq/public_html/www_swapmyenergy/css2';
+//     symlink($target, $shortcut);
+//     $target = '/home/wqbk9bge58wq/laravel-swapmyenergy/public/fonts';
+//     $shortcut = '/home/wqbk9bge58wq/public_html/www_swapmyenergy/fonts2';
+//     // symlink($target, $shortcut);
+//     $target = '/home/wqbk9bge58wq/laravel-swapmyenergy/public/img';
+//     $shortcut = '/home/wqbk9bge58wq/public_html/www_swapmyenergy/img2';
+//     symlink($target, $shortcut);
+//     $target = '/home/wqbk9bge58wq/laravel-swapmyenergy/public/js';
+//     $shortcut = '/home/wqbk9bge58wq/public_html/www_swapmyenergy/js2';
+//     symlink($target, $shortcut);
+//     $target = '/home/wqbk9bge58wq/laravel-swapmyenergy/public/media';
+//     $shortcut = '/home/wqbk9bge58wq/public_html/www_swapmyenergy/media2';
+//     symlink($target, $shortcut);
+//     $target = '/home/wqbk9bge58wq/laravel-swapmyenergy/public/storage';
+//     $shortcut = '/home/wqbk9bge58wq/public_html/www_swapmyenergy/storage2';
+//     // symlink($target, $shortcut);
+// });
