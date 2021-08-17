@@ -145,9 +145,7 @@
                     <h3>{{ $client_project -> SubHeading }}</h3>
                     @for ($j = 0; $j < count($short_content); $j++)
                         {{-- <p <?= ($j > 0) ? "class='read-more-target'" : '' ?>> --}}
-                        <p>
-                            {{ $short_content[$j] }}
-                        </p>
+                        <p>{{ $short_content[$j] }}</p>
                     @endfor
                     {{-- @if (count($short_content) > 1) <label for="read-more-controller" class="read-more-trigger"></label> @endif --}}
                     <a class="pink-link" href="{{ route('clients.projects', [ 'projectId' => $client_project -> ID ]) }}">Learn more<i class="fas fa-long-arrow-alt-right"></i></a>
