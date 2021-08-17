@@ -180,7 +180,7 @@
                 <img src="{{ asset('img/services-packages/fan-icon.png') }}" alt="" />
                 <h4 class="package-container-header">From Business To Brand</h4>
                 <p>Turn you business into a brand with this package. We'll sort out your brand design, social media marketing, content marketing and media content to upgrade your business.</p>
-                <a href="" class="pink-link">Learn More</a>
+                <a id="B2B" href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "From Business to Brand" package.'>Click to inquire in the form below</a>
             </div>
             <div class="d-none d-md-block col-md-6">
                 <img src="{{ asset('img/services-packages/megaphone.png') }}" alt="" />
@@ -194,7 +194,7 @@
                 <img src="{{ asset('img/services-packages/globe.png') }}" alt="" />
                 <h4 class="package-container-header">Time To Get Connected</h4>
                 <p>We'll get your business online by creating a website to suit your business. We will do some basic SEO work to push your business up Google's search engine.</p>
-                <a href="" class="pink-link">Learn More</a>
+                <a href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "Time To Get Connected" package.'>Click to inquire in the form below</a>
             </div>
         </div>
         <div class="row" style="padding: 20px 0px;">
@@ -202,7 +202,7 @@
                 <img src="{{ asset('img/services-packages/smartphone.png') }}" alt="" />
                 <h4 class="package-container-header">It's Time To Upgrade</h4>
                 <p>Want a bespoke and future-proof website? We will create a mobile ready website, so your customers can enjoy what you offer at any time or place.</p>
-                <a href="" class="pink-link">Learn More</a>
+                <a href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "It&apos;s Time To Upgrade" package.'>Click to inquire in the form below</a>
             </div>
             <div class="d-none d-md-block col-md-6">
                 <img src="{{ asset('img/services-packages/mobile.png') }}" alt="" />
@@ -245,9 +245,9 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message *</label>
-                        <textarea name="message" rows="4" required style="width: 100%;">{{ old('message') }}</textarea>
+                        <textarea id="message-box" name="message" rows="4" required style="width: 100%;">{{ old('message') }}</textarea>
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <p>* required</p>
                     </div>
                     <div style="text-align: center;">
@@ -257,4 +257,13 @@
             </div>
         </div>
     </div>
+@endsection
+
+
+@section('script')
+<script>
+$('a.pink-link').click(function(e){
+    $('#message-box').val($(this).data('template'));
+});
+</script>
 @endsection
