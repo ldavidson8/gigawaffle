@@ -44,6 +44,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YVLHDXKRLS"></script>
     <script src="{{ URL::asset('js/google-analytics.js') }}"></script>
+    <!-- Facebook Pixel Code -->
+    <script type="text/javascript" src="{{ URL::asset('js/facebook-pixel.js') }}"></script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=534470887542377&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
     <!-- Our Scripts -->
     <script type="text/javascript" src="{{ URL::asset('js/intersection-observer-api.js') }}"></script>
