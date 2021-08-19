@@ -7,8 +7,8 @@
         list-style-type: none;
     }
 
-    ul.caret-right-list li:before 
-    {    
+    ul.caret-right-list li:before
+    {
         font-family: 'FontAwesome';
         content: '\f0da';
         margin:0 10px 0 -15px;
@@ -52,10 +52,10 @@
     .text-white-outline
     {
         /* 1 pixel white shadow to left, top, right and bottom */
-        text-shadow: 
-        -1px 0 white, 
-        0 1px white, 
-        1px 0 white, 
+        text-shadow:
+        -1px 0 white,
+        0 1px white,
+        1px 0 white,
         0 -1px white;
     }
 
@@ -73,7 +73,7 @@
     {
         margin-right: 1em;
     }
-    
+
     }
 </style>
 @endsection
@@ -116,23 +116,23 @@
             <h2 style="font-size: 1.5em"> Our Services </h2>
             <p style="font-size: 1.5em; font-weight: bold;"> Those who have trusted gigawaffle </p>
             <div class="row d-flex center-content text-center">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-6">
                     <a href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">
                     <img class="border-radius-20" src="{{ asset('img/project-cards/sme-card.png')}}" alt="">
                     </a>
                         <p style="font-size: 1.5em; font-weight: 500;"> Swap My Energy</p>
                         <p style="font-weight: 300; font-style: italic">Web Development Project</p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-6">
                     <img class="border-radius-20" src="{{ asset('img/project-cards/comingsoon.png') }}" alt="">
                         <p style="font-size: 1.5em; font-weight: 500;"> Project Title</p>
                         <p style="font-weight: 300; font-style: italic"> Project Category</p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                {{-- <div class="col-12 col-md-6 col-lg-4">
                     <img class="border-radius-20" src="{{ asset('img/project-cards/comingsoon.png') }}" alt="">
                         <p style="font-size: 1.5em; font-weight: 500;"> Project Title</p>
                         <p style="font-weight: 300; font-style: italic"> Project Category</p>
-                </div>
+                </div> --}}
             </div>
             <a href="{{ route('clients') }}">
             <button class="navy-blue-button"> See All Clients </button>
