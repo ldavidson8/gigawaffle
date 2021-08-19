@@ -50,7 +50,10 @@ Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
 
 // Route::get('symbolic-link', function()
 // {
-//     $target = '/home/wqbk9bge58wq/laravel-swapmyenergy/public';
-//     $shortcut = '/home/wqbk9bge58wq/public_html/www_swapmyenergy';
+//     $target = '/home/wqbk9bge58wq/laravel-gigawaffle/public';
+//     $shortcut = '/home/wqbk9bge58wq/public_html/www_gigawaffle';
+//     symlink($target, $shortcut);
+//     $target = '/home/wqbk9bge58wq/laravel-gigawaffle-gw01/public';
+//     $shortcut = '/home/wqbk9bge58wq/public_html/www_gigawaffle_gw01';
 //     symlink($target, $shortcut);
 // });
