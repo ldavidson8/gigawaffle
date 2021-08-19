@@ -23,7 +23,7 @@
                         <td>
                             <h1 id="title-spacing" style="position: relative; padding-top:; font-weight: bold; font-size: 40px; text-align: center;">
                                 <span id="number-spacing" style="font-size: 130px;">
-                                    4 <img src="{{ asset('img/error pages/character-419.png') }}" style="width: auto; height: 0.8em; z-index: -1; margin-left: -0.2em; margin-right: -0.2em; margin-bottom: 0.2em;" /> 4
+                                    4 <img src="{{ asset('img/error pages/character-419.png') }}" style="width: auto; height: 0.8em; z-index: -1; margin-left: -0.2em; margin-right: -0.2em; margin-bottom: 0.2em;" /> 3
                                 </span>
                                 <br />Forbidden
                             </h1>
