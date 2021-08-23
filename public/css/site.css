@@ -104,15 +104,15 @@ nav navbar-toggle
     border:none;
 }
 
+nav .nav-link-current-page
+{
+    font-weight: bold;
+}
+
 
 footer
 {
-    background-color: #000733;
-    color: #FFFFFF;
-    font-weight: 100;
-    font-size: 22px;
-    padding: 10px;
-    text-align: center;
+    width: 100%;
 }
 
 img

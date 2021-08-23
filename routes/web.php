@@ -15,6 +15,12 @@ Route::get('/sitemap', 'HomeController@Sitemap') -> name('sitemap');
 Route::get('/clients', 'ClientsController@clients') -> name('clients');
 Route::get('/clients/{projectId}', 'ClientsController@clientProjects') -> name('clients.projects');
 
+Route::group([ 'prefix' => 'blog' ], function()
+{
+    Route::get('/', 'BlogController@index') -> name('blog');
+    Route::get('/{blogId}', 'BlogController@blogPost') -> name('blog.blog-post');
+});
+
 
 Route::group([ 'prefix' => 'work-with-us' ], function()
 {
@@ -57,3 +63,11 @@ Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
 //     $shortcut = '/home/wqbk9bge58wq/public_html/www_gigawaffle_gw01';
 //     symlink($target, $shortcut);
 // });
+
+
+//---------------------------------
+//-----  Permanent Redirects  -----
+//---------------------------------
+Route::Get('/blog/2021/08/17/waffle-corner-what-is-seo', function() { return redirect('/blog/512/', 301); });
+Route::Get('/blog/2021/08/09/waffle-fundamentals-what-is-copywriting', function() { return redirect('blog/513', 301); });
+Route::Get('/blog/2021/08/08/welcome-to-the-waffle-corner', function() { return redirect('blog/514', 301); });

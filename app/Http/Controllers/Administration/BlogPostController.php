@@ -3,28 +3,32 @@
 namespace App\Http\Controllers\Administration;
 
 use App\Http\Controllers\Controller;
-use App\Repositories\ClientProjectRepository;
+use App\Repositories\BlogCategoryRepository;
+use App\Repositories\BlogPostRepository;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Throwable;
 
-class ClientProjectsController extends Controller
+class BlogPostController extends Controller
 {
     public function index()
     {
-        $client_projects = ClientProjectRepository::Select();
-        if (!isset($client_projects)) return redirect() -> route('control-panel');
+        $blog_posts = BlogPostRepository::Select();
+        if (!isset($blog_posts)) return redirect() -> route('control-panel');
 
-        $page_title = 'Client Projects - Control Panel';
-        return view('administration.client-projects.index', compact('page_title', 'client_projects'));
+        $page_title = 'Blog Posts - Control Panel';
+        return view('administration.blog-posts.index', compact('page_title', 'blog_posts'));
     }
 
 
     public function create()
     {
-        $page_title = 'Create Client Project - Control Panel';
-        return view('administration.client-projects.create', compact('page_title'));
+        $blog_categories = BlogCategoryRepository::Select();
+        if (!isset($blog_categories)) return redirect() -> route('control-panel.blog-post');
+
+        $page_title = 'Create Blog Post - Control Panel';
+        return view('administration.blog-posts.create', compact('page_title', 'blog_categories'));
     }
 
     public function createPost(Request $request)
@@ -36,10 +40,9 @@ class ClientProjectsController extends Controller
             [
                 'page_title' => 'required|string',
                 'heading' => 'required|string',
-                'sub_heading' => 'required|string',
                 'image' => 'required|image',
-                'short_content' => 'required|string',
-                'full_content' => 'required|string'
+                'full_content' => 'required|string',
+                'category_id' => 'required|integer'
             ]);
             if ($validator -> fails()) return back() -> withErrors($validator) -> withInput();
 
@@ -54,31 +57,37 @@ class ClientProjectsController extends Controller
                 try
                 {
                     $uploaded_file = $request -> image;
-                    $image = 'storage/' . $uploaded_file -> store('client-projects/images', 'public_html');
+                    $image = 'storage/' . $uploaded_file -> store('blog-post/images', 'public_html');
                 }
                 catch (Throwable $th)
                 {
                     report($th);
-                    Log::channel('request-callback') -> error('ClientProjectsController -> createPost(), try catch 1, Error saving the uploaded file  -:-  ' . $th -> getMessage());
+                    Log::channel('request-callback') -> error('BlogPostControllerController -> createPost(), try catch 1, Error saving the uploaded file  -:-  ' . $th -> getMessage());
                     return redirect() -> back() -> withErrors([ 'image' => 'The image could not be saved.' ]) -> withInput();
                 }
             }
 
             // save the form data to the database
-            ClientProjectRepository::Insert(
+            $rows = BlogPostRepository::Insert(
                 $request -> input('page_title'),
                 $request -> input('heading'),
-                $request -> input('sub_heading'),
                 $image,
-                $request -> input('short_content'),
-                $request -> input('full_content')
+                $request -> input('full_content'),
+                $request -> input('category_id')
             );
+            $insert_id = $rows[0] -> last_insert_id;
 
-            // redirect to the success page
-            return redirect() -> route('control-panel.client-projects');
+            if (isset($insert_id) && is_numeric($insert_id) && $insert_id > 0)
+            {
+                // redirect to the success page
+                return redirect() -> route('control-panel.blog-post');
+            }
+
+            return redirect() -> back() -> withErrors([ '' => 'Sorry, but something went wrong. ' . $insert_id ]) -> withInput();
         }
         catch (Throwable $th)
         {
+            throw($th);
             // report the error and redirect to the error page
             report($th);
             return redirect() -> back() -> withErrors([ 'image' => 'Sorry, but there was an error.' ]) -> withInput();
@@ -88,12 +97,15 @@ class ClientProjectsController extends Controller
 
     public function edit($id)
     {
-        $rows = ClientProjectRepository::SelectById($id);
-        if (!isset($rows) || count($rows) == 0) return redirect() -> route('control-panel.client-projects');
-        $client_project = $rows[0];
+        $blog_categories = BlogCategoryRepository::Select();
+        if (!isset($blog_categories)) return redirect() -> route('control-panel.blog-post');
 
-        $page_title = 'Edit Client Project - Control Panel';
-        return view('administration.client-projects.edit', compact('page_title', 'client_project'));
+        $rows = BlogPostRepository::SelectById($id);
+        if (!isset($rows) || count($rows) == 0) return redirect() -> route('control-panel.blog-post');
+        $blog_post = $rows[0];
+
+        $page_title = 'Edit Blog Post - Control Panel';
+        return view('administration.blog-posts.edit', compact('page_title', 'blog_post', 'blog_categories'));
     }
 
     public function editPost(Request $request)
@@ -105,10 +117,9 @@ class ClientProjectsController extends Controller
             [
                 'page_title' => 'required|string',
                 'heading' => 'required|string',
-                'sub_heading' => 'required|string',
                 'image' => 'nullable|image',
-                'short_content' => 'required|string',
-                'full_content' => 'required|string'
+                'full_content' => 'required|string',
+                'category_id' => 'required|integer'
             ]);
             if ($validator -> fails()) return back() -> withErrors($validator) -> withInput();
 
@@ -119,12 +130,12 @@ class ClientProjectsController extends Controller
                 try
                 {
                     $uploaded_file = $request -> image;
-                    $image = 'storage/' . $uploaded_file -> store('client-projects', 'public_html');
+                    $image = 'storage/' . $uploaded_file -> store('blog-post', 'public_html');
                 }
                 catch (Throwable $th)
                 {
                     report($th);
-                    Log::channel('request-callback') -> error('ClientProjectsController -> createPost(), try catch 1, Error saving the uploaded file  -:-  ' . $th -> getMessage());
+                    Log::channel('request-callback') -> error('BlogPostControllerController -> createPost(), try catch 1, Error saving the uploaded file  -:-  ' . $th -> getMessage());
                     return redirect() -> back() -> withErrors([ 'image' => 'The image could not be saved.' ]) -> withInput();
                 }
             }
@@ -132,30 +143,28 @@ class ClientProjectsController extends Controller
             // save the form data to the database
             if (isset($image))
             {
-                ClientProjectRepository::Update(
+                BlogPostRepository::Update(
                     $request -> input('id'),
                     $request -> input('page_title'),
                     $request -> input('heading'),
-                    $request -> input('sub_heading'),
                     $image,
-                    $request -> input('short_content'),
-                    $request -> input('full_content')
+                    $request -> input('full_content'),
+                    $request -> input('category_id')
                 );
             }
             else
             {
-                ClientProjectRepository::UpdateNoImage(
+                BlogPostRepository::UpdateNoImage(
                     $request -> input('id'),
                     $request -> input('page_title'),
                     $request -> input('heading'),
-                    $request -> input('sub_heading'),
-                    $request -> input('short_content'),
-                    $request -> input('full_content')
+                    $request -> input('full_content'),
+                    $request -> input('category_id')
                 );
             }
 
             // redirect to the success page
-            return redirect() -> route('control-panel.client-projects');
+            return redirect() -> route('control-panel.blog-post');
         }
         catch (Throwable $th)
         {

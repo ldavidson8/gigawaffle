@@ -1,0 +1,95 @@
+.background-image
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+.background-image-right { background-position: right; }
+
+.blog-post-section
+{
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    width: 29%;
+    max-width: 100%;
+    margin: 1%;
+}
+
+.blog-post-heading
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    background-color: rgba(0, 7, 51, 0.5);
+    border-radius: 0 0 30px 30px;
+    font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 1199px)
+{
+    .background-image
+    {
+        border-radius: 2.5vw;
+    }
+
+    .blog-post-section
+    {
+        height: 25vw;
+    }
+
+    .blog-post-heading
+    {
+        border-radius: 0 0 2.5vw 2.5vw;;
+        font-size: 1.6666vw;
+    }
+}
+
+@media (max-width: 999px)
+{
+    .background-image
+    {
+        border-radius: 2.5vw;
+    }
+
+    .blog-post-section
+    {
+        width: 45%;
+        height: 37.5vw;
+        margin: 2%;
+    }
+
+    .blog-post-heading
+    {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 575px)
+{
+    .background-image
+    {
+        border-radius: 2.5vw;
+    }
+
+    .blog-post-section
+    {
+        width: 96%;
+        height: 75vw;
+        margin: 2%;
+    }
+
+    .blog-post-heading
+    {
+        font-size: 5vw;
+    }
+}

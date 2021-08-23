@@ -41,7 +41,7 @@ class ClientsController extends Controller
             if (isset($rows) && count($rows) > 0)
             {
                 $client_project = $rows[0];
-                $navbar_page = '';
+                $navbar_page = 'clients';
                 $page_title = $client_project -> PageTitle;
                 return view('clients.client-project', compact('navbar_page', 'page_title', 'client_project'));
             }

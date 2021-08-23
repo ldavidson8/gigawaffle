@@ -12,14 +12,14 @@
 @section('main-content')
         <div class="container-lg top-section-outer">
             <div class="gradient-container container-no-gradient-sm">
-                <h1>Create a new Client Project</h1>
+                <h1>Create a new Blog Post</h1>
                 <hr style="width: 150px" />
             </div>
             <br />
 
-            <p><a href="{{ route('control-panel.client-projects') }}"><button class="btn btn-success">Back</button></a></p>
+            <p><a href="{{ route('control-panel.blog-post') }}"><button class="btn btn-success">Back</button></a></p>
 
-            <form method="POST" action="{{ route('control-panel.client-projects.create') }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('control-panel.blog-post.create') }}" enctype="multipart/form-data">
                 @if (count($errors) > 0)
                     <div class="alert alert-danger">
                         <strong>Whoops!</strong> There were some problems with your input.<br /><br />
@@ -32,6 +32,14 @@
                 @endif
                 @csrf
                 <div class="form-group">
+                    <label for="category_id">Category <span class="text-danger">*</span></label>
+                    <select class="form-control" type="text" name="category_id" data-value="{{ old('category_id') }}" required="required">
+                        @foreach ($blog_categories as $row)
+                            <option value="{{ $row -> CategoryID }}">{{ $row -> Name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="form-group">
                     <label for="page_title">Page Title <span class="text-danger">*</span></label>
                     <input class="form-control" type="text" name="page_title" value="{{ old('page_title') }}" required="required" />
                 </div>
@@ -40,19 +48,11 @@
                     <input class="form-control" type="text" name="heading" value="{{ old('heading') }}" required="required" />
                 </div>
                 <div class="form-group">
-                    <label for="sub_heading">Sub-Heading <span class="text-danger">*</span></label>
-                    <input class="form-control" type="text" name="sub_heading" value="{{ old('sub_heading') }}" required="required" />
-                </div>
-                <div class="form-group">
                     <label for="image">Image <span class="text-danger">*</span></label>
                     <input type="file" class="form-control" name="image" id="image" accept="image/*" required="required" />
                 </div>
                 <div class="form-group">
-                    <label for="short_content">Short Content (for page of showing multiple projects) <span class="text-danger">*</span></label>
-                    <textarea name="short_content" rows="10" style="width: 100%;">{{ old('short_content') }}</textarea>
-                </div>
-                <div class="form-group">
-                    <label for="full_content">Full Content (for the page displaying only this project) <span class="text-danger">*</span></label>
+                    <label for="full_content">Full Content <span class="text-danger">*</span></label>
                     <textarea name="full_content" rows="20" style="width: 100%;">{{ old('full_content') }}</textarea>
                 </div>
                 <div style="text-align: center;">
