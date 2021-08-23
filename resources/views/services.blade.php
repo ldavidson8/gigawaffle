@@ -179,7 +179,7 @@
             <div class="package-container col-12 col-md-6">
                 <img src="{{ asset('img/services-packages/fan-icon.png') }}" alt="" />
                 <h4 class="package-container-header">From Business To Brand</h4>
-                <p>Turn you business into a brand with this package. We'll sort out your brand design, social media marketing, content marketing and media content to upgrade your business.</p>
+                <p>Turn your business into a brand with this package. We'll sort out your brand design, social media posts, physical branding and copyright to upgrade your business.</p>
                 <a id="B2B" href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "From Business to Brand" package.'>Click to inquire in the form below</a>
             </div>
             <div class="d-none d-md-block col-md-6">
