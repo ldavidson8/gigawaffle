@@ -5,10 +5,6 @@
         ul{
             list-style: none;
         }
-        p{
-            font-weight: normal;
-            text-align: center;
-        }
         .line-height{
             line-height: 2.5;
             padding: 0px;
@@ -38,7 +34,7 @@
             color: #000733;
             padding: 2.5mm;
             margin-right: 2cm;
-            border-radius: 25px; 
+            border-radius: 25px;
             text-align: center;
         }
 
@@ -54,7 +50,7 @@
 
 @section('main-content')
 <hr />
-    <main class="col-md-12">
+    <main class="col-md-12" style="text-align: center;">
         <div class="container">
             <div class="title">
                 <br />
@@ -64,7 +60,7 @@
                     <p>Welcome to our Sitemap page. Below you can find a list of all the visitable pages on our website.</p>
                     <br />
                 </div>
-            </div>   
+            </div>
             <div class="row">
                 <div class="col-lg-6">
                     <p class="font-weight-bold gradient-container">Gigawaffle:</p>
@@ -89,12 +85,12 @@
                     <ul class="line-height">
                         <li>
                         <br />
-                        <p><a class="anchor-default" href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">Swap My Energy</a></p>  
+                        <p><a class="anchor-default" href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">Swap My Energy</a></p>
                         </li>
-                    </ul>   
+                    </ul>
                 </div>
             </div>
         </div>
     </main>
-    <br /><br /><br />    
+    <br /><br /><br />
 @endsection()

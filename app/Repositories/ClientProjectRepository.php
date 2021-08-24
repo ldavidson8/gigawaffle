@@ -28,7 +28,6 @@ class ClientProjectRepository
         }
         catch (Throwable $th)
         {
-            report($th);
             return null;
         }
     }
@@ -71,7 +70,6 @@ class ClientProjectRepository
         }
         catch (Throwable $th)
         {
-            throw($th);
             report($th);
             return null;
         }
@@ -93,7 +91,6 @@ class ClientProjectRepository
         }
         catch (Throwable $th)
         {
-            throw($th);
             report($th);
             return null;
         }

@@ -25,7 +25,6 @@ class BlogController extends Controller
         catch (Throwable $th)
         {
             report($th);
-            return redirect() -> route('home');
         }
 
         return view('blog.index', compact('navbar_page', 'page_title', 'blog_posts'));
@@ -49,7 +48,6 @@ class BlogController extends Controller
         }
         catch (Throwable $th)
         {
-            throw($th);
             report($th);
             return redirect() -> action("BlogController@index");
         }

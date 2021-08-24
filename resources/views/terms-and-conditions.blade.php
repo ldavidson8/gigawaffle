@@ -3,7 +3,7 @@
     <style>
         p{
             font-weight: normal;
-            line-height: 1; 
+            line-height: 1;
             padding: 6px;
         }
         h2{
@@ -59,16 +59,16 @@
                     <p class="font-weight-bold">1.1 Parties</p>
                     <p>This Agreement is made between You the customer ("Customer") and, Gigawaffle ("gigawaffle.co.uk"), a company registered in England, (Company Number 01772 584880) whose registered address is Estate House, 18 Fox St, Preston PR1 2AB.</p>
                     <p class="font-weight-bold">1.2. Definitions</p>
-                    <p>In this Agreement, unless the context otherwise requires: 
+                    <p>In this Agreement, unless the context otherwise requires:
                     <br />
                     <br />
                     "We", "Us", "Our" and related expressions refer to Gigawaffle.
                     <br />
                     <br />
-                    "You", "Your", "Customer" and related expressions refer to the user of the Service. 
+                    "You", "Your", "Customer" and related expressions refer to the user of the Service.
                     <br />
                     <br />
-                    "Our Site" means the website with address <a class="anchor-default" href="{{ route('home') }}">www.gigawaffle.co.uk.</a> 
+                    "Our Site" means the website with address <a class="anchor-default" href="{{ route('home') }}">www.gigawaffle.co.uk.</a>
                     <br />
                     <br />
                     "Service" means the service provided by Gigawaffle via the gigawaffle.co.uk website.
@@ -86,16 +86,16 @@
                     </p>
                 <h2 class="section-title gradient-container">2. Buyer's Obligations</h2>
                 <br />
-                    <p class="font-weight-bold">2.1. You represent and warrant that:</p> 
+                    <p class="font-weight-bold">2.1. You represent and warrant that:</p>
                     <p>You are of sufficient legal age and capacity to enter into this Agreement. That you have taken all reasonable precautions to ensure that any data you submit to Our Site is true and accurate and free from viruses and anything else that may have a contaminating or destructive effect on any part of Our Site or any other technology.
                     </p>
                     <p class="font-weight-bold">2.2. You undertake and agree to:</p>
                     <p>Fully comply with all applicable laws and any other contractual terms which govern your use of the Gigawaffle Services (and any related interaction or transaction).
                     <br />
-                    <br /> 
+                    <br />
                     Be solely responsible and liable with respect to any of the uses of the Gigawaffle Services which occur under your User Account and/or User Platform(s), and for any of your User Content (including for any consequences of accessing, importing, uploading, copying, using or publishing such User Content on or with respect to the Gigawaffle Services);
                     <br />
-                    <br /> 
+                    <br />
                     Regularly and independently save and backup any of your User Content and the information that is being processed by you regarding your User Platform, including with respect to End Users, User Products, and any applications and/or Third Party Services used by you;
                     <br />
                     <br />
@@ -170,11 +170,11 @@
                     Gigawaffle reserves the right to change its Fees at any time, upon notice to you if such change may affect your existing subscriptions. If you received a discount or other promotional offer, Gigawaffle shall have the right to automatically and without notice renew your subscription to such Gigawaffle Service(s) at the full applicable Fee.
                     </p>
                     <p class="font-weight-bold">5.2. Invoices</p>
-                    <p> 
+                    <p>
                     Gigawaffle will issue an invoice or credit memo for any payment of Fees or refund made to or by Gigawaffle (“Invoice”). Each Invoice will be issued in electronic form and based on the country stated in your billing address, and will be made available to you via your User Account and/or by e-mail. For the purpose of issuing the Invoice, you may be required to furnish certain Personal Information (as such term is defined in the Privacy Policy) in order to comply with local laws.
                     </p>
                     <p class="font-weight-bold">5.3. Money-Back Guarantee</p>
-                    <p>  
+                    <p>
                     If you are not satisfied with Gigawaffle Services that are subject to a Fee for a period of service or subscription commitment and which is your initial purchase of such service, you may provide notice of cancellation for any reason within fourteen (14) days of having first ordered or activated. The Refund is applicable only to the initial purchase of Gigawaffle services and is not applicable to any additional purchases, upgrades, modification or renewals. Please note that the Refund amount may be different than the amount you were charged due to currency changes and third party fees. Gigawaffle will not be responsible for any differences caused by change of currency exchange rates or fees you were charged by third parties. After the Refund Period, the Fees paid by you are non-refundable and non-cancellable.
                     </p>
                 <h2 class="section-title gradient-container">6. Termination</h2>
@@ -187,8 +187,8 @@
                     Please note that as the cancellation process may take a few days, in order to avoid the next automatic renewal and respective charge the cancellation request should be made at least fourteen (14) days prior to the expiration of the then-current service period.
                     </p>
                     <p class="font-weight-bold">6.2. Cancellation by Gigawaffle</p>
-                    <p>  
-                    Failure to comply with any of the Gigawaffle Terms and/or to pay any due Fee shall entitle Gigawaffle to suspend (until full payment is made) or cancel your User Account and User Platform (or certain features thereof), as well as the provision of any related Gigawaffle Services (e.g., Paid Services) or Third Party Services to you. 
+                    <p>
+                    Failure to comply with any of the Gigawaffle Terms and/or to pay any due Fee shall entitle Gigawaffle to suspend (until full payment is made) or cancel your User Account and User Platform (or certain features thereof), as well as the provision of any related Gigawaffle Services (e.g., Paid Services) or Third Party Services to you.
                     </p>
                 <h2 class="section-title gradient-container">7. Third Party Services</h2>
                     <br />
@@ -210,20 +210,20 @@
                     <br />
                     <p>To the fullest extent permitted by law in each applicable jurisdiction, Gigawaffle, its officers, directors, shareholders, employees, affiliates and/or agents shall not be liable to you for any direct, indirect, incidental, special, punitive, exemplary or consequential damages whatsoever, including any damages resulting from:
                     <br />
-                    <br />   
-                    (1) errors, mistakes, or inaccuracies of or in any content; 
                     <br />
-                    <br />  
-                    (2) any personal injury or property damage related to your use of the Gigawaffle Services; 
-                    <br />
-                    <br />   
-                    (3) any unauthorized access to or use of our servers and/or any personal information and/or other information stored therein; 
+                    (1) errors, mistakes, or inaccuracies of or in any content;
                     <br />
                     <br />
-                    (4) any interruption or cessation of transmission to or from the Gigawaffle Services; (5) the use or display of any Content or User Content posted, emailed, transmitted, or otherwise made available via the Gigawaffle Services; 
+                    (2) any personal injury or property damage related to your use of the Gigawaffle Services;
                     <br />
                     <br />
-                    (6) events beyond the reasonable control of Gigawaffle, including any internet failures, equipment failures, electrical power failures, strikes, labor disputes, riots, insurrections, civil disturbances, shortages of labor or materials, fires, floods, storms, earthquakes, explosions, acts of God, war, terrorism, intergalactic struggles, governmental actions, orders of courts, agencies or tribunals or non-performance of third parties; and/or 
+                    (3) any unauthorized access to or use of our servers and/or any personal information and/or other information stored therein;
+                    <br />
+                    <br />
+                    (4) any interruption or cessation of transmission to or from the Gigawaffle Services; (5) the use or display of any Content or User Content posted, emailed, transmitted, or otherwise made available via the Gigawaffle Services;
+                    <br />
+                    <br />
+                    (6) events beyond the reasonable control of Gigawaffle, including any internet failures, equipment failures, electrical power failures, strikes, labor disputes, riots, insurrections, civil disturbances, shortages of labor or materials, fires, floods, storms, earthquakes, explosions, acts of God, war, terrorism, intergalactic struggles, governmental actions, orders of courts, agencies or tribunals or non-performance of third parties; and/or
                     <br />
                     <br />
                     (7) loss of use, data, profits, goodwill, or other intangible losses, resulting from the use or the inability to use any or all of Gigawaffle Services.
@@ -232,20 +232,20 @@
                     You acknowledge and agree that these limitations of liability are agreed allocations of risk constituting in part the consideration for Gigawaffle’s services to you, and such limitations will apply even if Gigawaffle has been advised of the possibility of such liabilities.</p>
                 <h2 class="section-title gradient-container">10. Indemnity</h2>
                     <br />
-                    <p>You agree to defend, indemnify and hold harmless Gigawaffle, its officers, directors, shareholders, employees, affiliates and agents, from and against any and all claims, damages, obligations, losses, liabilities, costs, debt and expenses (including attorneys’ fees) arising from: 
+                    <p>You agree to defend, indemnify and hold harmless Gigawaffle, its officers, directors, shareholders, employees, affiliates and agents, from and against any and all claims, damages, obligations, losses, liabilities, costs, debt and expenses (including attorneys’ fees) arising from:
                     <br />
-                    <br />  
+                    <br />
                     (1) your violation of any term of these Terms of Use or any other Gigawaffle Terms;
                     <br />
                     <br />
-                    (2) your violation of any third party right, including any copyright, access rights, property, or privacy right, resulting from your User Platform or User Content and/or your use of the Gigawaffle Services, including, without limitation, Gigawaffle Services’ actions for your benefit; and/or 
+                    (2) your violation of any third party right, including any copyright, access rights, property, or privacy right, resulting from your User Platform or User Content and/or your use of the Gigawaffle Services, including, without limitation, Gigawaffle Services’ actions for your benefit; and/or
                     <br />
                     <br />
                     (3) any other type of claim that your User Platform and/or User Content caused damage to a third party.</p>
                 <h2 class="section-title gradient-container">11. General</h2>
                     <br />
                     <p class="font-weight-bold">11.1. Changes & Updates</p>
-                    <p> 
+                    <p>
                     Gigawaffle reserves the right to change, suspend or terminate any of the Gigawaffle Services (or any features thereof, or prices applicable thereto), and/or cancel your access to any of the Gigawaffle Services (including removal of any materials created by you in connection with the Gigawaffle Services) for any reason and/or change any of the Gigawaffle Terms with or without prior notice - at any time and in any manner.
                     <br />
                     <br />
@@ -254,14 +254,14 @@
                     <br />
                     If any such changes involve the payment of additional Fees, we will provide you with a notice of such Fees prior to enabling such specific changes. If you fail or refuse to pay such Fees, we may (at our sole discretion) cancel your User Account, continue to support your then-current Gigawaffle Services without enabling such changes, or provide you with alternative Services.</p>
                     <p class="font-weight-bold">11.2. Notices</p>
-                    <p> 
-                    We may provide you with notices in any of the following methods: 
+                    <p>
+                    We may provide you with notices in any of the following methods:
                     <br />
                     <br />
-                    (1) via the Gigawaffle Services, including by pop-up within the Gigawaffle Website, User Account or elsewhere; 
+                    (1) via the Gigawaffle Services, including by pop-up within the Gigawaffle Website, User Account or elsewhere;
                     <br />
                     <br />
-                    (2) by e-mail, sent to the e-mail address you provided us; and/or 
+                    (2) by e-mail, sent to the e-mail address you provided us; and/or
                     <br />
                     <br />
                     (3) through any other means, including any phone number. Gigawaffle’s notice to you will be deemed received and effective within twenty four (24) hours after it was published or sent through any of the foregoing methods, unless otherwise indicated in the notice.</p>

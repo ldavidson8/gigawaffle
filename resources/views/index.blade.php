@@ -1,81 +1,81 @@
 @extends('layouts.master')
 
 @section('stylesheets')
-<style>
-    .caret-right-list
-    {
-        list-style-type: none;
-    }
-
-    ul.caret-right-list li:before
-    {
-        font-family: 'FontAwesome';
-        content: '\f0da';
-        margin:0 10px 0 -15px;
-        color: var(--color-pink);
-        font-size: 3em;
-        vertical-align: middle;
-    }
-
-    .blog-cards
-    {
-        margin-bottom: 1em;
-        text-align: center;
-        border: 2px solid var(--color-navyblue);
-    }
-
-    .blog-card-link
-    {
-        position: relative;
-    }
-
-    .blog-cards-text
-    {
-        color: var(--color-pink);
-        font-size: 17px;
-        font-weight: 700;
-    }
-
-    .post-content
-    {
-        position: absolute;
-        bottom: 25px;
-        left: 15px;
-    }
-
-    .meta
-    {
-        color: var(--color-pink);
-        font-size: 12px;
-        margin-top: 5px;
-    }
-    .text-white-outline
-    {
-        /* 1 pixel white shadow to left, top, right and bottom */
-        text-shadow:
-        -1px 0 white,
-        0 1px white,
-        1px 0 white,
-        0 -1px white;
-    }
-
-    @media (max-width: 990px)
-    {
-    .blog-cards:first-of-type
-    {
-        margin-right: 0;
-    }
+    <link rel="stylesheet" href="{{ asset('css/blog-listing.css') }}" />
+    <style>
+        .caret-right-list
+        {
+            list-style-type: none;
         }
 
-    @media (min-width: 991px)
-    {
-    .blog-cards:first-of-type
-    {
-        margin-right: 1em;
-    }
+        ul.caret-right-list li:before
+        {
+            font-family: 'FontAwesome';
+            content: '\f0da';
+            margin:0 10px 0 -15px;
+            color: var(--color-pink);
+            font-size: 3em;
+            vertical-align: middle;
+        }
 
-    }
-</style>
+        .blog-cards
+        {
+            margin-bottom: 1em;
+            text-align: center;
+            border: 2px solid var(--color-navyblue);
+        }
+
+        .blog-card-link
+        {
+            position: relative;
+        }
+
+        .blog-cards-text
+        {
+            color: var(--color-pink);
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .post-content
+        {
+            position: absolute;
+            bottom: 25px;
+            left: 15px;
+        }
+
+        .meta
+        {
+            color: var(--color-pink);
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .text-white-outline
+        {
+            /* 1 pixel white shadow to left, top, right and bottom */
+            text-shadow:
+            -1px 0 white,
+            0 1px white,
+            1px 0 white,
+            0 -1px white;
+        }
+
+        @media (max-width: 990px)
+        {
+            .blog-cards:first-of-type
+            {
+                margin-right: 0;
+            }
+        }
+
+        @media (min-width: 991px)
+        {
+            .blog-cards:first-of-type
+            {
+                margin-right: 1em;
+            }
+        }
+    </style>
 @endsection
 
 @section('before-header')
@@ -83,29 +83,29 @@
 @endsection
 
 @section('main-content')
-    <div class="container-lg row top-section-outer">
-            <div class="col-12 col-md-6 no-padding">
+        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm">
+            <div class="col-12 col-md-6 no-padding d-flex flex-column">
                 <div class="gradient-container container-no-gradient-sm d-flex">
-                    <div class="align-item-bottom" style="font-style: italic">
+                    <div class="align-item-bottom no-padding" style="font-style: italic">
                         <h1>Marketing and web design that tickles your taste buds</h1>
                         <hr style="width: 150px">
                     </div>
                 </div>
-                <div class="text-container-40px">
+                <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
                     <p class="text-white-outline" style="font-weight: 700;">
                         We're gigawaffle; we want to turn businesses into brands. With plenty of options across web design, marketing and media, you're truly in control when it comes to your business.
                     </p>
                     <p class="text-white-outline">
                         You can pick and choose from a range of services, allowing you to build the perfect package for your business.
                     </p>
-                    <div class="center-button">
+                    <div class="center-button" style="width: 100%;">
                         <a href="{{ route("services") }}">
-                        <button class="button-default">View Services</button>
+                            <button class="button-default">View Services</button>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-6 d-none d-md-flex center-content">
+            <div class="col-6 d-none d-md-block" style="text-align: right;">
                 <img src="{{ asset('img/code-snippet.png') }}" alt="Code snippet of Hello world in React framework"/>
             </div>
         </div>
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="w-100">
-                <h2 class="pink-heading" style="text-align:left; font-style: italic; font-size: 1.6em;"> The Process </h2>
+                {{-- <h2 class="pink-heading" style="text-align:left; font-style: italic; font-size: 1.6em;"> The Process </h2> --}}
                 <ul class="caret-right-list" style="font-weight: 500;">
                     <li>Purchase your perfect package, choose from one of our existing packages or talk with one our team.</li>
                     <li>We'll clarify any of the finer details and then get to work.</li>
@@ -166,28 +166,23 @@
             </div>
         </div>
     </div>
-    <canvas id="bubble"></canvas>
-    <div class="container">
-        <div class="col-12 d-flex flex-column align-items-center py-5">
-            <h2 class="pink-heading pb-3" style="color: var(--color-navyblue)"> The Waffle Corner </h2>
-            <h3> The only place we tolerate any waffle... </h3>
-            <div class="row d-flex justify-content-center pb-4 pt-0 pt-md-5">
-                <a class="blog-card-link" href="http://gigawaffle.co.uk/blog/2021/08/09/waffle-fundamentals-what-is-copywriting/">
-                    <div class="post-content">
-                        <p class="blog-cards-text"> Waffle Fundamentals: What is Copywriting?</p>
-                        <div class="meta"> <i class="far fa-calendar-alt"></i> 09 Aug 2021 </div>
+    @if (isset($blog_posts) && count($blog_posts) > 0)
+        <canvas id="bubble"></canvas>
+        <div class="container full-size d-flex center-content">
+            <div class="col-12 d-flex flex-column align-items-center py-5">
+                <h2 class="pink-heading pb-3" style="color: var(--color-navyblue)">The Waffle Corner</h2>
+                <h3>The only place that we tolerate any waffle...</h3>
+                <div class="container-xl" style="margin-bottom: 30px;">
+                    <div class="text-container-40px" style="text-align: center;">
+                        @foreach ($blog_posts as $blog_post)
+                        <a href="{{ route('blog.blog-post', [ 'blogId' => $blog_post -> ID ]) }}" class="blog-post-section no-padding background-image" style="background-image: url('{{ asset($blog_post -> ImageSource) }}');">
+                            <p class="blog-post-heading">{{ $blog_post -> Heading }}</p>
+                        </a>
+                        @endforeach
                     </div>
-                    <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-1.png') }}" alt="">
-                </a>
-                <a class="blog-card-link" href="http://gigawaffle.co.uk/blog/2021/08/08/welcome-to-the-waffle-corner/">
-                    <div class="post-content">
-                        <p class="blog-cards-text"> Welcome to the Waffle Corner</p>
-                        <div class="meta"> <i class="far fa-calendar-alt"></i> 08 Aug 2021 </div>
-                    </div>
-                    <img class="border-radius-20 blog-cards" src="{{ asset('img/blog-cards/blog-card-2.png') }}" alt="">
-                </a>
+                </div>
+                <a href="{{ route('blog') }}"><button class="navy-blue-button">Read More</button></a>
             </div>
-            <!-- Change to live site blog url when site is ready to launch --><a href="http://gigawaffle.co.uk/blog/"><button class="navy-blue-button"> Read More </button></a>
         </div>
-    </div>
+    @endif
 @endsection
