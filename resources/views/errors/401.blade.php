@@ -15,22 +15,27 @@
         <hr/>
         <div class="row flex-grow-1 no-padding">
         <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block"></div>
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"style="background-image: url('{{ asset('img/error pages/401.png') }}'); background-repeat: no-repeat; background-position: center; background-size: 350px;">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 error-images-2"[[style="background-image: url('{{ asset('img/error pages/401.png') }}'); background-repeat: no-repeat; background-position: center; background-size: 350px;">
                 <table class="table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing" style="padding-top: 2cm; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 130px;">401</span><br />Access Denied</h1>
+                            <h1 id="title-spacing"  style="padding-top:;">
+                                <span class="addhttp" id="number-spacing">
+                                    4 <!--<img src="{{ asset('img/error pages/Donut.png') }}" style="width: auto; height: 0.8em; z-index: -1; margin-left: -0.2em; margin-right: -0.2em; margin-bottom: 0.2em;" />--> <img rel="preload" src="{{ asset('img/error pages/Waffle-1-500kB.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right: -0.3em; margin-bottom: 0.2em;" /> 1
+                                </span>
+                                <br />Access Denied
+                            </h1>
 
                             <br /><br /> 
 
-                            <div style="display: flex; justify-content: center; padding-top:5cm;">
-                                <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 550px;">Your authorization failed<br />Please fill in the correct credentials and try again</p> 
+                            <div class="error-text" style="padding-top:;">
+                                <p class="gradient-container gradient-error-pages">Your authorization failed<br />Please fill in the correct credentials and try again</p>  
                             </div>
 
                             <br /><br />
             
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate" style="width: 100%; font-size: 23px;">Go Back</button></a></p>
+                            <div class="button-container">
+                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
                             </div>
 
                             <br /><br />

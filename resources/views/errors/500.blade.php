@@ -19,18 +19,23 @@
                 <table class=" no-spacing table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing" style="padding-top:; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 130px;">500</span><br />Something Went Wrong</h1>
+                        <h1 id="title-spacing">
+                                <span class="addhttp" id="number-spacing">
+                                    5 <img src="{{ asset('img/error pages/Waffle-1.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right:0em; margin-bottom: 0.1em;" /> <img src="{{ asset('img/error pages/Waffle-1-500kB.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.4em; margin-right: -0.1em; margin-bottom: 0.1em;" /> 
+                                </span>
+                                <br />Something Went Wrong
+                            </h1>
                             
                             <br /><br />
 
-                            <div style="padding-top:; display: flex; justify-content: center;">
-                                <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 500px;">The server encountered an internal error and was unable to complete your request</p> 
+                            <div class="error-text">
+                                <p class="gradient-container gradient-error-pages">The server encountered an internal error and was unable to complete your request</p> 
                             </div>
 
                             <br /><br />
 
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate" style="width: 100%; font-size: 23px;">Go Back</button></a></p>
+                            <div class="button-container">
+                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
                             </div>
                             
                             <br /><br />

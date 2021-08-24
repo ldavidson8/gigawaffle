@@ -29,6 +29,42 @@ h1 {
   background-image: linear-gradient(to right, #DF4985 , #7A98EE);
   border-radius: 20px;
 }
+.addhttp
+{
+  font-size: 160px;
+}
+
+.error-text{
+  display: flex; 
+  justify-content: center;
+}
+
+.error-text > p{
+  padding: 10px 10px; 
+  text-align: center; 
+  font-size: 18px; 
+  letter-spacing: 1px; 
+  height: auto; 
+  width: 500px;
+}
+
+#title-spacing{
+  font-weight: bold;
+  font-size: 40px; 
+  text-align: center;
+}
+.button-alternate{
+  width: 100%; 
+  font-size: 25px;
+  position: relative;
+}
+
+.button-container{
+  
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
 
 @media (max-width: 575px)
 {
@@ -37,16 +73,45 @@ h1 {
         padding: 10px 10px !important;
         width: 100% !important;
     }
-}
-
-@media (max-width: 575px)
-{
+    
     .error-images
     {
       background-size: 100% !important;
     }
-}
+    .error-text > p
+    {
+      font-size: 3.5vw;
 
+    }
+    .addhttp
+    {
+      font-size: 30vw;
+
+    }
+    #title-spacing
+    {
+      
+       font-size: 9vw; 
+     }
+     .button-alternate{
+
+      font-size: 5vw;
+     }
+}
+@media (max-width: 400px){
+  
+     .error-images-2
+    {
+      background-size: 80vw !important;
+      display: flex; 
+      justify-content: center;
+      bottom: 50px;
+    }
+    .error-images-3
+    {
+      background-size: 80vw !important;
+    }
+}
 
 /*animations*/
 
@@ -58,11 +123,11 @@ h1 {
 }
 
 @-webkit-keyframes number {
-  0%   { letter-spacing: -40px; }
+  0%   { letter-spacing: -30px; }
   100% { letter-spacing: 0px; }
 }
 @keyframes number {
-  0%   { letter-spacing: -40px; }
+  0%   { letter-spacing: -30px; }
   100% { letter-spacing: 0px; }
 }
 
@@ -71,8 +136,8 @@ h1 {
 
 #title-spacing {
     letter-spacing:-3px;
-    -webkit-animation: title 2.5s;
-    animation: title 2.5s;
+    -webkit-animation: title 3.5s;
+    animation: title 3.5s;
 }
 
 @-webkit-keyframes title {
