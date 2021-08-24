@@ -35,6 +35,13 @@ return [
     */
 
     'channels' => [
+        'auto-generate/sitemap' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/auto-generate/sitemap.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+            'days' => 14,
+        ],
+
         'service-selection-form' => [
             'driver' => 'daily',
             'path' => storage_path('logs/service-selection-form.log'),
@@ -48,14 +55,14 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => 14,
         ],
-        
+
         'contact-us-form' => [
             'driver' => 'daily',
             'path' => storage_path('logs/contact-us-form.log'),
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => 14,
         ],
-        
+
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],

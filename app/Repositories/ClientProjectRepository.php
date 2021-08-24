@@ -28,7 +28,6 @@ class ClientProjectRepository
         }
         catch (Throwable $th)
         {
-            report($th);
             return null;
         }
     }

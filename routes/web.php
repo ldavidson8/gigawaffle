@@ -68,6 +68,18 @@ Route::group([ 'prefix' => '/testing/errors/http/error-pages/' ], function()
 //---------------------------------
 //-----  Permanent Redirects  -----
 //---------------------------------
-Route::Get('/blog/2021/08/17/waffle-corner-what-is-seo', function() { return redirect('/blog/512/', 301); });
-Route::Get('/blog/2021/08/09/waffle-fundamentals-what-is-copywriting', function() { return redirect('blog/513', 301); });
-Route::Get('/blog/2021/08/08/welcome-to-the-waffle-corner', function() { return redirect('blog/514', 301); });
+Route::get('/blog/2021/08/17/waffle-corner-what-is-seo', function() { return redirect('/blog/512/', 301); });
+Route::get('/blog/2021/08/09/waffle-fundamentals-what-is-copywriting', function() { return redirect('blog/513', 301); });
+Route::get('/blog/2021/08/08/welcome-to-the-waffle-corner', function() { return redirect('blog/514', 301); });
+
+
+//--------------------------------
+//-----  Sitemap Generation  -----
+//--------------------------------
+Route::get('/generation/create/sitemap.xml', 'AutoGenerateController@sitemap');
+
+Route::domain('http://www.gigawaffle.co.uk') -> group(function()
+{
+    Route::get('/clients/{projectId}', 'ClientsController@clientProjects') -> name('live-website.clients.projects');
+    Route::get('/blog/{blogId}', 'BlogController@blogPost') -> name('live-website.blog.blog-post');
+});
