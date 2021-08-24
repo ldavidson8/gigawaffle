@@ -15,7 +15,6 @@ class BlogCategoryRepository
         }
         catch (Throwable $th)
         {
-            throw($th);
             report($th);
             return null;
         }
@@ -29,7 +28,6 @@ class BlogCategoryRepository
         }
         catch (Throwable $th)
         {
-            throw($th);
             report($th);
             return null;
         }
@@ -62,7 +60,6 @@ class BlogCategoryRepository
         }
         catch (Throwable $th)
         {
-            throw($th);
             report($th);
             return null;
         }

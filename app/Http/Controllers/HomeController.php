@@ -2,13 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\BlogPostRepository;
+use Throwable;
+
 class HomeController extends Controller
 {
     public function index()
     {
         $navbar_page = 'home';
         $page_title = 'Gigawaffle';
-        return view('index', compact('page_title', 'navbar_page'));
+
+        $blog_posts = [];
+        try
+        {
+            $blog_posts = BlogPostRepository::SelectOnly(3);
+        }
+        catch (Throwable $th)
+        {
+            report($th);
+        }
+
+        return view('index', compact('page_title', 'navbar_page', 'blog_posts'));
     }
 
     public function services()

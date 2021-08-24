@@ -20,6 +20,19 @@ class BlogPostRepository
         }
     }
 
+    public static function SelectOnly($limit)
+    {
+        try
+        {
+            return DB::select('call SELECT_LIMIT_Blog_Post(?)', [ $limit ]);
+        }
+        catch (Throwable $th)
+        {
+            report($th);
+            return null;
+        }
+    }
+
     public static function SelectById($id)
     {
         try
@@ -69,7 +82,6 @@ class BlogPostRepository
         }
         catch (Throwable $th)
         {
-            throw($th);
             report($th);
             return null;
         }
@@ -90,7 +102,6 @@ class BlogPostRepository
         }
         catch (Throwable $th)
         {
-            throw($th);
             report($th);
             return null;
         }

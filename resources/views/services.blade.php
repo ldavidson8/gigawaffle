@@ -220,7 +220,6 @@
         <div class="pink-box-round pink-box-merge-bottom">
             <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
                 <form method="post" action="{{ route('post.contact-us') }}">
-                    @csrf
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
                             <strong>Whoops!</strong> There were some problems with your input.<br /><br />
@@ -231,6 +230,7 @@
                             </ul>
                         </div>
                     @endif
+                    @csrf
                     <div class="form-group">
                         <label for="full_name">Full Name *</label>
                         <input class="form-control" type="text" name="full_name" value="{{ old('full_name') }}" required="required" />

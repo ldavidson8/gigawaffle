@@ -160,7 +160,6 @@ class ClientProjectsController extends Controller
         catch (Throwable $th)
         {
             // report the error and redirect to the error page
-            throw($th);
             report($th);
             return redirect() -> back() -> withErrors([ 'image' => 'Sorry, but there was an error.' ]) -> withInput();
         }

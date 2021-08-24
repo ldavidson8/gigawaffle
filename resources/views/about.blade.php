@@ -195,7 +195,7 @@
         <p style="font-size: 20px; text-align: center;">Send a message</p>
         <div class="pink-box-round pink-box-merge-bottom">
             <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
-                <form method="post" action="{{ route('post.work-with-us') }}">
+                <form method="post" action="{{ route('post.contact-us') }}">
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
                             <strong>Whoops!</strong> There were some problems with your input.<br /><br />
