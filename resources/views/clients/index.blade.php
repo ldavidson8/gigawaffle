@@ -2,6 +2,19 @@
 
 @section('stylesheets')
     <style>
+        .mobile-flex-column
+        {
+            display: -webkit-flex;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .mobile-flex-grow-1
+        {
+            flex-grow: 1;
+        }
+
         .background-image
         {
             background-repeat: no-repeat;
@@ -13,7 +26,7 @@
 
         .client-project-section
         {
-            margin: 20px 0px !important;
+            margin: 50px 0px !important;
         }
 
         .client-project-column
@@ -94,6 +107,11 @@
             {
                 height: 30vw;
             }
+
+            .client-project-section
+            {
+                margin: 40px 0px !important;
+            }
         }
     </style>
 @endsection
@@ -103,21 +121,21 @@
 @endsection
 
 @section('main-content')
-        <div class="container-lg row top-section-outer">
-            <div class="col-12 col-md-6 no-padding">
+        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm">
+            <div class="col-12 col-md-6 no-padding d-flex flex-column">
                 <div class="gradient-container container-no-gradient-sm d-flex">
                     <div class="align-item-bottom no-padding" style="font-style: italic">
                         <h1>Those who have trusted gigawaffle</h1>
                         <hr style="width: 150px">
                     </div>
                 </div>
-                <div class="text-container-40px">
+                <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
                     <p><b>Here you'll find all of the clients we've previously worked with, what services we provided for them and what they thought of our work.</b></p>
                     <p>You can read more about a client by clicking "Learn More". If you like what you see, why not get in touch with us, and you never know, your business may appear here too.</p>
-                    <div class="center-button"><a href="{{ route('services') }}#contactform"><button class="button-default">Get In Touch</button></a></div>
+                    <div class="center-button" style="width: 100%;"><a href="{{ route('services') }}#contactform"><button class="button-default">Get In Touch</button></a></div>
                 </div>
             </div>
-            <div class="col-6 d-none d-md-block">
+            <div class="col-6 d-none d-md-block" style="text-align: right;">
                 <img src={{ asset('img/approved-illustration.png') }}>
             </div>
         </div>

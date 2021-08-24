@@ -83,29 +83,29 @@
 @endsection
 
 @section('main-content')
-        <div class="container-lg row top-section-outer">
-            <div class="col-12 col-md-6 no-padding">
+        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm">
+            <div class="col-12 col-md-6 no-padding d-flex flex-column">
                 <div class="gradient-container container-no-gradient-sm d-flex">
-                    <div class="align-item-bottom" style="font-style: italic">
+                    <div class="align-item-bottom no-padding" style="font-style: italic">
                         <h1>Marketing and web design that tickles your taste buds</h1>
                         <hr style="width: 150px">
                     </div>
                 </div>
-                <div class="text-container-40px">
+                <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
                     <p class="text-white-outline" style="font-weight: 700;">
                         We're gigawaffle; we want to turn businesses into brands. With plenty of options across web design, marketing and media, you're truly in control when it comes to your business.
                     </p>
                     <p class="text-white-outline">
                         You can pick and choose from a range of services, allowing you to build the perfect package for your business.
                     </p>
-                    <div class="center-button">
+                    <div class="center-button" style="width: 100%;">
                         <a href="{{ route("services") }}">
-                        <button class="button-default">View Services</button>
+                            <button class="button-default">View Services</button>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-6 d-none d-md-flex center-content">
+            <div class="col-6 d-none d-md-block" style="text-align: right;">
                 <img src="{{ asset('img/code-snippet.png') }}" alt="Code snippet of Hello world in React framework"/>
             </div>
         </div>

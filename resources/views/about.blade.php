@@ -105,15 +105,13 @@
 @endsection
 
 @section('main-content')
-        <div class="container-lg row top-section-outer">
-            <div class="col-12 col-md-6 no-padding">
-                <div class="gradient-container container-no-gradient-sm d-flex">
-                    <div class="align-item-bottom" style="font-style: italic">
-                        <h1>A new agency that suits you</h1>
-                        <hr style="width: 150px">
-                    </div>
+        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm" style="text-align: center;">
+            <div class="col-12 col-md-6 container-lg no-padding d-flex flex-column" style="text-align: left;">
+                <div class="gradient-container container-no-gradient-sm" style="font-style: italic">
+                    <h1>A new agency that suits you</h1>
+                    <hr style="width: 150px">
                 </div>
-                <div class="text-container-40px">
+                <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
                     <p><b>For some people, understanding what is needed to elevate your business can be hard. This is where we come in. Our dedicated team at gigawaffle are ready to turn your business into a brand.</b></p>
                     <p>We're always on the look out for ways we can improve our efficiency, quality, accuracy, and more. This allows us to be on top of the latest design, development and marketing trends. We'll keep you up to date with everything gigawaffle via "The Waffle Corner".</p>
                     <div class="center-button"><a href="http://gigawaffle.co.uk/blog/"><button class="button-default">The Waffle Corner</button></a></div>

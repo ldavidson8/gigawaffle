@@ -450,6 +450,13 @@ textarea:-webkit-autofill:focus
 
 @media (min-width: 576px)
 {
+    .center-content-sm
+    {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
     .container-no-gradient-sm
     {
         background-image: none;

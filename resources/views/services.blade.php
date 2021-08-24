@@ -78,18 +78,18 @@
 @endsection
 
 @section('main-content')
-        <div class="container-md row top-section-outer">
-            <div class="col-12 col-md-6 no-padding">
+        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm">
+            <div class="col-12 col-md-6 no-padding d-flex flex-column">
                 <div class="gradient-container container-no-gradient-sm d-flex">
-                    <div class="align-item-bottom" style="font-style: italic">
+                    <div class="align-item-bottom no-padding" style="font-style: italic">
                         <h1>Services that make your mouth water</h1>
                         <hr style="width: 150px">
                     </div>
                 </div>
-                <div class="text-container-40px">
+                <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
                     <p><b>You can 'Pick n Mix' from our wide range of design, development, media & marketing services, allowing you to create a tailored package perfect for your business.</b></p>
                     <p>Not sure what services you want or want a waffle-free approach? Don't worry, we can help. Just click "Help Me Decide" below and fill in the form.</p>
-                    <div class="center-button">
+                    <div class="center-button" style="width: 100%;">
                         <a href="{{ route("service-selection") }}">
                         <button class="button-default button-margin-md">Pick n Mix</button>
                         </a>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 d-none d-md-flex center-content">
+            <div class="col-6 d-none d-md-block" style="text-align: right;">
                 <img src="{{ asset('img/services-illustration.png') }}"/>
             </div>
         </div>
@@ -172,40 +172,48 @@
 
         <br /><br />
 
-        <h2 class="pink-heading">Our Packages</h2>
-        <h3>Packages that make it easy for you</h3>
+        <div style="padding: 2vw 0 0;">
+            <h2 class="pink-heading">Our Packages</h2>
+            <h3>Packages that make it easy for you</h3>
+        </div>
 
-        <div class="row" style="padding: 20px 0px;">
-            <div class="package-container col-12 col-md-6">
-                <img src="{{ asset('img/services-packages/fan-icon.png') }}" alt="" />
-                <h4 class="package-container-header">From Business To Brand</h4>
-                <p>Turn your business into a brand with this package. We'll sort out your brand design, social media posts, physical branding and copyright to upgrade your business.</p>
-                <a id="B2B" href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "From Business to Brand" package.'>Click to inquire in the form below</a>
-            </div>
-            <div class="d-none d-md-block col-md-6">
-                <img src="{{ asset('img/services-packages/megaphone.png') }}" alt="" />
-            </div>
-        </div>
-        <div class="row" style="padding: 20px 0px;">
-            <div class="d-none d-md-block col-md-6">
-                <img src="{{ asset('img/services-packages/desktop.png') }}" alt="" />
-            </div>
-            <div class="package-container col-12 col-md-6">
-                <img src="{{ asset('img/services-packages/globe.png') }}" alt="" />
-                <h4 class="package-container-header">Time To Get Connected</h4>
-                <p>We'll get your business online by creating a website to suit your business. We will do some basic SEO work to push your business up Google's search engine.</p>
-                <a href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "Time To Get Connected" package.'>Click to inquire in the form below</a>
+        <div style="padding: 2vw 0 0;">
+            <div class="row" style="padding: 20px 0px;">
+                <div class="package-container col-12 col-md-6">
+                    <img src="{{ asset('img/services-packages/fan-icon.png') }}" alt="" />
+                    <h4 class="package-container-header">From Business To Brand</h4>
+                    <p>Turn your business into a brand with this package. We'll sort out your brand design, social media posts, physical branding and copyright to upgrade your business.</p>
+                    <a id="B2B" href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "From Business to Brand" package.'>Click to inquire in the form below</a>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="{{ asset('img/services-packages/megaphone.png') }}" alt="" />
+                </div>
             </div>
         </div>
-        <div class="row" style="padding: 20px 0px;">
-            <div class="package-container col-12 col-md-6">
-                <img src="{{ asset('img/services-packages/smartphone.png') }}" alt="" />
-                <h4 class="package-container-header">It's Time To Upgrade</h4>
-                <p>Want a bespoke and future-proof website? We will create a mobile ready website, so your customers can enjoy what you offer at any time or place.</p>
-                <a href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "It&apos;s Time To Upgrade" package.'>Click to inquire in the form below</a>
+        <div style="padding: 2vw 0 0;">
+            <div class="row" style="padding: 20px 0px;">
+                <div class="d-none d-md-block col-md-6">
+                    <img src="{{ asset('img/services-packages/desktop.png') }}" alt="" />
+                </div>
+                <div class="package-container col-12 col-md-6">
+                    <img src="{{ asset('img/services-packages/globe.png') }}" alt="" />
+                    <h4 class="package-container-header">Time To Get Connected</h4>
+                    <p>We'll get your business online by creating a website to suit your business. We will do some basic SEO work to push your business up Google's search engine.</p>
+                    <a href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "Time To Get Connected" package.'>Click to inquire in the form below</a>
+                </div>
             </div>
-            <div class="d-none d-md-block col-md-6">
-                <img src="{{ asset('img/services-packages/mobile.png') }}" alt="" />
+        </div>
+        <div style="padding: 2vw 0;">
+            <div class="row" style="padding: 20px 0px;">
+                <div class="package-container col-12 col-md-6">
+                    <img src="{{ asset('img/services-packages/smartphone.png') }}" alt="" />
+                    <h4 class="package-container-header">It's Time To Upgrade</h4>
+                    <p>Want a bespoke and future-proof website? We will create a mobile ready website, so your customers can enjoy what you offer at any time or place.</p>
+                    <a href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "It&apos;s Time To Upgrade" package.'>Click to inquire in the form below</a>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="{{ asset('img/services-packages/mobile.png') }}" alt="" />
+                </div>
             </div>
         </div>
         {{-- <div style="text-align: center;">
@@ -218,7 +226,7 @@
         <h3>
             Don't understand all the waffle?<br />
             Did our website blow your mind?<br />
-            <span style="background-color: #00a2ab; padding: 3px 5px 1px; border-radius: 50%; display: inline-block; font-size: 25px;">&#x1F92F;</span><br />
+            <span style="background-color: #00a2ab; border-radius: 50%; font-size: 25px; width: 1.4em; height: 1.4em;" class="d-inline-flex flex-column center-content">&#x1F92F;</span><br />
             Can't decide?<br />
             We can help.
         </h3>
