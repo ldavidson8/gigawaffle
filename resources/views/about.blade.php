@@ -5,6 +5,7 @@
         .timeline-section-outer
         {
             text-align: center;
+            max-width: 100%;
         }
 
         .timeline-section
@@ -122,7 +123,7 @@
             </div>
         </div>
     </div>
-    <div class="container no-padding" style="margin: 3em auto;">
+    <div class="container no-padding">
         <h2 class="pink-heading"><b>Our Locations</b></h2>
         <h3>Where to find gigawaffle</h3>
         <div class="shadowed-card">

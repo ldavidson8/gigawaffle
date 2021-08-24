@@ -57,7 +57,8 @@
             </div>
             <div class="col-7 col-md-6 no-padding d-flex flex-column text-right">
                 <ul class="list-unstyled">
-                    <li> <img src="{{ asset('img/home-icon.png') }}" height="30">
+                    <li>
+                        <img src="{{ asset('img/home-icon.png') }}" alt="Image of a House" height="30">
                         <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>
                     </li>
                     <li>Estate House</li>

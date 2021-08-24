@@ -103,13 +103,20 @@
         <?php $project_content = explode("\r\n", $blog_post -> Content) ?>
         @foreach ($project_content as $line)
             @if (is_numeric(strpos($line, "<h2>")))
-                <?php
-                    $line = str_replace("<h2>", "", $line);
-                    $line = str_replace("</h2>", "", $line);
-                ?>
-                <h2 style="text-align: left;">{{ $line }}</h2>
+                <h2 style="text-align: left;"><?php $line ?></h2>
             @else
-                <p>{{ $line }}</p>
+            <?php
+                $line = str_replace("<h2>", "", $line);
+                $line = str_replace("</h2>", "", $line);
+                if (($http_index = strpos($line, "http://")) !== false || ($http_index = strpos($line, "https://")) !== false)
+                {
+                    $http_length = strpos($line, " ", $http_index) - $http_index;
+                    if ($http_length < 2) $http_length = strlen($line) - $http_index;
+                    $http_str = substr($line, $http_index, $http_length);
+                    $line = str_replace($http_str, "<a href='$http_str'>$http_str</a>", $line);
+                }
+            ?>
+                <p><?= $line ?></p>
             @endif
         @endforeach
         <a href="{{ route('blog') }}"><button class="button-default">Back</button></a>
