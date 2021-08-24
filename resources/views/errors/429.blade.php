@@ -21,18 +21,22 @@
                 <table class="table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing" style="position: relative; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 130px;">429</span><br />Too Many Requests</h1>
+                            <h1 id="title-spacing" style="position: relative;">
+                            
+                                <span class="addhttp" id="number-spacing">429</span>
+                                <br />Too Many Requests
+                            </h1>
 
                             <br /><br />
 
-                            <div style="display: flex; justify-content: center;">
-                                <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; position: relative; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 480px;">Too much traffic is being generated Please try again later</p> 
+                            <div class="error-text">
+                                <p class="gradient-container gradient-error-pages">Too much traffic is being generated<br /> Please try again later</p> 
                             </div>
 
                             <br /><br />
 
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate" style="width: 100%; font-size: 23px; position: relative;">Go Back</button></a></p>
+                            <div class="button-container">
+                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
                             </div>
 
                             <br /><br />

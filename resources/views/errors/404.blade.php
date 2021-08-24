@@ -19,18 +19,24 @@
                 <table class=" no-spacing table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing" style="padding-top:; font-weight: bold; font-size: 40px; text-align: center;"><span id="number-spacing" style="font-size: 130px;">404</span><br />Uh-oh! <br />There's nothing here</h1>
+                            <h1 id="title-spacing">
+                                <span class="addhttp" id="number-spacing">
+                                    4 <img src="{{ asset('img/error pages/Waffle-1-500kB.png') }}" style="width: auto; height: 1.1em; z-index: -1; margin-left: -0.3em; margin-right: -0.3em; margin-bottom: 0.2em;" /> 4
+                                </span>
+                                <br />Uh-oh!
+                                <br />There's nothing here
+                            </h1>
                             
                             <br /><br />
 
-                            <div style="padding-top:; display: flex; justify-content: center;">
-                                <p class="gradient-container gradient-error-pages" style="padding: 10px 10px; text-align: center; font-size: 18px; letter-spacing: 1px; height: auto; width: 500px;">This page does not exist</p> 
+                            <div class="error-text">
+                                <p class="gradient-container gradient-error-pages">This page does not exist</p> 
                             </div>
 
                             <br /><br />
 
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate" style="width: 100%; font-size: 23px;">Go Back</button></a></p>
+                            <div class="button-container">
+                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
                             </div>
                             
                             <br /><br />
