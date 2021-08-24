@@ -65,7 +65,7 @@ class HomeController extends Controller
 
     public function picknMix()
     {
-        $page_title = 'Pick n Mix - Gigawaffle';
+        $page_title = 'Service Selection - Gigawaffle';
         return view('service-selection', compact('page_title'));
     }
 }

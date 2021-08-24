@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="text-container-40px">
-                    <p><b>You can 'Pick n Mix' from our wide range of design, development, media & marketing services, allowing you to created a tailored package perfect for your business.</b></p>
+                    <p><b>You can 'Pick n Mix' from our wide range of design, development, media & marketing services, allowing you to create a tailored package perfect for your business.</b></p>
                     <p>Not sure what services you want or want a waffle-free approach? Don't worry, we can help. Just click "Help Me Decide" below and fill in the form.</p>
                     <div class="center-button">
                         <a href="{{ route("service-selection") }}">
@@ -215,7 +215,13 @@
     </div>
     <div id="services-contactform" class="container no-padding" style="width: 576px; max-width: 100%;">
         <h2 class="pink-heading">Help Me Decide</h2>
-        <h3>Don't understand all the waffle? &#x1F92F; <br> Or can't decide? We can help.</h3>
+        <h3>
+            Don't understand all the waffle?<br />
+            Did our website blow your mind?<br />
+            <span style="background-color: #00a2ab; padding: 3px 5px 1px; border-radius: 50%; display: inline-block; font-size: 25px;">&#x1F92F;</span><br />
+            Can't decide?<br />
+            We can help.
+        </h3>
         <p style="font-size: 20px; text-align: center;">Fill in this form and we will be back in touch with you.</p>
         <div class="pink-box-round pink-box-merge-bottom">
             <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
