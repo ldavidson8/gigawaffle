@@ -29,16 +29,16 @@ class ServiceSelectionController extends Controller
             if ($validator -> fails()) return back() -> withErrors($validator) -> withInput();
 
             // save the form data to the database
-            $ticket = date("dHis");
+            $ticket = date("dis");
             try
             {
                 $sql_data =
                 [
                     Request::input('full_name'),
                     Request::input('email'),
-                    Request::input('phone'),
+                    (Request::has('phone')) ? Request::input('phone') : "",
                     Request::input('message'),
-                    implode(",", Request::input('services'))
+                    (Request::has('services')) ? implode(",", Request::input('services')) : ""
                 ];
                 $rows = DB::select("call INSERT_service_request(?, ?, ?, ?, ?);", $sql_data);
                 if (count($rows) > 0)

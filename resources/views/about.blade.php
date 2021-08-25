@@ -219,8 +219,8 @@
                         <input class="form-control" type="text" name="phone" value="{{ old('phone') }}">
                     </div>
                     <div class="form-group">
-                        <label for="message">Message (optional)</label>
-                        <textarea name="message" rows="4" style="width: 100%;">{{ old('message') }}</textarea>
+                        <label for="message">Message *</label>
+                        <textarea name="message" rows="4" style="width: 100%;" required="required">{{ old('message') }}</textarea>
                     </div>
                     <div class="from-group">
                         <p>* required</p>
