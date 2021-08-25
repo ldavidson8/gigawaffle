@@ -118,15 +118,15 @@
             <div class="row d-flex center-content text-center">
                 <div class="col-12 col-md-6 col-lg-6">
                     <a href="{{ route('clients.projects', [ 'projectId' => '1' ]) }}">
-                    <img class="border-radius-20" src="{{ asset('img/project-cards/sme-card.png')}}" alt="">
+                        <img class="border-radius-20" style="max-height: 400px;" src="{{ asset('img/project-cards/website-card-swap-my-energy.png')}}" alt="Swap My Energy project image">
                     </a>
-                        <p style="font-size: 1.5em; font-weight: 500;"> Swap My Energy</p>
-                        <p style="font-weight: 300; font-style: italic">Web Development Project</p>
+                    <p style="font-size: 1.5em; font-weight: 500;">Swap My Energy</p>
+                    <p style="font-weight: 300; font-style: italic">Web Development Project</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
-                    <img class="border-radius-20" src="{{ asset('img/project-cards/comingsoon.png') }}" alt="">
-                        <p style="font-size: 1.5em; font-weight: 500;"> Project Title</p>
-                        <p style="font-weight: 300; font-style: italic"> Project Category</p>
+                    <img class="border-radius-20" style="max-height: 400px;" src="{{ asset('img/project-cards/website-card-your-business-here.png') }}" alt="Your project here image">
+                    <p style="font-size: 1.5em; font-weight: 500;">Project Title</p>
+                    <p style="font-weight: 300; font-style: italic">Project Category</p>
                 </div>
                 {{-- <div class="col-12 col-md-6 col-lg-4">
                     <img class="border-radius-20" src="{{ asset('img/project-cards/comingsoon.png') }}" alt="">
@@ -135,7 +135,7 @@
                 </div> --}}
             </div>
             <a href="{{ route('clients') }}">
-            <button class="navy-blue-button"> See All Clients </button>
+                <button class="navy-blue-button"> See All Clients </button>
             </a>
         </div>
         @include('partials.waves-bottom')
