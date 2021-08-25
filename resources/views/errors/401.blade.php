@@ -21,7 +21,7 @@
                         <td>
                             <h1 id="title-spacing"  style="padding-top:;">
                                 <span class="addhttp" id="number-spacing">
-                                    4 <!--<img src="{{ asset('img/error pages/Donut.png') }}" style="width: auto; height: 0.8em; z-index: -1; margin-left: -0.2em; margin-right: -0.2em; margin-bottom: 0.2em;" />--> <img rel="preload" src="{{ asset('img/error pages/Waffle-1-500kB.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right: -0.3em; margin-bottom: 0.2em;" /> 1
+                                    4 <!--<img src="{{ asset('img/error pages/Donut.png') }}" style="width: auto; height: 0.8em; z-index: -1; margin-left: -0.2em; margin-right: -0.2em; margin-bottom: 0.2em;" />--> <img rel="preload" src="{{ asset('img/error pages/Waffle-4.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right: -0.3em; margin-bottom: 0.2em;" /> 1
                                 </span>
                                 <br />Access Denied
                             </h1>
