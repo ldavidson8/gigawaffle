@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://www.gigawaffle.co.uk/</loc>
+   </url>
+   <url>
+      <loc>http://www.gigawaffle.co.uk/clients</loc>
+   </url>
+   @clients
+   <url>
+      <loc>http://www.gigawaffle.co.uk/services</loc>
+   </url>
+   <url>
+      <loc>http://www.gigawaffle.co.uk/service-selection</loc>
+   </url>
+   <url>
+      <loc>http://www.gigawaffle.co.uk/about</loc>
+   </url>
+   <url>
+      <loc>http://www.gigawaffle.co.uk/blog</loc>
+   </url>
+   @blog
+   <url>
+      <loc>http://www.gigawaffle.co.uk/terms-and-conditions</loc>
+   </url>
+   <url>
+      <loc>http://www.gigawaffle.co.uk/privacy-policy</loc>
+   </url>
+   <url>
+      <loc>http://www.gigawaffle.co.uk/cookie-policy</loc>
+   </url>
+   <url>
+      <loc>http://www.gigawaffle.co.uk/sitemap</loc>
+   </url>
+</urlset>
