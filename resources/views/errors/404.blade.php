@@ -21,7 +21,7 @@
                         <td>
                             <h1 id="title-spacing">
                                 <span class="addhttp" id="number-spacing">
-                                    4 <img src="{{ asset('img/error pages/Waffle-1-500kB.png') }}" style="width: auto; height: 1.1em; z-index: -1; margin-left: -0.3em; margin-right: -0.3em; margin-bottom: 0.2em;" /> 4
+                                    4 <img src="{{ asset('img/error pages/Waffle-4.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right: -0.3em; margin-bottom: 0.2em;" /> 4
                                 </span>
                                 <br />Uh-oh!
                                 <br />There's nothing here

@@ -21,7 +21,7 @@
                         <td>
                         <h1 id="title-spacing">
                                 <span class="addhttp" id="number-spacing">
-                                    5 <img src="{{ asset('img/error pages/Waffle-1.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right:0em; margin-bottom: 0.1em;" /> <img src="{{ asset('img/error pages/Waffle-1-500kB.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.4em; margin-right: -0.1em; margin-bottom: 0.1em;" /> 
+                                    5 <img src="{{ asset('img/error pages/Waffle-4.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right:0em; margin-bottom: 0.1em;" /> <img src="{{ asset('img/error pages/Waffle-3.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.4em; margin-right: -0.1em; margin-bottom: 0.1em;" /> 
                                 </span>
                                 <br />Something Went Wrong
                             </h1>
