@@ -56,6 +56,9 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('/staff-members/administration')
                 ->namespace('App\\Http\\Controllers\\Administration')
                 ->group(base_path('routes/administration.php'));
+
+            Route::middleware('web')
+                ->group(base_path('routes/testing-redirects-and-other.php'));
         });
     }
 
