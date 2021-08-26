@@ -35,7 +35,7 @@
                             <br /><br />
 
                             <div class="button-container">
-                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
+                                <p><a href="{{ url() -> previous(route('home'))}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
                             </div>
 
                             <br /><br />

@@ -9,13 +9,13 @@
     @if (isset($description))
         <meta name="description" content="{{ $description }}" />
     @endif
-    
+
     <link rel="shortcut icon" type="image/jpg" href="{{ asset('favicon.png') }}"/>
-    
+
     <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-    <!-- Fonts --> 
+    <!-- Fonts -->
     <style>
         @font-face { font-family: Rubik; src: url('{{ asset("fonts/Rubik-VariableFont_wght.ttf") }}'); }
         @font-face { font-family: Rubik; src: url('{{ asset("fonts/Rubik-Italic-VariableFont_wght.ttf") }}'); font-style: italic; }
@@ -30,13 +30,13 @@
         @font-face { font-family: Poppins; src: url('{{ asset("fonts/Poppins-Bold.ttf") }}'); font-weight: 700; font-style: italic; }
         @font-face { font-family: Poppins; src: url('{{ asset("fonts/Poppins-BoldItalic.ttf") }}'); font-weight: 700; font-style: italic; }
     </style>
-    
-    
+
+
     <!-- Our Stylesheets -->
     <link rel="stylesheet" href="{{ asset('css/site.css') }}" />
-    
+
     @yield('stylesheets')
-    
+
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer="true"></script>
@@ -69,7 +69,7 @@
     @include('partials.footer')
 
     @yield('after-footer')
-    
+
     <!-- Scripts -->
     @yield('script')
     <script src="{{ asset('js/site.js') }}" defer="true"></script>

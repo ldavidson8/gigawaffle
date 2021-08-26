@@ -100,10 +100,20 @@
         </div>
     </div>
     <div class="container-lg" style="font-size: 20px;">
-        <?php $project_content = explode("\r\n", $client_project -> Content) ?>
-        @foreach ($project_content as $line)
-            <p>{{ $line }}</p>
-        @endforeach
+        <?php
+            $project_content = explode("\r\n", $client_project -> Content);
+            foreach ($project_content as $line)
+            {
+                if (($http_index = strpos($line, "http://")) !== false || ($http_index = strpos($line, "https://")) !== false)
+                {
+                    $http_length = strpos($line, " ", $http_index) - $http_index;
+                    if ($http_length < 2) $http_length = strlen($line) - $http_index;
+                    $http_str = substr($line, $http_index, $http_length);
+                    $line = str_replace($http_str, "<a href='$http_str'>$http_str</a>", $line);
+                }
+                echo "<p>$line</p>";
+            }
+        ?>
         <a href="{{ url() -> previous(route('clients')) }}"><button class="button-default">Back</button></a>
         <br /><br />
     </div>

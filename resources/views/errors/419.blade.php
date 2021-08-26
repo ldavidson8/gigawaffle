@@ -29,13 +29,13 @@
                             <br /><br />
 
                             <div class="error-text" style="padding-top: 4cm;">
-                                <p class="gradient-container gradient-error-pages">Your session has expired<br />Please go back and try again</p> 
+                                <p class="gradient-container gradient-error-pages">Your session has expired<br />Please go back and try again</p>
                             </div>
 
                             <br /><br />
 
                             <div class="button-container">
-                                <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
+                                <p><a href="{{ url() -> previous(route('home'))}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
                             </div>
 
                             <br /><br />

@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'HomeController@index') -> name('home');
+Route::get('/{test?}', 'HomeController@index') -> name('home');
 Route::get('/services', 'HomeController@services') -> name('services');
 Route::get('/about', 'HomeController@about') -> name('about');
 Route::get('/terms-and-conditions', 'HomeController@termsAndConditions') -> name('terms-and-conditions');

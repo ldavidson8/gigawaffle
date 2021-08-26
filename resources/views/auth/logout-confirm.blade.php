@@ -24,7 +24,7 @@
                 </div>
                 <div class="text-container-40px">
                     <p>
-                        <a href="{{ url() -> previous() }}" id="link-back">
+                        <a href="{{ url() -> previous(route('home')) }}" id="link-back">
                             <button class="btn btn-lg rounded-blue-button logout-button" style="color: white; background-color: #00bb00;">No</button>
                         </a>
                         <a href="{{ route('logout') }}">

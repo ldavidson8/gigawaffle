@@ -77,19 +77,19 @@ nav .nav-link
     vertical-align: middle;
 }
 
-nav .nav-link:link,
-nav .nav-link:visited
+nav.navbar-dark a.nav-link:link,
+nav.navbar-dark a.nav-link:visited
 {
-    color: #FFFFFF !important;
+    color: #FFFFFF;
     padding: 5px 7px;
     border-radius: 7px;
     border: 2px solid transparent;
 }
 
-nav .nav-link:hover,
-nav .nav-link:active
+nav.navbar-dark a.nav-link:hover,
+nav.navbar-dark a.nav-link:active
 {
-    color: #FFFFFF !important;
+    color: #FFFFFF;
     text-decoration: underline;
 }
 
