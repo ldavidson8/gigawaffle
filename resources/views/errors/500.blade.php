@@ -15,21 +15,21 @@
         <hr/>
         <div class="row flex-grow-1 no-padding background-image" style="background-image: url('{{ asset('img/waves/wavesDesktopBottom.png') }}');">
             <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block"></div>
-            <div class="col-xl-8 col-lg-8 col-md-8 col-12"> 
+            <div class="col-xl-8 col-lg-8 col-md-8 col-12">
                 <table class=" no-spacing table-center-contents">
                     <tr>
                         <td>
-                        <h1 id="title-spacing">
+                            <h1 id="title-spacing">
                                 <span class="addhttp" id="number-spacing">
-                                    5 <img src="{{ asset('img/error pages/Waffle-4.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right:0em; margin-bottom: 0.1em;" /> <img src="{{ asset('img/error pages/Waffle-3.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.4em; margin-right: -0.1em; margin-bottom: 0.1em;" /> 
+                                    <?= 5 ?>@include('errors.partials.random_doughnut')@include('errors.partials.random_doughnut')
                                 </span>
                                 <br />Something Went Wrong
                             </h1>
-                            
+
                             <br /><br />
 
                             <div class="error-text">
-                                <p class="gradient-container gradient-error-pages">The server encountered an internal error and was unable to complete your request</p> 
+                                <p class="gradient-container gradient-error-pages">The server encountered an internal error and was unable to complete your request</p>
                             </div>
 
                             <br /><br />
@@ -37,7 +37,7 @@
                             <div class="button-container">
                                 <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
                             </div>
-                            
+
                             <br /><br />
 
                         </td>

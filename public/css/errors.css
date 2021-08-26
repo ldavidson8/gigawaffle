@@ -1,9 +1,27 @@
-
 .background-image{
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 150%;
 }
+
+.waffle-image-outer
+{
+    width: 0.9em;
+    height: 0.9em;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.waffle-image
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: 0.9em;
+}
+
 button:hover{
     color: #DB4782;
 }
@@ -35,34 +53,34 @@ h1 {
 }
 
 .error-text{
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
 
 .error-text > p{
-  padding: 10px 10px; 
-  text-align: center; 
-  font-size: 18px; 
-  letter-spacing: 1px; 
-  height: auto; 
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  height: auto;
   width: 500px;
 }
 
 #title-spacing{
   font-weight: bold;
-  font-size: 40px; 
+  font-size: 40px;
   text-align: center;
 }
 .button-alternate{
-  width: 100%; 
+  width: 100%;
   font-size: 25px;
   position: relative;
 }
 
 .button-container{
-  
-  display: flex; 
-  justify-content: center; 
+
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -73,7 +91,7 @@ h1 {
         padding: 10px 10px !important;
         width: 100% !important;
     }
-    
+
     .error-images
     {
       background-size: 100% !important;
@@ -90,8 +108,8 @@ h1 {
     }
     #title-spacing
     {
-      
-       font-size: 9vw; 
+
+       font-size: 9vw;
      }
      .button-alternate{
 
@@ -99,11 +117,11 @@ h1 {
      }
 }
 @media (max-width: 400px){
-  
+
      .error-images-2
     {
       background-size: 80vw !important;
-      display: flex; 
+      display: flex;
       justify-content: center;
       bottom: 50px;
     }

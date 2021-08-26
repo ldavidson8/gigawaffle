@@ -21,16 +21,16 @@
                         <td>
                             <h1 id="title-spacing">
                                 <span class="addhttp" id="number-spacing">
-                                    4 <img src="{{ asset('img/error pages/Waffle-4.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right: -0.3em; margin-bottom: 0.2em;" /> 4
+                                    <?= 4 ?>@include('errors.partials.random_doughnut')4
                                 </span>
                                 <br />Uh-oh!
                                 <br />There's nothing here
                             </h1>
-                            
+
                             <br /><br />
 
                             <div class="error-text">
-                                <p class="gradient-container gradient-error-pages">This page does not exist</p> 
+                                <p class="gradient-container gradient-error-pages">This page does not exist</p>
                             </div>
 
                             <br /><br />
@@ -38,7 +38,7 @@
                             <div class="button-container">
                                 <p><a href="{{ url() -> previous()}}" onclick="history.back()"><button class="button-alternate">Go Back</button></a></p>
                             </div>
-                            
+
                             <br /><br />
 
                         </td>

@@ -15,7 +15,7 @@
         <hr/>
         <div class="flex-grow-1 row flex-grow-1 no-padding">
             <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block" style="background-image: url('{{ asset('img/waves/wavesDesktopBottom.png') }}'); background-repeat: no-repeat; background-position: left bottom; background-size: full; width: 100%"></div>
-            <div class="col-xl-8 col-lg-8 col-md-8 col-12" style="background: #f0f0f0; position: relative;"> 
+            <div class="col-xl-8 col-lg-8 col-md-8 col-12" style="background: #f0f0f0; position: relative;">
                 <div class="error-images"
                 [[style="background-image: url('{{ asset('img/error pages/503.png') }}'); position: absolute; width: 100%; height: 100%; background-size: 620px; background-repeat: no-repeat; background-position: center; filter: invert(50%); opacity: 0.3; bottom: 55px;">
                 </div>
@@ -24,7 +24,7 @@
                         <td>
                             <h1 id="title-spacing" style="position: relative;">
                                 <span class="addhttp" id="number-spacing">
-                                    5 <img src="{{ asset('img/error pages/Waffle-3.png') }}" style="width: auto; height: 1em; z-index: -1; margin-left: -0.3em; margin-right: -0.3em; margin-bottom: 0.2em;"/> 3
+                                    <?= 5 ?>@include('errors.partials.random_doughnut')3
                                 </span>
                                 <br />This Service Is Unavailable
                             </h1>
@@ -32,7 +32,7 @@
                             <br /><br />
 
                             <div class="error-text">
-                                <p class="gradient-container gradient-error-pages" style="position: relative;">The server is temporarily unable to <br /> handle your request, Please try again later</p> 
+                                <p class="gradient-container gradient-error-pages" style="position: relative;">The server is temporarily unable to <br /> handle your request, Please try again later</p>
                             </div>
 
                             <br /><br />
