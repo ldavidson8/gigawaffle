@@ -92,18 +92,17 @@
 @endsection
 
 @section('before-header')
-    <div class="gradient" style="position: absolute; width: 100%; height: 100%; z-index: -2"></div>
-    <div class="full-size container-fluid d-flex flex-column center-content" style="min-height: 95vh;">
+    <div class="full-size gradient container-fluid d-flex flex-column center-content" style="min-height: 95vh;" style="position: relative;">
 @endsection
 
 @section('main-content')
-        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm" style="position: relative;">
+        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm">
             <div class="col-12 col-md-6 no-padding d-flex flex-column">
-                <div class="gradient-container container-no-gradient-sm d-flex">
+                <div class="d-flex">
                     <div class="align-item-bottom no-padding" style="font-style: italic">
                         <h1 style="font: inherit; font-size: 40px; font-weight: 900; line-height: 60px;">Welcome to Gigawaffle</h1>
-                        <p style="font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; font-style: italic; font-weight: 600; line-height: 32.4px; margin-bottom: 8px; margin-top: 0px;">Marketing and web design that tickles your taste buds</p>
-                        <hr style="width: 150px">
+                        <p style="font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; font-style: italic; font-weight: 600; line-height: 32.4px; margin-bottom: 8px; margin-top: 0px; color: var(--color-navyblue);">Marketing and web design that tickles your taste buds</p>
+                        <hr style="width: 150px; border-color: var(--color-navyblue);">
                     </div>
                 </div>
                 <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">

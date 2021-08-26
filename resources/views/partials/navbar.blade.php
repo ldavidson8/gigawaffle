@@ -20,7 +20,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto center-content">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link {{ ($navbar_page == "home") ? 'nav-link-current-page' : '' }}" href="{{ route("home") }}">Home</a>
             </li>
             <li class="nav-item">

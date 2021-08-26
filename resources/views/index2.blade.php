@@ -99,11 +99,11 @@
 @section('main-content')
         <div class="container-lg row top-section-outer flex-grow-1 center-content-sm" style="position: relative;">
             <div class="col-12 col-md-6 no-padding d-flex flex-column">
-                <div class="gradient-container container-no-gradient-sm d-flex">
+                <div class="d-flex">
                     <div class="align-item-bottom no-padding" style="font-style: italic">
-                        <h1 style="font: inherit; font-size: 40px; font-weight: 900; line-height: 60px;">Welcome to Gigawaffle</h1>
+                        <h1 style="font: inherit; font-size: 40px; font-weight: 900; line-height: 60px; color: var(--color-navyblue);">Welcome to Gigawaffle</h1>
                         <p style="font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; font-style: italic; font-weight: 600; line-height: 32.4px; margin-bottom: 8px; margin-top: 0px;">Marketing and web design that tickles your taste buds</p>
-                        <hr style="width: 150px">
+                        <hr style="width: 150px; border-color: var(--color-navyblue);">
                     </div>
                 </div>
                 <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
@@ -183,9 +183,9 @@
             </div>
         </div>
     </div>
-    <div class="gradient" style="position: absolute; width: 100%; height: 100%; z-index: -2"></div>
     <canvas id="white-bubble"></canvas>
-    <div class="full-size d-flex flex-column">
+    <div class="full-size d-flex flex-column" style="position: relative;">
+        <div class="gradient" style="position: absolute; width: 100%; height: 100%; z-index: -2"></div>
         @include('partials.waves-top')
         @if (isset($blog_posts) && count($blog_posts) > 0)
             <div class="container col-12 d-flex flex-column align-items-center py-5 flex-grow-1 center-content">
