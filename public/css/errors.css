@@ -6,11 +6,12 @@
 
 .waffle-image-outer
 {
-    width: 0.9em;
-    height: 0.9em;
+    width: 1.05em;
+    height: 1.05em;
     position: relative;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
+    margin-top: 0.075em;
 }
 
 .waffle-image
@@ -19,7 +20,7 @@
     left: 50%;
     top: 50%;
     width: auto;
-    height: 0.9em;
+    height: 1.05em;
 }
 
 button:hover{
