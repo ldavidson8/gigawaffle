@@ -51,6 +51,8 @@ h1 {
 .addhttp
 {
   font-size: 160px;
+  text-align: center;
+  margin: 0px;
 }
 
 .error-text{
@@ -71,7 +73,9 @@ h1 {
   font-weight: bold;
   font-size: 40px;
   text-align: center;
+  margin: 0px;
 }
+
 .button-alternate{
   width: 100%;
   font-size: 25px;
@@ -134,7 +138,23 @@ h1 {
 
 /*animations*/
 
-#number-spacing {
+#title-spacing {
+  letter-spacing:-3px;
+  -webkit-animation: title 3.5s;
+  animation: title 3.5s;
+}
+
+@-webkit-keyframes title {
+0%   { letter-spacing: -10px; }
+100% { letter-spacing: -3px; }
+}
+@keyframes title {
+0%   { letter-spacing: -10px; }
+100% { letter-spacing: -3px; }
+}
+
+
+/*#number-spacing {
     letter-spacing: 0px;
     -webkit-animation: number 3.5s;
     animation: number 3.5s;
@@ -148,22 +168,4 @@ h1 {
 @keyframes number {
   0%   { letter-spacing: -30px; }
   100% { letter-spacing: 0px; }
-}
-
-
-
-
-#title-spacing {
-    letter-spacing:-3px;
-    -webkit-animation: title 3.5s;
-    animation: title 3.5s;
-}
-
-@-webkit-keyframes title {
-  0%   { letter-spacing: -10px; }
-  100% { letter-spacing: -3px; }
-}
-@keyframes title {
-  0%   { letter-spacing: -10px; }
-  100% { letter-spacing: -3px; }
 }

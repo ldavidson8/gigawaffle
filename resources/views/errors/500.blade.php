@@ -19,12 +19,10 @@
                 <table class=" no-spacing table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing">
-                                <span class="addhttp" id="number-spacing">
-                                    <?= 5 ?>@include('errors.partials.random_doughnut')@include('errors.partials.random_doughnut')
-                                </span>
-                                <br />Something Went Wrong
+                            <h1 class="addhttp">
+                                <?= 5?>@include('errors.partials.random_doughnut')@include('errors.partials.random_doughnut')
                             </h1>
+                            <h1 id="title-spacing">Something Went Wrong</h1>
 
                             <br /><br />
 

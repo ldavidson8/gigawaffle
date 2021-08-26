@@ -21,13 +21,11 @@
                 <table class=" no-spacing table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing" style="position: relative;">
-                                <span class="addhttp" id="number-spacing">
-                                    <?= 4 ?>@include('errors.partials.random_doughnut')3
-                                </span>
-                                <br />Forbidden
+                            <h1 class="addhttp">
+                                <?= 4?>@include('errors.partials.random_doughnut')3
                             </h1>
-
+                            <h1 id="title-spacing" style="position: relative;">Forbidden</h1>
+                            
                             <br /><br />
 
                             <div class="error-text">

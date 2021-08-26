@@ -22,13 +22,11 @@
                 <table class="table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing" style="position: relative;">
-                                <span class="addhttp" id="number-spacing">
-                                    <?= 5 ?>@include('errors.partials.random_doughnut')3
-                                </span>
-                                <br />This Service Is Unavailable
+                            <h1 class="addhttp">
+                                <?= 5?>@include('errors.partials.random_doughnut')3
                             </h1>
-
+                            <h1 id="title-spacing" style="position: relative;">This Service Is Unavailable</h1>
+                            
                             <br /><br />
 
                             <div class="error-text">

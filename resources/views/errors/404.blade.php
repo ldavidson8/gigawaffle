@@ -14,16 +14,15 @@
 @section('main-content')
         <hr/>
         <div class="row flex-grow-1 no-padding background-image" style="background-image: url('{{ asset('img/waves/wavesDesktopBottom.png') }}');">
-        <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block"></div>
+            <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block"></div>
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 ">
                 <table class=" no-spacing table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing">
-                                <span class="addhttp" id="number-spacing">
-                                    <?= 4 ?>@include('errors.partials.random_doughnut')4
-                                </span>
-                                <br />Uh-oh!
+                            <h1 class="addhttp">
+                                <?= 4?>@include('errors.partials.random_doughnut')4
+                            </h1>
+                            <h1 id="title-spacing">Uh-oh!
                                 <br />There's nothing here
                             </h1>
 

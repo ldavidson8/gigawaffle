@@ -19,17 +19,15 @@
                 <table class="table-center-contents">
                     <tr>
                         <td>
-                            <h1 id="title-spacing">
-                                <span class="addhttp" id="number-spacing">
-                                    <?= 4 ?>@include('errors.partials.random_doughnut')1
-                                </span>
-                                <br />Access Denied
+                            <h1 class="addhttp">
+                                <?= 4?>@include('errors.partials.random_doughnut')1
                             </h1>
+                            <h1 id="title-spacing">Access Denied</h1>
 
                             <br /><br />
 
                             <div class="error-text">
-                                <p class="gradient-container gradient-error-pages">Your authorization failed<br />Please fill in the correct credentials and try again</p>
+                                <p class="gradient-container gradient-error-pages">Your authorization failed<br />Please fill in the correct credentials <br />and try again</p>
                             </div>
 
                             <br /><br />
