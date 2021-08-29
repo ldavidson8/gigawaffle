@@ -20,7 +20,7 @@
     left: 50%;
     top: 50%;
     width: auto;
-    height: 1.05em;
+    height: 0.85em;
 }
 
 button:hover{
@@ -89,6 +89,16 @@ h1 {
   align-items: center;
 }
 
+.error-images-3{
+
+  width: 200px; 
+  height: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+
+}
+
 @media (max-width: 575px)
 {
     .gradient-error-pages
@@ -132,7 +142,8 @@ h1 {
     }
     .error-images-3
     {
-      background-size: 80vw !important;
+      width: 50vw; 
+      height: 50vw;
     }
 }
 

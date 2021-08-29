@@ -15,7 +15,7 @@
         <hr/>
         <div class="row flex-grow-1 no-padding">
             <div class="col-xl-2 col-lg-2 col-md-2 d-none d-md-block"></div>
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 error-images-3"style="background-image: url('{{ asset('img/error pages/419.png') }}'); background-repeat: no-repeat; background-position: center; background-size: 350px;">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                 <table class=" no-spacing table-center-contents">
                     <tr>
                         <td>
@@ -25,10 +25,11 @@
                                 </span>
                                 <br />Page Expired
                             </h1>
+                            <img class="error-images-3" src="{{ asset('img/error pages/419.png') }}"/> 
 
                             <br /><br />
 
-                            <div class="error-text" style="padding-top: 4cm;">
+                            <div class="error-text">
                                 <p class="gradient-container gradient-error-pages">Your session has expired<br />Please go back and try again</p>
                             </div>
 
