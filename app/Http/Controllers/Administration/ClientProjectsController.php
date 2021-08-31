@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Administration;
 
 use App\Http\Controllers\Controller;
 use App\Repositories\ClientProjectRepository;
-use Illuminate\Support\Facades\Log;
+use App\Repositories\ClientProjectServiceRepository;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Throwable;
@@ -17,14 +17,17 @@ class ClientProjectsController extends Controller
         if (!isset($client_projects)) return redirect() -> route('control-panel');
 
         $page_title = 'Client Projects - Control Panel';
-        return view('administration.client-projects.index', compact('page_title', 'client_projects'));
+        return view('administration.client-projects.index', compact('page_title', 'client_projects',));
     }
 
 
     public function create()
     {
+        $services = ClientProjectServiceRepository::Select();
+        if (!isset($services)) return redirect() -> route('control-panel.client-project-services');
+
         $page_title = 'Create Client Project - Control Panel';
-        return view('administration.client-projects.create', compact('page_title'));
+        return view('administration.client-projects.create', compact('page_title', 'services'));
     }
 
     public function createPost(Request $request)
@@ -38,6 +41,7 @@ class ClientProjectsController extends Controller
                 'heading' => 'required|string',
                 'sub_heading' => 'required|string',
                 'image' => 'required|image',
+                'services' => 'nullable|array',
                 'short_content' => 'required|string',
                 'full_content' => 'required|string'
             ]);
@@ -59,7 +63,6 @@ class ClientProjectsController extends Controller
                 catch (Throwable $th)
                 {
                     report($th);
-                    Log::channel('request-callback') -> error('ClientProjectsController -> createPost(), try catch 1, Error saving the uploaded file  -:-  ' . $th -> getMessage());
                     return redirect() -> back() -> withErrors([ 'image' => 'The image could not be saved.' ]) -> withInput();
                 }
             }
@@ -70,6 +73,7 @@ class ClientProjectsController extends Controller
                 $request -> input('heading'),
                 $request -> input('sub_heading'),
                 $image,
+                ($request -> has('services')) ? implode(",", $request -> input('services')) : null,
                 $request -> input('short_content'),
                 $request -> input('full_content')
             );
@@ -79,6 +83,7 @@ class ClientProjectsController extends Controller
         }
         catch (Throwable $th)
         {
+            throw($th);
             // report the error and redirect to the error page
             report($th);
             return redirect() -> back() -> withErrors([ 'image' => 'Sorry, but there was an error.' ]) -> withInput();
@@ -88,12 +93,18 @@ class ClientProjectsController extends Controller
 
     public function edit($id)
     {
+        // get the current client project information
         $rows = ClientProjectRepository::SelectById($id);
         if (!isset($rows) || count($rows) == 0) return redirect() -> route('control-panel.client-projects');
         $client_project = $rows[0];
 
+        // get the list of services
+        $services = ClientProjectServiceRepository::Select();
+        if (!isset($services)) return redirect() -> route('control-panel.client-project-services');
+
+        // return the view
         $page_title = 'Edit Client Project - Control Panel';
-        return view('administration.client-projects.edit', compact('page_title', 'client_project'));
+        return view('administration.client-projects.edit', compact('page_title', 'client_project', 'services'));
     }
 
     public function editPost(Request $request)
@@ -107,6 +118,7 @@ class ClientProjectsController extends Controller
                 'heading' => 'required|string',
                 'sub_heading' => 'required|string',
                 'image' => 'nullable|image',
+                'services' => 'nullable|array',
                 'short_content' => 'required|string',
                 'full_content' => 'required|string'
             ]);
@@ -124,7 +136,6 @@ class ClientProjectsController extends Controller
                 catch (Throwable $th)
                 {
                     report($th);
-                    Log::channel('request-callback') -> error('ClientProjectsController -> createPost(), try catch 1, Error saving the uploaded file  -:-  ' . $th -> getMessage());
                     return redirect() -> back() -> withErrors([ 'image' => 'The image could not be saved.' ]) -> withInput();
                 }
             }
@@ -138,6 +149,7 @@ class ClientProjectsController extends Controller
                     $request -> input('heading'),
                     $request -> input('sub_heading'),
                     $image,
+                    ($request -> has('services')) ? implode(",", $request -> input('services')) : null,
                     $request -> input('short_content'),
                     $request -> input('full_content')
                 );
@@ -149,6 +161,7 @@ class ClientProjectsController extends Controller
                     $request -> input('page_title'),
                     $request -> input('heading'),
                     $request -> input('sub_heading'),
+                    ($request -> has('services')) ? implode(",", $request -> input('services')) : null,
                     $request -> input('short_content'),
                     $request -> input('full_content')
                 );
@@ -159,6 +172,7 @@ class ClientProjectsController extends Controller
         }
         catch (Throwable $th)
         {
+            throw($th);
             // report the error and redirect to the error page
             report($th);
             return redirect() -> back() -> withErrors([ 'image' => 'Sorry, but there was an error.' ]) -> withInput();

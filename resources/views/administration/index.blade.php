@@ -16,6 +16,7 @@
             <br />
 
             <p><a href="{{ route('control-panel.client-projects') }}"><button class="btn btn-info">Client Projects</button></a></p>
+            <p><a href="{{ route('control-panel.client-project-services') }}"><button class="btn btn-info">Client Project Services</button></a></p>
             <p><a href="{{ route('control-panel.blog-post') }}"><button class="btn btn-info">Blog Posts</button></a></p>
             <p><a href="{{ route('control-panel.blog-category') }}"><button class="btn btn-info">Blog Categorys</button></a></p>
         </div>

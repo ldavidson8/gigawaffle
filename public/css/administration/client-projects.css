@@ -1,0 +1,17 @@
+.services-checkbox
+{
+    display: none;
+}
+
+.services-checkbox + *
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.services-checkbox:checked + *
+{
+    background-color: #06f;
+    color: white;
+}

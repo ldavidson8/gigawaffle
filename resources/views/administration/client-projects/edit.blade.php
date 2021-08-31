@@ -1,8 +1,7 @@
 @extends('layouts.master')
 
 @section('stylesheets')
-    <style type="text/css">
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/administration/client-projects.css') }}" />
 @endsection
 
 @section('before-header')
@@ -47,6 +46,22 @@
                 <div class="form-group">
                     <label for="image">Image <span class="text-danger">*</span></label>
                     <input type="file" class="form-control" name="image" id="image" accept="image/*" />
+                </div>
+                <div class="form-group">
+                    <br />
+                    <p><label>Services We Provided</label></p>
+                    @foreach ($services as $service)
+                        <?php $service_name_for_ids = str_replace(" ", "_", $service -> Name); ?>
+                        <input type="checkbox" name="services[]" id="services_{{ $service_name_for_ids }}" class="services-checkbox" value="{{ $service -> ID }}" {{ (isset($client_project -> ServiceList) && in_array($service -> ID, explode(",", $client_project -> ServiceList))) ? "checked" : "" }} />
+                        <label for="services_{{ $service_name_for_ids }}">
+                            <div style="width: 30px; height: 30px; margin-right: 5px; vertical-align: middle;" class="d-inline-flex center-content">
+                                <img src="{{ asset($service -> ImgSrc) }}" style="max-width: 100%; max-height: 100%;" />
+                            </div>
+                            {{ $service -> Name }}
+                        </label>
+                    @endforeach
+                    <br />
+                    <br />
                 </div>
                 <div class="form-group">
                     <label for="short_content">Short Content (for page of showing multiple projects) <span class="text-danger">*</span></label>

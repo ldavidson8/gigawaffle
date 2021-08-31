@@ -100,6 +100,18 @@
         </div>
     </div>
     <div class="container-lg" style="font-size: 20px;">
+        <div style="columns: 3 350px; column-fill: balance;">
+            @foreach ($services as $service)
+                <table style="margin: 5px 0;">
+                    <tr>
+                        <td style="vertical-align: top;"><img src="{{ asset($service -> ImgSrc) }}" style="max-width: 30px; max-height: 30px; margin-right: 7px;" /></td>
+                        <td style="vertical-align: middle;">{{ $service -> Name }}</td>
+                    </tr>
+                </table>
+            @endforeach
+        </div>
+        <br />
+
         <?php
             $project_content = explode("\r\n", $client_project -> Content);
             foreach ($project_content as $line)
@@ -114,7 +126,7 @@
                 echo "<p>$line</p>";
             }
         ?>
-        <a href="{{ url() -> previous(route('clients')) }}"><button class="button-default">Back</button></a>
+        <a href="{{ route('clients') }}"><button class="button-default">Back</button></a>
         <br /><br />
     </div>
 @endsection

@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\DB;
+use App\Repositories\ClientProjectRepository;
+use App\Repositories\ClientProjectServiceRepository;
 use Throwable;
 
 class ClientsController extends Controller
@@ -15,7 +16,7 @@ class ClientsController extends Controller
         $client_projects = [];
         try
         {
-            $rows = DB::select('call SELECT_Client_Project');
+            $rows = ClientProjectRepository::select();
             if (isset($rows) && count($rows) > 0)
             {
                 $client_projects = $rows;
@@ -36,15 +37,16 @@ class ClientsController extends Controller
 
         try
         {
-            $rows = DB::select('call SELECT_BY_ID_Client_Project(?)', [ $projectId ]);
+            $rows = ClientProjectRepository::SelectById($projectId);
+            if (!isset($rows) || count($rows) == 0) return redirect() -> action("ClientsController@clients");
+            $client_project = $rows[0];
 
-            if (isset($rows) && count($rows) > 0)
-            {
-                $client_project = $rows[0];
-                $navbar_page = 'clients';
-                $page_title = $client_project -> PageTitle;
-                return view('clients.client-project', compact('navbar_page', 'page_title', 'client_project'));
-            }
+            $services = ClientProjectServiceRepository::SelectByClientProjectIDs($client_project -> ServiceList);
+            if (!isset($services) || count($services) == 0) return redirect() -> action("ClientsController@clients");
+
+            $navbar_page = 'clients';
+            $page_title = $client_project -> PageTitle;
+            return view('clients.client-project', compact('navbar_page', 'page_title', 'client_project', 'services'));
         }
         catch (Throwable $th)
         {

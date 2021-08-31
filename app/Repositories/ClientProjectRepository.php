@@ -11,7 +11,7 @@ class ClientProjectRepository
     {
         try
         {
-            return DB::select('call SELECT_Client_Project');
+            return DB::select('call Select_All_ClientProject');
         }
         catch (Throwable $th)
         {
@@ -24,27 +24,7 @@ class ClientProjectRepository
     {
         try
         {
-            return DB::select('call SELECT_BY_ID_Client_Project(?)', [ $id ]);
-        }
-        catch (Throwable $th)
-        {
-            return null;
-        }
-    }
-
-    public static function Insert($page_title, $heading, $sub_heading, $image, $short_content, $full_content)
-    {
-        try
-        {
-            return DB::select('call INSERT_Client_Project(?, ?, ?, ?, ?, ?)',
-            [
-                $page_title,
-                $heading,
-                $sub_heading,
-                $image,
-                $short_content,
-                $full_content
-            ]);
+            return DB::select('call Select_ClientProject(?)', [ $id ]);
         }
         catch (Throwable $th)
         {
@@ -53,46 +33,74 @@ class ClientProjectRepository
         }
     }
 
-    public static function Update($id, $page_title, $heading, $sub_heading, $image, $short_content, $full_content)
+    public static function Insert($page_title, $heading, $sub_heading, $image, $service_list, $short_content, $full_content)
     {
         try
         {
-            DB::select("call UPDATE_Client_Project(?, ?, ?, ?, ?, ?, ?);",
+            return DB::select('call Insert_ClientProject(?, ?, ?, ?, ?, ?, ?)',
+            [
+                $page_title,
+                $heading,
+                $sub_heading,
+                $image,
+                $service_list,
+                $short_content,
+                $full_content
+            ]);
+        }
+        catch (Throwable $th)
+        {
+            throw($th);
+            report($th);
+            return null;
+        }
+    }
+
+    public static function Update($id, $page_title, $heading, $sub_heading, $image, $services, $short_content, $full_content)
+    {
+        try
+        {
+            return DB::select("call Update_ClientProject(?, ?, ?, ?, ?, ?, ?, ?);",
             [
                 $id,
                 $page_title,
                 $heading,
                 $sub_heading,
                 $image,
+                $services,
                 $short_content,
                 $full_content
             ]);
         }
         catch (Throwable $th)
         {
+            throw($th);
             report($th);
             return null;
         }
     }
 
-    public static function UpdateNoImage($id, $page_title, $heading, $sub_heading, $short_content, $full_content)
+    public static function UpdateNoImage($id, $page_title, $heading, $sub_heading, $services, $short_content, $full_content)
     {
         try
         {
-            DB::select("call UPDATE_Client_Project_NO_IMAGE(?, ?, ?, ?, ?, ?);",
+            return DB::select("call UPDATE_ClientProject_NO_IMAGE(?, ?, ?, ?, ?, ?, ?);",
             [
                 $id,
                 $page_title,
                 $heading,
                 $sub_heading,
+                $services,
                 $short_content,
                 $full_content
             ]);
         }
         catch (Throwable $th)
         {
+            throw($th);
             report($th);
             return null;
         }
     }
+
 }

@@ -114,7 +114,7 @@
                 echo "<p>$line</p>";
             }
         ?>
-        <a href="{{ url() -> previous(route('blog')) }}"><button class="button-default">Back</button></a>
+        <a href="{{ route('blog') }}"><button class="button-default">Back</button></a>
         <br /><br />
     </div>
 @endsection
