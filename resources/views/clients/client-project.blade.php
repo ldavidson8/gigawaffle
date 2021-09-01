@@ -121,7 +121,7 @@
                     $http_length = strpos($line, " ", $http_index) - $http_index;
                     if ($http_length < 2) $http_length = strlen($line) - $http_index;
                     $http_str = substr($line, $http_index, $http_length);
-                    $line = str_replace($http_str, "<a href='$http_str'>$http_str</a>", $line);
+                    $line = str_replace($http_str, "<a href='$http_str' target='_blank'>$http_str</a>", $line);
                 }
                 echo "<p>$line</p>";
             }
