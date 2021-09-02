@@ -71,10 +71,8 @@
     @include('partials.footer')
 
     @yield('after-footer')
-
     <!-- Scripts -->
     @yield('script')
     <script src="{{ asset('js/site.js') }}" defer="true"></script>
-    <script id="CookieDeclaration" src="https://consent.cookiebot.com/18350f06-db86-4fed-9f79-aa8cdb6eca23/cd.js" type="text/javascript" async></script>
 </body>
 </html>
