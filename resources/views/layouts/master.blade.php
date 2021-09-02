@@ -37,6 +37,8 @@
 
     @yield('stylesheets')
 
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="18350f06-db86-4fed-9f79-aa8cdb6eca23" data-blockingmode="auto" type="text/javascript"></script>
+
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer="true"></script>
@@ -73,6 +75,6 @@
     <!-- Scripts -->
     @yield('script')
     <script src="{{ asset('js/site.js') }}" defer="true"></script>
-
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/18350f06-db86-4fed-9f79-aa8cdb6eca23/cd.js" type="text/javascript" async></script>
 </body>
 </html>
