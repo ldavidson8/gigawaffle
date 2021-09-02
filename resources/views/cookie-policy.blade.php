@@ -129,6 +129,7 @@
                     <br />
                     <span class="font-weight-bold">Important</span> <br />Please note that if you adjust your internet browser settings to refuse the setting of cookies, you may not be able to access or fully use certain parts or functionality of our website. Because of this, we would recommend taking a more targeted approach to withdrawing your consent. For example, if you wanted to stop Cookies being used for the purposes of serving you with interest-based advertisements, then instead of blocking all cookies, you could instead opt-out of these on a case-by-case basis.
                     </p>
+                    <script id="CookieDeclaration" src="https://consent.cookiebot.com/18350f06-db86-4fed-9f79-aa8cdb6eca23/cd.js" type="text/javascript" async></script>
             </section>
         </div>
     </main>
