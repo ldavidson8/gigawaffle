@@ -9,7 +9,7 @@
 @endsection
 
 @section('main-content')
-        <div class="container-lg top-section-outer">
+        <div class="container-lg top-section-outer" style="margin-top: 0;">
             <div class="gradient-container container-no-gradient-sm">
                 <h1>Create a new Client Project</h1>
                 <hr style="width: 150px" />
@@ -48,7 +48,22 @@
                 </div>
                 <div class="form-group">
                     <br />
-                    <p><label>Services We Provided</label></p>
+                    <p><label>Technologies Used</label></p>
+                    <div style="border-radius: 10px; display: inline-block; padding: 5px; background-image: linear-gradient(to right, #DF4985 , #7A98EE);">
+                        @foreach ($technologies as $technology)
+                            <?php $technology_name_for_ids = str_replace(" ", "_", $technology -> Name); ?>
+                            <input type="checkbox" name="technologies[]" id="technologies_{{ $technology_name_for_ids }}" class="technologies-checkbox" value="{{ $technology -> ID }}" />
+                            <label for="technologies_{{ $technology_name_for_ids }}" style="margin-bottom: 0px;">
+                                <img src="{{ asset($technology -> ImgSrc) }}" style="width: auto; height: 30px;" />
+                            </label>
+                        @endforeach
+                    </div>
+                    <br />
+                    <br />
+                </div>
+                <div class="form-group">
+                    <br />
+                    <p><label>Services We Provided Them</label></p>
                     @foreach ($services as $service)
                         <?php $service_name_for_ids = str_replace(" ", "_", $service -> Name); ?>
                         <input type="checkbox" name="services[]" id="services_{{ $service_name_for_ids }}" class="services-checkbox" value="{{ $service -> ID }}" />

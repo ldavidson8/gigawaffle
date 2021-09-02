@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Administration;
 use App\Http\Controllers\Controller;
 use App\Repositories\ClientProjectRepository;
 use App\Repositories\ClientProjectServiceRepository;
+use App\Repositories\ClientProjectTechnologyRepository;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Throwable;
@@ -24,10 +25,13 @@ class ClientProjectsController extends Controller
     public function create()
     {
         $services = ClientProjectServiceRepository::Select();
-        if (!isset($services)) return redirect() -> route('control-panel.client-project-services');
+        if (!isset($services)) return redirect() -> route('control-panel.client-projects');
+
+        $technologies = ClientProjectTechnologyRepository::Select();
+        if (!isset($technologies)) return redirect() -> route('control-panel.client-projects');
 
         $page_title = 'Create Client Project - Control Panel';
-        return view('administration.client-projects.create', compact('page_title', 'services'));
+        return view('administration.client-projects.create', compact('page_title', 'services', 'technologies'));
     }
 
     public function createPost(Request $request)
@@ -42,6 +46,7 @@ class ClientProjectsController extends Controller
                 'sub_heading' => 'required|string',
                 'image' => 'required|image',
                 'services' => 'nullable|array',
+                'technologies' => 'nullable|array',
                 'short_content' => 'required|string',
                 'full_content' => 'required|string'
             ]);
@@ -74,6 +79,7 @@ class ClientProjectsController extends Controller
                 $request -> input('sub_heading'),
                 $image,
                 ($request -> has('services')) ? implode(",", $request -> input('services')) : null,
+                ($request -> has('technologies')) ? implode(",", $request -> input('technologies')) : null,
                 $request -> input('short_content'),
                 $request -> input('full_content')
             );
@@ -102,9 +108,13 @@ class ClientProjectsController extends Controller
         $services = ClientProjectServiceRepository::Select();
         if (!isset($services)) return redirect() -> route('control-panel.client-project-services');
 
+        // get the list of technologies
+        $technologies = ClientProjectTechnologyRepository::Select();
+        if (!isset($technologies)) return redirect() -> route('control-panel.client-project-technologies');
+
         // return the view
         $page_title = 'Edit Client Project - Control Panel';
-        return view('administration.client-projects.edit', compact('page_title', 'client_project', 'services'));
+        return view('administration.client-projects.edit', compact('page_title', 'client_project', 'services', 'technologies'));
     }
 
     public function editPost(Request $request)
@@ -119,6 +129,7 @@ class ClientProjectsController extends Controller
                 'sub_heading' => 'required|string',
                 'image' => 'nullable|image',
                 'services' => 'nullable|array',
+                'technologies' => 'nullable|array',
                 'short_content' => 'required|string',
                 'full_content' => 'required|string'
             ]);
@@ -150,6 +161,7 @@ class ClientProjectsController extends Controller
                     $request -> input('sub_heading'),
                     $image,
                     ($request -> has('services')) ? implode(",", $request -> input('services')) : null,
+                    ($request -> has('technologies')) ? implode(",", $request -> input('technologies')) : null,
                     $request -> input('short_content'),
                     $request -> input('full_content')
                 );
@@ -162,6 +174,7 @@ class ClientProjectsController extends Controller
                     $request -> input('heading'),
                     $request -> input('sub_heading'),
                     ($request -> has('services')) ? implode(",", $request -> input('services')) : null,
+                    ($request -> has('technologies')) ? implode(",", $request -> input('technologies')) : null,
                     $request -> input('short_content'),
                     $request -> input('full_content')
                 );

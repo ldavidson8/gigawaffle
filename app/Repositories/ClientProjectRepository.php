@@ -33,17 +33,18 @@ class ClientProjectRepository
         }
     }
 
-    public static function Insert($page_title, $heading, $sub_heading, $image, $service_list, $short_content, $full_content)
+    public static function Insert($page_title, $heading, $sub_heading, $image, $services, $technologies, $short_content, $full_content)
     {
         try
         {
-            return DB::select('call Insert_ClientProject(?, ?, ?, ?, ?, ?, ?)',
+            return DB::select('call Insert_ClientProject(?, ?, ?, ?, ?, ?, ?, ?)',
             [
                 $page_title,
                 $heading,
                 $sub_heading,
                 $image,
-                $service_list,
+                $services,
+                $technologies,
                 $short_content,
                 $full_content
             ]);
@@ -56,11 +57,11 @@ class ClientProjectRepository
         }
     }
 
-    public static function Update($id, $page_title, $heading, $sub_heading, $image, $services, $short_content, $full_content)
+    public static function Update($id, $page_title, $heading, $sub_heading, $image, $services, $technologies, $short_content, $full_content)
     {
         try
         {
-            return DB::select("call Update_ClientProject(?, ?, ?, ?, ?, ?, ?, ?);",
+            return DB::select("call Update_ClientProject(?, ?, ?, ?, ?, ?, ?, ?, ?);",
             [
                 $id,
                 $page_title,
@@ -68,6 +69,7 @@ class ClientProjectRepository
                 $sub_heading,
                 $image,
                 $services,
+                $technologies,
                 $short_content,
                 $full_content
             ]);
@@ -80,17 +82,18 @@ class ClientProjectRepository
         }
     }
 
-    public static function UpdateNoImage($id, $page_title, $heading, $sub_heading, $services, $short_content, $full_content)
+    public static function UpdateNoImage($id, $page_title, $heading, $sub_heading, $services, $technologies, $short_content, $full_content)
     {
         try
         {
-            return DB::select("call UPDATE_ClientProject_NO_IMAGE(?, ?, ?, ?, ?, ?, ?);",
+            return DB::select("call UPDATE_ClientProject_NO_IMAGE(?, ?, ?, ?, ?, ?, ?, ?);",
             [
                 $id,
                 $page_title,
                 $heading,
                 $sub_heading,
                 $services,
+                $technologies,
                 $short_content,
                 $full_content
             ]);

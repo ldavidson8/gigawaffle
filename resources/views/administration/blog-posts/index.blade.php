@@ -9,7 +9,7 @@
 @endsection
 
 @section('main-content')
-        <div class="container-xl top-section-outer">
+        <div class="container-xl top-section-outer" style="margin-top: 0;">
             <div class="gradient-container container-no-gradient-sm">
                 <h1>Blog Posts</h1>
                 <hr style="width: 150px" />

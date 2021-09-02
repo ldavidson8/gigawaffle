@@ -42,6 +42,24 @@ Route::group([ 'prefix' => '/client-project-services' ], function()
     });
 });
 
+Route::group([ 'prefix' => '/client-project-technologies' ], function()
+{
+    Route::get('/', 'ClientProjectTechnologyController@index') -> middleware('auth') -> name('control-panel.client-project-technologies');
+    Route::group([ 'prefix' => '/create' ], function()
+    {
+        Route::get('/', 'ClientProjectTechnologyController@create') -> middleware('auth') -> name('control-panel.client-project-technologies.create');
+        Route::post('/', 'ClientProjectTechnologyController@createPost') -> middleware('auth') -> name('control-panel.client-project-technologies.create');
+    });
+
+    Route::group([ 'prefix' => '/edit' ], function()
+    {
+        Route::get('/{id}', 'ClientProjectTechnologyController@edit') -> middleware('auth') -> name('control-panel.client-project-technologies.edit');
+        Route::post('/', 'ClientProjectTechnologyController@editPost') -> middleware('auth') -> name('control-panel.client-project-technologies.edit');
+    });
+});
+
+
+
 Route::group([ 'prefix' => '/blog-post' ], function()
 {
     Route::get('/', 'BlogPostController@index') -> middleware('auth') -> name('control-panel.blog-post');

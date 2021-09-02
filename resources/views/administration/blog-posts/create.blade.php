@@ -10,7 +10,7 @@
 @endsection
 
 @section('main-content')
-        <div class="container-lg top-section-outer">
+        <div class="container-lg top-section-outer" style="margin-top: 0;">
             <div class="gradient-container container-no-gradient-sm">
                 <h1>Create a new Blog Post</h1>
                 <hr style="width: 150px" />

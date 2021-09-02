@@ -86,8 +86,13 @@
 @section('main-content')
     <div class="d-flex flex-column center-content no-padding purple-gradient-box">
         <div class="container-lg row top-section-outer">
-            <div class="col-12 col-sm-6 col-xl-6 no-padding d-flex center-content">
+            <div class="col-12 col-sm-6 col-xl-6 no-padding d-flex center-content flex-column">
                 <h1 style="color: black; margin: 0; padding: 20px 0;">{{ $client_project -> Heading }}</h1>
+                <div style="text-align: center; margin-bottom: 20px;">
+                    @foreach ($technologies as $technology)
+                        <img src="{{ asset($technology -> ImgSrc) }}" style="margin: 2px;" />
+                    @endforeach
+                </div>
             </div>
             <div class="col-12 col-sm-6 d-flex center-content">
                 <img class="border-radius-20" style="object-fit: fill;" src="{{ asset($client_project -> ImageSource) }}" alt="" />

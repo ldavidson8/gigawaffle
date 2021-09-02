@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Repositories\ClientProjectRepository;
 use App\Repositories\ClientProjectServiceRepository;
+use App\Repositories\ClientProjectTechnologyRepository;
 use Throwable;
 
 class ClientsController extends Controller
@@ -41,12 +42,15 @@ class ClientsController extends Controller
             if (!isset($rows) || count($rows) == 0) return redirect() -> action("ClientsController@clients");
             $client_project = $rows[0];
 
-            $services = ClientProjectServiceRepository::SelectByClientProjectIDs($client_project -> ServiceList);
+            $services = ClientProjectServiceRepository::SelectByClientProjectIDs($client_project -> Services);
             if (!isset($services) || count($services) == 0) return redirect() -> action("ClientsController@clients");
+
+            $technologies = ClientProjectTechnologyRepository::SelectByClientProjectIDs($client_project -> Technologies);
+            if (!isset($technologies) || count($technologies) == 0) return redirect() -> action("ClientsController@clients");
 
             $navbar_page = 'clients';
             $page_title = $client_project -> PageTitle;
-            return view('clients.client-project', compact('navbar_page', 'page_title', 'client_project', 'services'));
+            return view('clients.client-project', compact('navbar_page', 'page_title', 'client_project', 'services', 'technologies'));
         }
         catch (Throwable $th)
         {
