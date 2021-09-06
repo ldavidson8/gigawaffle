@@ -6,6 +6,14 @@ header
     width: 100%
 }
 
+footer
+{
+    background-image: linear-gradient(to right, #7A98EE , #DF4985);
+    color: #FFFFFF;
+    padding: 20px 10px;
+    width: 100%
+}
+
 nav
 {
     font-size: 23px;

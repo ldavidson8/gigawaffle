@@ -22,6 +22,6 @@
 
     @yield('main-content')
 
-    <header><nav>&nbsp;</nav></header>
+    <footer><nav>&nbsp;</nav></header>
 </body>
 </html>
