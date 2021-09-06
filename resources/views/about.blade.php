@@ -137,7 +137,8 @@
                     <li>Fox Street,</li>
                     <li>Preston,</li>
                     <li>PR1 2AB</li>
-                    <li style="font-style: italic;"> hello@gigawaffle.co.uk </li>
+                    <li style="font-style: italic;">{{ env('DATA_CONTACT_EMAIL') }}</li>
+                    <li style="font-style: italic;">{{ env('DATA_CONTACT_PHONE_NUMBER') }}</li>
                 </ul>
             </div>
             </div>
