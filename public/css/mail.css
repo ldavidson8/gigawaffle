@@ -1,0 +1,53 @@
+header
+{
+    background-image: linear-gradient(to right, #DF4985 , #7A98EE);
+    color: #FFFFFF;
+    padding: 20px 10px;
+    width: 100%
+}
+
+nav
+{
+    font-size: 23px;
+    font-weight: 500;
+    font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-brand
+{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.navbar-brand:link,
+.navbar-brand:visited,
+.navbar-brand:hover,
+.navbar-brand:active
+{
+    text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 27px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--color-white)
+}
+
+h2
+{
+    font-size: 27px;
+}
+
+h3
+{
+    font-size: 22px;
+}
