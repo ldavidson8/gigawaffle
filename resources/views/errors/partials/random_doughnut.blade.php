@@ -32,4 +32,3 @@
         "<div class='waffle-image-outer'>",
         "<img rel='preload' src='$random_image_string' class='waffle-image' style='transform: translate(-50%, -50%) rotate({$random_rotation}deg);' />",
         "</div>";
-  
