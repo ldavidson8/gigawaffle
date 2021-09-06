@@ -128,19 +128,19 @@
         <h3>Where to find gigawaffle</h3>
         <div class="shadowed-card">
             <div class="row">
-            <div class="col-12 col-md-8 no-padding shadow-right-md"><img class="google-map border-radius-20" src="{{ asset('img/map.png') }}"></div>
-            <div class="col-12 col-md-4 m-auto text-center">
-                <img src="{{ asset('img/home-icon.png') }}" style="display: inline-block" height="30" alt="Map of our location">
-                <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>
-                <ul class="list-unstyled">
-                    <li>Estate House,</li>
-                    <li>Fox Street,</li>
-                    <li>Preston,</li>
-                    <li>PR1 2AB</li>
-                    <li style="font-style: italic;">{{ env('DATA_CONTACT_EMAIL') }}</li>
-                    <li style="font-style: italic;">{{ env('DATA_CONTACT_PHONE_NUMBER') }}</li>
-                </ul>
-            </div>
+                <div class="col-12 col-md-8 no-padding shadow-right-md"><img class="google-map border-radius-20" src="{{ asset('img/map.png') }}"></div>
+                <div class="col-12 col-md-4 m-auto text-center">
+                    <img src="{{ asset('img/home-icon.png') }}" style="display: inline-block" height="30" alt="Map of our location">
+                    <p style="font-size: 1.3em; font-weight: 500; display: inline-block"> Preston HQ </p>
+                    <ul class="list-unstyled">
+                        <li>Estate House,</li>
+                        <li>Fox Street,</li>
+                        <li>Preston,</li>
+                        <li>PR1 2AB</li>
+                        <li style="font-style: italic;">{{ env('DATA_CONTACT_EMAIL') }}</li>
+                        <li style="font-style: italic;">{{ env('DATA_CONTACT_PHONE_NUMBER') }}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
