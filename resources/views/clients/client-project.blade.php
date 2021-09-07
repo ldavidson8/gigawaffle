@@ -90,7 +90,7 @@
                 <h1 style="color: black; margin: 0; padding: 20px 0;">{{ $client_project -> Heading }}</h1>
                 <div style="text-align: center; margin-bottom: 20px;">
                     @foreach ($technologies as $technology)
-                        <img src="{{ asset($technology -> ImgSrc) }}" style="margin: 2px;" />
+                        <img src="{{ asset($technology -> ImgSrc) }}" title="{{ $technology -> Name }}" style="margin: 2px;" />
                     @endforeach
                 </div>
             </div>
@@ -105,6 +105,7 @@
         </div>
     </div>
     <div class="container-lg" style="font-size: 20px;">
+        <h2 class="pink-heading" style="text-align: center;">Services They Chose</h2>
         <div style="columns: 3 350px; column-fill: balance;">
             @foreach ($services as $service)
                 <table style="margin: 5px 0;">
