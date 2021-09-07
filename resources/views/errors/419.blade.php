@@ -1,5 +1,5 @@
 <?php
-    $page_title = 'Page Expired';
+    if (!isset($page_title)) $page_title = 'Page Expired';
 ?>
 @extends('layouts.master')
 
@@ -25,7 +25,7 @@
                                 </span>
                                 <br />Page Expired
                             </h1>
-                            <img class="error-images-3" src="{{ asset('img/error pages/419.png') }}"/> 
+                            <img class="error-images-3" src="{{ asset('img/error pages/419.png') }}"/>
 
                             <br /><br />
 

@@ -1,5 +1,5 @@
 <?php
-    $page_title = 'Service Unavailable';
+    if (!isset($page_title)) $page_title = 'Service Unavailable';
 ?>
 @extends('layouts.master')
 
@@ -26,7 +26,7 @@
                                 <?= 5?>@include('errors.partials.random_doughnut')3
                             </h1>
                             <h1 id="title-spacing" style="position: relative;">This Service Is Unavailable</h1>
-                            
+
                             <br /><br />
 
                             <div class="error-text">

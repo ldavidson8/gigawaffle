@@ -1,5 +1,5 @@
 <?php
-    $page_title = 'Forbidden';
+    if (!isset($page_title)) $page_title = 'Forbidden';
 ?>
 @extends('layouts.master')
 
@@ -25,7 +25,7 @@
                                 <?= 4?>@include('errors.partials.random_doughnut')3
                             </h1>
                             <h1 id="title-spacing" style="position: relative;">Forbidden</h1>
-                            
+
                             <br /><br />
 
                             <div class="error-text">

@@ -1,5 +1,5 @@
 <?php
-    $page_title = 'Unauthorized';
+    if (!isset($page_title)) $page_title = 'Unauthorized';
 ?>
 @extends('layouts.master')
 
