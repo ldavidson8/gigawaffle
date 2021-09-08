@@ -105,7 +105,7 @@
         </div>
     </div>
     <div class="container-lg" style="font-size: 20px;">
-        <h2 class="pink-heading" style="text-align: center;">Services They Chose</h2>
+        <h2 class="pink-heading" style="text-align: center; margin-bottom: 20px;">Services They Chose</h2>
         <div style="columns: 3 350px; column-fill: balance;">
             @foreach ($services as $service)
                 <table style="margin: 5px 0;">
