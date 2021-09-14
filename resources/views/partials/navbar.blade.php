@@ -43,5 +43,11 @@
                 </li>
             </ul>
         @endauth
+        <button id="theme-toggle" class="btn btn-link btn-lg ml-2" type="button">
+            <span class="d-block-light d-none"><img src="{{ asset('img/moon.svg')}}"></span>
+            <span class="d-block-dark d-none"><img src="{{ asset('img/sun.svg')}}"></span>
+           </button>
+           
+         
     </div>
 </nav>

@@ -43,9 +43,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer="true"></script>
     <script src="https://kit.fontawesome.com/6e2d0444fe.js" crossorigin="anonymous"></script>
+
+    <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YVLHDXKRLS"></script>
     <script src="{{ URL::asset('js/google-analytics.js') }}"></script>
+
     <!-- Facebook Pixel Code -->
     <script type="text/javascript" src="{{ URL::asset('js/facebook-pixel.js') }}"></script>
     <noscript><img height="1" width="1" style="display:none"
@@ -55,7 +59,6 @@
 
     <!-- Our Scripts -->
     <script type="text/javascript" src="{{ URL::asset('js/intersection-observer-api.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/theme-toggle.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/lava-lamp.js') }}"></script>
 
 </head>
@@ -74,5 +77,6 @@
     <!-- Scripts -->
     @yield('script')
     <script src="{{ asset('js/site.js') }}" defer="true"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/darkmode.js') }}"></script>
 </body>
 </html>
