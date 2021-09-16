@@ -380,22 +380,22 @@ html[data-theme='dark'] .navy-blue-button
 
 .button-default
 {
-    background-color: #000733;
-    color: white;
-    border: 2px solid #000733;
+    background-color: var(--color-navyblue);
+    color: var(--color-white);
+    border: 2px solid var(--color-navyblue);
 }
 
 .button-alternate
 {
-    background-color: white;
-    color: #000733;
-    border: 2px solid #000733;
+    background-color: var(--color-white);
+    color: var(--color-navyblue);
+    border: 2px solid var(--color-navyblue);
 }
 
 
 .shadowed-card
 {
-    box-shadow: 0px 2px 3px 0px #000733;
+    box-shadow: 0px 2px 3px 0px var(--color-navyblue);
     border-radius: 20px;
     background-color: white;
 }

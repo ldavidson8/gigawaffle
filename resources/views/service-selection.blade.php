@@ -80,7 +80,8 @@
         .selection-button
         {
             background-color: white;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+            border: 2px solid #000733;
             font-weight: bold;
             border-radius: 10px;
             padding: 0 5px;
@@ -93,6 +94,7 @@
         html[data-theme='dark'] .selection-button
         {
             background-color: #000733;
+            border: 2px solid white;
         }
 
         .selection-items [type=checkbox]:checked + label
@@ -100,6 +102,7 @@
             color: #DF4985;
             background-color: #000733;
             font-style: normal;
+            border: 2px solid #DF4985;
         }
         html[data-theme='dark'] .selection-items [type=checkbox]:checked + label
         {
@@ -122,6 +125,7 @@
         input#Design:checked ~ .selection-items > label:not([filter=design])
         {
             display: none;
+            animation: fadeInButton 2s ease-in;
         }
 
         input#Marketing:checked ~ .selection-items > label:not([filter=marketing])
@@ -132,6 +136,15 @@
         input#Media:checked ~ .selection-items > label:not([filter=social-content])
         {
             display: none;
+        }
+
+        @keyframes zoom-in {
+        0% {
+            transform: scale(.1);
+        }
+        100% {
+            transform: none;
+        }
         }
 
 
@@ -147,7 +160,7 @@
 
             .selection-button
             {
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
                 font-weight: bold;
                 border-radius: 10px;
                 padding: 0 5px;
@@ -174,7 +187,7 @@
 
             .selection-button
             {
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
                 font-weight: bold;
                 border-radius: 10px;
                 padding: 0 5px;
