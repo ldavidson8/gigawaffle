@@ -34,18 +34,15 @@
         }
         html[data-theme='dark'] .package-container
         {
-            box-shadow: 0px 2px 3px 0px white;
+            border: 2px solid white;
+            border-radius: 20px;
+            box-shadow: none;
             background-color: #000733;
         }
 
         .package-container-header
         {
             text-align: left;
-        }
-
-        .package-container p
-        {
-            color: gray;
         }
 
         @media (min-width: 767px)
@@ -73,6 +70,15 @@
             .button-margin-md
             {
                 margin-bottom: 1em;
+            }
+        }
+
+        @media (max-width 767px)
+        {
+            .package-container
+            {
+                border: 0px solid transparent !important;
+                border-radius: 0px;
             }
         }
 
@@ -238,7 +244,7 @@
         </h3>
         <p style="font-size: 20px; text-align: center;">Fill in this form and we will be back in touch with you.</p>
         <div class="pink-box-round pink-box-merge-bottom">
-            <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
+            <div class="pink-box-white-striped-border pink-box-border-merge-bottom no-border-in-dark-mode">
                 <form method="post" action="{{ route('post.contact-us') }}">
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">

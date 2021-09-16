@@ -11,7 +11,7 @@ toggle.onclick = function() {
 
     if (currentTheme === "light") {
         targetTheme = "dark";
-        
+
     }
 
     document.documentElement.setAttribute('data-theme', targetTheme)

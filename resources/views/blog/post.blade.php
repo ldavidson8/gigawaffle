@@ -42,6 +42,11 @@
             -ms-transform-origin: center;
             transform-origin: center;
         }
+        html[data-theme='dark'] .white-wave path { fill: #000733; }
+        @media (prefers-color-scheme: dark) { .white-wave path { fill: #000733; } }
+        @media screen and (-ms-high-contrast: active) { .white-wave path { fill: #000733; } }
+        @media screen and (-ms-high-contrast: white-on-black) { .white-wave path { fill: #000733; } }
+        @media screen and (prefers-contrast: more) { .white-wave path { fill: #000733; } }
 
         h1
         {

@@ -567,7 +567,7 @@
             </div>
             <div class="container no-padding" style="width: 576px; max-width: 100%;">
                 <div class="pink-box-round pink-box-merge-bottom">
-                    <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
+                    <div class="pink-box-white-striped-border pink-box-border-merge-bottom no-border-in-dark-mode">
                         <div class="form-group">
                             <label for="full_name">Full Name *</label>
                             <input class="form-control" type="text" name="full_name" value="{{ old('full_name') }}" required />

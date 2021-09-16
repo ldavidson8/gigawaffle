@@ -112,19 +112,19 @@
 @endsection
 
 @section('before-header')
-    <canvas id="white-bubble"></canvas>
     <div class="full-size container-fluid d-flex flex-column center-content" style="min-height: 100vh; position: relative;">
 @endsection
 
 @section('main-content')
         <div class="gradient" style="position: absolute; width: 100%; height: 100%; z-index: -2"></div>
-        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm" style="position: relative;">
+        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm" style="position: relative; color: #000733;">
+            <canvas id="white-bubble"></canvas>
             <div class="col-12 col-md-6 no-padding d-flex flex-column">
                 <div class="d-flex">
                     <div class="align-item-bottom no-padding" style="font-style: italic">
                         <h1 style="font: inherit; font-size: 40px; font-weight: 900; line-height: 60px; color: #000733;">Welcome to Gigawaffle</h1>
-                        <p style="font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; font-style: italic; font-weight: 600; line-height: 32.4px; margin-bottom: 8px; margin-top: 0px; color: #000733;">Marketing and web design that tickles your taste buds</p>
-                        <hr style="width: 150px;" style="border-color: #000733;">
+                        <p style="font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; font-style: italic; font-weight: 600; line-height: 32.4px; margin-bottom: 8px; margin-top: 0px;">Marketing and web design that tickles your taste buds</p>
+                        <hr style="width: 150px; border-color: #000733;">
                     </div>
                 </div>
                 <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
@@ -147,7 +147,7 @@
         </div>
     </div>
     <div class="gradient">
-        @include('partials.waves-bottom')
+        @include('partials.waves-bottom-hidden-in-dark-mode')
     </div>
     <div class="no-padding">
         <div class="col-12 d-flex flex-column align-items-center text-center py-5">
@@ -178,7 +178,7 @@
         </div>
     </div>
     <div class="gradient text-white">
-        @include('partials.waves-top')
+        @include('partials.waves-top-hidden-in-dark-mode')
         <div class="container">
             <div class="col-12 d-flex flex-column align-items-center py-0 py-md-4">
                 <h2 class="pink-heading pb-3" style="padding-top: 30px; color: white;">The Process</h2>
@@ -205,24 +205,26 @@
                 </div>
             </div>
         </div>
-        @include('partials.waves-bottom')
+        @include('partials.waves-bottom-hidden-in-dark-mode')
     </div>
     @if (isset($blog_posts) && count($blog_posts) > 0)
         <canvas id="bubble"></canvas>
-        <div class="container full-size d-flex center-content">
-            <div class="col-12 d-flex flex-column align-items-center py-5">
-                <h2 class="pink-heading pb-3 color-navyblue">The Waffle Corner</h2>
-                <h3>The only place that we tolerate any waffle...</h3>
-                <div class="container-xl" style="margin-bottom: 30px;">
-                    <div class="text-container-40px" style="text-align: center;">
-                        @foreach ($blog_posts as $blog_post)
-                        <a href="{{ route('blog.blog-post', [ 'blogId' => $blog_post -> ID ]) }}" class="blog-post-section no-padding background-image" style="background-image: url('{{ asset($blog_post -> ImageSource) }}');">
-                            <p class="blog-post-heading">{{ $blog_post -> Heading }}</p>
-                        </a>
-                        @endforeach
+        <div class="fluid-container no-padding">
+            <div class="container full-size d-flex center-content">
+                <div class="col-12 d-flex flex-column align-items-center py-5">
+                    <h2 class="pb-3">The Waffle Corner</h2>
+                    <h3>The only place that we tolerate any waffle...</h3>
+                    <div class="container-xl" style="margin-bottom: 30px;">
+                        <div class="text-container-40px" style="text-align: center;">
+                            @foreach ($blog_posts as $blog_post)
+                            <a href="{{ route('blog.blog-post', [ 'blogId' => $blog_post -> ID ]) }}" class="blog-post-section no-padding background-image" style="background-image: url('{{ asset($blog_post -> ImageSource) }}');">
+                                <p class="blog-post-heading">{{ $blog_post -> Heading }}</p>
+                            </a>
+                            @endforeach
+                        </div>
                     </div>
+                    <a href="{{ route('blog') }}"><button class="navy-blue-button">Read More</button></a>
                 </div>
-                <a href="{{ route('blog') }}"><button class="navy-blue-button">Read More</button></a>
             </div>
         </div>
     @endif

@@ -169,7 +169,7 @@
     </div>
     <br />
     <div class="gradient no-padding">
-        @include('partials.waves-top')
+        @include('partials.waves-top-hidden-in-dark-mode')
         <div class="banner">
             <h2 style="font-weight: 200; margin: 20px auto; color: white; font-size: 2.5rem">Discover us</h2>
             <div style="padding: 5px 0px 25px;">
@@ -179,7 +179,7 @@
                 <a href="https://www.linkedin.com/company/gigawaffle/"><img class="social-img" src="{{ asset('img/social-links/linkedin.svg') }}" width="50px" height="50px" alt="LinkedIn" /></a>
             </div>
         </div>
-        @include('partials.waves-bottom')
+        @include('partials.waves-bottom-hidden-in-dark-mode')
     </div>
     <br />
     <div class="container no-padding">
@@ -211,13 +211,10 @@
     </div>
     <br />
     <div id="contactform" class="container no-padding" style="width: 576px; max-width: 100%;">
-        <h2 style="font-size: 30px;
-        color: #DF4985;
-        font-weight: bold;
-        text-align: center;"><b>How can we help you?</b></h2>
+        <h2 style="font-size: 30px; color: #DF4985; font-weight: bold; text-align: center;"><b>How can we help you?</b></h2>
         <p style="font-size: 20px; text-align: center;">Send a message</p>
         <div class="pink-box-round pink-box-merge-bottom">
-            <div class="pink-box-white-striped-border pink-box-border-merge-bottom">
+            <div class="pink-box-white-striped-border pink-box-border-merge-bottom no-border-in-dark-mode">
                 <form method="post" action="{{ route('post.contact-us') }}">
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
