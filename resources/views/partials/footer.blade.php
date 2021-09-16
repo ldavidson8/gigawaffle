@@ -6,19 +6,19 @@
 
     .footer-link:hover
     {
-        color: var(--color-violet);
+        color: #7A98EE;
         text-decoration: none;
     }
 
     .fa-home
     {
         font-size: 3em;
-        color: var(--color-pink);
+        color: #DF4985;
     }
 
     .bottom-border-center
     {
-        background: linear-gradient(var(--color-pink),var(--color-pink)) bottom/ 95% 5px no-repeat, #000733;
+        background: linear-gradient(#DF4985, #DF4985) bottom/ 95% 5px no-repeat, #000733;
     }
     @media (max-width: 360px)
         {
@@ -32,7 +32,7 @@
 </style>
 <footer class="text-white" style="width: 100%;">
     <a href="https://linktr.ee/gigawaffle" rel="external">
-        <div class="col-12 container-fluid text-center footer-link py-2" style="background-color: var(--color-pink)">
+        <div class="col-12 container-fluid text-center footer-link py-2" style="background-color: #DF4985">
             Find us on social media @gigawaffleuk
         </div>
     </a>

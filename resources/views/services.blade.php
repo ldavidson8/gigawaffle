@@ -28,9 +28,14 @@
         {
             box-shadow: 0px 2px 3px 0px #000733;
             border-radius: 20px;
-            background-color: var(--color-white);
+            background-color: white;
             padding: 25px;
             text-align: left;
+        }
+        html[data-theme='dark'] .package-container
+        {
+            box-shadow: 0px 2px 3px 0px white;
+            background-color: #000733;
         }
 
         .package-container-header
@@ -68,6 +73,15 @@
             .button-margin-md
             {
                 margin-bottom: 1em;
+            }
+        }
+
+        @media (prefers-color-scheme: dark)
+        {
+            .package-container
+            {
+                box-shadow: 0px 2px 3px 0px white;
+                background-color: #000733;
             }
         }
     </style>

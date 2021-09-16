@@ -62,7 +62,7 @@
     <script type="text/javascript" src="{{ URL::asset('js/lava-lamp.js') }}"></script>
 
 </head>
-<body>
+<body class="background-color-white color-navyblue">
     @yield('before-header')
 
     <header>

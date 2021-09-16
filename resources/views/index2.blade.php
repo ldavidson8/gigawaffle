@@ -35,7 +35,11 @@
         {
             margin-bottom: 1em;
             text-align: center;
-            border: 2px solid var(--color-navyblue);
+            border: 2px solid #000733;
+        }
+        html[data-theme='dark'] .blog-cards
+        {
+            border-color: white;
         }
 
         .blog-card-link
@@ -45,7 +49,7 @@
 
         .blog-cards-text
         {
-            color: var(--color-pink);
+            color: #DF4985;
             font-size: 17px;
             font-weight: 700;
         }
@@ -59,7 +63,7 @@
 
         .meta
         {
-            color: var(--color-pink);
+            color: #DF4985;
             font-size: 12px;
             margin-top: 5px;
         }
@@ -101,9 +105,9 @@
             <div class="col-12 col-md-6 no-padding d-flex flex-column">
                 <div class="d-flex">
                     <div class="align-item-bottom no-padding" style="font-style: italic">
-                        <h1 style="font: inherit; font-size: 40px; font-weight: 900; line-height: 60px; color: var(--color-navyblue);">Welcome to Gigawaffle</h1>
+                        <h1 class="color-navyblue" style="font: inherit; font-size: 40px; font-weight: 900; line-height: 60px;">Welcome to Gigawaffle</h1>
                         <p style="font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; font-style: italic; font-weight: 600; line-height: 32.4px; margin-bottom: 8px; margin-top: 0px;">Marketing and web design that tickles your taste buds</p>
-                        <hr style="width: 150px; border-color: var(--color-navyblue);">
+                        <hr class="border-color-navyblue" style="width: 150px;">
                     </div>
                 </div>
                 <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
@@ -189,7 +193,7 @@
         @include('partials.waves-top')
         @if (isset($blog_posts) && count($blog_posts) > 0)
             <div class="container col-12 d-flex flex-column align-items-center py-5 flex-grow-1 center-content">
-                <h2 class="pink-heading pb-3" style="color: var(--color-navyblue)">The Waffle Corner</h2>
+                <h2 class="pink-heading pb-3 color-navyblue">The Waffle Corner</h2>
                 <h3>The only place that we tolerate any waffle...</h3>
                 <div class="container-xl" style="margin-bottom: 30px;">
                     <div class="text-container-40px" style="text-align: center;">

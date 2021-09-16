@@ -4,8 +4,8 @@
     <style>
         .filter-button
         {
-            background-color: var(--color-navyblue);
-            color: var(--color-white);
+            background-color: #000733;
+            color: white;
             font-weight: 700;
             font-size: 24px;
             border:none;
@@ -13,16 +13,26 @@
             padding: 5px 15px;
             width: 90vw;
         }
+        html[data-theme='dark'] .filter-button
+        {
+            background-color: white;
+            color: #000733;
+        }
+
         .long-button
         {
             width: 200px;
             max-width: 100%;
             border-radius: 17px;
             padding: 5px 10px;
-            border: 2px solid var(--color-navyblue);
+            border: 2px solid #000733;
             background-color: transparent;
             font-weight: 700;
             font-size: 20px;
+        }
+        html[data-theme='dark'] .long-button
+        {
+            border-color: white;
         }
 
         .filter-button-icon
@@ -34,14 +44,24 @@
 
         input[name=filter-services]:checked + label
         {
-            background-color: var(--color-white);
-            border: 2px solid var(--color-navyblue);
-            color: var(--color-navyblue)
+            background-color: white;
+            border: 2px solid #000733;
+            color: #000733;
+        }
+        html[data-theme='dark'] input[name=filter-services]:checked + label
+        {
+            background-color: #000733;
+            border-color: white;
+            color: white;
         }
 
         input[name=filter-services]:checked + * *
         {
-            fill: var(--color-navyblue)
+            fill: #000733;
+        }
+        html[data-theme='dark'] input[name=filter-services]:checked + * *
+        {
+            fill: white;
         }
 
         .radio-hidden
@@ -59,7 +79,7 @@
 
         .selection-button
         {
-            background-color: var(--color-white);
+            background-color: white;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             font-weight: bold;
             border-radius: 10px;
@@ -70,20 +90,33 @@
             margin: 5px;
             align-items: center;
         }
+        html[data-theme='dark'] .selection-button
+        {
+            background-color: #000733;
+        }
+
         .selection-items [type=checkbox]:checked + label
         {
-        color: var(--color-pink);
-        background-color: var(--color-navyblue);
-        font-style: normal;
+            color: #DF4985;
+            background-color: #000733;
+            font-style: normal;
+        }
+        html[data-theme='dark'] .selection-items [type=checkbox]:checked + label
+        {
+            background-color: white;
         }
         .selection-items [type=checkbox]:checked + * *
         {
-            fill: var(--color-pink);
+            fill: #DF4985;
         }
 
         .service-svg-1
         {
-            fill: var(--color-navyblue);
+            fill: #000733;
+        }
+        html[data-theme='dark'] .service-svg-1
+        {
+            fill: white;
         }
 
         input#Design:checked ~ .selection-items > label:not([filter=design])
@@ -114,7 +147,6 @@
 
             .selection-button
             {
-                background-color: var(--color-white);
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                 font-weight: bold;
                 border-radius: 10px;
@@ -142,7 +174,6 @@
 
             .selection-button
             {
-                background-color: var(--color-white);
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                 font-weight: bold;
                 border-radius: 10px;
@@ -155,6 +186,40 @@
             }
         }
 
+        @media (prefers-color-scheme: dark)
+        {
+            .filter-button
+            {
+                background-color: white;
+                color: #000733;
+            }
+            .long-button
+            {
+                border-color: white;
+            }
+            input[name=filter-services]:checked + label
+            {
+                background-color: #000733;
+                border-color: white;
+                color: white;
+            }
+            input[name=filter-services]:checked + * *
+            {
+                fill: white;
+            }
+            .selection-button
+            {
+                background-color: #000733;
+            }
+            .selection-items [type=checkbox]:checked + label
+            {
+                background-color: white;
+            }
+            .service-svg-1
+            {
+                fill: white;
+            }
+        }
     </style>
 @endsection
 
@@ -175,7 +240,7 @@
                     <p style="font-size: 22px; font-weight: 700;"> Select the services that suit your business and click continue. If you've accidentally selected a service that you don't want, you can click/tap the button to deselect. </p>
                     {{-- <div class="col-12 col-md-6 d-flex center-content flex-column">
                         <button class="d-block long-button mb-3">View Basket</button>
-                        <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>
+                        <button class="long-button background-color-navyblue color-white">Continue</button>
                     </div> --}}
                 </div>
             </div>
@@ -477,7 +542,7 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex center-content flex-column">
                     <button class="d-block long-button mb-3">View Basket</button>
-                    <button class="long-button" style="background-color: var(--color-navyblue); color: var(--color-white);">Continue</button>
+                    <button class="long-button background-color-navyblue color-white">Continue</button>
                 </div>
             </div>
         </div> --}}

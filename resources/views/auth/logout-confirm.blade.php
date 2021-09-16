@@ -28,7 +28,7 @@
                             <button class="btn btn-lg rounded-blue-button logout-button" style="color: white; background-color: #00bb00;">No</button>
                         </a>
                         <a href="{{ route('logout') }}">
-                            <button class="btn btn-lg rounded-blue-button logout-button" style="color: white; background-color: var(--color-violet)">Yes</button>
+                            <button class="btn btn-lg rounded-blue-button logout-button" style="color: white; background-color: #7A98EE;">Yes</button>
                         </a>
                     </p>
                 </div>

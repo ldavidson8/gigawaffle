@@ -40,8 +40,13 @@
             top: 1em;
             width: 1.2em;
             bottom: 0px;
-            border-top: 1px solid var(--color-navyblue);
-            border-left: 1px solid var(--color-navyblue);
+            border-top: 1px solid #000733;
+            border-left: 1px solid #000733;
+        }
+        html[data-theme='dark'] .timeline-section .timeline-lines
+        {
+            border-top-color: white;
+            border-left-color: white;
         }
 
         .timeline-lines-2
@@ -50,7 +55,11 @@
             left: 2.5em;
             top: 0;
             height: 1em;
-            border-left: 1px solid var(--color-navyblue);
+            border-left: 1px solid #000733;
+        }
+        html[data-theme='dark'] .timeline-lines-2
+        {
+            border-left-color: white;
         }
 
         .timeline-section-bottom .timeline-lines
@@ -96,6 +105,20 @@
             .google-map
             {
 
+            }
+        }
+
+        @media (prefers-color-scheme: dark)
+        {
+            .timeline-section .timeline-lines
+            {
+                border-top-color: white;
+                border-left-color: white;
+            }
+
+            .timeline-lines-2
+            {
+                border-left-color: white;
             }
         }
     </style>
@@ -189,7 +212,7 @@
     <br />
     <div id="contactform" class="container no-padding" style="width: 576px; max-width: 100%;">
         <h2 style="font-size: 30px;
-        color: var(--color-pink);
+        color: #DF4985;
         font-weight: bold;
         text-align: center;"><b>How can we help you?</b></h2>
         <p style="font-size: 20px; text-align: center;">Send a message</p>
