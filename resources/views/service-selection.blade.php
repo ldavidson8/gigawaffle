@@ -60,7 +60,8 @@
         .selection-button
         {
             background-color: var(--color-white);
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+            border: 2px solid var(--color-navyblue);
             font-weight: bold;
             border-radius: 10px;
             padding: 0 5px;
@@ -75,6 +76,7 @@
         color: var(--color-pink);
         background-color: var(--color-navyblue);
         font-style: normal;
+        border: 2px solid var(--color-pink);
         }
         .selection-items [type=checkbox]:checked + * *
         {
@@ -89,6 +91,7 @@
         input#Design:checked ~ .selection-items > label:not([filter=design])
         {
             display: none;
+            animation: fadeInButton 2s ease-in;   
         }
 
         input#Marketing:checked ~ .selection-items > label:not([filter=marketing])
@@ -99,6 +102,15 @@
         input#Media:checked ~ .selection-items > label:not([filter=social-content])
         {
             display: none;
+        }
+
+        @keyframes zoom-in {
+        0% {
+            transform: scale(.1);
+        }
+        100% {
+            transform: none;
+        }
         }
 
 
@@ -115,7 +127,7 @@
             .selection-button
             {
                 background-color: var(--color-white);
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
                 font-weight: bold;
                 border-radius: 10px;
                 padding: 0 5px;
@@ -143,7 +155,7 @@
             .selection-button
             {
                 background-color: var(--color-white);
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
                 font-weight: bold;
                 border-radius: 10px;
                 padding: 0 5px;
