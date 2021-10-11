@@ -3,19 +3,17 @@
 @section('stylesheets')
     <link rel="stylesheet" href="{{ asset('css/blog-listing.css') }}" />
 
-    {{-- <style>
+    <style>
+
+        .main-heading
+        {
+            font-size: 32px;
+        }
         header
         {
             background-image: none !important;
+            background-color: transparent;
         }
-
-        nav.navbar-dark a.nav-link
-        {
-            color: black !important;
-        }
-    </style> --}}
-
-    <style>
         .caret-right-list
         {
             list-style-type: none;
@@ -26,7 +24,7 @@
             font-family: 'FontAwesome';
             content: '\f0da';
             margin:0 10px 0 -15px;
-            color: white;
+            color: var(--color-pink);
             font-size: 3em;
             vertical-align: middle;
         }
@@ -73,6 +71,17 @@
             0 -1px white;
         }
 
+        .pink-button
+        {
+            background-color: #DF4985;
+            color: white;
+            font-weight: 700;
+            font-size: 24px;
+            border: none;
+            border-radius: 20px;
+            padding: 15px 25px;
+        }
+
         @media (max-width: 990px)
         {
             .blog-cards:first-of-type
@@ -88,44 +97,35 @@
                 margin-right: 1em;
             }
         }
+
+        @media (min-width: 768px)
+        {
+            .main-heading
+            {
+                font-size: 56px;
+            }
+        }
     </style>
 @endsection
 
 @section('before-header')
-    <canvas id="white-bubble"></canvas>
-    <div class="full-size container-fluid d-flex flex-column center-content" style="min-height: 100vh; position: relative;">
+    <div class="container-fluid d-flex center-content vh-100 flex-column" style="background-image: url('img/background/hero-image.png')">
 @endsection
 
 @section('main-content')
-        <div class="gradient" style="position: absolute; width: 100%; height: 100%; z-index: -2"></div>
-        <div class="container-lg row top-section-outer flex-grow-1 center-content-sm" style="position: relative;">
-            <div class="col-12 col-md-6 no-padding d-flex flex-column">
-                <div class="d-flex">
-                    <div class="align-item-bottom no-padding" style="font-style: italic">
-                        <h1 style="font: inherit; font-size: 40px; font-weight: 900; line-height: 60px; color: var(--color-navyblue);">Welcome to Gigawaffle</h1>
-                        <p style="font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; font-style: italic; font-weight: 600; line-height: 32.4px; margin-bottom: 8px; margin-top: 0px;">Marketing and web design that tickles your taste buds</p>
-                        <hr style="width: 150px; border-color: var(--color-navyblue);">
-                    </div>
+        <div class="flex-grow-1 d-flex center-content">
+                <div class="text-center">
+                    <h1 class="main-heading" style="color: white;"><span class="typed-header"></span><span class="cursor">&nbsp;</span>services</h1>
+                    <h2 style="color: white">without the waffle</h2>
+                    <a href="{{ route("services") }}">
+                        <div class="text-center mt-5">
+                            <button class="button pink-button">View Services</button>
+                        </div>
+                    </a>
                 </div>
-                <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
-                    <p style="font-weight: 700;">
-                        We're gigawaffle; we want to turn businesses into brands. With plenty of options across web design, marketing and media, you're truly in control when it comes to your business.
-                    </p>
-                    <p>
-                        You can pick and choose from a range of services, allowing you to build the perfect package for your business.
-                    </p>
-                    <div class="center-button" style="width: 100%;">
-                        <a href="{{ route("services") }}">
-                            <button class="button-default">View Services</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 d-none d-md-block" style="text-align: right;">
-                <img src="{{ asset('img/code-snippet.png') }}" alt="Code snippet of Hello world in React framework"/>
-            </div>
         </div>
     </div>
+    {{-- <div class="gradient" style="position: absolute; width: 100%; height: 100%; z-index: -2"></div> --}}
     <div class="gradient">
         @include('partials.waves-bottom')
     </div>
@@ -157,7 +157,7 @@
             </a>
         </div>
     </div>
-    <div class="gradient text-white">
+    {{-- <div class="gradient text-white"> --}}
         @include('partials.waves-top')
         <div class="container">
             <div class="col-12 d-flex flex-column align-items-center py-0 py-md-4">
@@ -186,7 +186,7 @@
             </div>
         </div>
         @include('partials.waves-bottom')
-    </div>
+    {{-- </div> --}}
     @if (isset($blog_posts) && count($blog_posts) > 0)
         <canvas id="bubble"></canvas>
         <div class="container full-size d-flex center-content">
@@ -207,3 +207,11 @@
         </div>
     @endif
 @endsection
+
+@section('after-footer')
+@endsection
+
+@section('script')
+<script type="text/javascript" src="{{ URL::asset('js/typewriter.js') }}" async></script>
+@endsection
+

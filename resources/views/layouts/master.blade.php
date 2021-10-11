@@ -59,7 +59,7 @@
 
     <!-- Our Scripts -->
     <script type="text/javascript" src="{{ URL::asset('js/intersection-observer-api.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/lava-lamp.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ URL::asset('js/lava-lamp.js') }}"></script> --}}
 
 </head>
 <body>

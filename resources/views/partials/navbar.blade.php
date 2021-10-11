@@ -4,7 +4,7 @@
 <style>
     header
     {
-        padding: 0px 30px;
+        padding: 0px 20px;
     }
 
     #navbar-logo
@@ -43,11 +43,11 @@
                 </li>
             </ul>
         @endauth
-        <button id="theme-toggle" class="btn btn-link btn-lg ml-2" type="button">
-            <span class="d-block-light d-none"><img src="{{ asset('img/moon.svg')}}"></span>
-            <span class="d-block-dark d-none"><img src="{{ asset('img/sun.svg')}}"></span>
-           </button>
-           
-         
+        <div class="text-center">
+            <button id="theme-toggle" class="btn btn-link btn-lg ml-2" type="button">
+                <span class="d-block-light d-none text-white"><span class="d-block d-md-none">Switch to Light Mode</span> <img src="{{ asset('img/moon.svg')}}"></span>
+                <span class="d-block-dark d-none text-white"><span class="d-block d-md-none">Switch to Dark Mode</span> <img src="{{ asset('img/sun.svg')}}"></span>
+            </button>
+        </div>
     </div>
 </nav>

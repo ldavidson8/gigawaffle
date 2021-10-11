@@ -15,7 +15,6 @@ html
     --color-violet: #7A98EE;
     --color-navyblue: #000733;
     --color-white: #FFFFFF;
-    --button-color: #000733;
 }
 
 html[data-theme='light'] 
@@ -83,7 +82,8 @@ header
     background-image: linear-gradient(to right, #DF4985 , #7A98EE);
     color: #FFFFFF;
     padding: 20px 10px 0 10px;
-    width: 100%
+    width: 100%;
+    background-color: transparent;
 }
 
 nav
@@ -364,6 +364,17 @@ b
     font-weight: 700;
     font-size: 20px;
     border:none;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.pink-button
+{
+    background-color: var(--color-pink);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
     border-radius: 20px;
     padding: 5px 20px;
 }

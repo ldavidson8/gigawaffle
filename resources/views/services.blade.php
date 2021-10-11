@@ -63,13 +63,6 @@
             }
         }
 
-        @media (min-width: 768px) and (max-width: 991px)
-        {
-            .button-margin-md
-            {
-                margin-bottom: 1em;
-            }
-        }
     </style>
 @endsection
 
@@ -91,10 +84,10 @@
                     <p>Not sure what services you want or want a waffle-free approach? Don't worry, we can help. Just click "Help Me Decide" below and fill in the form.</p>
                     <div class="center-button" style="width: 100%;">
                         <a href="{{ route("service-selection") }}">
-                        <button class="button-default button-margin-md">Pick n Mix</button>
+                        <button class="navy-blue-button mb-4 mb-sm-0">Pick n Mix</button>
                         </a>
                         <a href="{{ route('services') }}#services-contactform">
-                            <button class="button-alternate">Help Me Decide</button>
+                            <button class="pink-button">Help Me Decide</button>
                         </a>
                     </div>
                 </div>
@@ -178,7 +171,7 @@
         <div class="row" style="padding: 20px 0px;">
             <div class="package-container col-12 col-md-6">
                 <img src="{{ asset('img/services-packages/fan-icon.png') }}" alt="" />
-                <h4 class="package-container-header">From Business To Brand</h4>
+                <h4 class="package-container-header mt-2">From Business To Brand</h4>
                 <p>Turn your business into a brand with this package. We'll sort out your brand design, social media posts, physical branding and copyright to upgrade your business.</p>
                 <a id="B2B" href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "From Business to Brand" package.'>Click to inquire in the form below</a>
             </div>
@@ -192,7 +185,7 @@
             </div>
             <div class="package-container col-12 col-md-6">
                 <img src="{{ asset('img/services-packages/globe.png') }}" alt="" />
-                <h4 class="package-container-header">Time To Get Connected</h4>
+                <h4 class="package-container-header mt-2">Time To Get Connected</h4>
                 <p>We'll get your business online by creating a website to suit your business. We will do some basic SEO work to push your business up Google's search engine.</p>
                 <a href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "Time To Get Connected" package.'>Click to inquire in the form below</a>
             </div>
@@ -200,7 +193,7 @@
         <div class="row" style="padding: 20px 0px;">
             <div class="package-container col-12 col-md-6">
                 <img src="{{ asset('img/services-packages/smartphone.png') }}" alt="" />
-                <h4 class="package-container-header">It's Time To Upgrade</h4>
+                <h4 class="package-container-header mt-2">It's Time To Upgrade</h4>
                 <p>Want a bespoke and future-proof website? We will create a mobile ready website, so your customers can enjoy what you offer at any time or place.</p>
                 <a href="{{ route('services') }}#services-contactform" class="pink-link" data-template='Hi I would like to learn more about the "It&apos;s Time To Upgrade" package.'>Click to inquire in the form below</a>
             </div>

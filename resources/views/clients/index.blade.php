@@ -132,7 +132,7 @@
                 <div class="text-container-40px flex-column flex-grow-1 d-flex center-content">
                     <p><b>Here you'll find all of the clients we've previously worked with, what services we provided for them and what they thought of our work.</b></p>
                     <p>You can read more about a client by clicking "Learn More". If you like what you see, why not get in touch with us, and you never know, your business may appear here too.</p>
-                    <div class="center-button" style="width: 100%;"><a href="{{ route('services') }}#contactform"><button class="button-default">Get In Touch</button></a></div>
+                    <div class="center-button" style="width: 100%;"><a href="{{ route('services') }}#contactform"><button class="navy-blue-button">Get In Touch</button></a></div>
                 </div>
             </div>
             <div class="col-6 d-none d-md-block" style="text-align: right;">
