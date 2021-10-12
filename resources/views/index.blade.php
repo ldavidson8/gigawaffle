@@ -82,6 +82,45 @@
             padding: 15px 25px;
         }
 
+        .container-mask
+        {
+            background-color: var(--color-mask-container);
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container-mask:before, 
+        .container-mask:after 
+        {
+        background: inherit;
+        content: '';
+        display: block;
+        height: 50%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        -webkit-backface-visibility: hidden; // for Chrome Windows;
+        }
+
+        .container-mask:before
+        {
+            top: -3em;
+            transform: skewY(-1.5deg);
+            transform-origin: 100% 0;
+            border-top: solid 3px var(--color-pink);
+        }
+        
+        
+        .container-mask:after
+        {
+            bottom: 0;
+            transform: skewY(-1.5deg);
+            transform-origin: 100%;
+            border-bottom: solid 3px var(--color-pink)
+        }
+
         @media (max-width: 990px)
         {
             .blog-cards:first-of-type
@@ -126,9 +165,9 @@
         </div>
     </div>
     {{-- <div class="gradient" style="position: absolute; width: 100%; height: 100%; z-index: -2"></div> --}}
-    <div class="gradient">
+    {{-- <div class="gradient">
         @include('partials.waves-bottom')
-    </div>
+    </div> --}}
     <div class="no-padding">
         <div class="col-12 d-flex flex-column align-items-center text-center py-5">
             <h2 style="font-size: 1.5em"> Our Services </h2>
@@ -158,34 +197,36 @@
         </div>
     </div>
     {{-- <div class="gradient text-white"> --}}
-        @include('partials.waves-top')
-        <div class="container">
-            <div class="col-12 d-flex flex-column align-items-center py-0 py-md-4">
-                <h2 class="pink-heading pb-3" style="padding-top: 30px; color: white;">The Process</h2>
-                <h3> All the services, without the waffle </h3>
-                <div class="row pt-5">
-                    <div class="col-12 col-md-6">
-                        <p style="font-weight: 600"> We pride ourselves on making it easy for you to turn your business into a brand. Whether you know exactly what you're after, or you have no clue where to begin, we'll make it a simple progress. </p>
-                        <p> Our enthusiastic and passionate team will always be on hand throughout the process, allowing you to see your image come to life </p>
+        {{-- @include('partials.waves-top') --}}
+        <div class="container-mask">
+            <div class="container mb-5">
+                <div class="col-12 d-flex flex-column align-items-center py-0 py-md-4">
+                    <h2 class="pink-heading pb-3" style="padding-top: 30px;">The Process</h2>
+                    <h3> All the services, without the waffle </h3>
+                    <div class="row pt-5">
+                        <div class="col-12 col-md-6">
+                            <p style="font-weight: 600"> We pride ourselves on making it easy for you to turn your business into a brand. Whether you know exactly what you're after, or you have no clue where to begin, we'll make it a simple progress. </p>
+                            <p> Our enthusiastic and passionate team will always be on hand throughout the process, allowing you to see your image come to life </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="{{ asset('img/world-wide-web-image.png') }}" width="100%" alt="World Wide Web Image"/>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <img src="{{ asset('img/world-wide-web-image.png') }}" width="100%" alt="World Wide Web Image"/>
-                    </div>
-                </div>
-                <div class="w-100">
-                    {{-- <h2 class="pink-heading" style="text-align:left; font-style: italic; font-size: 1.6em;"> The Process </h2> --}}
-                    <ul class="caret-right-list" style="font-weight: 500;">
-                        <li>Purchase your perfect package, choose from one of our existing packages or talk with one of our team.</li>
-                        <li>We'll clarify any of the finer details and then get to work.</li>
-                        <li>We'll regularly check back in with progress updates, ideas, designs and more, to ensure you get exactly what you're after.</li>
-                    </ul>
-                    <div style="text-align: center">
-                        <a href="{{ route('services') }}"><button class="navy-blue-button">Get Started</button></a>
+                    <div class="w-100">
+                        {{-- <h2 class="pink-heading" style="text-align:left; font-style: italic; font-size: 1.6em;"> The Process </h2> --}}
+                        <ul class="caret-right-list" style="font-weight: 500;">
+                            <li>Purchase your perfect package, choose from one of our existing packages or talk with one of our team.</li>
+                            <li>We'll clarify any of the finer details and then get to work.</li>
+                            <li>We'll regularly check back in with progress updates, ideas, designs and more, to ensure you get exactly what you're after.</li>
+                        </ul>
+                        <div style="text-align: center">
+                            <a href="{{ route('services') }}"><button class="pink-button">Get Started</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        @include('partials.waves-bottom')
+        {{-- @include('partials.waves-bottom') --}}
     {{-- </div> --}}
     @if (isset($blog_posts) && count($blog_posts) > 0)
         <canvas id="bubble"></canvas>
