@@ -8,6 +8,7 @@
         .main-heading
         {
             font-size: 32px;
+            max-width: 260px;
         }
         header
         {
@@ -109,7 +110,7 @@
             top: -3em;
             transform: skewY(-1.5deg);
             transform-origin: 100% 0;
-            border-top: solid 3px var(--color-pink);
+            border-top: solid 2px var(--color-pink);
         }
         
         
@@ -118,7 +119,7 @@
             bottom: 0;
             transform: skewY(-1.5deg);
             transform-origin: 100%;
-            border-bottom: solid 3px var(--color-pink)
+            border-bottom: solid 2px var(--color-pink)
         }
 
         @media (max-width: 990px)
@@ -142,6 +143,7 @@
             .main-heading
             {
                 font-size: 56px;
+                max-width: unset;
             }
         }
     </style>
