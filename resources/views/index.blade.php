@@ -4,9 +4,11 @@
     Discover Digital Marketing with Gigawaffle
 @stop
 
-@section('description', 'Gigawaffle, Digital Marketing Company 
-based in Preston City Centre. Web Design, Brand Design, SEO and Copywriting. 
-grow your business and turn it into a brand.')
+@section('description')
+    Gigawaffle, Digital Marketing Company 
+    based in Preston City Centre. Web Design, Brand Design, SEO and Copywriting. 
+    grow your business and turn it into a brand.
+@stop
 
 @section('keywords', 'Marketing | Digital Marketing | Creative 
 Design | Website Design &amp; Development | Branding | SEO | Copywriting |
