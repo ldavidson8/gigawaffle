@@ -2,13 +2,13 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 
-    <title>{{ (isset($page_title)) ? "$page_title" : 'Gigawaffle' }}</title>
-
+    <title>Gigawaffle - @yield('title')</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     @if (isset($description))
         <meta name="description" content="{{ $description }}" />
     @endif
+    <meta name="keywords" content="@yield('keywords')">
 
     <link rel="shortcut icon" type="image/jpg" href="{{ asset('favicon.png') }}"/>
 

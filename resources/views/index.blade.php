@@ -1,5 +1,17 @@
 @extends('layouts.master')
 
+@section('title')
+    Discover Digital Marketing with Gigawaffle
+@stop
+
+@section('description', 'Gigawaffle, Digital Marketing Company 
+based in Preston City Centre. Web Design, Brand Design, SEO and Copywriting. 
+grow your business and turn it into a brand.')
+
+@section('keywords', 'Marketing | Digital Marketing | Creative 
+Design | Website Design &amp; Development | Branding | SEO | Copywriting |
+Preston |marketing agency | Hustle')
+
 @section('stylesheets')
     <link rel="stylesheet" href="{{ asset('css/blog-listing.css') }}" />
 
