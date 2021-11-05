@@ -1,5 +1,20 @@
 @extends('layouts.master')
 
+@section('title')
+    Find Digital Marketing Services with Gigawaffle
+@stop
+
+@section('description')
+    Gigawaffle has any Digital marketing services you could need. From 
+    Web development, UI design, Brand Design and Graphic Design all the way to 
+    Copywriting, Video and audio content and social media management.
+@stop
+
+@section('keywords', 'Brand Design, Web Development, UI Design, Graphic Design, 
+Packaging Design, Staff Systems, SEO, Copywriting, Digital Marketing, Content 
+Marketing, Affiliate Marketing, Email Marketing, Video Content, Audio Content, 
+social media, Photography')
+
 @section('stylesheets')
     <style>
         .services-outer

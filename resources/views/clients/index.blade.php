@@ -1,5 +1,19 @@
 @extends('layouts.master')
 
+@section('title')
+    Hear from Gigawaffle Marketing Clients
+@stop
+
+@section('description')
+    Client Reviews of Gigawaffle services, new website designs, brand 
+    redesigns, SEO optimisation and everything in between. Read testimonials from our 
+    clients and decide for yourself if you want our marketing services
+@stop
+
+@section('keywords', 'Digital Marketing Clients, Digital Marketing Testimonials, SEO, Search 
+Engine Optimisation, Website Designs, Brand Redesigns, Playgroundbullys, Swap my 
+Energy.')
+
 @section('stylesheets')
     <style>
         .mobile-flex-column

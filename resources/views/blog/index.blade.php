@@ -1,5 +1,16 @@
 @extends('layouts.master')
 
+@section('title')
+    Learn Marketing with The Gigawaffle blog
+@stop
+
+@section('description')
+    Gigawaffle’s blog is your first stop to learn all about the world of marketing. 
+@stop
+
+@section('keywords', 'Blog, Marketing Blog, affiliate marketing blog, online marketing 
+blog, best marketing blogs')
+
 @section('stylesheets')
     <link rel="stylesheet" href="{{ asset('css/blog-listing.css') }}" />
 @endsection
