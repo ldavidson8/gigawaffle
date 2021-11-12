@@ -110,7 +110,7 @@ class ContactController extends Controller
             $ticket = "C" . $ticket;
 
             // send an email to our support email address
-            Mail::to(env('MAIL_TO_ADDRESS')) -> queue(new ContactUsEmail($form_data, $ticket));
+            Mail::to(env('hello@gigawaffle.co.uk')) -> queue(new ContactUsEmail($form_data, $ticket));
 
             // redirect to the success page
             return redirect() -> route('post.contact-us.success', [ "ticket" => $ticket ]);
